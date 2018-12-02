@@ -1035,10 +1035,9 @@ margin-right: 6px!important;
 z-index: 99 !important;}
 
 .contextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
-  right: 6px!important;}
-  
-  .chatTab .chatTabUnreadBadge {
-  padding-right: 15px!important; }
+  right: 0px!important;}
+.contextMenuItem .TabRightContainer .chatTabUnreadBadge{
+	  right: 16px!important;}
 
 .addFriendButton:hover .SVGIcon_AddFriend .plusCircle {
   transform: none !important; }
