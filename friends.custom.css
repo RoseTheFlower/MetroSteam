@@ -112,14 +112,6 @@ font-size:13px !important;}
 	stroke: white !important;
 }
 
-.ContextMenuButton .SVGIcon_DownArrowContextMenu{
-	display: none !important;
-}
-.ContextMenuButton{
-	width: 1px !important;
-	opacity: 0 !important;
-}
-
 /* zzz icon next to friends' names on the list */
 .friendsContainer .SnoozeContainer, 
 .friendlistListContainer .SnoozeContainer{
@@ -140,8 +132,13 @@ font-size:13px !important;}
 }
 /* X unread Message in Friends Panel */
 .unreadMessageViolator{
-	background: rgba(0,0,0,0.8) !important;
-	color: yellow !important;
+	background: rgb(var(--clientBG)) !important;
+	color: rgb(45,137,239) !important;
+    width: calc(100% - 2px)!important;
+	  border: 0 !important;
+	right: 0px !important;
+	left: 0px !important;
+	z-index: 2!important;
 }
 /* Make chat screenshots small at startup */
 .chatImageFull{
@@ -353,7 +350,8 @@ border:1px solid rgb(7,7,7) !important;}
 .VoiceToggle.Inactive:hover,
 .chatSubmitButton.EmbedButton:hover,
 .chatSubmitButton.EmoticonPickerButton:hover {
-  background-color: rgb(81,81,81) !important; }
+  background-color: rgb(81,81,81) !important;
+  cursor: default!important;}
   
 .ChatMessageEntryVoice {
   background-color: rgb(var(--chatentry)) !important;
@@ -401,18 +399,15 @@ outline: 0px solid transparent !important; }
   height: 20px!important; 
   margin-top: 9px!important; 
   margin-bottom: 0px!important;  }
- .activeVoiceButtons button {
+
+
+.ChatMessageEntryVoice .activeVoiceButtons button {
   max-width: 28px!important;
   min-width: 28px!important;
   min-height: 28px!important;
   max-height: 28px!important;
   margin-top: 2px!important; }
 
-.VoiceControlPanelButton.ToggleVoiceOutputButton .SVGIcon_Headphones,
-.VoiceControlPanelButton.ToggleMicrophoneButton .SVGIcon_Microphone {
-  padding-top: 2px!important;
-  width: 20px!important;
-  height: 20px!important; }
 .ChatMessageEntryVoice .activeVoiceButtons {
   width: 64px!important; }
 
@@ -484,7 +479,7 @@ button.DialogButton:not(.Off) {
 	background: rgb(var(--focus)) !important;
 }
 button.DialogButton:hover {
-    background: rgb(var(--header_dark)) !important;
+    background: rgb(81,81,81) !important;
 }
 button.DialogButton:disabled, 
 button.DialogButton:disabled:hover{
@@ -510,6 +505,9 @@ button.DialogButton.roleButton.owner:disabled {
 	fill: rgb(var(--focus)) !important;
 }
 
+._DialogInputContainer{
+color: rgb(140,140,140)!important;}
+
 button.DialogButton, 
 .DialogOnOffToggle_Option:hover:not( .Active ) {
 	background: #4c4c4c;
@@ -523,7 +521,7 @@ button.DialogButton,
 
 .DialogLabel, 
 .DialogLabelStrong{
-	color: white !important;
+	color: rgb(140,140,140) !important;
 }
 .DialogCheckbox_Container{
 	padding: 0 !important;
@@ -535,8 +533,43 @@ button.DialogButton,
 
 .PagedSettingsDialog_PageListColumn{
 	background: rgb(var(--header_dark)) !important;
+	padding-left: 0px !important;
 }
+.PagedSettingsDialog_Title{
+color: white!important;
+font-size: 18px!important;
+text-transform: none!important;
+margin-left: 15px!important;
+margin-top: -3px!important;}
 
+.DialogHeader{
+  color: white!important;
+font-size: 18px!important;
+text-transform: none!important;
+letter-spacing: 0px!important;}
+
+.PagedSettingsDialog_PageListItem{
+	text-transform: none!important;
+	font-size: 14px!important;
+margin-bottom: 3px!important;
+padding: 4px 40px !important;
+cursor: initial!important;}
+
+.PagedSettingsDialog_PageListItem.Active{
+background-color:rgb(76,76,76)!important;}
+.PagedSettingsDialog_PageListItem:not(.Active):hover{
+color:#969696!important;}
+
+.ModalPosition_TopBar{
+height: 0!important;}
+.DialogOnOffToggle_Option:hover:not(.Active) {
+   background: rgb(75,75,75)!important;}
+.DialogCheckbox .SVGIcon_DialogCheck{
+   overflow: white!important;}
+.FriendsSettingsNotificationRow{
+background-color: transparent!important;
+color: rgb(140,140,140)!important;
+}
 /* Scroll Bar*/
 ::-webkit-scrollbar{
 	width: var(--scrollbarSize) !important;
@@ -558,7 +591,12 @@ button.DialogButton,
     border-radius: 0px!important; 
     background-color: none!important; 
     border: 2px solid transparent!important;
-} 
+}
+/* disables scroll buttons at settings */
+.DialogBody::-webkit-scrollbar-button {
+    display:none!important;
+}
+
 ::-webkit-scrollbar-button:hover { 
     background-color: #272727!important; 
 }
@@ -612,8 +650,15 @@ button.DialogButton,
 /* Voice control */
 .activeVoiceControls {
 	background:transparent!important;
+	border-image:none!important;
+	border-color:rgb(0,163,0)!important;
 }
-
+.OneOnOneVoiceActive .OneOnOneVoiceStatusLabel{
+color:rgb(0,163,0)!important;}
+.OneOnOneVoiceActive{
+background:rgb(var(--header_dark)) !important;
+border-bottom: 1px solid black!important;
+}
 /* Change cursor at groups */
 .voiceRoomDragBar {
 	cursor: initial !important;
@@ -661,6 +706,7 @@ button.DialogButton,
 .chatentry_chatEntryControls_2O_X7 {
    background-color: rgb(var(--chatentry)) !important;
    padding-right: 0px !important;
+   color: #ffffff!important;
 }
 /*the box where you type*/
 .chatentry_chatTextarea_3e__5 {
@@ -675,8 +721,8 @@ button.DialogButton,
   margin-bottom: 0px !important; }
 .chatEntry.compactView .chatSubmitButton .SVGIcon_Submit,
 .chatEntry.compactView .chatSubmitButton.EmoticonPickerButton .SVGIcon_Emoticon {
-  height: 15px !important; 
-  margin-top: 0px !important;
+  height: 20px !important; 
+  margin-top: 5px !important;
 }
   
   .ChatTabs.compactView .clanName, .ChatTabs.compactView .friend .playerName, .ChatTabs.compactView .friend .playerNickname {
@@ -687,7 +733,7 @@ button.DialogButton,
   font-size: 12px !important; 
   margin-top: 1px !important }
   
-  .ChatTabs.compactView .chatTabList .chatTab,
+.ChatTabs.compactView .chatTabList .chatTab,
 .ChatTabs.compactView .ChatTabsBackButton {
   height: 34px !important; }
   
@@ -776,8 +822,9 @@ background-image: none !important;
 }
 .FriendChatTypingNotification {
   background: rgb(var(--clientbg)) !important;
-  color: #808080 !important;
-    padding: 18px 10px 4px 12px !important
+  color: #8c8c8c !important;
+  padding: 18px 10px 4px 12px !important;
+  font-weight: 300!important;
  }
   
  .chatTab .chatTabHighlight {
@@ -786,24 +833,39 @@ background-image: none !important;
  .contextMenuContents {
  font-size: 12px !important;}
  
- .contextMenu .contextMenuItem {
-  padding: 4px 2px;
+.contextMenuItem {
+  padding: 4px 55px 4px 10px !important;
   line-height: 15px !important;
   color: rgb(var(--iconBG)) !important;
   border-top: none !important;
  border-bottom: none !important;}
+ 
+.contextMenu {
+padding: 0px!important; }
+
+.contextMenu .contextMenuItem.contextMenuUnselectable:hover,
+.contextMenuItem.contextMenuGameTitle,
+.contextMenuItem.contextMenuBroadcast,
+.contextMenuItem.contextMenuGameOptions {
+  background-color: rbg(var(--clientBG))!important; }
+.contextMenuItem.contextMenuGameTitle {
+border-top: 1px solid rgb(53,53,53) !important;}
+
+.contextMenuItem.contextMenuGameOptions .SVGIcon_Play {
+display:none!important;}
 
 .currentUserAvatar {
 	 border-radius: 1px !important;
 	width: 42px !important;
   height: 42px !important;
 }
-.currentUserAvatar:hover {
-transform: none !important;}
 
-/* disables scroll bar at settings */
-.DialogBody::-webkit-scrollbar {
-    display:none!important;
+html.ContextMenuPopup .contextMenu .contextMenuContents {
+  padding: 0!important; }
+
+.currentUserAvatar:hover {
+transform: none !important;
+  filter: brightness(1.1) !important;
 }
 
 .miniProfileContent .miniProfileHeader {
@@ -842,14 +904,19 @@ background: rgb(var(--header_dark)) !important;}
   height: 15px !important;
   position: absolute !important;
   right: 8px !important;
-  top: -5px !important;}
-  .friendSettingsButton:hover .SVGIcon_Settings {
-  background-color: rgb(var(--scrollbarBG)) !important;
+top: -6px !important;}
+.friendSettingsButton{
+  cursor: initial!important;}
+
+.friendSettingsButton:hover .SVGIcon_Settings {
+  background-color: rgb(81,81,81) !important;
+  animation-name: none!important;
  }
 
 .ChatUnreadMessageIndicator {
   background: none !important;
 }
+
 .chatTab .UnreadGlow {
   background: none !important;
 }
@@ -867,10 +934,14 @@ transform: none!important;}
  background-color: #0c0c0c !important;
  line-height: 20px !important;
  margin: 0px !important;
+ border: 2px solid #0c0c0c !important;
 }
 .mentionDialog {
   padding: 0px 0px 0px 0px !important;
-}  
+}
+
+.currentUserContainer .ContextMenuButton {
+display: none!important;}
 
 .suggestOption.selected {
   color: #fefefe !important;
@@ -922,7 +993,63 @@ opacity:.4!important;}
 	background-color: rgb(var(--scrollbarBG)) !important;}
 	
 .chatTabSetContainer{
-border-bottom:1px solid rgb(7,7,7)!important;}
+border-bottom:0px solid rgb(7,7,7)!important;}
 
 .closeButton:hover {
 	background: red !important;}
+
+.msg.ChatMsgSlashEmote .speaker {
+background:rgb(var(--chatentry))!important;
+color: rgb(var(--online))!important;}
+
+/*group chat member count*/
+.statMembersOnline {
+	color: rgb(var(--online))!important;}
+.statMembersInGame{
+	color: rgb(var(--ingame))!important;}
+	
+.inviteButton.inviteButtonJoinVoice {
+background:rgb(53,53,53)!important;}
+.inviteButton.inviteButtonJoinVoice:hover {
+  background: rgb(var(--focus))!important;}
+.OneOnOneVoiceRoomControls{
+	background-color: rgb(var(--clientBG))!important;}
+.ChatMessageEntryVoice {
+	background: rgb(var(--cliententry))!important;}
+.msg.voiceChannelInvite {
+	color: rgb(var(--white50))!important;
+	float: center!important;}
+	
+.SlashCommandSuggestion_SlashCommandDescription {
+	  color: rgb(var(--white50))!important;}
+
+.SingleUserChat .msg{
+margin-right: 4px!important;
+padding: 0 0 3px 50px !important;}
+
+.SingleUserChat .msgText{
+margin-right: 6px!important;
+  margin-left: 8px!important; }
+	  
+.FriendMessageCount{
+z-index: 99 !important;}
+
+.contextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
+  right: 6px!important;}
+  
+  .chatTab .chatTabUnreadBadge {
+  padding-right: 15px!important; }
+
+.addFriendButton:hover .SVGIcon_AddFriend .plusCircle {
+  transform: none !important; }
+
+.addFriendButton:hover .SVGIcon_AddFriend{
+background-color: rgb(81,81,81) !important;
+}
+
+.ContextMenuButton{
+cursor: default!important;}
+
+.chatTab .MicStatus{
+background:rgb(0,163,0)!important;
+z-index: -1!important;}
