@@ -1,4 +1,4 @@
-# Metro skin for the new Steam chat and friends UI
+# Metro skin for new Steam chat and friends UI
 
 This skin for the new chat and friends UI was created after Valve made it problematic to revert to the old-style windows.
 My quest was to make the new windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
