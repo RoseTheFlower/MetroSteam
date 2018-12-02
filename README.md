@@ -1,4 +1,4 @@
-# Good old Metro skin for the new Steam chat and friends UI
+Metro skin for the new Steam chat and friends UI
 
 This skin for the new chat and friends UI was created after Valve made it problematic to revert to the old-style windows.
 My quest was to make the new windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
@@ -9,9 +9,11 @@ My quest was to make the new windows look as close as possible to those of [the 
 * Launch the patcher and wait for it to apply the changes.
 * Close and open the chat and friends windows if necessary.
 
-## Known issues seemingly applicable to all skins
+## Known issues
 * Broken height of multiuser chats
 * Alignment issues at the notification options tab
+
+Both of these stem from the current version of the patcher, not the skin itself.
 
 ## Credits
 * [RedSigma](https://github.com/redsigma) for creating a custom skin of the new chat, which I initially used as a template.
