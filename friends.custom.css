@@ -967,7 +967,7 @@ background-color: rgb(15,15,15) !important;
     color: white !important;}
 
 .ConnectionTroubleContent {
-background: rgb(26,26,26) !important;}
+background: rgb(var(--focus)) !important;}
 
 .msg a {
 color: rgb(var(--online))!important;}
@@ -1025,7 +1025,7 @@ background:rgb(53,53,53)!important;}
 
 .SingleUserChat .msg{
 margin-right: 4px!important;
-padding: 0 0 3px 50px !important;}
+}
 
 .SingleUserChat .msgText{
 margin-right: 6px!important;
