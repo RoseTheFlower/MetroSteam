@@ -1,7 +1,7 @@
 :root{
 	--focus: 0, 114, 198;
-	--clientBG: 19,19,19;
-	--header_dark: 12, 12, 12;
+	--clientBG: 26,26,26;
+	--header_dark: 20, 20, 20;
 	--iconBG: 254, 254, 254;
 
 	--online: 93, 178, 254;
@@ -9,10 +9,10 @@
 	--offline: 19,19,19;
 	--scrollbarSize: 15px;
 	--scrollbarBG: 37, 37, 37;
-	--chatentry: 34, 34, 34;
-	--avatarCircleRadius: 0px;
+	--textentry: 34, 34, 34;
 	--white50: 255,255,255,127.5;
     --white75: 255, 255, 255, 191.25;
+	--border: 7,7,7
 }
 /* remove animations and other things */
 *{
@@ -32,30 +32,30 @@
 	justify-content: center !important;
 }
 
-/* Top Border */
+/* Top friends list border */
 .currentUserContainer{
-	border: 1px solid rgba(7,7,7,255) !important;
+	border: 1px solid rgb(var(--border)) !important;
 }
 
-/* Friend List Panel bg*/
+/* Friends list bg*/
 .friendlistListContainer, .socialListTab {
 	background: rgb(var(--clientBG)) !important;
-	border-left: 1px solid rgba(7,7,7,255) !important;
-	border-right: 1px solid rgba(7,7,7,255) !important;
+	border-left: 1px solid rgb(var(--border)) !important;
+	border-right: 1px solid rgb(var(--border)) !important;
 }
 
-/* Top Panel bg*/
+/* Top friends list panel bg*/
 .friendListHeaderContainer, .friendsListSectionTitle {
     background-color: rgb(var(--header_dark)) !important;
 }
 /* Bottom Panel bg*/
 .friendListFooter {
     background-color: rgb(var(--clientBG)) !important;
-	border-bottom: 1px solid rgba(7,7,7,255) !important;
+	border-bottom: 1px solid rgb(var(--border)) !important;
 }
 .friendListFooter, .friendsListSectionTitle {
-	border-left: 1px solid rgba(7,7,7,255) !important;
-	border-right: 1px solid rgba(7,7,7,255) !important;
+	border-left: 1px solid rgb(var(--border)) !important;
+	border-right: 1px solid rgb(var(--border)) !important;
 }
 /* Top Panel Avatar Effect*/
 .statusHeaderGlow{
@@ -103,8 +103,8 @@
 	transform: translateX( 0px ) !important;
 }
 .groupName{
-color: white !important;
-font-size:13px !important;}
+  color: white !important;
+  font-size:13px !important;}
 
 /* PlusMinus Friends Header Color*/
 .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, 
@@ -177,7 +177,6 @@ font-size:13px !important;}
 .friendStatusHover.offline.Friend_ContextMenuActive{
 	background-color: rgb( 37, 37, 37 ) !important;
 	z-index: 1 !important;
-
 }
 
 .friendStatusHover.watchingbroadcast:hover, /*Fix missing hover */
@@ -295,7 +294,7 @@ opacity: 1!important;}
     background: rgb(var(--header_dark)) !important;
 }
 .chatEntryControls{
-	background-color: rgb(var(--chatentry)) !important;
+	background-color: rgb(var(--textentry)) !important;
 }
 
 /* Chat More Tabs DropDown avatar overlay fix */
@@ -336,7 +335,7 @@ opacity: 1!important;}
 }
 
 .chatEntry {
-    background: rgb(var(--chatentry)) !important;
+    background: rgb(var(--textentry)) !important;
 	padding: 0px!important;
 }
 .chatWindow{
@@ -345,7 +344,7 @@ border:1px solid rgb(7,7,7) !important;}
 .chatSubmitButton.disabled, 
 .chatSubmitButton.EmbedButton, 
 .chatSubmitButton.EmoticonPickerButton {
-    background-color: rgb(var(--chatentry)) !important;
+    background-color: rgb(var(--textentry)) !important;
 }
 .VoiceToggle.Inactive:hover,
 .chatSubmitButton.EmbedButton:hover,
@@ -354,7 +353,7 @@ border:1px solid rgb(7,7,7) !important;}
   cursor: default!important;}
   
 .ChatMessageEntryVoice {
-  background-color: rgb(var(--chatentry)) !important;
+  background-color: rgb(var(--textentry)) !important;
   color: #ffffff !important;
   max-width: 46px !important;
   margin-left: 0px !important;
@@ -365,7 +364,7 @@ border: 0px solid transparent!important;
 outline: 0px solid transparent !important; }
 .chatSubmitButton {
   position: relative;
-  background-color: rgb(var(--chatentry)) !important;
+  background-color: rgb(var(--textentry)) !important;
   border: 0px solid #1b1c20 !important;
   margin-top: 0px !important;
 }
@@ -438,14 +437,14 @@ outline: 0px solid transparent !important; }
 
 .VoiceToggle, 
 .chatTextarea {
-    background: rgb(var(--chatentry))!important;
+    background: rgb(var(--textentry))!important;
 }
 
 .ChatMessageBlock.SingletonMsg .FriendChatTimeStamp {
     background: none!important;
 }
 .chatEntry .chatSubmitButton {
-    background-color: rgb(var(--chatentry)) !important;
+    background-color: rgb(var(--textentry)) !important;
 }
 .chatEntry .chatSubmitButton.disabled{
     margin-left: -1px !important;
@@ -502,11 +501,38 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 ._DialogInputContainer .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu{
-	fill: rgb(var(--focus)) !important;
+	fill: rgb(var(--white75)) !important;
 }
-
 ._DialogInputContainer{
 color: rgb(140,140,140)!important;}
+
+._DialogTextInputBase, ._DialogInputContainer{
+background: rgb(var(--clientBG))!important;}
+
+.DialogDropDown._DialogInputContainer{
+color: rgba(var(--white75))!important;
+padding:3px 5px!important;
+border: 1px solid rgb(53,53,53)!important;}
+
+.DialogDropDown._DialogInputContainer:hover{
+border: 1px solid rgb(81,81,81)!important;}
+
+.DialogDropDown_Arrow{
+top: 5px!important;}
+
+.Dialog_EditNickName .friend.online ._DialogTextInputBase, .Dialog_ChangePersonaName .friend.online ._DialogTextInputBase{
+	border: 1px solid rgb(53,53,53)!important;
+color: rgb(var(--white75)) !important;
+background: rgb(39,39,39) !important;}
+
+.DialogDropDown{
+cursor:initial!important;}
+
+.DialogLabel, .DialogLabelStrong{
+text-transform: none!important;}
+
+.DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu{
+	fill: none!important;}
 
 button.DialogButton, 
 .DialogOnOffToggle_Option:hover:not( .Active ) {
@@ -704,14 +730,14 @@ border-bottom: 1px solid black!important;
 
 /* chat window message entry box */
 .chatentry_chatEntryControls_2O_X7 {
-   background-color: rgb(var(--chatentry)) !important;
+   background-color: rgb(var(--textentry)) !important;
    padding-right: 0px !important;
    color: #ffffff!important;
 }
 /*the box where you type*/
 .chatentry_chatTextarea_3e__5 {
      font-size: 13px !important;
-	   background-color: rgb(var(--chatentry)) !important;
+	   background-color: rgb(var(--textentry)) !important;
 	   height: 29px !important;
 	   padding: 5px 5px 5px 5px!important;
 	   color: rgba(var(--white50))!important;
@@ -807,11 +833,11 @@ background-image: none !important;
   padding-left: 0px !important;
   padding-right: 0px !important; }
 .OneOnOneVoiceClose {
-  background-color: rgb(var(--chatentry)) !important;
+  background-color: rgb(var(--textentry)) !important;
 }
 /*emoticons and attachments area*/
 .chatentry_chatEntryActionsGroup_15mWd {
-  background-color: rgb(var(--chatentry)) !important;
+  background-color: rgb(var(--textentry)) !important;
   padding: 0px!important;
   margin-left: 0px!important; }
 
@@ -904,10 +930,13 @@ background: rgb(var(--header_dark)) !important;}
   height: 15px !important;
   position: absolute !important;
   right: 8px !important;
-top: -6px !important;}
+  top: -6px !important;
+  padding: 3px!important;}
 .friendSettingsButton{
+	  width: 20px!important;
+  height: 20px!important;
   cursor: initial!important;}
-
+  
 .friendSettingsButton:hover .SVGIcon_Settings {
   background-color: rgb(81,81,81) !important;
   animation-name: none!important;
@@ -920,6 +949,9 @@ top: -6px !important;}
 .chatTab .UnreadGlow {
   background: none !important;
 }
+
+.chatTab.active .chatTabUnreadBadge{
+display:none!important;}
 
 .chatTab.ChatTabTransiton-exit,.chatTab.ChatTabTransiton-exit-active,.chatTab.ChatTabTransiton-appear-active,
 .chatTab.ChatTabTransiton-enter-active,.chatTab.ChatTabTransiton-appear,
@@ -999,7 +1031,7 @@ border-bottom:0px solid rgb(7,7,7)!important;}
 	background: red !important;}
 
 .msg.ChatMsgSlashEmote .speaker {
-background:rgb(var(--chatentry))!important;
+background:rgb(var(--textentry))!important;
 color: rgb(var(--online))!important;}
 
 /*group chat member count*/
@@ -1052,3 +1084,16 @@ cursor: default!important;}
 .chatTab .MicStatus{
 background:rgb(0,163,0)!important;
 z-index: -1!important;}
+
+button.DialogButton{
+color: rgba(var(--white75))!important;
+  background: rgb(53,53,53)!important;}
+  
+.voiceMicTestContainer{
+padding: 0!important;
+}
+.voiceSelfDirections{
+	background-color: rgb(var(--clientBG)) !important;}
+
+button.DialogButton.Primary:hover{
+	background: rgb(var(--focus)) !important;}
