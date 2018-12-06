@@ -1,8 +1,12 @@
 :root{
 	--focus: 0, 114, 198;
-	--clientBG: 26,26,26;
-	--header_dark: 20, 20, 20;
+	--clientBG: 19,19,19;
+	--header_dark: 12, 12, 12;
 	--iconBG: 254, 254, 254;
+	
+/*optional original colors, somehow turning darker sometimes
+	--clientBG: 26,26,26;
+        --header_dark: 20, 20, 20;*/
 
 	--online: 93, 178, 254;
 	--ingame: 130, 186, 0;
@@ -34,11 +38,11 @@
 
 /* Top friends list border */
 .currentUserContainer{
-	border: 1px solid rgb(var(--border)) !important;
+	border-bottom: 1px solid rgb(var(--border)) !important;
 }
 
 /* Friends list bg*/
-.friendlistListContainer, .socialListTab {
+.friendlistListContainer{
 	background: rgb(var(--clientBG)) !important;
 	border-left: 1px solid rgb(var(--border)) !important;
 	border-right: 1px solid rgb(var(--border)) !important;
@@ -104,7 +108,9 @@
 }
 .groupName{
   color: white !important;
-  font-size:13px !important;}
+  font-size:13px !important;
+  text-transform: uppercase !important;
+  line-height: 16px!important;}
 
 /* PlusMinus Friends Header Color*/
 .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, 
@@ -754,6 +760,7 @@ border-bottom: 1px solid black!important;
   .ChatTabs.compactView .clanName, .ChatTabs.compactView .friend .playerName, .ChatTabs.compactView .friend .playerNickname {
   font-size: 13px !important; }
   
+  
   .ChatTabs.compactView .friend .richPresenceLabel {
   line-height: 13px !important;
   font-size: 12px !important; 
@@ -812,7 +819,7 @@ color: rgb(var(--online)) !important;}
   font-size: 13px!important; }
 
 .chatHistoryScroll {
-padding: 0px 0px 10px 1px !important;
+padding: 5px 0px 12px 1px !important;
 }
 .window_resize_grip {
 background-image: none !important;
@@ -895,13 +902,12 @@ transform: none !important;
 }
 
 .miniProfileContent .miniProfileHeader {
-background: rgb(var(--header_dark)) !important;}
+background: rgb(var(--clientBG)) !important;}
 .miniProfileContent .miniProfilePlayer.online .avatarStatus.miniProfileAvatarStatus {
   background: rgb(var(--online)) !important;}
 
 .miniProfileContent .miniProfilePlayer.in-game .avatarStatus.miniProfileAvatarStatus {
   background: rgb(var(--ingame)) !important;}
-  
 
 .miniProfileBackground {
   background: rgb(var(--clientBG)) !important;}
@@ -963,10 +969,12 @@ transform: none!important;}
 
 .suggestOption {
  color: #fefefe !important;
- background-color: #0c0c0c !important;
+ background-color: rgb(var(--clientBG)) !important;
  line-height: 20px !important;
  margin: 0px !important;
- border: 2px solid #0c0c0c !important;
+ border: 1px solid #0c0c0c !important;
+ padding: 2px !important;
+ padding-left: 22px!important;
 }
 .mentionDialog {
   padding: 0px 0px 0px 0px !important;
@@ -998,18 +1006,21 @@ background-color: rgb(15,15,15) !important;
   padding-top: 0px !important;
     color: white !important;}
 
+/*Connection issues message*/
 .ConnectionTroubleContent {
 background: rgb(var(--focus)) !important;}
 
+/*URLs*/
 .msg a {
-color: rgb(var(--online))!important;}
+color: rgb(93, 178, 254)!important;}
 .msg a:hover {
-color: rgb(var(--focus))!important;}
+color: #54a1e6!important;}
 
+/*selected text for copying etc*/
 ::selection {
   background: rgb(0, 164, 250)!important;
   text-shadow: none!important;}
-  
+
 .SVGIcon_MobilePhone {
   fill: none!important;}
 
@@ -1017,15 +1028,17 @@ color: rgb(var(--focus))!important;}
 background: rgb(var(--scrollbarBG)) !important;}
 
 .chatTabList .chatTab:not(.active) {
-background: rgb(var(--header-dark)) !important;
+background: rgb(var(--header_dark)) !important;
 border-bottom: 1px transparent!important;
 opacity:.4!important;}
 
 .chatTab:not(.active):hover {
 	background-color: rgb(var(--scrollbarBG)) !important;}
 	
-.chatTabSetContainer{
-border-bottom:0px solid rgb(7,7,7)!important;}
+.titleBarContainer{
+border-left:1px solid rgb(var(--border)) !important;
+border-top:1px solid rgb(var(--border)) !important;
+border-right:1px solid rgb(var(--border)) !important;}
 
 .closeButton:hover {
 	background: red !important;}
