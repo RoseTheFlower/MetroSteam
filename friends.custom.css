@@ -10,7 +10,7 @@
 
 	--online: 93, 178, 254;
 	--ingame: 130, 186, 0;
-	--offline: 19,19,19;
+	--offline: 139, 139, 139;
 	--scrollbarSize: 15px;
 	--scrollbarBG: 37, 37, 37;
 	--textentry: 34, 34, 34;
@@ -27,7 +27,7 @@
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
 	-o-transition: none !important;
-	/*font-family: "Segoe UI"*/
+/*	font-family: "Segoe UI" !important;*/
 }
 
 
@@ -117,6 +117,9 @@
 .ExpandPlusMinus .SVGIcon_PlusCircle .verticalLine{
 	stroke: white !important;
 }
+
+.ExpandPlusMinus {
+margin-top: 1px!important;}
 
 /* zzz icon next to friends' names on the list */
 .friendsContainer .SnoozeContainer, 
@@ -858,6 +861,7 @@ background-image: none !important;
   color: #8c8c8c !important;
   padding: 18px 10px 4px 12px !important;
   font-weight: 300!important;
+  text-transform: uppercase!important;
  }
   
  .chatTab .chatTabHighlight {
@@ -1012,9 +1016,10 @@ background: rgb(var(--focus)) !important;}
 
 /*URLs*/
 .msg a {
-color: rgb(93, 178, 254)!important;}
+color: rgb(198,198,198)!important;
+text-decoration: underline !important;}
 .msg a:hover {
-color: #54a1e6!important;}
+color: rgb(198,198,198)!important;}
 
 /*selected text for copying etc*/
 ::selection {
@@ -1110,3 +1115,7 @@ padding: 0!important;
 
 button.DialogButton.Primary:hover{
 	background: rgb(var(--focus)) !important;}
+
+/* Chat tab friend offline */
+.ChatTabContent .friend.offline .statusAndName{
+color: rgb(var(--offline))!important;}
