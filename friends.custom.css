@@ -960,6 +960,9 @@ background: rgb(var(--clientBG)) !important;}
   background: none !important;
 }
 
+.chatTab.active .chatTabUnreadBadge{
+display:none!important;}
+
 .chatTab.ChatTabTransiton-exit,.chatTab.ChatTabTransiton-exit-active,.chatTab.ChatTabTransiton-appear-active,
 .chatTab.ChatTabTransiton-enter-active,.chatTab.ChatTabTransiton-appear,
 .chatTab.ChatTabTransiton-enter {
@@ -1084,7 +1087,8 @@ z-index: 99 !important;}
 .contextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
   right: 0px!important;}
 .contextMenuItem .TabRightContainer .chatTabUnreadBadge{
-	  right: 16px!important;}
+	  right: 16px!important;
+	  display:initial!important;}
 
 .addFriendButton:hover .SVGIcon_AddFriend .plusCircle {
   transform: none !important; }
