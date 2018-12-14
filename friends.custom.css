@@ -960,9 +960,6 @@ background: rgb(var(--clientBG)) !important;}
   background: none !important;
 }
 
-.chatTab.active .chatTabUnreadBadge{
-display:none!important;}
-
 .chatTab.ChatTabTransiton-exit,.chatTab.ChatTabTransiton-exit-active,.chatTab.ChatTabTransiton-appear-active,
 .chatTab.ChatTabTransiton-enter-active,.chatTab.ChatTabTransiton-appear,
 .chatTab.ChatTabTransiton-enter {
