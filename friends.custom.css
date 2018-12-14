@@ -405,8 +405,8 @@ outline: 0px solid transparent !important; }
 .SVGIcon_Paperclip {
   width: 20px!important; 
   height: 20px!important; 
-  margin-top: 9px!important; 
-  margin-bottom: 0px!important;  }
+  margin-top: 0px!important; 
+  margin-bottom: 2px!important;  }
 
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
