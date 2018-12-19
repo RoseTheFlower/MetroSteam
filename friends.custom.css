@@ -210,7 +210,7 @@ margin-top: 1px!important;}
 }
 
 /* Remove status Boxes if zzz */
-.friend.awayOrSnooze  .avatarHolder .avatarStatus{
+.friend.awayOrSnooze .avatarHolder .avatarStatus{
 	background:none !important;
 }
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
@@ -794,6 +794,12 @@ color: rgb(var(--ingame)) !important;}
 .friend.online {
 color: rgb(var(--online)) !important;}
 
+.ingame .steamavatar_avatarStatus_1Pwr6, .ingame .X-Large .steamavatar_avatarStatus_1Pwr6 {
+  background: rgb(var(--ingame)) !important; }
+  
+.online .steamavatar_avatarStatus_1Pwr6 {
+  background: rgb(var(--online)) !important;}
+  
 .FriendChatTimeStamp {
   font-size: 10px !important;
 }
@@ -906,6 +912,10 @@ background: rgb(var(--clientBG)) !important;}
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.in-game .miniprofile_personaName_W3QjS.miniprofile_nickName_2E8Iz .miniprofile_personaNameLabel_390p4 {
 color: rgb(var(--ingame)) !important;}
 
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.online .miniprofile_personaName_W3QjS:not(.miniprofile_hasNickname_dgG-l) .miniprofile_personaNameLabel_390p4,
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.online .miniprofile_personaName_W3QjS.miniprofile_nickName_2E8Iz .miniprofile_personaNameLabel_390p4 {
+color: rgb(var(--online)) !important;}
+
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.miniprofile_online_3Bk5s .miniprofile_nickname_1W3dU,
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.miniprofile_online_3Bk5s .miniprofile_persona_1Z3Ey,
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.online .miniprofile_playerContent_PV11V .miniprofile_awayStatusLabel_2UzRy {  
@@ -962,7 +972,8 @@ display:none!important;}
 transform: none!important;}
 
 .EmoticonSelector_Separator .EmoticonSelector_SeparatorBackground {
-  height: 1px !important;}
+  height: 1px !important;
+  background: black!important;}
 
 .suggestOption {
  color: #fefefe !important;
@@ -1157,3 +1168,7 @@ border: 1px solid black !important;}
 
 .chatBody .playerNicknameBracket{
 display:none!important;}
+
+/*new emoticon icon color*/
+.emoticon_NewEmoticonIndicator_3NVON {
+background: rgba(233, 154, 35, 0);}
