@@ -210,12 +210,8 @@ margin-top: 1px!important;}
 }
 
 /* Remove status Boxes if zzz */
-.friend.awayOrSnooze .avatarHolder .avatarStatus{
+.friendlist .friend.awayOrSnooze .avatarHolder .avatarStatus{
 	background:none !important;
-}
-.chatTab .ChatTabContent .avatarHolder .avatarStatus{
-	z-index: 6 !important;
-	margin: -1px 0px !important;
 }
 
 .chatTab .ChatTabContent{
@@ -339,7 +335,7 @@ opacity: 1!important;}
 	padding: 0px!important;
 }
 .chatWindow{
-border:1px solid rgb(7,7,7) !important;}
+border:1px solid rgb(var(--border)) !important;}
 
 .chatSubmitButton.disabled, 
 .chatSubmitButton.EmbedButton, 
@@ -1136,7 +1132,7 @@ display: none!important;}
 .ChatRoomSpeaker .speaker .speakerAvatar,
 .ChatMsgSlashEmote .speaker .speakerAvatar, .speaker .speakerStatus{
 opacity: 0!important;
-width: 0px!important;}
+width: 0.5px!important;}
 	
 .messages_SpeakerName_Online_2nKVN{
 	color: rgb(var(--online))!important;}
@@ -1166,9 +1162,38 @@ color: gray!important;}
 .miniprofile_miniProfile_s5zcg{
 border: 1px solid black !important;}
 
+/*Nickname * indicator in chat window*/
 .chatBody .playerNicknameBracket{
 display:none!important;}
 
 /*new emoticon icon color*/
 .emoticon_NewEmoticonIndicator_3NVON {
 background: rgba(233, 154, 35, 0);}
+
+/* Hide status line of inactive tabs */
+.chatTab:not(.active) .ChatTabContent .avatarHolder .avatarStatus{
+opacity: 0!important;}
+
+.speakerHoverArea {
+   pointer-events: none!important; }
+  
+.NonInlinedEmbed .SVGIcon_Hyperlink {
+display:none!important;}
+
+/* Status border/line for avatars in chat tabs; keep one or the other */
+.chatTab .ChatTabContent .avatarHolder .avatarStatus{
+	z-index: 6 !important;
+	margin: -1px 0px !important;
+}
+/*
+.ChatTabContent .avatarHolder .avatar {
+padding:1px!important;
+}
+
+.chatTab .ChatTabContent .avatarHolder .avatarStatus{
+	z-index: -500 !important;
+    position:absolute!important;
+    left:-1px!important;
+	height: 100px!important;
+}
+*/
