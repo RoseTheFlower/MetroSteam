@@ -1,35 +1,33 @@
 :root{
-	--focus: 0, 114, 198;
-	--clientBG: 19,19,19;
-	--header_dark: 12, 12, 12;
-	--iconBG: 254, 254, 254;
-	
+  --focus: 0, 114, 198;
+  --clientBG: 19,19,19;
+  --header_dark: 12, 12, 12;
+  --iconBG: 254, 254, 254;
+  --online: 93, 178, 254;
+  --ingame: 130, 186, 0;
+  --offline: 139, 139, 139;
+  --scrollbarSize: 15px;
+  --scrollbarBG: 37, 37, 37;
+  --textentry: 34, 34, 34;
+  --white50: 255,255,255,127.5;
+  --white75: 255, 255, 255, 191.25;
+  --border: 7,7,7
 /*optional original colors, somehow turning darker sometimes
 	--clientBG: 26,26,26;
         --header_dark: 20, 20, 20;*/
-
-	--online: 93, 178, 254;
-	--ingame: 130, 186, 0;
-	--offline: 139, 139, 139;
-	--scrollbarSize: 15px;
-	--scrollbarBG: 37, 37, 37;
-	--textentry: 34, 34, 34;
-	--white50: 255,255,255,127.5;
-    --white75: 255, 255, 255, 191.25;
-	--border: 7,7,7
 }
+
 /* remove animations and other things */
 *{
-	box-shadow: none !important;
-	border-radius: 0 !important;
-	transition: none !important;
-	transition-duration: 0ms !important;
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-o-transition: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  transition: none !important;
+  transition-duration: 0ms !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
 /*	font-family: "Segoe UI" !important;*/
 }
-
 
 /* Center name and status at user pic */
 .currentUserContainer .labelHolder{
@@ -122,17 +120,10 @@
 margin-top: 1px!important;}
 
 /* zzz icon next to friends' names on the list */
-.friendsContainer .SnoozeContainer, 
-.friendlistListContainer .SnoozeContainer{
-	position: absolute !important;
-	right: 6px !important;
+.friendsnooze_SnoozeContainer_1OfTa{
 	display: none !important;
 }
-.friendsContainer .SnoozeContainer .SnoozeZ, 
-.friendlistListContainer .SnoozeContainer .SnoozeZ{
-	font-size: 10px !important;
 
-}
 /* Remove useless "Watch Broadcast" text */
 .friendsContainer .watchingbroadcast .richPresenceContainer .gameName,
 .friendlistListContainer .watchingbroadcast .richPresenceContainer .gameName{
@@ -781,7 +772,6 @@ border-bottom: 1px solid black!important;
 .friend.ingame .gameName.richPresenceLabel a:visited {
 color: rgb(var(--ingame)) !important;}
   
- .miniProfileContent .miniProfilePlayer.online .playerContent .awayStatusLabel,
 .currentUserContainer.online .richPresenceLabel,
 .friend.online .richPresenceLabel,
 .friend.online .gameName.richPresenceLabel a,
@@ -905,33 +895,35 @@ transform: none !important;
   filter: brightness(1.1) !important;
 }
 
-.miniProfileContent .miniProfileHeader {
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfileHeader_3oBIW {
 background: rgb(var(--clientBG)) !important;}
-.miniProfileContent .miniProfilePlayer.online .avatarStatus.miniProfileAvatarStatus {
-  background: rgb(var(--online)) !important;}
-
-.miniProfileContent .miniProfilePlayer.in-game .avatarStatus.miniProfileAvatarStatus {
-  background: rgb(var(--ingame)) !important;}
-
-.miniProfileBackground {
+.miniprofile_miniProfileBackground_3gfFJ {
   background: rgb(var(--clientBG)) !important;}
-.miniProfileBackgroundBlur {
+.miniprofile_miniProfileBackgroundBlur_G000o {
   opacity: 0 !important;  }
   
-  .miniProfileContent .miniProfilePlayer.in-game .personaName:not(.hasNickname) .personaNameLabel,
-.miniProfileContent .miniProfilePlayer.in-game .personaName.nickName .personaNameLabel {
-  color: rgb(var(--ingame)) !important;}
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.in-game .miniprofile_personaName_W3QjS:not(.miniprofile_hasNickname_dgG-l) .miniprofile_personaNameLabel_390p4,
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.in-game .miniprofile_personaName_W3QjS.miniprofile_nickName_2E8Iz .miniprofile_personaNameLabel_390p4 {
+color: rgb(var(--ingame)) !important;}
+
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.miniprofile_online_3Bk5s .miniprofile_nickname_1W3dU,
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.miniprofile_online_3Bk5s .miniprofile_persona_1Z3Ey,
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.online .miniprofile_playerContent_PV11V .miniprofile_awayStatusLabel_2UzRy {  
+color: rgb(var(--online)) !important;}
+
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.online .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
+  background: rgb(var(--online)) !important;}
   
-.miniProfileContent .miniProfilePlayer.online .nickname,
-.miniProfileContent .miniProfilePlayer.online .persona {
-  color: rgb(var(--online)) !important;}
-.friend.online .PersonaStatusIcon .SVGIcon_VR path,
-.friend.online .PersonaStatusIcon .SVGIcon_MobilePhone path,
-.friend.online .PersonaStatusIcon .SVGIcon_BigPicture path {
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfilePlayer_3cN6K.in-game .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
+  background: rgb(var(--ingame)) !important;}
+
+.personastatusicons_PersonaStatusIcon_2rP7f.online .SVGIcon_VR path,
+.personastatusicons_PersonaStatusIcon_2rP7f.online .SVGIcon_MobilePhone path,
+.personastatusicons_PersonaStatusIcon_2rP7f.online .SVGIcon_BigPicture path {
   fill: rgb(var(--online)) !important;}
-.friend.ingame .PersonaStatusIcon .SVGIcon_VR path,
-.friend.ingame .PersonaStatusIcon .SVGIcon_MobilePhone path,
-.friend.ingame .PersonaStatusIcon .SVGIcon_BigPicture path {
+.personastatusicons_PersonaStatusIcon_2rP7f.ingame .SVGIcon_VR path,
+.personastatusicons_PersonaStatusIcon_2rP7f.ingame .SVGIcon_MobilePhone path,
+.personastatusicons_PersonaStatusIcon_2rP7f.ingame .SVGIcon_BigPicture path {
   fill: rgb(var(--ingame)) !important;}
 
 .SVGIcon_Settings {
@@ -942,6 +934,7 @@ background: rgb(var(--clientBG)) !important;}
   right: 8px !important;
   top: -6px !important;
   padding: 3px!important;}
+
 .friendSettingsButton{
 	  width: 20px!important;
   height: 20px!important;
@@ -998,13 +991,14 @@ border: 1px dashed rgb(26,26,26) !important;
  margin-left: 1px !important; }
 
 .timeDivision .preHorizDivider{
-  width: 2% !important;}
+  width: 10% !important;}
 .timeDivision .preHorizDivider, .timeDivision .horizDivider {
 background-color: rgb(var(--clientBG)) !important;}
 
 .msg.timeDivision {
 font-size: 12px !important;
-  color:#808080 !important;}
+  color:#808080 !important;
+  text-transform:uppercase!important;}
 .ScrollToBottomButton {
 background-color: rgb(15,15,15) !important;
   padding-top: 0px !important;
@@ -1115,8 +1109,51 @@ padding: 0!important;
 	background-color: rgb(var(--clientBG)) !important;}
 
 button.DialogButton.Primary:hover{
-	background: rgb(var(--focus)) !important;}
+	background: rgb(var(--clientBG)) !important;}
 
 /* Chat tab friend offline */
 .ChatTabContent .friend.offline .statusAndName{
 color: rgb(var(--offline))!important;}
+
+.NonInlinedEmbed .SVGIcon_Video path, .NonInlinedEmbed .SVGIcon_Image path, .NonInlinedEmbed .SVGIcon_Hyperlink{
+fill: white!important;
+stroke: white!important;}
+
+.currentUserContainer .personastatusicons_PersonaStatusIcon_2rP7f.personastatusicons_MobilePhoneIcon_2ZlAW {
+display: none!important;}
+
+.ChatRoomSpeaker .speaker .speakerAvatar,
+.ChatMsgSlashEmote .speaker .speakerAvatar, .speaker .speakerStatus{
+opacity: 0!important;
+width: 0px!important;}
+	
+.messages_SpeakerName_Online_2nKVN{
+	color: rgb(var(--online))!important;}
+.messages_SpeakerName_InGame_1vaKy {
+		color: rgb(var(--ingame))!important;}
+		
+.friend.offline .avatarHolder img.avatar {
+filter: none!important;}
+
+.speakerTimeStamp {
+font-size: 11px!important;
+color:gray!important;}
+
+.MultiUserChat .msg:not(.ChatMsgSlashEmote) {
+padding-left: 10px!important;}
+
+.MultiUserChat .msg {
+padding: 1.2px 0!important;}
+
+.ChatRoomSpeaker {
+padding-top: 0px!important;
+margin-top: -4px!important;}
+.msg.serverMsg .msgText {
+text-align: left!important;
+color: gray!important;}
+
+.miniprofile_miniProfile_s5zcg{
+border: 1px solid black !important;}
+
+.chatBody .playerNicknameBracket{
+display:none!important;}
