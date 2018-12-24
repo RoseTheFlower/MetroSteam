@@ -198,7 +198,6 @@ margin-top: 1px!important;}
 	width:100% !important;
 	margin: -1px 1px !important;
 	z-index: -1 !important;
-	transform: translateX( 0px ) !important;
 }
 
 .friend.watchingbroadcast .avatarHolder .avatarStatus{
@@ -857,7 +856,7 @@ background-image: none !important;
  }
   
  .chatTab .chatTabHighlight {
- background: none !important; }
+ background: none!important;}
  
  .contextMenuContents {
  font-size: 12px !important;}
@@ -884,7 +883,6 @@ border-top: 1px solid rgb(53,53,53) !important;}
 display:none!important;}
 
 .currentUserAvatar {
-	 border-radius: 1px !important;
 	width: 42px !important;
   height: 42px !important;
 }
@@ -942,7 +940,7 @@ color: rgb(var(--online)) !important;}
   padding: 3px!important;}
 
 .friendSettingsButton{
-	  width: 20px!important;
+  width: 20px!important;
   height: 20px!important;
   cursor: initial!important;}
   
@@ -1004,8 +1002,7 @@ background-color: rgb(var(--clientBG)) !important;}
 
 .msg.timeDivision {
 font-size: 12px !important;
-  color:#808080 !important;
-  text-transform:uppercase!important;}
+  color:#808080 !important;}
 .ScrollToBottomButton {
 background-color: rgb(15,15,15) !important;
   padding-top: 0px !important;
@@ -1018,9 +1015,11 @@ background: rgb(var(--focus)) !important;}
 /*URLs*/
 .msg a {
 color: rgb(198,198,198)!important;
-text-decoration: underline !important;}
+text-decoration: underline !important;
+border-bottom: none!important;}
 .msg a:hover {
-color: rgb(198,198,198)!important;}
+color: rgb(198,198,198)!important;
+border-bottom: none!important;}
 
 /*selected text for copying etc*/
 ::selection {
@@ -1081,6 +1080,9 @@ margin-right: 4px!important;
 .SingleUserChat .msgText{
 margin-right: 6px!important;
   margin-left: 8px!important; }
+  
+.MultiUserChat .isCurrentUser .msgText {
+color: rgb(var(--offline))!important;}
 	  
 .FriendMessageCount{
 z-index: 99 !important;}
@@ -1091,12 +1093,16 @@ z-index: 99 !important;}
 	  right: 16px!important;
 	  display:initial!important;}
 
-.addFriendButton:hover .SVGIcon_AddFriend .plusCircle {
+/*Friend request and Add friend buttons*/
+.addFriendButton:hover .SVGIcon_AddFriend .plusCircle, .friendRequestButton:hover .requestsNumber {
   transform: none !important; }
-
-.addFriendButton:hover .SVGIcon_AddFriend{
+ 
+.addFriendButton:hover .SVGIcon_AddFriend, .friendRequestButton:hover .SVGIcon_FriendRequest{
 background-color: rgb(81,81,81) !important;
 }
+
+.friendRequestButton:hover:not(.friendRequestViewActive) .SVGIcon_FriendRequest .friendArm {
+  animation-name: none!important; }
 
 .ContextMenuButton{
 cursor: default!important;}
@@ -1116,7 +1122,7 @@ padding: 0!important;
 	background-color: rgb(var(--clientBG)) !important;}
 
 button.DialogButton.Primary:hover{
-	background: rgb(var(--clientBG)) !important;}
+	background: rgb(81,81,81) !important;}
 
 /* Chat tab friend offline */
 .ChatTabContent .friend.offline .statusAndName{
@@ -1126,7 +1132,8 @@ color: rgb(var(--offline))!important;}
 fill: white!important;
 stroke: white!important;}
 
-.currentUserContainer .personastatusicons_PersonaStatusIcon_2rP7f.personastatusicons_MobilePhoneIcon_2ZlAW {
+/* Hide status icons (mobile, VR, etc) from some areas*/
+.currentUserContainer .personastatusicons_PersonaStatusIcon_2rP7f.personastatusicons_MobilePhoneIcon_2ZlAW, .miniprofile_miniProfile_s5zcg .personastatusicons_PersonaStatusIcon_2rP7f {
 display: none!important;}
 
 .ChatRoomSpeaker .speaker .speakerAvatar,
@@ -1168,7 +1175,15 @@ display:none!important;}
 
 /*new emoticon icon color*/
 .emoticon_NewEmoticonIndicator_3NVON {
-background: rgba(233, 154, 35, 0);}
+  background: none!important;
+  top: 98%!important;
+  right: 0%!important;
+  left: 0%!important;}
+
+.emoticon_NewEmoticonIndicator_3NVON .emoticon_NewEmoticonCircle_3mNrG {
+width: 100%!important;
+height: 1px!important;
+background-color: rgb(var(--focus))!important;}
 
 /* Hide status line of inactive tabs */
 .chatTab:not(.active) .ChatTabContent .avatarHolder .avatarStatus{
@@ -1179,6 +1194,46 @@ opacity: 0!important;}
   
 .NonInlinedEmbed .SVGIcon_Hyperlink {
 display:none!important;}
+
+.msg.voiceChannelInvite {
+ float: left!important;}
+
+/*Invite box*/
+.ChatMessageInvite {
+background: rgb(15,15,15)!important;
+border-left: 3px solid rgb(var(--focus)) !important;}
+
+.msg.ChatMessageInvite .invitedTimeLabel, .Invite_ExpireTime {
+color: gray!important;}
+
+.gameInviteMsg .productImage.productImageBlur, .broadcastInviteMsg .productImage.productImageBlur, .broadcastViewRequestMsg .productImage.productImageBlur {
+filter:none!important;
+z-index: 6!important;
+top:16px!important;}
+
+/*Search box at the top of friends list*/
+.TabSearchButton:hover {
+background-color: rgb(var(--clientBG))!important;}
+
+/*Hide single window switch button*/
+.title-area-icon.singleWindowToggle {
+display:none!important;}
+
+/*Line that separates friends and chat windows in single window mode*/
+.singleWindowDivider {
+min-width: 1px!important;
+width: 1px!important;
+background-color: rgb(var(--border))!important;
+border:none!important;}
+
+.chatDialogs {
+background: rgb(var(--clientBG))!important;}
+
+.friend .richPresenceLabel {
+-webkit-mask:none!important;}
+
+.ChatTabContent .friend .statusAndName {
+margin-top: -4px!important;}
 
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
