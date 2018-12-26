@@ -208,11 +208,6 @@ margin-top: 1px!important;}
 	transform: translateX( 0px ) !important;
 }
 
-/* Remove status Boxes if zzz */
-.friendlist .friend.awayOrSnooze .avatarHolder .avatarStatus{
-	background:none !important;
-}
-
 .chatTab .ChatTabContent{
 opacity: 1!important;}
 
@@ -281,6 +276,7 @@ opacity: 1!important;}
 .chatWindow{
 	background: rgb(var(--clientBG)) !important;
 	font-size: 13px !important;
+	border: 1px solid rgb(var(--border)) !important;
 }
 .chatRoomListContainer {
 	background: rgb(var(--clientBG)) !important;
@@ -333,8 +329,6 @@ opacity: 1!important;}
     background: rgb(var(--textentry)) !important;
 	padding: 0px!important;
 }
-.chatWindow{
-border:1px solid rgb(var(--border)) !important;}
 
 .chatSubmitButton.disabled, 
 .chatSubmitButton.EmbedButton, 
@@ -969,6 +963,7 @@ transform: none!important;}
   height: 1px !important;
   background: black!important;}
 
+/*Suggested commands and emoticons*/
 .suggestOption {
  color: #fefefe !important;
  background-color: rgb(var(--clientBG)) !important;
@@ -1017,6 +1012,7 @@ background: rgb(var(--focus)) !important;}
 color: rgb(198,198,198)!important;
 text-decoration: underline !important;
 border-bottom: none!important;}
+
 .msg a:hover {
 color: rgb(198,198,198)!important;
 border-bottom: none!important;}
@@ -1201,7 +1197,8 @@ display:none!important;}
 /*Invite box*/
 .ChatMessageInvite {
 background: rgb(15,15,15)!important;
-border-left: 3px solid rgb(var(--focus)) !important;}
+border-left: 3px solid rgb(var(--focus));
+color: rgb(var(--offline))!important;}
 
 .msg.ChatMessageInvite .invitedTimeLabel, .Invite_ExpireTime {
 color: gray!important;}
@@ -1235,11 +1232,19 @@ background: rgb(var(--clientBG))!important;}
 .ChatTabContent .friend .statusAndName {
 margin-top: -4px!important;}
 
+/* Game title area in context menu*/
+.contextMenuSectionHeader {
+-webkit-mask: none!important;}
+
+.awayOrSnooze .steamavatar_avatarStatus_1Pwr6 {
+-webkit-mask: none!important;}
+
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
 	z-index: 6 !important;
 	margin: -1px 0px !important;
 }
+
 /*
 .ChatTabContent .avatarHolder .avatar {
 padding:1px!important;
