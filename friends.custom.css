@@ -1,5 +1,5 @@
 :root{
-  --focus: 0, 114, 198;
+  --focus: 0, 114, 198; /*default blue accent*/
   --clientBG: 19,19,19;
   --header_dark: 12, 12, 12;
   --iconBG: 254, 254, 254;
@@ -7,17 +7,17 @@
   --ingame: 130, 186, 0;
   --offline: 139, 139, 139;
   --scrollbarSize: 15px;
-  --scrollbarBG: 37, 37, 37;
+  --scrollbarBG: 32, 32, 32;
   --textentry: 34, 34, 34;
   --white50: 255,255,255,127.5;
   --white75: 255, 255, 255, 191.25;
   --border: 7,7,7
-/*optional original colors, somehow turning darker sometimes
+/*optional original colors, somehow turning darker sometimes:
 	--clientBG: 26,26,26;
-        --header_dark: 20, 20, 20;*/
+    --header_dark: 20, 20, 20;*/
 }
 
-/* remove animations and other things */
+/* remove animations, round corners and delays */
 *{
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -26,12 +26,17 @@
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -o-transition: none !important;
-/*	font-family: "Segoe UI" !important;*/
+/* font-family: "Segoe UI" !important;*/
 }
+
+/* optional red hover for close button 
+ .closeButton:hover {
+ 	background: red !important;}*/
 
 /* Center name and status at user pic */
 .currentUserContainer .labelHolder{
 	justify-content: center !important;
+	margin-right: 60px!important;
 }
 
 /* Top friends list border */
@@ -39,7 +44,7 @@
 	border-bottom: 1px solid rgb(var(--border)) !important;
 }
 
-/* Friends list bg*/
+/* Friends list window*/
 .friendlistListContainer{
 	background: rgb(var(--clientBG)) !important;
 	border-left: 1px solid rgb(var(--border)) !important;
@@ -50,10 +55,11 @@
 .friendListHeaderContainer, .friendsListSectionTitle {
     background-color: rgb(var(--header_dark)) !important;
 }
-/* Bottom Panel bg*/
+/* Bottom panel bg*/
 .friendListFooter {
     background-color: rgb(var(--clientBG)) !important;
 	border-bottom: 1px solid rgb(var(--border)) !important;
+	min-height:15px!important;
 }
 .friendListFooter, .friendsListSectionTitle {
 	border-left: 1px solid rgb(var(--border)) !important;
@@ -98,17 +104,18 @@
 .friendGroup .groupName .groupCount.collapsed{
 	color: white !important;
 }
+
+/*Number of friends in a category*/
 .friendGroup .groupName .groupCount{
 	color: white !important;
-	margin-top: 1px !important;
-	opacity: 1 !important;
-	transform: translateX( 0px ) !important;
+	margin-top: 0px !important;
 }
 .groupName{
   color: white !important;
-  font-size:13px !important;
+  font-size:12px !important;
   text-transform: uppercase !important;
-  line-height: 16px!important;}
+  line-height: 16px!important;
+  margin-bottom: -3px!important;}
 
 /* PlusMinus Friends Header Color*/
 .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, 
@@ -133,7 +140,7 @@ margin-top: 1px!important;}
 /* X unread Message in Friends Panel */
 .unreadMessageViolator{
 	background: rgb(var(--clientBG)) !important;
-	color: rgb(45,137,239) !important;
+	color: rgb(var(--focus)) !important;
     width: calc(100% - 2px)!important;
 	  border: 0 !important;
 	right: 0px !important;
@@ -184,7 +191,7 @@ margin-top: 1px!important;}
 	background-color: rgb( 37, 37, 37 ) !important;
 }
 
-/* Avatar Status Boxes */
+/* Avatar status boxes */
 .friend.online .avatarHolder .avatarStatus{
 	background: rgb(var(--online)) !important;
 	width:100% !important;
@@ -198,6 +205,7 @@ margin-top: 1px!important;}
 	width:100% !important;
 	margin: -1px 1px !important;
 	z-index: -1 !important;
+	transform: translateX( 0px ) !important;
 }
 
 .friend.watchingbroadcast .avatarHolder .avatarStatus{
@@ -295,21 +303,29 @@ opacity: 1!important;}
 	z-index: 0 !important;
 }
 
+  .contextMenuContents.ChatTabs .contextMenuItem {
+  padding: 0!important; }
+
 .ScrollToBottomButton{
-	color: grey !important;
+  padding-top: 0px !important;
+    color: white !important;
+	z-index: 13!important;
 }
 .ScrollToBottomButton > span{
 	width: 100% !important;
-	background: rgba(0,0,0,0.7) !important;
+	background: rgb(var(--border)) !important;
 }
+
+.ScrollToBottomButton.UnreadMessages > span {
+color: rgb(var(--focus))!important;}
 
 /* Favorites List Unread Indicator */
 .quickAccessFriends .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
-	right: 0 !important;
-	top: 0 !important;
-	height: 12px !important;
-	width: 12px !important;
-	border-radius: 6px !important;
+	right: -3px !important;
+    bottom: -8px !important;
+    height: 2px !important;
+    width: 28px !important;
+	background-color: rgb(var(--focus)) !important;
 }
 
 .chatHeader {
@@ -641,7 +657,7 @@ color: rgb(140,140,140)!important;
 /* ======== Friend Panel Group ======== */
 .friendsListSectionTitle.chatSectionTitle .groupChatSectionTitle{
 	position: absolute !important;
-	left: 16px !important;
+	left: 15px !important;
 }
 /* Groups chat selected category on servers */
  .chatRoomTextChannel.ActiveTextChannel {
@@ -739,11 +755,7 @@ border-bottom: 1px solid black!important;
   height: 20px !important; 
   margin-top: 5px !important;
 }
-  
-  .ChatTabs.compactView .clanName, .ChatTabs.compactView .friend .playerName, .ChatTabs.compactView .friend .playerNickname {
-  font-size: 13px !important; }
-  
-  
+
   .ChatTabs.compactView .friend .richPresenceLabel {
   line-height: 13px !important;
   font-size: 12px !important; 
@@ -815,7 +827,7 @@ background-image: none !important;
   height: 5px !important;}
 
 .inviteAnotherFriendButton {
-  background-color: rgb(var(--clientBG)) !important;
+  background: transparent !important;
 }
 .inviteAnotherFriendButton:hover .invitePlus,
 .chatRoomButton:hover:not(.Disabled) .invitePlus {
@@ -840,7 +852,17 @@ background-image: none !important;
 .chatTabSelector {
   background: none !important;
   border: 0px solid black !important;
+  width: 16px!important;
+  height:16px!important;
+  left: 2px!important;
+  top: 2px!important;
+cursor: initial!important;
 }
+.chatTabSelector .SVGIcon_DownArrowContextMenu {
+margin-left: 2px!important;
+margin-top: 2px!important;
+fill: rgb(113,113,113)!important;}
+
 .FriendChatTypingNotification {
   background: rgb(var(--clientbg)) !important;
   color: #8c8c8c !important;
@@ -876,10 +898,6 @@ border-top: 1px solid rgb(53,53,53) !important;}
 .contextMenuItem.contextMenuGameOptions .SVGIcon_Play {
 display:none!important;}
 
-.currentUserAvatar {
-	width: 42px !important;
-  height: 42px !important;
-}
 
 html.ContextMenuPopup .contextMenu .contextMenuContents {
   padding: 0!important; }
@@ -928,18 +946,17 @@ color: rgb(var(--online)) !important;}
   fill:  rgb(var(--iconBG)) !important;
   width: 15px !important;
   height: 15px !important;
-  position: absolute !important;
-  right: 8px !important;
-  top: -6px !important;
-  padding: 3px!important;}
+  padding: 5px!important;}
 
 .friendSettingsButton{
-  width: 20px!important;
-  height: 20px!important;
   cursor: initial!important;}
   
+  .friendListButtons {
+  right:4px!important;
+  top:27px!important;}
+  
 .friendSettingsButton:hover .SVGIcon_Settings {
-  background-color: rgb(81,81,81) !important;
+  background-color: rgb(var(--scrollbarBG)) !important;
   animation-name: none!important;
  }
 
@@ -978,7 +995,9 @@ transform: none!important;}
 }
 
 .currentUserContainer .ContextMenuButton {
-display: none!important;}
+padding-top: 0px!important;
+opacity: 0.6!important;
+}
 
 .suggestOption.selected {
   color: #fefefe !important;
@@ -998,10 +1017,6 @@ background-color: rgb(var(--clientBG)) !important;}
 .msg.timeDivision {
 font-size: 12px !important;
   color:#808080 !important;}
-.ScrollToBottomButton {
-background-color: rgb(15,15,15) !important;
-  padding-top: 0px !important;
-    color: white !important;}
 
 /*Connection issues message*/
 .ConnectionTroubleContent {
@@ -1012,6 +1027,9 @@ background: rgb(var(--focus)) !important;}
 color: rgb(198,198,198)!important;
 text-decoration: underline !important;
 border-bottom: none!important;}
+
+.msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
+color: rgb(198,198,198)!important;}
 
 .msg a:hover {
 color: rgb(198,198,198)!important;
@@ -1025,13 +1043,13 @@ border-bottom: none!important;}
 .SVGIcon_MobilePhone {
   fill: none!important;}
 
-.chatTabSelector:hover {
-background: rgb(var(--scrollbarBG)) !important;}
+.chatTabSelector .SVGIcon_DownArrowContextMenu:hover, .chatTabSelector.UnreadMessages .SVGIcon_DownArrowContextMenu:hover {
+fill: white !important;}
 
 .chatTabList .chatTab:not(.active) {
 background: rgb(var(--header_dark)) !important;
 border-bottom: 1px transparent!important;
-opacity:.4!important;}
+opacity:0.5!important;}
 
 .chatTab:not(.active):hover {
 	background-color: rgb(var(--scrollbarBG)) !important;}
@@ -1040,9 +1058,6 @@ opacity:.4!important;}
 border-left:1px solid rgb(var(--border)) !important;
 border-top:1px solid rgb(var(--border)) !important;
 border-right:1px solid rgb(var(--border)) !important;}
-
-.closeButton:hover {
-	background: red !important;}
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
@@ -1060,8 +1075,6 @@ background:rgb(53,53,53)!important;}
   background: rgb(var(--focus))!important;}
 .OneOnOneVoiceRoomControls{
 	background-color: rgb(var(--clientBG))!important;}
-.ChatMessageEntryVoice {
-	background: rgb(var(--cliententry))!important;}
 .msg.voiceChannelInvite {
 	color: rgb(var(--white50))!important;
 	float: center!important;}
@@ -1083,18 +1096,21 @@ color: rgb(var(--offline))!important;}
 .FriendMessageCount{
 z-index: 99 !important;}
 
+/*Unread notification circle in chat context menu*/
 .contextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
-  right: 0px!important;}
+  right: 0px!important;
+  background-color: rgb(var(--focus))!important;}
+
 .contextMenuItem .TabRightContainer .chatTabUnreadBadge{
-	  right: 16px!important;
-	  display:initial!important;}
+	  display:initial!important;
+	  background:none!important;}
 
 /*Friend request and Add friend buttons*/
 .addFriendButton:hover .SVGIcon_AddFriend .plusCircle, .friendRequestButton:hover .requestsNumber {
   transform: none !important; }
  
 .addFriendButton:hover .SVGIcon_AddFriend, .friendRequestButton:hover .SVGIcon_FriendRequest{
-background-color: rgb(81,81,81) !important;
+background-color: rgb(37,37,37) !important;
 }
 
 .friendRequestButton:hover:not(.friendRequestViewActive) .SVGIcon_FriendRequest .friendArm {
@@ -1208,6 +1224,10 @@ filter:none!important;
 z-index: 6!important;
 top:16px!important;}
 
+/*Embedded elements*/
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile{
+background: rgb(15,15,15)!important;}
+
 /*Search box at the top of friends list*/
 .TabSearchButton:hover {
 background-color: rgb(var(--clientBG))!important;}
@@ -1227,10 +1247,11 @@ border:none!important;}
 background: rgb(var(--clientBG))!important;}
 
 .friend .richPresenceLabel {
--webkit-mask:none!important;}
+-webkit-mask:none!important;
+margin-top: 0px!important;}
 
 .ChatTabContent .friend .statusAndName {
-margin-top: -4px!important;}
+margin-top: -5px!important;}
 
 /* Game title area in context menu*/
 .contextMenuSectionHeader {
@@ -1239,10 +1260,156 @@ margin-top: -4px!important;}
 .awayOrSnooze .steamavatar_avatarStatus_1Pwr6 {
 -webkit-mask: none!important;}
 
+.socialListTab {
+letter-spacing: 1px!important;
+padding-left: 15px!important;
+}
+
+.compactView .socialListTab {
+  height: 25px!important; }
+
+.friendsListSectionTitle {
+letter-spacing: 1px!important;}	
+
+.friendlistListContainer .friend .avatarHolder {
+	width: 32px!important;
+height: 32px!important;
+transform: scale(1, 1) translateX(0px)!important;}
+
+.CompactFriendsList .SteamPlayerGroupFooter .SteamPlayerGroupFooterCount,
+.CompactFriendsList .friend .avatarHolder {
+  height: 24px!important;
+  width: 24px!important;
+}
+.steamavatar_avatar_f2laR {
+	border: none!important;
+	height: 100%!important;}
+	
+.miniprofile_miniProfileContent_25Sge .miniprofile_playerAvatar_1dzWG {
+	padding-bottom: 2px !important;}
+
+.quickAccessFriend .clanName, .friend .playerName, .friend .playerNickname {
+font-size: 13px!important;
+line-height: 14px!important;}
+
+.friendGroup .friend, .friendGroup .SteamPlayerGroupFooter {
+padding-left: 22px!important;
+padding-top: 8px!important;}
+
+.AvatarAndUser {
+	padding-left: 14px!important;
+	padding-top: 12px!important;}
+
+/* Favorites area */
+
+
+.currentUserAvatar {
+	width:36px!important;
+height: 36px!important;
+}
+
+.friend .statusAndName {
+margin-top: -5px!important;}
+
+.compactView .friend .statusAndName {
+	margin-top: -2px!important;}
+
+.currentUserContainer .playerName {
+font-size:14px!important;}
+
+.labelHolder{
+margin-left: 10px!important;}
+
+.groupName .gameGroupContainer .groupIcon, .FriendInGameIcon img {
+margin-left: 6px!important;
+margin-top: 0px!important;}
+
+.miniprofile_miniProfileContent_25Sge .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
+margin-bottom: -4px!important;}
+
+.title-area-icon{
+padding:3px!important;}
+.title-area-icon:hover{
+background-color: rgb(var(--scrollbarBG))!important;}
+
+.multiChatDialog .title-area-icon {
+padding:1px!important;}
+
+.title-area-icon .SVGIcon_Button rect,
+.title-area-icon .SVGIcon_Button line,
+.title-area-icon .SVGIcon_Button polyline {
+  stroke: white!important;}
+
+.ChatTabs {
+padding-left: 1px!important;}
+
+
+.singlewindow .currentUserContainer .labelHolder.twoLine .statusAndName, .singlewindow .currentUserContainer .labelHolder.twoLine {
+margin-right: 10px!important;}
+
+.chatTabSelector.UnreadMessages{
+background-color: none!important;}
+
+.chatTabSelector.UnreadMessages .SVGIcon_DownArrowContextMenu{
+fill: rgb(var(--focus))!important;}
+	
+.title-area-icon .SVGIcon_Maximize line {
+    display: none !important;
+}
+
+.chatTabDraggableSpace.ChromeClearance, .chatTabDraggableSpace {
+    width: 15px!important;
+}
+
+.chatTabDraggableSpace.ChromeClearance {
+width: 80px!important;
+height: 24px!important;}
+
+.ChatTabContent .avatarHolder{
+height: fit-content!important;}
+
+.EmbedButton .SVGIcon_Paperclip path, .SVGIcon_Paperclip, .EmoticonPickerButton .SVGIcon_Emoticon line, .EmoticonPickerButton .SVGIcon_Emoticon circle, .EmoticonPickerButton .SVGIcon_Emoticon path, .VoiceToggleIconCtn .SVGIcon_VoiceRoom {
+stroke: rgb(200,200,200)!important;}
+
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone {
+fill: rgb(200,200,200)!important;}
+
+/*Unread messages count near username in friendslist*/
+.FriendMessageCount {
+	background:  rgb(var(--focus))!important;
+    color: white!important;
+	font-size: 14px!important;
+  line-height: 25px!important;
+  height: 25px!important;
+  min-width: 25px!important;
+  padding: 0px!important;
+  margin-top: 15px!important;
+}
+
+.CompactFriendsList .FriendMessageCount {
+	  line-height: 24px!important;
+height: 24px!important;
+min-width: 24px!important;
+margin-top: 7px!important;}
+
+/*Unread messages box at chat tabs*/
+.chatTab .chatTabUnreadBadge {
+color: white!important;
+background: rgb(var(--focus))!important;}
+
+.EmoticonSelector {
+max-width: 50vw!important;}
+
+.quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
+opacity: initial!important;}
+
+.quickAccessFriends {
+padding-left: 5px!important;}
+
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
 	z-index: 6 !important;
-	margin: -1px 0px !important;
+	margin: -2px 0px !important;
 }
 
 /*
