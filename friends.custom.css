@@ -29,10 +29,6 @@
 /* font-family: "Segoe UI" !important;*/
 }
 
-/* optional red hover for close button 
- .closeButton:hover {
- 	background: red !important;}*/
-
 /* Center name and status at user pic */
 .currentUserContainer .labelHolder{
 	justify-content: center !important;
