@@ -114,7 +114,7 @@ justify-content: center !important;}
   margin-bottom: -3px!important;}
   
 .groupName .gameGroupContainer .groupIcon {
-margin-left: 5px!important;} 
+margin-left: 2px!important;} 
 
 /* PlusMinus Friends Header Color*/
 .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, 
@@ -123,7 +123,7 @@ margin-left: 5px!important;}
 }
 
 .ExpandPlusMinus {
-margin-top: 1px!important;}
+margin-top: 2px!important;}
 
 /* zzz icon next to friends' names on the list */
 .friendsnooze_SnoozeContainer_1OfTa{
