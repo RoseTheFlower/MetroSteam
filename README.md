@@ -9,6 +9,9 @@ My quest was to make the new windows look as close as possible to those of [the 
 * Launch the patcher and wait for it to apply the changes.
 * Close and open the chat and friends windows if necessary.
 
+## Uninstallation
+* Simply remove friends.custom.css from Steam/clientui/
+
 ## Credits
 * [RedSigma](https://github.com/redsigma) for creating a custom skin of the new chat, which I initially used as a template.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that makes customization possible.
