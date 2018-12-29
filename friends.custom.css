@@ -31,8 +31,9 @@
 
 /* Center name and status at user pic */
 .currentUserContainer .labelHolder{
-	justify-content: center !important;
-	margin-right: 60px!important;
+justify-content: center !important;}
+.currentUserContainer .statusAndName {
+	margin-right: 58px!important;
 }
 
 /* Top friends list border */
@@ -110,8 +111,10 @@
   color: white !important;
   font-size:12px !important;
   text-transform: uppercase !important;
-  line-height: 16px!important;
   margin-bottom: -3px!important;}
+  
+.groupName .gameGroupContainer .groupIcon {
+margin-left: 5px!important;} 
 
 /* PlusMinus Friends Header Color*/
 .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, 
@@ -368,6 +371,8 @@ outline: 0px solid transparent !important; }
   background-color: rgb(var(--textentry)) !important;
   border: 0px solid #1b1c20 !important;
   margin-top: 0px !important;
+  margin-bottom: 2px!important;
+  min-width: 32px!important; 
 }
 .chatWindow .chatEntry > .compactableHeight {
   height: 38px !important; }
@@ -383,11 +388,6 @@ outline: 0px solid transparent !important; }
 
 .chatEntry .activeVoiceFlexBox {
   height: 28px!important; }
-.chatSubmitButton {
-  margin-bottom: 2px!important; }
-
-.chatSubmitButton {
-  min-width: 32px!important; }
 
 .SVGIcon_Submit, .SVGIcon_Emoticon {
   width: 20px!important; 
@@ -397,9 +397,8 @@ outline: 0px solid transparent !important; }
 .SVGIcon_Paperclip {
   width: 20px!important; 
   height: 20px!important; 
-  margin-top: 0px!important; 
-  margin-bottom: 2px!important;  }
-
+   margin-top: 0px!important; 
+   margin-bottom: 3px!important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
   max-width: 28px!important;
@@ -681,7 +680,9 @@ color: rgb(140,140,140)!important;
 	border-color:rgb(0,163,0)!important;
 }
 .OneOnOneVoiceActive .OneOnOneVoiceStatusLabel{
-color:rgb(0,163,0)!important;}
+color:rgb(0,163,0)!important;
+margin-top: 1px!important;
+overflow: hidden!important;}
 .OneOnOneVoiceActive{
 background:rgb(var(--header_dark)) !important;
 border-bottom: 1px solid black!important;
@@ -837,6 +838,7 @@ background-image: none !important;
   padding-right: 0px !important; }
 .OneOnOneVoiceClose {
   background-color: rgb(var(--textentry)) !important;
+  z-index: 200!important;
 }
 /*emoticons and attachments area*/
 .chatentry_chatEntryActionsGroup_15mWd {
@@ -1066,7 +1068,9 @@ color: rgb(var(--online))!important;}
 	color: rgb(var(--ingame))!important;}
 	
 .inviteButton.inviteButtonJoinVoice {
-background:rgb(53,53,53)!important;}
+background:rgb(53,53,53)!important;
+}
+
 .inviteButton.inviteButtonJoinVoice:hover {
   background: rgb(var(--focus))!important;}
 .OneOnOneVoiceRoomControls{
@@ -1292,12 +1296,14 @@ line-height: 14px!important;}
 padding-left: 22px!important;
 padding-top: 8px!important;}
 
+.FriendInGameIcon{
+margin-left: -18px!important;
+margin-right: 15px!important;
+margin-top: 4px!important;}
+
 .AvatarAndUser {
 	padding-left: 14px!important;
 	padding-top: 12px!important;}
-
-/* Favorites area */
-
 
 .currentUserAvatar {
 	width:36px!important;
@@ -1316,9 +1322,6 @@ font-size:14px!important;}
 .labelHolder{
 margin-left: 10px!important;}
 
-.groupName .gameGroupContainer .groupIcon, .FriendInGameIcon img {
-margin-left: 6px!important;
-margin-top: 0px!important;}
 
 .miniprofile_miniProfileContent_25Sge .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
 margin-bottom: -4px!important;}
@@ -1367,19 +1370,19 @@ height: fit-content!important;}
 .EmbedButton .SVGIcon_Paperclip path, .SVGIcon_Paperclip, .EmoticonPickerButton .SVGIcon_Emoticon line, .EmoticonPickerButton .SVGIcon_Emoticon circle, .EmoticonPickerButton .SVGIcon_Emoticon path, .VoiceToggleIconCtn .SVGIcon_VoiceRoom {
 stroke: rgb(200,200,200)!important;}
 
-.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone {
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone{
 fill: rgb(200,200,200)!important;}
 
 /*Unread messages count near username in friendslist*/
 .FriendMessageCount {
-	background:  rgb(var(--focus))!important;
-    color: white!important;
-	font-size: 14px!important;
-  line-height: 25px!important;
-  height: 25px!important;
-  min-width: 25px!important;
+  background:  rgb(var(--focus))!important;
+  color: white!important;
+  font-size: 15px!important;
+  line-height: 30px!important;
+  height: 30px!important;
+  min-width: 30px!important;
   padding: 0px!important;
-  margin-top: 15px!important;
+  margin-top: 11px!important;
 }
 
 .CompactFriendsList .FriendMessageCount {
