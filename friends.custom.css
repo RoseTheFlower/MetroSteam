@@ -320,10 +320,10 @@ color: rgb(var(--focus))!important;}
 
 /* Favorites List Unread Indicator */
 .quickAccessFriends .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
-	right: -3px !important;
-    bottom: -8px !important;
+    left: 2px !important;
+    top: -4px !important;
     height: 2px !important;
-    width: 28px !important;
+    width: 87%!important;
 	background-color: rgb(var(--focus)) !important;
 }
 
