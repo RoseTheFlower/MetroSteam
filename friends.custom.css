@@ -679,10 +679,11 @@ color: rgb(140,140,140)!important;
 	border-image:none!important;
 	border-color:rgb(0,163,0)!important;
 }
-.OneOnOneVoiceActive .OneOnOneVoiceStatusLabel{
+.OneOnOneVoiceStatusLabel{
 color:rgb(0,163,0)!important;
 margin-top: 1px!important;
 overflow: hidden!important;}
+
 .OneOnOneVoiceActive{
 background:rgb(var(--header_dark)) !important;
 border-bottom: 1px solid black!important;
@@ -1119,10 +1120,6 @@ background-color: rgb(37,37,37) !important;
 .ContextMenuButton{
 cursor: default!important;}
 
-.chatTab .MicStatus{
-background:rgb(0,163,0)!important;
-z-index: -1!important;}
-
 button.DialogButton{
 color: rgba(var(--white75))!important;
   background: rgb(53,53,53)!important;}
@@ -1225,8 +1222,11 @@ z-index: 6!important;
 top:16px!important;}
 
 /*Embedded elements*/
-.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile{
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m {
 background: rgb(15,15,15)!important;}
+
+.OpenGraphImgBackground .ChatMessageOpenGraph_Image {
+display:none!important;}
 
 /*Search box at the top of friends list*/
 .TabSearchButton:hover {
@@ -1370,7 +1370,7 @@ height: fit-content!important;}
 .EmbedButton .SVGIcon_Paperclip path, .SVGIcon_Paperclip, .EmoticonPickerButton .SVGIcon_Emoticon line, .EmoticonPickerButton .SVGIcon_Emoticon circle, .EmoticonPickerButton .SVGIcon_Emoticon path, .VoiceToggleIconCtn .SVGIcon_VoiceRoom {
 stroke: rgb(200,200,200)!important;}
 
-.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone{
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone, .chatSubmitButton .SVGIcon_Submit path{
 fill: rgb(200,200,200)!important;}
 
 /*Unread messages count near username in friendslist*/
@@ -1397,7 +1397,8 @@ color: white!important;
 background: rgb(var(--focus))!important;}
 
 .EmoticonSelector {
-max-width: 50vw!important;}
+max-width: 50vw!important;
+max-height: 35vh!important;}
 
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
 opacity: initial!important;}
