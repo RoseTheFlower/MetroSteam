@@ -68,10 +68,9 @@ justify-content: center !important;}
 }
 /* Top Panel Focus Effect*/
 .title-area-highlight{
-	background: none !important;
-	mask: none !important;
-	-webkit-mask: none !important;
+height:0!important;
 }
+
 /*Top Panel Focus Line*/
 .singleWindowFocusBar {
 	height: 0px !important;
@@ -453,7 +452,7 @@ outline: 0px solid transparent !important; }
 
 /* Any Right Click Menu */
 .contextMenu {
-	border: 1px solid rgb(var(--header_dark));
+	border: 1px solid rgb(var(--border));
     background: rgb(var(--clientBG)) !important;
     box-shadow: none!important;
 }
@@ -485,7 +484,7 @@ button.DialogButton:disabled:hover{
 	background: rgb(var(--header_dark)) !important;
 }
 .DialogCheckbox path {
-	stroke: rgb(var(--focus)) !important;
+	stroke: white !important;
 }
 
 button.DialogButton.roleButton.owner:disabled {
@@ -566,7 +565,8 @@ color: white!important;
 font-size: 18px!important;
 text-transform: none!important;
 margin-left: 15px!important;
-margin-top: -3px!important;}
+margin-top: -3px!important;
+font-weight: 200!important;}
 
 .DialogHeader{
   color: white!important;
@@ -578,7 +578,7 @@ letter-spacing: 0px!important;}
 	text-transform: none!important;
 	font-size: 14px!important;
 margin-bottom: 3px!important;
-padding: 4px 40px !important;
+padding: 5px 15px !important;
 cursor: initial!important;}
 
 .PagedSettingsDialog_PageListItem.Active{
@@ -717,7 +717,7 @@ border-bottom: 1px solid black!important;
 	height: 100em !important;
 	max-height: 100em !important;
 }
-/* Group chat Button Clickable Area */
+/* Group chats Button Clickable Area */
 .ToggleGroupChatList {
 	position: absolute !important;
 	z-index: 11 !important;
@@ -869,9 +869,14 @@ fill: rgb(113,113,113)!important;}
   font-weight: 300!important;
   text-transform: uppercase!important;
  }
-  
- .chatTab .chatTabHighlight {
- background: none!important;}
+
+.chatTab .chatTabHighlight {
+height:1px!important;
+z-index: 20!important;
+background:none!important;}
+
+.chatTab:not(.active) .chatTabHighlight {
+	background:none!important;}
  
  .contextMenuContents {
  font-size: 12px !important;}
@@ -1328,8 +1333,16 @@ margin-bottom: -4px!important;}
 
 .title-area-icon{
 padding:3px!important;}
+
+/*Gray hover color for every title bar button
 .title-area-icon:hover{
-background-color: rgb(var(--scrollbarBG))!important;}
+background: rgb(var(--scrollbarBG))!important;}*/
+
+.minimizeButton:hover, .maximizeButton:hover, .restoreButton:hover {
+	background: rgb(var(--scrollbarBG))!important;}
+	
+.closeButton:not(.chatTabClose):hover {
+background: red!important;}
 
 .multiChatDialog .title-area-icon {
 padding:1px!important;}
@@ -1340,8 +1353,8 @@ padding:1px!important;}
   stroke: white!important;}
 
 .ChatTabs {
-padding-left: 1px!important;}
-
+padding-left: 1px!important;
+}
 
 .singlewindow .currentUserContainer .labelHolder.twoLine .statusAndName, .singlewindow .currentUserContainer .labelHolder.twoLine {
 margin-right: 10px!important;}
@@ -1405,6 +1418,22 @@ opacity: initial!important;}
 
 .quickAccessFriends {
 padding-left: 5px!important;}
+
+.chatTab.active .chatTabClose, .chatTab:hover .chatTabClose, .friendSearchClear, .EmoticonSelector_Item{
+cursor: default!important;}
+
+.chatTabList .chatTab,
+.ChatTabsBackButton {
+width: 170px!important;}
+
+.inviteAnotherFriendButton .SVGIcon_Button{
+fill: rgb(var(--iconBG))!important;
+opacity:.4!important;}
+.inviteAnotherFriendButton .SVGIcon_Button line, .chatRoomButton .SVGIcon_Button line{
+	stroke: rgb(var(--iconBG))!important;}
+.inviteAnotherFriendButton:hover{
+background: rgb(var(--scrollbarBG))!important;
+cursor: initial!important;}
 
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
