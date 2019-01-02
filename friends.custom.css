@@ -990,7 +990,7 @@ transform: none!important;}
  background-color: rgb(var(--clientBG)) !important;
  line-height: 20px !important;
  margin: 0px !important;
- border: 1px solid #0c0c0c !important;
+ border: 1px solid rgb(var(--border)) !important;
  padding: 2px !important;
  padding-left: 22px!important;
 }
@@ -1052,8 +1052,10 @@ fill: white !important;}
 
 .chatTabList .chatTab:not(.active) {
 background: rgb(var(--header_dark)) !important;
-border-bottom: 1px transparent!important;
-opacity:0.5!important;}
+border-bottom: 1px transparent!important;}
+.chatTabList .chatTab:not(.active) .friend {
+filter: grayscale(100%)!important;
+opacity:.7!important;}
 
 .chatTab:not(.active):hover {
 	background-color: rgb(var(--scrollbarBG)) !important;}
@@ -1434,6 +1436,13 @@ opacity:.4!important;}
 .inviteAnotherFriendButton:hover{
 background: rgb(var(--scrollbarBG))!important;
 cursor: initial!important;}
+
+.TradeOfferInvite .leftInviteContainer .SVGIcon_Trade{
+background-color: rgb(var(--focus))!important;}
+
+.confirmInviteButton.confirmInvites{
+	background: rgb(var(--focus))!important;
+	background-color: none!important;}
 
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
