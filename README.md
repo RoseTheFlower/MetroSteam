@@ -13,6 +13,7 @@ My quest was to make the new windows look as close as possible to those of [the 
 * Copy and add the [css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
 
 ## Uninstallation
+### Windows
 * Simply remove friends.custom.css from Steam\clientui\
 
 ## Credits
