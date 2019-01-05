@@ -29,10 +29,9 @@
 /* font-family: "Segoe UI" !important;*/
 }
 
-/* Center name and status at user pic */
+/* User's name and status */
 .currentUserContainer .labelHolder{
-justify-content: center !important;}
-.currentUserContainer .statusAndName {
+justify-content: center !important;
 	margin-right: 58px!important;
 }
 
@@ -1443,6 +1442,7 @@ background-color: rgb(var(--focus))!important;}
 .confirmInviteButton.confirmInvites{
 	background: rgb(var(--focus))!important;
 	background-color: none!important;}
+	
 
 /* Status border/line for avatars in chat tabs; keep one or the other */
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
