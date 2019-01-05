@@ -1029,7 +1029,8 @@ background: rgb(var(--focus)) !important;}
 .msg a {
 color: rgb(198,198,198)!important;
 text-decoration: underline !important;
-border-bottom: none!important;}
+border-bottom: none!important;
+white-space: initial!important;}
 
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
 color: rgb(198,198,198)!important;}
