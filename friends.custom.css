@@ -281,13 +281,13 @@ opacity: 1!important;}
 .chatWindow{
 	background: rgb(var(--clientBG)) !important;
 	font-size: 13px !important;
-	border: 1px solid rgb(var(--border)) !important;
 }
 .chatRoomListContainer {
 	background: rgb(var(--clientBG)) !important;
 }
 .titleBarContainer.ChatTabs {
     background: rgb(var(--header_dark)) !important;
+	border: none!important;
 }
 .chatEntryControls{
 	background-color: rgb(var(--textentry)) !important;
@@ -326,9 +326,8 @@ color: rgb(var(--focus))!important;}
 }
 
 .chatHeader {
-    background-color: rgb(7,7,7)!important;
-	background: rgb(7,7,7)!important;
-	min-height: 0px !important;
+	background: rgb(var(--border))!important;
+	min-height: 1px !important;
 }
 .chatTabList .chatTab, 
 .ChatTabsBackButton {
@@ -595,7 +594,7 @@ height: 0!important;}
 background-color: transparent!important;
 color: rgb(140,140,140)!important;
 }
-/* Scroll Bar*/
+/* scroll bar*/
 ::-webkit-scrollbar{
 	width: var(--scrollbarSize) !important;
 }
@@ -623,7 +622,7 @@ color: rgb(140,140,140)!important;
 }
 
 ::-webkit-scrollbar-button:hover { 
-    background-color: #272727!important; 
+    background-color: rgb(var(--scrollbarBG))!important; 
 }
 /* arrow buttons at scroll bar */
 /* Down */
@@ -642,11 +641,14 @@ color: rgb(140,140,140)!important;
 ::-webkit-scrollbar-track {
     background-color:none!important;
 }
-/* thumb normal and hover state */
+/* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #373737!important;
-    border-radius: 2px!important;
+    border-radius: 0px!important;
 }
+
+.multiChatDialog{
+border: 1px solid rgb(var(--border))!important;}
 
 /* ======== Friend Panel Group ======== */
 .friendsListSectionTitle.chatSectionTitle .groupChatSectionTitle{
@@ -1437,6 +1439,11 @@ opacity:.4!important;}
 background: rgb(var(--scrollbarBG))!important;
 cursor: initial!important;}
 
+.chatRoomButton .SVGIcon_Button{
+fill:white!important;}
+.chatRoomButton:hover{
+background: rgb(var(--scrollbarBG))!important;}
+
 .TradeOfferInvite .leftInviteContainer .SVGIcon_Trade{
 background-color: rgb(var(--focus))!important;}
 
@@ -1444,22 +1451,34 @@ background-color: rgb(var(--focus))!important;}
 	background: rgb(var(--focus))!important;
 	background-color: none!important;}
 	
+.friendlistListContainer .Collapsed .ExpandPlusMinus .SVGIcon_PlusCircle {
+stroke: rgb(110,110,110)!important;}
+.friendlistListContainer .ExpandPlusMinus .SVGIcon_PlusCircle{
+    width: 4px!important;
+    height: 17px!important;
+margin-left: 1px!important;
+stroke: white!important;}
+.friendlistListContainer .SVGIcon_PlusCircle circle{
+stroke-width: 180px!important;
+opacity:1!important;}
+.friendlistListContainer .ExpandPlusMinus .SVGIcon_PlusCircle .horizontalLine, .ExpandPlusMinus .SVGIcon_PlusCircle .verticalLine{
+display:none!important;}
+.friendlistListContainer .ExpandPlusMinus{
+opacity:1!important;}
 
-/* Status border/line for avatars in chat tabs; keep one or the other */
+.friendGroup.offlineFriends .groupName .groupCount, .friendGroup.onlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed, .friendGroup .groupName .groupCount {
+	  opacity: 1!important;
+color: rgb(135,135,135)!important;
+  transform: translateX(3px)!important;}
+  
+.dropTargetBox {
+border: 2px dashed rgba(var(--focus), 0.4)!important;}
+
+.friend .playerNickname{
+color: rgb(199,199,199)!important;}
+
+/* Status line for avatars in chat tabs*/
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
 	z-index: 6 !important;
 	margin: -2px 0px !important;
 }
-
-/*
-.ChatTabContent .avatarHolder .avatar {
-padding:1px!important;
-}
-
-.chatTab .ChatTabContent .avatarHolder .avatarStatus{
-	z-index: -500 !important;
-    position:absolute!important;
-    left:-1px!important;
-	height: 100px!important;
-}
-*/
