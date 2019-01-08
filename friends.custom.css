@@ -30,10 +30,14 @@
 }
 
 /* User's name and status */
-.currentUserContainer .labelHolder{
+.currentUserContainer .labelHolder {
 justify-content: center !important;
-	margin-right: 58px!important;
+margin-right: 58px!important;
 }
+
+.currentUserContainer .richPresenceLabel{
+-webkit-app-region: drag!important;
+margin-right: -45px!important;}	
 
 /* Top friends list border */
 .currentUserContainer{
@@ -110,6 +114,9 @@ height:0!important;
   font-size:12px !important;
   text-transform: uppercase !important;
   margin-bottom: -3px!important;}
+  
+ .friendGroup .groupName{
+ margin-top: 0px!important;}
   
 .groupName .gameGroupContainer .groupIcon {
 margin-left: 2px!important;} 
@@ -659,11 +666,10 @@ border: 1px solid rgb(var(--border))!important;}
  .chatRoomTextChannel.ActiveTextChannel {
     background: rgb(var(--header_dark)) !important;
 }
-/* groups chat search button on servers */
+/* friend search input box */
 .friendSearchInput[type="text"]:focus, 
 .friendSearchInput[type="text"] {
-	background-color: rgb(var(--header_dark)) !important;
-}
+	background-color: rgb(var(--header_dark)) !important;}
 /* Random stuff from groups area on friends list */
 .ChatRoomListGroupItem:hover {
     background-color: #101010 !important;
@@ -722,9 +728,9 @@ border-bottom: 1px solid black!important;
 .ToggleGroupChatList {
 	position: absolute !important;
 	z-index: 11 !important;
-	right: 60px !important;
+	right: 50px !important;
 	width: 100% !important;
-	height: 20px !important;
+	height: 30px !important;
 	opacity: 0 !important;
 }
 
@@ -860,7 +866,7 @@ cursor: initial!important;
 }
 .chatTabSelector .SVGIcon_DownArrowContextMenu {
 margin-left: 2px!important;
-margin-top: 2px!important;
+margin-top: 3px!important;
 fill: rgb(113,113,113)!important;}
 
 .FriendChatTypingNotification {
@@ -1221,6 +1227,11 @@ display:none!important;}
 background: rgb(15,15,15)!important;
 border-left: 3px solid rgb(var(--focus));
 color: rgb(var(--offline))!important;}
+
+.inviteButton {
+	background: rgb(var(--focus))!important;}
+.inviteButton:hover {
+  background: rgb(80,80,80)!important; }
 
 .msg.ChatMessageInvite .invitedTimeLabel, .Invite_ExpireTime {
 color: gray!important;}
