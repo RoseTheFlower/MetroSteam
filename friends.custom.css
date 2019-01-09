@@ -558,6 +558,7 @@ button.DialogButton,
 .PagedSettingsDialog_PageListColumn{
 	background: rgb(var(--header_dark)) !important;
 	padding-left: 0px !important;
+	min-width: 205px!important;
 }
 .PagedSettingsDialog_Title{
 color: white!important;
