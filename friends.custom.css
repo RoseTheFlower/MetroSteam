@@ -47,8 +47,6 @@ margin-right: -45px!important;}
 /* Friends list window*/
 .friendlistListContainer{
 	background: rgb(var(--clientBG)) !important;
-	border-left: 1px solid rgb(var(--border)) !important;
-	border-right: 1px solid rgb(var(--border)) !important;
 }
 
 /* Top friends list panel bg*/
@@ -58,13 +56,9 @@ margin-right: -45px!important;}
 /* Bottom panel bg*/
 .friendListFooter {
     background-color: rgb(var(--clientBG)) !important;
-	border-bottom: 1px solid rgb(var(--border)) !important;
 	min-height:15px!important;
 }
-.friendListFooter, .friendsListSectionTitle {
-	border-left: 1px solid rgb(var(--border)) !important;
-	border-right: 1px solid rgb(var(--border)) !important;
-}
+
 /* Top Panel Avatar Effect*/
 .statusHeaderGlow{
 	opacity: 0 !important;
@@ -290,8 +284,8 @@ opacity: 1!important;}
 	font-size: 13px !important;
 }
 .chatRoomListContainer {
-	background: rgb(var(--clientBG)) !important;
-}
+background: rgb(var(--clientBG)) !important;}
+
 .titleBarContainer.ChatTabs {
     background: rgb(var(--header_dark)) !important;
 	border: none!important;
@@ -379,7 +373,7 @@ outline: 0px solid transparent !important; }
   min-width: 32px!important; 
 }
 .chatWindow .chatEntry > .compactableHeight {
-  height: 38px !important; }
+  height: 39px !important; }
   
 .VoiceToggle {
   height: 36px!important;
@@ -693,7 +687,7 @@ overflow: hidden!important;}
 
 .OneOnOneVoiceActive{
 background:rgb(var(--header_dark)) !important;
-border-bottom: 1px solid black!important;
+border-bottom: 1px solid rgb(var(--border))!important;
 }
 /* Change cursor at groups */
 .voiceRoomDragBar {
@@ -731,12 +725,18 @@ border-bottom: 1px solid black!important;
 	right: 50px !important;
 	width: 100% !important;
 	height: 30px !important;
-	opacity: 0 !important;
+	opacity: 1 !important;
 }
 
-.ToggleGroupChatList svg{
+.Collapsed .ToggleGroupChatList svg{
 	display: none !important;
 }
+
+.FriendsListChatSection.ChatRoomListContainerParent .ToggleGroupChatList .SVGIcon_DoubleArrow{
+    width: 123px!important;
+    height: 8px!important;
+    margin-top: 11px!important;}
+	
 
 /* chat window message entry box */
 .chatentry_chatEntryControls_2O_X7 {
@@ -1067,11 +1067,6 @@ opacity:.7!important;}
 
 .chatTab:not(.active):hover {
 	background-color: rgb(var(--scrollbarBG)) !important;}
-	
-.titleBarContainer{
-border-left:1px solid rgb(var(--border)) !important;
-border-top:1px solid rgb(var(--border)) !important;
-border-right:1px solid rgb(var(--border)) !important;}
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
@@ -1493,3 +1488,6 @@ color: rgb(199,199,199)!important;}
 	z-index: 6 !important;
 	margin: -2px 0px !important;
 }
+
+.chat_main_flex{
+border: 1px solid rgb(var(--border))!important;}
