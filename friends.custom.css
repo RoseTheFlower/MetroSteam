@@ -265,10 +265,7 @@ opacity: 1!important;}
     display: none !important;
 }
 .SteamPlayerGroupFooterCount .count {
-    position: absolute!important;
-    top: -35px!important;
-    right: 45px!important;
-    color: rgba( 145, 194, 87, 1 );
+    display: none !important;
 }
 /* Remove heightspace after each friend item */
 .friendGroup .SteamPlayerGroupFooter{
@@ -1492,3 +1489,9 @@ color: rgb(199,199,199)!important;}
 
 .chat_main_flex{
 border: 1px solid rgb(var(--border))!important;}
+
+.DialogOnOffToggle_Option:not(.Active) {
+color: transparent!important;}
+
+.friend.ingame .twoLine .richPresenceLabel{
+color: inherit!important;}
