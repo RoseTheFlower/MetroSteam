@@ -33,6 +33,7 @@
 .currentUserContainer .labelHolder {
 justify-content: center !important;
 margin-right: 58px!important;
+margin-bottom: 0!important;
 }
 
 .currentUserContainer .richPresenceLabel{
@@ -215,7 +216,8 @@ margin-top: 2px!important;}
 }
 
 .chatTab .ChatTabContent{
-opacity: 1!important;}
+opacity: 1!important;
+    -webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 100%)!important;}
 
 /* Favorites Section avatars */
 .friend.online.quickAccessFriend .avatarHolder .avatarStatus,
@@ -265,7 +267,7 @@ opacity: 1!important;}
     display: none !important;
 }
 .SteamPlayerGroupFooterCount .count {
-    display: none !important;
+   display: none !important;
 }
 /* Remove heightspace after each friend item */
 .friendGroup .SteamPlayerGroupFooter{
@@ -320,8 +322,13 @@ color: rgb(var(--focus))!important;}
     top: -4px !important;
     height: 2px !important;
     width: 87%!important;
-	background-color: rgb(var(--focus)) !important;
 }
+
+.Collapsed .chatSectionTitle .ChatUnreadMessageIndicator .chatUnreadCircle {
+background-color: transparent!important;}
+
+.ChatUnreadMessageIndicator .chatUnreadCircle {
+background-color: rgb(var(--focus))!important;}
 
 .chatHeader {
 	background: rgb(var(--border))!important;
@@ -393,7 +400,7 @@ outline: 0px solid transparent !important; }
   width: 20px!important; 
   height: 20px!important; 
    margin-top: 0px!important; 
-   margin-bottom: 3px!important; }
+   margin-bottom: 2px!important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
   max-width: 28px!important;
@@ -951,27 +958,42 @@ color: rgb(var(--online)) !important;}
 .personastatusicons_PersonaStatusIcon_2rP7f.ingame .SVGIcon_BigPicture path {
   fill: rgb(var(--ingame)) !important;}
 
+/* Settings icon image*/
 .SVGIcon_Settings {
   fill:  rgb(var(--iconBG)) !important;
   width: 15px !important;
   height: 15px !important;
   padding: 5px!important;}
 
+/* Settings button itself */
 .friendSettingsButton{
   cursor: initial!important;}
-  
-  .friendListButtons {
-  right:4px!important;
-  top:27px!important;}
   
 .friendSettingsButton:hover .SVGIcon_Settings {
   background-color: rgb(var(--scrollbarBG)) !important;
   animation-name: none!important;
  }
+  
+.friendListButtons {
+  right:4px!important;
+  top:27px!important;}
 
+/* Glow of unread messages*/
 .ChatUnreadMessageIndicator {
-  background: none !important;
+	  background: none !important;
 }
+
+.chatSectionTitle .ChatUnreadMessageIndicator {
+top:25px!important;
+padding:0!important;
+left:14px!important;
+    height: 1px!important;
+    width: 96px!important;
+	background: rgb(var(--focus))!important;}
+}
+
+.chatUnreadCircle{
+background-color: rgb(var(--focus))!important;}
 
 .chatTab .UnreadGlow {
   background: none !important;
@@ -1061,10 +1083,10 @@ background: rgb(var(--header_dark)) !important;
 border-bottom: 1px transparent!important;}
 .chatTabList .chatTab:not(.active) .friend {
 filter: grayscale(100%)!important;
-opacity:.7!important;}
+opacity:.5!important;}
 
 .chatTab:not(.active):hover {
-	background-color: rgb(var(--scrollbarBG)) !important;}
+	background-color: rgb(25,25,25) !important;}
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
@@ -1206,6 +1228,10 @@ background-color: rgb(var(--focus))!important;}
 .chatTab:not(.active) .ChatTabContent .avatarHolder .avatarStatus{
 opacity: 0!important;}
 
+.chatTab:not(.active) .chatTabClose{
+  transform: scale(1)!important;
+  opacity: .3;}
+
 .speakerHoverArea {
    pointer-events: none!important; }
   
@@ -1237,6 +1263,9 @@ top:16px!important;}
 /*Embedded elements*/
 .msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m {
 background: rgb(15,15,15)!important;}
+
+.NonInlinedEmbedSingleLine{
+white-space: initial!important;}
 
 .OpenGraphImgBackground .ChatMessageOpenGraph_Image {
 display:none!important;}
@@ -1332,7 +1361,7 @@ margin-top: -5px!important;}
 .currentUserContainer .playerName {
 font-size:14px!important;}
 
-.labelHolder{
+.friendlist .labelHolder{
 margin-left: 10px!important;}
 
 
