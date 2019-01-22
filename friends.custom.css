@@ -9,8 +9,8 @@
   --scrollbarSize: 15px;
   --scrollbarBG: 32, 32, 32;
   --textentry: 34, 34, 34;
-  --white50: 255,255,255,127.5;
-  --white75: 255, 255, 255, 191.25;
+  --white50: 255,255,255,0.5;
+  --white75: 199,199,199;
   --border: 7,7,7
 /*optional original colors, somehow turning darker sometimes:
 	--clientBG: 26,26,26;
@@ -170,24 +170,24 @@ margin-top: 2px!important;}
 /* Friend items hover colors */
 .friendStatusHover.online:hover, 
 .friendStatusHover.online.Friend_ContextMenuActive{
-	background-color: rgb( 37, 37, 37 ) !important;
+	background-color: rgb(var(--scrollbarBG)) !important;
 }
 
 .friendStatusHover.ingame:hover, 
 .friendStatusHover.ingame.Friend_ContextMenuActive{
-	background-color: rgb( 37, 37, 37) !important;
+	background-color: rgb(var(--scrollbarBG)) !important;
 	z-index: 1 !important;
 }
 
 .friendStatusHover.offline:hover, 
 .friendStatusHover.offline.Friend_ContextMenuActive{
-	background-color: rgb( 37, 37, 37 ) !important;
+	background-color: rgb(var(--scrollbarBG)) !important;
 	z-index: 1 !important;
 }
 
 .friendStatusHover.watchingbroadcast:hover, /*Fix missing hover */
 .friendStatusHover.watchingbroadcast.Friend_ContextMenuActive{
-	background-color: rgb( 37, 37, 37 ) !important;
+	background-color: rgb(var(--scrollbarBG)) !important;
 }
 
 /* Avatar status boxes */
@@ -267,8 +267,9 @@ opacity: 1!important;
     display: none !important;
 }
 .SteamPlayerGroupFooterCount .count {
-   display: none !important;
+    display: none !important;
 }
+
 /* Remove heightspace after each friend item */
 .friendGroup .SteamPlayerGroupFooter{
 	position: absolute !important;
@@ -512,7 +513,7 @@ color: rgb(140,140,140)!important;}
 background: rgb(var(--clientBG))!important;}
 
 .DialogDropDown._DialogInputContainer{
-color: rgba(var(--white75))!important;
+color: rgb(var(--white75))!important;
 padding:3px 5px!important;
 border: 1px solid rgb(53,53,53)!important;}
 
@@ -649,7 +650,7 @@ color: rgb(140,140,140)!important;
 }
 /* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #373737!important;
+    background-color: rgba(255,255,255,0.1)!important;
     border-radius: 0px!important;
 }
 
@@ -755,7 +756,7 @@ border-bottom: 1px solid rgb(var(--border))!important;
 	   background-color: rgb(var(--textentry)) !important;
 	   height: 29px !important;
 	   padding: 5px 5px 5px 5px!important;
-	   color: rgba(var(--white50))!important;
+	   color: white!important;
 }
 
 .chatEntry.compactView .chatEntryControls .chatSubmitButton {
@@ -885,7 +886,8 @@ fill: rgb(113,113,113)!important;}
 .chatTab .chatTabHighlight {
 height:1px!important;
 z-index: 20!important;
-background:none!important;}
+background:none)!important;
+}
 
 .chatTab:not(.active) .chatTabHighlight {
 	background:none!important;}
@@ -1055,16 +1057,16 @@ background: rgb(var(--focus)) !important;}
 
 /*URLs*/
 .msg a {
-color: rgb(198,198,198)!important;
+color: rgb(var(--white75))!important;
 text-decoration: underline !important;
 border-bottom: none!important;
 white-space: initial!important;}
 
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
-color: rgb(198,198,198)!important;}
+color: rgb(var(--white75))!important;}
 
 .msg a:hover {
-color: rgb(198,198,198)!important;
+color: !important;
 border-bottom: none!important;}
 
 /*selected text for copying etc*/
@@ -1107,11 +1109,11 @@ background:rgb(53,53,53)!important;
 .OneOnOneVoiceRoomControls{
 	background-color: rgb(var(--clientBG))!important;}
 .msg.voiceChannelInvite {
-	color: rgb(var(--white50))!important;
+	color: rgba(var(--white50))!important;
 	float: center!important;}
 	
 .SlashCommandSuggestion_SlashCommandDescription {
-	  color: rgb(var(--white50))!important;}
+	  color: rgba(var(--white50))!important;}
 
 .SingleUserChat .msg{
 margin-right: 4px!important;
@@ -1151,7 +1153,7 @@ background-color: rgb(37,37,37) !important;
 cursor: default!important;}
 
 button.DialogButton{
-color: rgba(var(--white75))!important;
+color: rgb(var(--white75))!important;
   background: rgb(53,53,53)!important;}
   
 .voiceMicTestContainer{
@@ -1379,7 +1381,7 @@ background: rgb(var(--scrollbarBG))!important;}*/
 	background: rgb(var(--scrollbarBG))!important;}
 	
 .closeButton:not(.chatTabClose):hover {
-background: red!important;}
+background: rgb(232,18,35)!important;}
 
 .multiChatDialog .title-area-icon {
 padding:1px!important;}
@@ -1512,8 +1514,10 @@ color: rgb(199,199,199)!important;}
 
 /* Status line for avatars in chat tabs*/
 .chatTab .ChatTabContent .avatarHolder .avatarStatus{
-	z-index: 6 !important;
-	margin: -2px 0px !important;
+	z-index: 3 !important;
+	margin: 0px !important;
+	position:absolute!important;
+	height:100%!important;
 }
 
 .chat_main_flex{
@@ -1524,3 +1528,22 @@ color: transparent!important;}
 
 .friend.ingame .twoLine .richPresenceLabel{
 color: inherit!important;}
+
+.contextMenu .compactView .avatar{
+padding:0px!important;}
+
+.ChatTabContent .avatarHolder .avatar{
+padding: 1px;}
+
+.ChatTabs:not(.compactView) .ChatTabContent .avatarHolder .avatar {
+width: 32px!important;}
+
+.ChatTabs:not(.compactView) .ChatTabContent .avatarHolder {
+margin-top:3px!important;
+margin-left:2px!important;}
+
+.friend.offline {
+  color: rgb(var(--offline))!important;}
+  
+.currentUserContainer.offline .richPresenceLabel, .friend.offline .richPresenceLabel, .friend.offline .gameName.richPresenceLabel a, .friend.offline .gameName.richPresenceLabel a:hover, .friend.offline .gameName.richPresenceLabel a:active, .friend.offline .gameName.richPresenceLabel a:visited{
+color: rgb(var(--offline))!important;}
