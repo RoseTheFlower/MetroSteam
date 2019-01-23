@@ -263,7 +263,7 @@ opacity: 1!important;
     display: none !important;
 }
 .SteamPlayerGroupFooterCount .count {
-
+    display: none !important;
 }
 
 /* Remove heightspace after each friend item */
