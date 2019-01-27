@@ -262,6 +262,7 @@ opacity: 1!important;
 .SteamPlayerGroupFooter .SteamPlayerGroupLines {
     display: none !important;
 }
+
 .SteamPlayerGroupFooterCount .count {
     display: none !important;
 }
@@ -779,7 +780,8 @@ color: rgb(var(--ingame)) !important;}
   color: rgb(var(--online)) !important;}
   
   .CompactFriendsList .friend .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 {
-  font-size: 11px !important; }
+  font-size: 11px !important;
+  }
   
 .ingame .personanameandstatus_playerName_1uxaf {
   color: rgb(var(--ingame)) !important; }
@@ -869,9 +871,9 @@ fill: rgb(113,113,113)!important;}
  }
 
 .chatTab .chatTabHighlight {
-height:1px!important;
+height:0px!important;
 z-index: 20!important;
-background:none)!important;
+background:none!important;
 }
 
 .chatTab:not(.active) .chatTabHighlight {
@@ -907,7 +909,7 @@ html.ContextMenuPopup .contextMenu .contextMenuContents {
 
 .currentUserAvatar:hover {
 transform: none !important;
-  filter: brightness(1.1) !important;
+  filter: none !important;
 }
 
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfileHeader_3oBIW {
@@ -1292,7 +1294,7 @@ padding-left: 15px!important;
 }
 
 .compactView .socialListTab {
-  height: 25px!important; }
+  height: 27px!important; }
 
 .friendsListSectionTitle {
 letter-spacing: 1px!important;}	
@@ -1332,8 +1334,8 @@ margin-top: 4px!important;}
 	padding-top: 12px!important;}
 
 .currentUserAvatar {
-	width:36px!important;
-height: 36px!important;
+	width:32px!important;
+height: 32px!important;
 }
 
 .friend .personanameandstatus_statusAndName_9U-hi {
@@ -1539,3 +1541,21 @@ color: rgb(var(--white75))!important;}
 
 .smallChatFont .chatTextarea, .smallChatFont .msg.serverMsg .msgText, .FriendsSettingsChatFontSizeSection_ButtonRow .smallFontSetting, .smallChatFont .ChatMessageOpenGraph_Title, .smallChatFont .nameWidthLabel, .ChatHistoryContainer.smallChatFont .ChatSpeaker .speaker, .smallChatFont {
 font-size: 12px!important;}
+
+.friendlistListContainer .Collapsed .ExpandPlusMinus .SVGIcon_PlusCircle:hover{
+stroke: white!important;}
+
+.contextMenuContents .contextMenuGameName {
+color: white!important;}
+
+.online .currentUserAvatar {
+border: 1px solid rgb(var(--online))!important;}
+
+.ingame .currentUserAvatar {
+border: 1px solid rgb(var(--ingame))!important;}
+
+.offline .currentUserAvatar {
+border: 1px solid rgb(var(--offline))!important;}
+
+.currentUserContainer .personanameandstatus_richPresenceContainer_21cNf {
+    margin-top: 4px!important;}
