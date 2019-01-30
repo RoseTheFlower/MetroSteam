@@ -163,7 +163,7 @@ margin-top: 2px!important;}
 	margin-top: -1.5px !important;
 }
 
-/* Friend items hover colors */
+/* Friends list items hover colors */
 .friendStatusHover.online:hover, 
 .friendStatusHover.online.Friend_ContextMenuActive{
 	background-color: rgb(var(--scrollbarBG)) !important;
@@ -171,7 +171,7 @@ margin-top: 2px!important;}
 
 .friendStatusHover.ingame:hover, 
 .friendStatusHover.ingame.Friend_ContextMenuActive{
-	background-color: rgb(var(--scrollbarBG)) !important;
+	background-color: rgba(255,255,255,.05) !important;
 	z-index: 1 !important;
 }
 
@@ -181,9 +181,14 @@ margin-top: 2px!important;}
 	z-index: 1 !important;
 }
 
-.friendStatusHover.watchingbroadcast:hover, /*Fix missing hover */
+.friendStatusHover.watchingbroadcast:hover,
 .friendStatusHover.watchingbroadcast.Friend_ContextMenuActive{
 	background-color: rgb(var(--scrollbarBG)) !important;
+}
+
+/*Group chats hover*/
+.ChatRoomListGroupItem:hover {
+	background-color: rgba(255,255,255,.05) !important;
 }
 
 /* Avatar status boxes */
@@ -210,6 +215,13 @@ margin-top: 2px!important;}
 	z-index: -1 !important;
 	transform: translateX( 0px ) !important;
 }
+
+/*.friend.offline .avatarHolder .avatarStatus {
+    background: rgb(var(--offline)) !important;
+    width: 100% !important;
+    margin: -1px 1px!important;
+    z-index: -1 !important;
+transform: translateX( 0px ) !important;}*/
 
 .chatTab .ChatTabContent{
 opacity: 1!important;
@@ -264,7 +276,13 @@ opacity: 1!important;
 }
 
 .SteamPlayerGroupFooterCount .count {
-    display: none !important;
+    position: absolute!important;
+    margin-top: -50px!important;
+    color: rgba(var(--ingame),1)!important;
+    font-size: 14px!important;
+    line-height: 14px!important;
+    right: 27px!important;
+    text-align: left!important;
 }
 
 /* Remove heightspace after each friend item */
@@ -668,9 +686,6 @@ border: 1px solid rgb(var(--border))!important;}
 .friendSearchInput[type="text"] {
 	background-color: rgb(var(--header_dark)) !important;}
 /* Random stuff from groups area on friends list */
-.ChatRoomListGroupItem:hover {
-    background-color: #101010 !important;
-}
 .chatRoomVoiceChannel.ActiveVoiceChannel {
     background-color: #191b1b !important;
 }
@@ -973,13 +988,12 @@ color: rgb(var(--online)) !important;}
 }
 
 .chatSectionTitle .ChatUnreadMessageIndicator {
-top:25px!important;
-padding:0!important;
-left:14px!important;
-    height: 1px!important;
-    width: 96px!important;
-	background: rgb(var(--focus))!important;}
-}
+    top: 13px!important;
+    padding: 0!important;
+    left: 7px!important;
+    height: 4px!important;
+    width: 4px!important;
+background: rgb(var(--focus))!important;}
 
 .chatUnreadCircle{
 background-color: rgb(var(--focus))!important;}
@@ -1070,7 +1084,7 @@ fill: white !important;}
 .chatTabList .chatTab:not(.active) {
 background: rgb(var(--header_dark)) !important;
 border-bottom: 1px transparent!important;}
-.chatTabList .chatTab:not(.active) .friend {
+.chatTabList .chatTab:not(.active) .ChatTabContent {
 filter: grayscale(100%)!important;
 opacity:.5!important;}
 
@@ -1559,3 +1573,9 @@ border: 1px solid rgb(var(--offline))!important;}
 
 .currentUserContainer .personanameandstatus_richPresenceContainer_21cNf {
     margin-top: 4px!important;}
+	
+.ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName{
+	color: white!important;}
+	
+.confirmInviteRequestContainer .cancelAddFriends .SVGIcon_Arrow polyline{
+	stroke: rgb(var(--focus))!important;}
