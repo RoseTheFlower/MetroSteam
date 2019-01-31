@@ -1,20 +1,18 @@
 :root{
   --focus: 0, 114, 198; /*default blue accent*/
-  --clientBG: 19,19,19;
-  --header_dark: 12, 12, 12;
+  --clientBG: 26, 26, 26;
+  --header_dark: 20, 20, 20;
   --iconBG: 254, 254, 254;
-  --online: 93, 178, 254;
+  --online: 93, 178, 255;
   --ingame: 130, 186, 0;
-  --offline: 139, 139, 139;
+  --offline: 145, 145, 145;
   --scrollbarSize: 15px;
   --scrollbarBG: 32, 32, 32;
-  --textentry: 34, 34, 34;
-  --white50: 255,255,255,0.5;
+  --textentry: 39, 39, 39;
+  --white05: 255,255,255,.05;
+  --white50: 255,255,255,.5;
   --white75: 199,199,199;
-  --border: 7,7,7
-/*optional original colors, somehow turning darker sometimes:
-	--clientBG: 26,26,26;
-    --header_dark: 20, 20, 20;*/
+  --border: 15,15,15;
 }
 
 /* remove animations, round corners and delays */
@@ -166,29 +164,29 @@ margin-top: 2px!important;}
 /* Friends list items hover colors */
 .friendStatusHover.online:hover, 
 .friendStatusHover.online.Friend_ContextMenuActive{
-	background-color: rgb(var(--scrollbarBG)) !important;
+	background-color: rgba(var(--white05)) !important;
 }
 
 .friendStatusHover.ingame:hover, 
 .friendStatusHover.ingame.Friend_ContextMenuActive{
-	background-color: rgba(255,255,255,.05) !important;
+	background-color: rgba(var(--white05)) !important;
 	z-index: 1 !important;
 }
 
 .friendStatusHover.offline:hover, 
 .friendStatusHover.offline.Friend_ContextMenuActive{
-	background-color: rgb(var(--scrollbarBG)) !important;
+	background-color: rgba(var(--white05)) !important;
 	z-index: 1 !important;
 }
 
 .friendStatusHover.watchingbroadcast:hover,
 .friendStatusHover.watchingbroadcast.Friend_ContextMenuActive{
-	background-color: rgb(var(--scrollbarBG)) !important;
+	background-color: rgba(var(--white05)) !important;
 }
 
 /*Group chats hover*/
 .ChatRoomListGroupItem:hover {
-	background-color: rgba(255,255,255,.05) !important;
+	background-color: rgba(var(--white05)) !important;
 }
 
 /* Avatar status boxes */
@@ -350,9 +348,8 @@ background-color: rgb(var(--focus))!important;}
 	background: rgb(var(--border))!important;
 	min-height: 1px !important;
 }
-.chatTabList .chatTab, 
-.ChatTabsBackButton {
-    background: rgb(var(--clientBG)) !important;
+.chatTabList .chatTab, .ChatTabsBackButton {
+    background: rgb(var(--clientBG)) !important; /*rgba(var(--white05))*/
     margin-right: 1px!important;
 	border: 0!important;
 	/*border-bottom: 1px solid #0072c6 !important;*/
@@ -370,8 +367,8 @@ background-color: rgb(var(--focus))!important;}
 }
 .VoiceToggle.Inactive:hover,
 .chatSubmitButton.EmbedButton:hover,
-.chatSubmitButton.EmoticonPickerButton:hover {
-  background-color: rgb(81,81,81) !important;
+.chatSubmitButton.EmoticonPickerButton:hover, .chatEntry .chatSubmitButton:hover {
+  background-color: rgba(var(--white05)) !important;
   cursor: default!important;}
   
 .ChatMessageEntryVoice {
@@ -476,7 +473,7 @@ outline: 0px solid transparent !important; }
     box-shadow: none!important;
 }
 .contextMenu .contextMenuItem:hover, .contextMenu .contextMenuItem.active {
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, .05) !important;
 }
 
 /* ============================= */
@@ -489,7 +486,7 @@ outline: 0px solid transparent !important; }
 	background: rgb(var(--focus)) !important;
 }
 .DialogSlider_Grabber{
-	background: rgba(255, 255, 255, 0.7) !important;	
+	background: rgba(255, 255, 255, 0.75) !important;	
 }
 
 button.DialogButton:not(.Off) {
@@ -622,7 +619,7 @@ color: rgb(140,140,140)!important;
 }
 ::-webkit-scrollbar-thumb{
 	border-radius: 0px !important;
-	background: rgb(var(--scrollbarBG)) !important;
+	background: rgba(var(--white05)) !important;
 	border: 0px solid #131313!important;
 }
 
@@ -816,6 +813,7 @@ color: rgb(var(--online)) !important;}
   
 .FriendChatTimeStamp {
   font-size: 10px !important;
+  display: none!important;
 }
 .FriendChatTimeStamp.online {
   color: #4b8fcc!important;
@@ -974,7 +972,7 @@ color: rgb(var(--online)) !important;}
   cursor: initial!important;}
   
 .friendSettingsButton:hover .SVGIcon_Settings {
-  background-color: rgb(var(--scrollbarBG)) !important;
+  background-color: rgba(var(--white05)) !important;
   animation-name: none!important;
  }
   
@@ -1035,7 +1033,7 @@ opacity: 0.6!important;
 
 .suggestOption.selected {
   color: #fefefe !important;
-  background-color: rgb(var(--scrollbarBG)) !important;
+  background-color: rgba(var(--white05)) !important;
   padding-left: 22px !important; }
   
 .timeDivision.time_passes .preHorizDivider,
@@ -1044,13 +1042,13 @@ border: 1px dashed rgb(26,26,26) !important;
  margin-left: 1px !important; }
 
 .timeDivision .preHorizDivider{
-  width: 10% !important;}
+  width: 15% !important;}
 .timeDivision .preHorizDivider, .timeDivision .horizDivider {
 background-color: rgb(var(--clientBG)) !important;}
 
 .msg.timeDivision {
 font-size: 12px !important;
-  color:#808080 !important;}
+  color: #8d8d8d !important;}
 
 /*Connection issues message*/
 .ConnectionTroubleContent {
@@ -1072,7 +1070,7 @@ border-bottom: none!important;}
 
 /*selected text for copying etc*/
 ::selection {
-  background: rgb(0, 164, 250)!important;
+  background: rgba(var(--focus), .9)!important;
   text-shadow: none!important;}
 
 .SVGIcon_MobilePhone {
@@ -1089,7 +1087,7 @@ filter: grayscale(100%)!important;
 opacity:.5!important;}
 
 .chatTab:not(.active):hover {
-	background-color: rgb(25,25,25) !important;}
+	background-color: rgba(var(--white05)) !important;}
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
@@ -1144,7 +1142,7 @@ z-index: 99 !important;}
   transform: none !important; }
  
 .addFriendButton:hover .SVGIcon_AddFriend, .friendRequestButton:hover .SVGIcon_FriendRequest{
-background-color: rgb(37,37,37) !important;
+background-color: rgba(var(--white05)) !important;
 }
 
 .friendRequestButton:hover:not(.friendRequestViewActive) .SVGIcon_FriendRequest .friendArm {
@@ -1154,9 +1152,9 @@ background-color: rgb(37,37,37) !important;
 cursor: default!important;}
 
 button.DialogButton{
-color: rgb(var(--white75))!important;
-  background: rgb(53,53,53)!important;}
-  
+color: white!important;
+  background: rgba(255,255,255,0.12)!important;}
+ 
 .voiceMicTestContainer{
 padding: 0!important;
 }
@@ -1164,9 +1162,7 @@ padding: 0!important;
 	background-color: rgb(var(--clientBG)) !important;}
 
 button.DialogButton.Primary:hover{
-	background: rgb(81,81,81) !important;}
-
-
+	background: rgba(255,255,255,0.24) !important;}
 
 .NonInlinedEmbed .SVGIcon_Video path, .NonInlinedEmbed .SVGIcon_Image path, .NonInlinedEmbed .SVGIcon_Hyperlink{
 fill: white!important;
@@ -1191,7 +1187,7 @@ filter: none!important;}
 
 .speakerTimeStamp {
 font-size: 11px!important;
-color:gray!important;}
+color: #8d8d8d!important;}
 
 .MultiUserChat .msg:not(.ChatMsgSlashEmote) {
 padding-left: 10px!important;}
@@ -1251,7 +1247,7 @@ color: rgb(var(--offline))!important;}
 .inviteButton {
 	background: rgb(var(--focus))!important;}
 .inviteButton:hover {
-  background: rgb(80,80,80)!important; }
+  background: rgba(var(--white05))!important; }
 
 .msg.ChatMessageInvite .invitedTimeLabel, .Invite_ExpireTime {
 color: gray!important;}
@@ -1263,7 +1259,7 @@ top:16px!important;}
 
 /*Embedded elements*/
 .msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m {
-background: rgb(15,15,15)!important;}
+background: rgba(0,0,0,.45)!important;}
 
 .NonInlinedEmbedSingleLine{
 white-space: initial!important;}
@@ -1292,8 +1288,6 @@ background: rgb(var(--clientBG))!important;}
 .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
 -webkit-mask:none!important;
 margin-top: 0px!important;}
-
-
 
 /* Game title area in context menu*/
 .contextMenuSectionHeader {
@@ -1373,10 +1367,10 @@ padding:3px!important;}
 
 /*Gray hover color for every title bar button
 .title-area-icon:hover{
-background: rgb(var(--scrollbarBG))!important;}*/
+background: rgba(var(--white05))!important;}*/
 
 .minimizeButton:hover, .maximizeButton:hover, .restoreButton:hover {
-	background: rgb(var(--scrollbarBG))!important;}
+	background: rgba(var(--white05))!important;}
 	
 .closeButton:not(.chatTabClose):hover {
 background: rgb(232,18,35)!important;}
@@ -1469,13 +1463,13 @@ opacity:.4!important;}
 .inviteAnotherFriendButton .SVGIcon_Button line, .chatRoomButton .SVGIcon_Button line{
 	stroke: rgb(var(--iconBG))!important;}
 .inviteAnotherFriendButton:hover{
-background: rgb(var(--scrollbarBG))!important;
+background: rgba(var(--white05))!important;
 cursor: initial!important;}
 
 .chatRoomButton .SVGIcon_Button{
 fill:white!important;}
 .chatRoomButton:hover{
-background: rgb(var(--scrollbarBG))!important;}
+background: rgba(var(--white05))!important;}
 
 .TradeOfferInvite .leftInviteContainer .SVGIcon_Trade{
 background-color: rgb(var(--focus))!important;}
@@ -1501,7 +1495,7 @@ opacity:1!important;}
 
 .friendGroup.offlineFriends .groupName .groupCount, .friendGroup.onlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed, .friendGroup .groupName .groupCount {
 	  opacity: 1!important;
-color: rgb(135,135,135)!important;
+color: rgb(141,141,141)!important;
   transform: translateX(3px)!important;}
   
 .dropTargetBox {
@@ -1579,3 +1573,9 @@ border: 1px solid rgb(var(--offline))!important;}
 	
 .confirmInviteRequestContainer .cancelAddFriends .SVGIcon_Arrow polyline{
 	stroke: rgb(var(--focus))!important;}
+
+.personanameandstatus_playerName_1uxaf {
+-webkit-mask: none!important;}
+
+button.DialogButton::before{
+box-shadow: none!important;}
