@@ -641,7 +641,7 @@ color: rgb(140,140,140)!important;
 }
 
 ::-webkit-scrollbar-button:hover { 
-    background-color: rgb(var(--scrollbarBG))!important; 
+    background-color: rgba(var(--white05)) !important; 
 }
 /* arrow buttons at scroll bar */
 /* Down */
@@ -1032,8 +1032,8 @@ opacity: 0.6!important;
 }
 
 .suggestOption.selected {
-  color: #fefefe !important;
-  background-color: rgba(var(--white05)) !important;
+  color:  !important;
+  background-color: #4b4b4b !important;
   padding-left: 22px !important; }
   
 .timeDivision.time_passes .preHorizDivider,
@@ -1240,7 +1240,7 @@ display:none!important;}
 
 /*Invite box*/
 .ChatMessageInvite {
-background: rgb(15,15,15)!important;
+background: rgba(0,0,0,.45)!important;
 border-left: 3px solid rgb(var(--focus));
 color: rgb(var(--offline))!important;}
 
@@ -1441,7 +1441,6 @@ color: white!important;
 background: rgb(var(--focus))!important;}
 
 .EmoticonSelector {
-max-width: 50vw!important;
 max-height: 35vh!important;}
 
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
@@ -1579,3 +1578,10 @@ border: 1px solid rgb(var(--offline))!important;}
 
 button.DialogButton::before{
 box-shadow: none!important;}
+
+.EmoticonSelector_Item:hover .emoticon.large {
+	transform: none!important;
+filter: none!important;}
+
+.EmoticonSelector_Item:hover {
+background-color: rgba(var(--white05))!important;}
