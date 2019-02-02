@@ -283,6 +283,9 @@ opacity: 1!important;
     text-align: left!important;
 }
 
+.CompactFriendsList .SteamPlayerGroupFooterCount .count {
+display:none!important;}
+
 /* Remove heightspace after each friend item */
 .friendGroup .SteamPlayerGroupFooter{
 	position: absolute !important;
@@ -345,7 +348,7 @@ background-color: transparent!important;}
 background-color: rgb(var(--focus))!important;}
 
 .chatHeader {
-	background: rgb(var(--border))!important;
+	background: rgb(var(--header_dark))!important;
 	min-height: 1px !important;
 }
 .chatTabList .chatTab, .ChatTabsBackButton {
@@ -1585,3 +1588,7 @@ filter: none!important;}
 
 .EmoticonSelector_Item:hover {
 background-color: rgba(var(--white05))!important;}
+
+.ChatMessageBlockDelete{
+left: 0px!important;
+top: 25px!important;}
