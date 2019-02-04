@@ -120,9 +120,12 @@ margin-left: 2px!important;}
 margin-top: 2px!important;}
 
 /* zzz icon next to friends' names on the list */
-.friendsnooze_SnoozeContainer_1OfTa{
+.personanameandstatus_statusAndName_9U-hi .friendsnooze_SnoozeContainer_1OfTa{
 	display: none !important;
 }
+
+.friendsnooze_SnoozeContainer_1OfTa.online.friendsnooze_Dim_10sPU .friendsnooze_SnoozeZ_29fyi{
+color: rgb(var(--online))!important;}
 
 /* Remove useless "Watch Broadcast" text */
 .friendsContainer .watchingbroadcast .richPresenceContainer .gameName,
@@ -184,6 +187,11 @@ margin-top: 2px!important;}
 	background-color: rgba(var(--white05)) !important;
 }
 
+.friendStatusHover.golden:hover,
+.friendStatusHover.golden.Friend_ContextMenuActive{
+	background-color: rgba(var(--white05)) !important;
+}
+
 /*Group chats hover*/
 .ChatRoomListGroupItem:hover {
 	background-color: rgba(var(--white05)) !important;
@@ -208,6 +216,13 @@ margin-top: 2px!important;}
 
 .friend.watchingbroadcast .avatarHolder .avatarStatus{
 	background: rgb(200,189,247) !important;
+	width:100% !important;
+	margin: -1px 1px !important;
+	z-index: -1 !important;
+	transform: translateX( 0px ) !important;
+}
+
+.friend.golden .avatarHolder .avatarStatus{
 	width:100% !important;
 	margin: -1px 1px !important;
 	z-index: -1 !important;
@@ -284,7 +299,8 @@ opacity: 1!important;
 }
 
 .CompactFriendsList .SteamPlayerGroupFooterCount .count {
-display:none!important;}
+	display:none!important;
+}
 
 /* Remove heightspace after each friend item */
 .friendGroup .SteamPlayerGroupFooter{
@@ -1409,7 +1425,7 @@ fill: rgb(var(--focus))!important;}
 
 .chatTabDraggableSpace.ChromeClearance {
 width: 80px!important;
-height: 24px!important;}
+height: 17px!important;}
 
 .ChatTabContent .avatarHolder{
 height: fit-content!important;}
@@ -1592,3 +1608,9 @@ background-color: rgba(var(--white05))!important;}
 .ChatMessageBlockDelete{
 left: 0px!important;
 top: 25px!important;}
+
+.quickAccessFriends.compactQuickAccess .favoriteElement:hover .friend .avatarHolder {
+  transform: scale(1)!important; }
+  
+  .chatTabSelector.UnreadMessages .ChatUnreadMessageIndicator{
+  width:5px!important;}
