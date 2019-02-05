@@ -6,6 +6,7 @@
   --online: 93, 178, 255;
   --ingame: 130, 186, 0;
   --offline: 145, 145, 145;
+  --golden: 255, 255, 99;
   --scrollbarSize: 15px;
   --scrollbarBG: 32, 32, 32;
   --textentry: 39, 39, 39;
@@ -229,12 +230,12 @@ color: rgb(var(--online))!important;}
 	transform: translateX( 0px ) !important;
 }
 
-/*.friend.offline .avatarHolder .avatarStatus {
+.friend.offline .avatarHolder .avatarStatus {
     background: rgb(var(--offline)) !important;
     width: 100% !important;
     margin: -1px 1px!important;
     z-index: -1 !important;
-transform: translateX( 0px ) !important;}*/
+transform: translateX( 0px ) !important;}
 
 .chatTab .ChatTabContent{
 opacity: 1!important;
@@ -243,7 +244,9 @@ opacity: 1!important;
 /* Favorites Section avatars */
 .friend.online.quickAccessFriend .avatarHolder .avatarStatus,
 .friend.ingame.quickAccessFriend .avatarHolder .avatarStatus,
-.friend.watchingbroadcast.quickAccessFriend .avatarHolder .avatarStatus{
+.friend.watchingbroadcast.quickAccessFriend .avatarHolder .avatarStatus,
+.friend.golden.quickAccessFriend .avatarHolder .avatarStatus,
+.friend.offline.quickAccessFriend .avatarHolder .avatarStatus{
 	position: absolute !important;
 	height: 100% !important;
 	transform: scale(1.07) translate(-1px, 1px) !important;
