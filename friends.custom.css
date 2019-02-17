@@ -174,13 +174,13 @@ color: rgb(var(--online))!important;}
 .friendStatusHover.ingame:hover, 
 .friendStatusHover.ingame.Friend_ContextMenuActive{
 	background-color: rgba(var(--white05)) !important;
-	z-index: 1 !important;
+
 }
 
 .friendStatusHover.offline:hover, 
 .friendStatusHover.offline.Friend_ContextMenuActive{
 	background-color: rgba(var(--white05)) !important;
-	z-index: 1 !important;
+
 }
 
 .friendStatusHover.watchingbroadcast:hover,
@@ -1081,7 +1081,7 @@ background: rgb(var(--focus)) !important;}
 color: rgb(var(--white75))!important;
 text-decoration: underline !important;
 border-bottom: none!important;
-white-space: initial!important;}
+}
 
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
 color: rgb(var(--white75))!important;}
@@ -1283,8 +1283,6 @@ top:16px!important;}
 .msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m {
 background: rgba(0,0,0,.45)!important;}
 
-.NonInlinedEmbedSingleLine{
-white-space: initial!important;}
 
 .OpenGraphImgBackground .ChatMessageOpenGraph_Image {
 display:none!important;}
@@ -1617,3 +1615,6 @@ top: 25px!important;}
   
   .chatTabSelector.UnreadMessages .ChatUnreadMessageIndicator{
   width:5px!important;}
+  
+  .personanameandstatus_playerName_1uxaf, .personanameandstatus_playerNickname_3-32P{
+  font-size: 13px!important;}
