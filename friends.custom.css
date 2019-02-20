@@ -488,11 +488,11 @@ outline: 0px solid transparent !important; }
 	display:none!important;
 }
 
-/* Any Right Click Menu */
 .contextMenu {
 	border: 1px solid rgb(var(--border));
     background: rgb(var(--clientBG)) !important;
     box-shadow: none!important;
+	padding: 0px!important; 
 }
 .contextMenu .contextMenuItem:hover, .contextMenu .contextMenuItem.active {
     background: rgba(255, 255, 255, .05) !important;
@@ -917,15 +917,12 @@ background:none!important;
  .contextMenuContents {
  font-size: 12px !important;}
  
-.contextMenuItem {
-  padding: 4px 55px 4px 10px !important;
-  line-height: 15px !important;
+.contextMenu .contextMenuItem {
+  padding: 4px 10px !important;
+  line-height: 16px !important;
   color: rgb(var(--iconBG)) !important;
   border-top: none !important;
  border-bottom: none !important;}
- 
-.contextMenu {
-padding: 0px!important; }
 
 .contextMenu .contextMenuItem.contextMenuUnselectable:hover,
 .contextMenuItem.contextMenuGameTitle,
@@ -1030,7 +1027,7 @@ display:none!important;}
 .chatTab.ChatTabTransiton-enter {
 transform: none!important;}
 
-.EmoticonSelector_Separator .EmoticonSelector_SeparatorBackground {
+.emoticon_EmoticonSelector_Separator_1_yzI .emoticon_EmoticonSelector_SeparatorBackground_13bYy {
   height: 1px !important;
   background: black!important;}
 
@@ -1306,7 +1303,6 @@ border:none!important;}
 background: rgb(var(--clientBG))!important;}
 
 .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
--webkit-mask:none!important;
 margin-top: 0px!important;}
 
 /* Game title area in context menu*/
@@ -1460,7 +1456,7 @@ margin-top: 7px!important;}
 color: white!important;
 background: rgb(var(--focus))!important;}
 
-.EmoticonSelector {
+.emoticon_EmoticonSelector_177nw {
 max-height: 35vh!important;}
 
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
@@ -1599,11 +1595,11 @@ border: 1px solid rgb(var(--offline))!important;}
 button.DialogButton::before{
 box-shadow: none!important;}
 
-.EmoticonSelector_Item:hover .emoticon.large {
+.emoticon_EmoticonSelector_Item_3muLb:hover .emoticon_emoticon_9hYGN.emoticon_large_p8Q42 {
 	transform: none!important;
 filter: none!important;}
 
-.EmoticonSelector_Item:hover {
+.emoticon_EmoticonSelector_Item_3muLb:hover {
 background-color: rgba(var(--white05))!important;}
 
 .ChatMessageBlockDelete{
@@ -1618,3 +1614,9 @@ top: 25px!important;}
   
   .personanameandstatus_playerName_1uxaf, .personanameandstatus_playerNickname_3-32P{
   font-size: 13px!important;}
+  
+  .personanameandstatus_richPresenceLabel_3Q6g1 {
+  -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important; }
+ 
+ .contextMenuGameItem {
+  -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important;}
