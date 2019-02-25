@@ -367,8 +367,9 @@ background-color: transparent!important;}
 background-color: rgb(var(--focus))!important;}
 
 .chatHeader {
-	background: rgb(var(--header_dark))!important;
-	min-height: 1px !important;
+	background: rgb(var(--clientBG))!important;
+	min-height: 0px !important;
+	border-top: 1px solid rgb(var(--border))!important;
 }
 .chatTabList .chatTab, .ChatTabsBackButton {
     background: rgb(var(--clientBG)) !important; /*rgba(var(--white05))*/
@@ -1107,6 +1108,9 @@ opacity:.5!important;}
 
 .chatTab:not(.active):hover {
 	background-color: rgba(var(--white05)) !important;}
+	
+.chatTabList .chatTab:hover {
+  color: #dddddd !important; }
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
@@ -1616,7 +1620,16 @@ top: 25px!important;}
   font-size: 13px!important;}
   
   .personanameandstatus_richPresenceLabel_3Q6g1 {
-  -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important; }
+  -webkit-mask: linear-gradient(to right, black 99%, rgba(0, 0, 0, 0) 100%)!important; }
  
  .contextMenuGameItem {
   -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important;}
+  
+.ChatSpeaker.ChatRoomSpeaker .speaker .rankIcon > * {
+top: 5px!important;}
+
+.chatRoomMembers{
+border-left: 1px solid rgb(var(--border))!important;}
+
+.chatRoomGroupHeader{
+border-bottom: 1px solid rgb(var(--border))!important;}
