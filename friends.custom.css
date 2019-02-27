@@ -346,7 +346,7 @@ background: rgb(var(--clientBG)) !important;}
 }
 .ScrollToBottomButton > span{
 	width: 100% !important;
-	background: rgb(var(--border)) !important;
+	background: rgb(var(--header_dark)) !important;
 }
 
 .ScrollToBottomButton.UnreadMessages > span {
@@ -1086,7 +1086,8 @@ color: rgb(var(--white75))!important;}
 
 .msg a:hover {
 color: !important;
-border-bottom: none!important;}
+border-bottom: none!important;
+filter: brightness(.9)!important;}
 
 /*selected text for copying etc*/
 ::selection {
@@ -1346,7 +1347,7 @@ transform: scale(1, 1) translateX(0px)!important;}
 
 .quickAccessFriend .clanName, .friend .personanameandstatus_playerName_1uxaf, .friend .playerNickname {
 font-size: 13px!important;
-line-height: 14px!important;}
+}
 
 .friendGroup .friend, .friendGroup .SteamPlayerGroupFooter {
 padding-left: 22px!important;
@@ -1550,7 +1551,7 @@ padding: 1px;}
 width: 32px!important;}
 
 .ChatTabs:not(.compactView) .ChatTabContent .avatarHolder {
-margin-top:3px!important;
+margin-top:4px!important;
 margin-left:2px!important;}
 
 .offline .personanameandstatus_playerName_1uxaf {
