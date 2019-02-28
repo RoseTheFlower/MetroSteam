@@ -11,6 +11,8 @@ My quest was to make the new windows look as close as possible to those of [the 
 * Close and open the chat and friends windows if necessary.
 ### Linux and Mac
 * Copy and add the [css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
+* Search the file contents for Linux or Mac in any text editor.
+* Remove sections as instructed within the code.
 
 ## Help and options
 The [wiki](https://github.com/RoseTheFlower/newsteamchat/wiki) answers some of the most asked questions and contains a few extras.
