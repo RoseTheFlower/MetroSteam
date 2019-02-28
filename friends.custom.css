@@ -1591,6 +1591,9 @@ border: 1px solid rgb(var(--ingame))!important;}
 .offline .currentUserAvatar {
 border: 1px solid rgb(var(--offline))!important;}
 
+.watchingbroadcast .currentUserAvatar {
+border: 1px solid #c9bdf7!important;}
+
 .currentUserContainer .personanameandstatus_richPresenceContainer_21cNf {
     margin-top: 4px!important;}
 	
@@ -1644,3 +1647,9 @@ border-bottom: 1px solid rgb(var(--border))!important;}
 img.emoticon_emoticon_9hYGN.emoticon_large_p8Q42{
 	 margin-top: 0px!important;
 	margin-bottom: 0px!important; }
+	
+.friend .watchingbroadcast .personanameandstatus_statusAndName_9U-hi {
+margin-top: -8px!important;}
+
+.titleBarContainer .currentUserContainer .personanameandstatus_richPresenceLabel_3Q6g1:not(.personanameandstatus_gameName_qvibF) {
+margin-top: -1px!important;}
