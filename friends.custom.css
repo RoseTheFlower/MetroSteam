@@ -666,6 +666,9 @@ color: rgb(140,140,140)!important;
 ::-webkit-scrollbar-button:hover { 
     background-color: rgba(var(--white05)) !important; 
 }
+
+/* Remove the following sections when on Linux or Mac */
+
 /* arrow buttons at scroll bar */
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
@@ -679,6 +682,9 @@ color: rgb(140,140,140)!important;
     background-repeat: no-repeat!important;
     background-position: 0px 0px!important;
 }
+
+/* Remove the above sections when on Linux or Mac */
+
 /* background behind scrollbar */
 ::-webkit-scrollbar-track {
     background-color:none!important;
