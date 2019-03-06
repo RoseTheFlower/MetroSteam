@@ -330,13 +330,13 @@ background: rgb(var(--clientBG)) !important;}
 }
 
 /* Chat More Tabs DropDown avatar overlay fix */
-.contextMenuContents .ChatTabContent .friend .avatarHolder .avatarStatus{
+.ChatTabsContextMenu .ChatTabContent .friend .avatarHolder .avatarStatus{
 	height: 107% !important;
 	margin: -1px 1px !important;
 	z-index: 0 !important;
 }
 
-  .contextMenuContents.ChatTabs .contextMenuItem {
+.ChatTabsContextMenu .ChatTabContextMenuItem {
   padding: 0!important; }
 
 .ScrollToBottomButton{
@@ -489,13 +489,13 @@ outline: 0px solid transparent !important; }
 	display:none!important;
 }
 
-.contextMenu {
+.contextmenu_contextMenu_3_a2Z {
 	border: 1px solid rgb(var(--border));
     background: rgb(var(--clientBG)) !important;
     box-shadow: none!important;
 	padding: 0px!important; 
 }
-.contextMenu .contextMenuItem:hover, .contextMenu .contextMenuItem.active {
+.contextmenu_contextMenuItem_CBC-y:hover, .contextmenu_contextMenuItem_CBC-y.contextmenu_active_3vYUp {
     background: rgba(255, 255, 255, .05) !important;
 }
 
@@ -921,29 +921,29 @@ background:none!important;
 .chatTab:not(.active) .chatTabHighlight {
 	background:none!important;}
  
- .contextMenuContents {
+.contextmenu_contextMenuContents_1yyTu {
  font-size: 12px !important;}
  
-.contextMenu .contextMenuItem {
+.contextmenu_contextMenuItem_CBC-y {
   padding: 4px 10px !important;
   line-height: 16px !important;
   color: rgb(var(--iconBG)) !important;
   border-top: none !important;
  border-bottom: none !important;}
 
-.contextMenu .contextMenuItem.contextMenuUnselectable:hover,
-.contextMenuItem.contextMenuGameTitle,
-.contextMenuItem.contextMenuBroadcast,
-.contextMenuItem.contextMenuGameOptions {
+.contextMenuUnselectable:hover,
+.contextMenuGameTitle,
+.contextMenuBroadcast,
+.contextMenuGameOptions {
   background-color: rbg(var(--clientBG))!important; }
-.contextMenuItem.contextMenuGameTitle {
+.contextMenuGameTitle {
 border-top: 1px solid rgb(53,53,53) !important;}
 
-.contextMenuItem.contextMenuGameOptions .SVGIcon_Play {
+.contextMenuGameOptions .SVGIcon_Play {
 display:none!important;}
 
 
-html.ContextMenuPopup .contextMenu .contextMenuContents {
+html.contextmenu_ContextMenuPopup_1exss .contextmenu_contextMenuContents_1yyTu {
   padding: 0!important; }
 
 .currentUserAvatar:hover {
@@ -1159,11 +1159,11 @@ color: rgb(var(--offline))!important;}
 z-index: 99 !important;}
 
 /*Unread notification circle in chat context menu*/
-.contextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
+.ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
   right: 0px!important;
   background-color: rgb(var(--focus))!important;}
 
-.contextMenuItem .TabRightContainer .chatTabUnreadBadge{
+.ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge{
 	  display:initial!important;
 	  background:none!important;}
 
@@ -1315,10 +1315,6 @@ background: rgb(var(--clientBG))!important;}
 
 .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
 margin-top: 0px!important;}
-
-/* Game title area in context menu*/
-.contextMenuSectionHeader {
--webkit-mask: none!important;}
 
 .awayOrSnooze .steamavatar_avatarStatus_1Pwr6 {
 -webkit-mask: none!important;}
@@ -1547,7 +1543,7 @@ color: transparent!important;}
 .friend.ingame .personanameandstatus_twoLine_2wZNn .personanameandstatus_richPresenceLabel_3Q6g1{
 color: inherit!important;}
 
-.contextMenu .compactView .avatar{
+.contextmenu_contextMenu_3_a2Z .compactView .avatar{
 padding:0px!important;}
 
 .ChatTabContent .avatarHolder .avatar{
@@ -1579,7 +1575,7 @@ font-size: 12px!important;}
 .friendlistListContainer .Collapsed .ExpandPlusMinus .SVGIcon_PlusCircle:hover{
 stroke: white!important;}
 
-.contextMenuContents .contextMenuGameName {
+.contextMenuGameName {
 color: white!important;}
 
 .online .currentUserAvatar {
@@ -1632,7 +1628,7 @@ top: 25px!important;}
   .personanameandstatus_richPresenceLabel_3Q6g1 {
   -webkit-mask: linear-gradient(to right, black 99%, rgba(0, 0, 0, 0) 100%)!important; }
  
- .contextMenuGameItem {
+.contextMenuGameItem {
   -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important;}
   
 .ChatSpeaker.ChatRoomSpeaker .speaker .rankIcon > * {
@@ -1650,6 +1646,9 @@ img.emoticon_emoticon_9hYGN.emoticon_large_p8Q42{
 	
 .friend .watchingbroadcast .personanameandstatus_statusAndName_9U-hi {
 margin-top: -8px!important;}
+
+.compactView .friend .watchingbroadcast .personanameandstatus_statusAndName_9U-hi{
+margin-top: -4px!important;}
 
 .titleBarContainer .currentUserContainer .personanameandstatus_richPresenceLabel_3Q6g1:not(.personanameandstatus_gameName_qvibF) {
 margin-top: -1px!important;}
