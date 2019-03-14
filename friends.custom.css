@@ -329,7 +329,7 @@ background: rgb(var(--clientBG)) !important;}
 	background-color: rgb(var(--textentry)) !important;
 }
 
-/* Chat More Tabs DropDown avatar overlay fix */
+/* Avatar status inside the chat tabs context menu */
 .ChatTabsContextMenu .ChatTabContent .friend .avatarHolder .avatarStatus{
 	height: 107% !important;
 	margin: -1px 1px !important;
@@ -1057,6 +1057,10 @@ padding-top: 0px!important;
 opacity: 0.6!important;
 }
 
+.titleBarContainer .currentUserContainer .ContextMenuButton {
+    margin-top: -2px!important;
+margin-bottom: 2px!important;}
+
 .suggestOption.selected {
   color:  !important;
   background-color: #4b4b4b !important;
@@ -1652,3 +1656,17 @@ margin-top: -4px!important;}
 
 .titleBarContainer .currentUserContainer .personanameandstatus_richPresenceLabel_3Q6g1:not(.personanameandstatus_gameName_qvibF) {
 margin-top: -1px!important;}
+
+.ChatTabsContextMenu.CompactFriendsList .friend {
+	  margin-top: 0px!important;
+  padding-left: 1px!important; }
+  
+.ChatRoomMultiFriendAvatar, .ChatRoomGroupAvatar{
+border: 1px solid #535c68!important;}
+
+.FriendsSettingsVoiceTransmissionType_ButtonRow, .FriendsSettingsFlashSection_ButtonRow{
+background-color: transparent!important;}
+
+.DialogSlider_Slider{
+	border: 1px solid #2a2d33!important;
+background: transparent!important;}
