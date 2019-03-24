@@ -498,7 +498,7 @@ outline: 0px solid transparent !important; }
 	padding: 0px!important; 
 }
 .contextmenu_contextMenuItem_CBC-y:hover, .contextmenu_contextMenuItem_CBC-y.contextmenu_active_3vYUp {
-    background: rgba(255, 255, 255, .05) !important;
+    background: rgba(var(--white05)) !important;
 }
 
 /* ============================= */
@@ -1682,3 +1682,6 @@ opacity: 1!important;}
 
 .friendsListSectionTitle .SVGIcon_NewChatGroup line{
 stroke: rgb(var(--clientBG))!important;}
+
+.friendSearchClear .SVGIcon_X_Line line, .chatTab .chatTabClose .SVGIcon_X_Line line{
+stroke: rgb(var(--white))!important;}
