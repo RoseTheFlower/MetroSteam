@@ -816,6 +816,9 @@ border-bottom: 1px solid rgb(var(--border))!important;
 .ChatTabs.compactView .ChatTabsBackButton {
   height: 34px !important; }
   
+  .ingame.awayOrSnooze .personanameandstatus_richPresenceLabel_3Q6g1, .ingame .personanameandstatus_richPresenceLabel_3Q6g1, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:hover, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:active, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:visited{
+color: rgba(var(--ingame), .5)!important;}
+  
 .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1, .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a, .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:hover, .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:active, .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:visited, .ingame.personanameandstatus_twoLine_2wZNn .personanameandstatus_richPresenceLabel_3Q6g1 {
 color: rgb(var(--ingame)) !important;}
   
@@ -1685,6 +1688,3 @@ stroke: rgb(var(--clientBG))!important;}
 
 .friendSearchClear .SVGIcon_X_Line line, .chatTab .chatTabClose .SVGIcon_X_Line line{
 stroke: rgb(var(--white))!important;}
-
-.ingame.awayOrSnooze .personanameandstatus_richPresenceLabel_3Q6g1, .ingame .personanameandstatus_richPresenceLabel_3Q6g1, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:hover, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:active, .ingame .personanameandstatus_richPresenceLabel_3Q6g1 a:visited{
-color: rgba(var(--ingame), .5)!important;}
