@@ -10,12 +10,33 @@
   --scrollbarBG: 32, 32, 32;
   --textentry: 39, 39, 39;
   --white05: 255,255,255,.05;
+  --white10: 255,255,255,.1;
   --white50: 255,255,255,.5;
   --white75: 255,255,255,.75;
   --white: 255, 255, 255;
   --border: 15,15,15;
   --textentrybuttons: 200, 200, 200;
 }
+
+/* Experimental Metro White theme color values:
+--focus: 0, 114, 198;
+--clientBG: 230,230,230;
+--header_dark: 255,255,255;
+--online: 66, 104, 255;
+--ingame: 94, 150, 15;
+--offline: 0, 0, 0, .45;
+--golden: 255, 255, 99;
+--scrollbarSize: 15px;
+--scrollbarBG: 0,0,0,.05;
+--textentry: 207,207,207;
+--white05: 0,0,0,.05;
+--white10: 0,0,0,.1;
+--white50: 0,0,0,.5;
+--white75: 0,0,0,.75;
+--white: 0,0,0;
+--border: 160,160,160;
+--textentrybuttons: 35,50,50;
+*/
 
 /* remove animations, round corners and delays */
 *{
@@ -124,10 +145,12 @@ margin-top: 2px!important;}
 
 /* zzz icon next to friends' names on the list */
 .personanameandstatus_statusAndName_9U-hi .friendsnooze_SnoozeContainer_1OfTa{
-	display: none !important;
+display: none!important;
 }
+.friendsnooze_SnoozeContainer_1OfTa.in-game .friendsnooze_SnoozeZ_29fyi{
+color: rgb(var(--ingame))!important;}
 
-.friendsnooze_SnoozeContainer_1OfTa.online.friendsnooze_Dim_10sPU .friendsnooze_SnoozeZ_29fyi{
+.friendsnooze_SnoozeContainer_1OfTa.online.friendsnooze_Dim_10sPU .friendsnooze_SnoozeZ_29fyi, .friendsnooze_SnoozeContainer_1OfTa.online .friendsnooze_SnoozeZ_29fyi{
 color: rgb(var(--online))!important;}
 
 /* Remove useless "Watch Broadcast" text */
@@ -366,7 +389,10 @@ color: rgb(var(--focus))!important;}
 background-color: transparent!important;}
 
 .ChatUnreadMessageIndicator .chatUnreadCircle {
-background-color: rgb(var(--focus))!important;}
+    background-color: rgb(var(--focus))!important;
+    border-radius: 3px!important;
+    width: 6px!important;
+    height: 6px!important;}
 
 .chatHeader {
 	background: rgb(var(--clientBG))!important;
@@ -693,7 +719,7 @@ color: rgb(140,140,140)!important;
 }
 /* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255,255,255,0.1)!important;
+    background-color: rgba(var(--white10))!important;
     border-radius: 0px!important;
 }
 
@@ -1017,12 +1043,14 @@ color: rgb(var(--online)) !important;}
 }
 
 .chatSectionTitle .ChatUnreadMessageIndicator {
-    top: 13px!important;
+    top: 12px!important;
     padding: 0!important;
-    left: 7px!important;
-    height: 4px!important;
-    width: 4px!important;
-background: rgb(var(--focus))!important;}
+    left: 5px!important;
+    height: 6px!important;
+    width: 6px!important;
+    background: rgb(var(--focus))!important;
+    border-radius: 3px!important;
+}
 
 .chatUnreadCircle{
 background-color: rgb(var(--focus))!important;}
@@ -1677,7 +1705,7 @@ border: 1px solid #535c68!important;}
 background-color: transparent!important;}
 
 .DialogSlider_Slider{
-	border: 1px solid #2a2d33!important;
+border: 1px solid #2a2d33!important;
 background: transparent!important;}
 
 .friend.awayOrSnooze .playerNameQuickAccessContainer, .friend.awayOrSnooze .labelHolder  {
@@ -1688,3 +1716,6 @@ stroke: rgb(var(--clientBG))!important;}
 
 .friendSearchClear .SVGIcon_X_Line line, .chatTab .chatTabClose .SVGIcon_X_Line line{
 stroke: rgb(var(--white))!important;}
+
+.chatTabList .chatTab.active, .chatRoomGroupHeaderName{
+color: rgb(var(--white))!important;}
