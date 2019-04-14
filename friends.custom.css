@@ -1294,6 +1294,9 @@ opacity: 0!important;}
 .chatTab:not(.active) .chatTabClose{
   transform: scale(1)!important;
   opacity: .3;}
+.chatTab:not(.active) .chatTabClose:hover {
+  opacity: 1!important;
+}
 
 .speakerHoverArea {
    pointer-events: none;}
