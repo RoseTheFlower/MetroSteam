@@ -966,13 +966,12 @@ background:none!important;
 .contextMenuGameTitle,
 .contextMenuBroadcast,
 .contextMenuGameOptions {
-  background-color: rbg(var(--clientBG))!important; }
+  background-color: rgb(var(--clientBG)) !important;}
 .contextMenuGameTitle {
 border-top: 1px solid rgb(53,53,53) !important;}
 
 .contextMenuGameOptions .SVGIcon_Play {
 display:none!important;}
-
 
 html.contextmenu_ContextMenuPopup_1exss .contextmenu_contextMenuContents_1yyTu {
   padding: 0!important; }
@@ -1293,7 +1292,7 @@ opacity: 0!important;}
 
 .chatTab:not(.active) .chatTabClose{
   transform: scale(1)!important;
-  opacity: .3;}
+  opacity: .3!important;}
 .chatTab:not(.active) .chatTabClose:hover {
   opacity: 1!important;
 }
