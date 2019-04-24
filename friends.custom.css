@@ -75,7 +75,8 @@ margin-right: -45px!important;}
 /* Bottom panel bg*/
 .friendListFooter {
     background-color: rgb(var(--clientBG)) !important;
-	min-height:15px!important;
+	min-height:23px!important;
+	border-top: 1px solid rgb(var(--border))!important;
 }
 
 /* Top Panel Avatar Effect*/
@@ -1721,3 +1722,16 @@ stroke: rgb(var(--white))!important;}
 
 .chatTabList .chatTab.active, .chatRoomGroupHeaderName{
 color: rgb(var(--white))!important;}
+
+.changeLog .SVGIcon_Scroll path{
+fill: rgb(var(--white))!important;}
+
+.changeLog{
+right: 9px!important;}
+
+.changeLog .SVGIcon_Scroll {
+  width: 18px!important;
+  height: 18px!important; }
+  
+.changeLog:hover {
+  background-color: rgba(var(--white05)) !important;}
