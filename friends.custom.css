@@ -1072,7 +1072,7 @@ transform: none!important;}
   background: black!important;}
 
 /*Suggested commands and emoticons*/
-.suggestOption {
+.suggestdialog_suggestOption_t54xp {
  color: #fefefe !important;
  background-color: rgb(var(--clientBG)) !important;
  line-height: 20px !important;
@@ -1081,7 +1081,7 @@ transform: none!important;}
  padding: 2px !important;
  padding-left: 22px!important;
 }
-.mentionDialog {
+.suggestdialog_mentionDialog_2hRnz {
   padding: 0px 0px 0px 0px !important;
 }
 
@@ -1094,7 +1094,7 @@ opacity: 0.6!important;
     margin-top: -2px!important;
 margin-bottom: 2px!important;}
 
-.suggestOption.selected {
+.suggestdialog_suggestOption_t54xp.suggestdialog_selected_e-sy7 {
   color:  !important;
   background-color: #4b4b4b !important;
   padding-left: 22px !important; }
