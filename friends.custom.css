@@ -51,12 +51,12 @@
 /* User's name and status */
 .currentUserContainer .labelHolder {
 justify-content: center !important;
-margin-right: 58px!important;
+margin-right: 12px!important;
 }
 
 .currentUserContainer .personanameandstatus_richPresenceLabel_3Q6g1{
 -webkit-app-region: drag!important;
-margin-right: -45px!important;}	
+}
 
 /* Top friends list border */
 .currentUserContainer{
