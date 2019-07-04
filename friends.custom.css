@@ -821,10 +821,9 @@ border-bottom: 1px solid rgb(var(--border))!important;
 	   color: rgb(var(--white))!important;
 }
 
-.chatEntry.compactView .chatEntryControls .chatSubmitButton {
+.compactView .chatentry_chatEntryControls_2O_X7 .chatentry_chatSubmitButton_3VRfL {
   margin-bottom: 0px !important; }
-.chatEntry.compactView .chatSubmitButton .SVGIcon_Submit,
-.chatEntry.compactView .chatSubmitButton.EmoticonPickerButton .SVGIcon_Emoticon {
+.chatEntry.compactView .chatentry_chatSubmitButton_3VRfL svg{
   height: 20px !important; 
   margin-top: 5px !important;
 }
@@ -1473,6 +1472,9 @@ stroke: rgb(var(--textentrybuttons))!important;}
 
 .VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone, .chatentry_chatSubmitButton_3VRfL .SVGIcon_Submit path{
 fill: rgb(var(--textentrybuttons))!important;}
+
+.chatentry_chatSubmitButton_3VRfL:not(.chatentry_disabled_2p2vW):hover .SVGIcon_Button.SVGIcon_Submit path {
+stroke: none!important; }
 
 /*Unread messages count near username in friendslist*/
 .FriendMessageCount {
