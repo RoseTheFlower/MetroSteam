@@ -1635,6 +1635,9 @@ border: 1px solid #c9bdf7!important;}
 .currentUserContainer .personanameandstatus_richPresenceContainer_21cNf {
     margin-top: 4px!important;}
 	
+.personanameandstatus_richPresenceContainer_21cNf {
+width: calc(100% - 20px)!important;}
+	
 .ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName{
 	color: rgb(var(--white))!important;}
 	
