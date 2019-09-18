@@ -1742,3 +1742,16 @@ right: 9px!important;}
   
 .currentUserContainer .personanameandstatus_statusAndName_9U-hi {
 margin-right: 55px!important;}
+
+.compactQuickAccess .friend.quickAccessFriend .avatarHolder .avatar, .friend.quickAccessFriend .avatarHolder .avatar {
+height:auto!important;}
+
+.friendCollapseButton, .friendSettingsButton, .friendCollapseButton .SVGIcon_DoubleArrow, .chatTabOpenFriendsList{
+cursor: default!important;}
+
+.chatTabOpenFriendsList{
+color: rgba(var(--white75)) !important;
+background-color: rgb(var(--clientBG)) !important}
+
+.chatTabOpenFriendsList:hover {
+  background-color: rgba(var(--white05)) !important;}
