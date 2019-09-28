@@ -1755,3 +1755,9 @@ background-color: rgb(var(--clientBG)) !important}
 
 .chatTabOpenFriendsList:hover {
   background-color: rgba(var(--white05)) !important;}
+  
+.friend.online {
+color: rgb(var(--online)) !important;}
+
+.friendsnooze_SnoozeContainer_1OfTa.friendsnooze_Dim_10sPU .friendsnooze_SnoozeZ_29fyi {
+filter: none!important;}
