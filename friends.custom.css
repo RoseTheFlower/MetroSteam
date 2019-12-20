@@ -145,7 +145,7 @@ margin-left: 2px!important;}
 margin-top: 2px!important;}
 
 /* zzz icon next to friends' names on the list */
-.personanameandstatus_statusAndName_9U-hi .friendsnooze_SnoozeContainer_1OfTa{
+.listContentContainer .friendsnooze_SnoozeContainer_1OfTa{
 display: none!important;
 }
 .friendsnooze_SnoozeContainer_1OfTa.in-game .friendsnooze_SnoozeZ_29fyi{
@@ -1716,6 +1716,10 @@ background-color: transparent!important;}
 border: 1px solid #2a2d33!important;
 background: transparent!important;}
 
+.chattabs_ChatTabContent_Friend_3m7Ps .friend.awayOrSnooze .labelHolder,
+.friend.awayOrSnooze .chattabs_ChatTabContent_Friend_3m7Ps .friend .avatarHolder .avatarStatus {
+opacity: .5!important;}
+	
 .friend.awayOrSnooze .playerNameQuickAccessContainer, .friend.awayOrSnooze .labelHolder  {
 opacity: 1!important;}
 
