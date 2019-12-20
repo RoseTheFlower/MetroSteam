@@ -265,7 +265,7 @@ transform: translateX( 0px ) !important;}
 
 .chattabs_ChatTab_1WfqA .chattabs_ChatTabContent_Friend_3m7Ps, .chattabs_ChatTabContent_ChatRoomName_2avXT{
 opacity: 1!important;
-    -webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 100%)!important;}
+-webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 100%)!important;}
 
 /* Favorites Section avatars */
 .friend.online.quickAccessFriend .avatarHolder .avatarStatus,
@@ -1157,11 +1157,8 @@ border-bottom: 1px transparent!important;}
 filter: grayscale(100%)!important;
 opacity:.5!important;}
 
-.chattabs_ChatTab_1WfqA:hover:not(.chattabs_Active_3sMSI) {
+.chattabs_ChatTab_1WfqA:hover:not(.chattabs_Active_3sMSI), .ChatTabsContextMenu .chattabs_ChatTab_1WfqA:hover{
 	background-color: rgba(var(--white05)) !important;}
-	
-.chattabs_ChatTab_1WfqA:hover {
-  color: #dddddd !important; }
 
 .msg.ChatMsgSlashEmote .speaker {
 background:rgb(var(--textentry))!important;
