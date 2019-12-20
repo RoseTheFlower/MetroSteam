@@ -1507,8 +1507,7 @@ margin-top: 7px!important;}
 color: rgb(var(--white))!important;
 background: rgb(var(--focus))!important;}
 
-.emoticon_EmoticonSelector_177nw {
-max-height: 35vh!important;}
+
 
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
 opacity: initial!important;}
@@ -1516,7 +1515,7 @@ opacity: initial!important;}
 .quickAccessFriends {
 padding-left: 5px!important;}
 
-.chattabs_CloseButton_SzByZ, .friendSearchClear, .EmoticonSelector_Item{
+.chattabs_CloseButton_SzByZ, .friendSearchClear, .emoticon_EmoticonSelector_Item_3muLb, .emoticon_StickerButton_3O95u{
 cursor: default!important;}
 
 .chatTabList .chattabs_ChatTab_1WfqA,
@@ -1662,7 +1661,7 @@ box-shadow: none!important;}
 	transform: none!important;
 filter: none!important;}
 
-.emoticon_EmoticonSelector_Item_3muLb:hover {
+.emoticon_EmoticonSelector_Item_3muLb:hover, .emoticon_StickerButton_3O95u:hover {
 background-color: rgba(var(--white05))!important;}
 
 .ChatMessageBlockDelete{
@@ -1775,3 +1774,6 @@ width:30px!important;}
 
 .chattabs_ChatTab_1WfqA:before, .chattabs_ChatTab_1WfqA:last-of-type:after{
 width: 0!important;}
+
+.emoticon_StickerButton_3O95u{
+background:none!important;}
