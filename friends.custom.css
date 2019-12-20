@@ -692,6 +692,7 @@ color: rgb(140,140,140)!important;
     background-color: none!important; 
     border: 2px solid transparent!important;
 }
+
 /* disables scroll buttons at settings */
 .DialogBody::-webkit-scrollbar-button {
     display:none!important;
@@ -1325,7 +1326,7 @@ z-index: 6!important;
 top:16px!important;}
 
 /*Embedded elements*/
-.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m {
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ {
 background: rgba(0,0,0,.45)!important;}
 
 
