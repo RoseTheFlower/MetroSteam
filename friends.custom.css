@@ -263,7 +263,7 @@ color: rgb(var(--online))!important;}
     z-index: -1 !important;
 transform: translateX( 0px ) !important;}
 
-.chattabs_ChatTab_1WfqA .chattabs_ChatTabContent_Friend_3m7Ps{
+.chattabs_ChatTab_1WfqA .chattabs_ChatTabContent_Friend_3m7Ps, .chattabs_ChatTabContent_ChatRoomName_2avXT{
 opacity: 1!important;
     -webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 100%)!important;}
 
@@ -672,6 +672,8 @@ color: rgb(140,140,140)!important;
 ::-webkit-scrollbar{
 	width: var(--scrollbarSize) !important;
 }
+.ChatTabs ::-webkit-scrollbar-thumb {
+  background-color: transparent!important;}
 ::-webkit-scrollbar-thumb{
 	border-radius: 0px !important;
 	background: rgba(var(--white05)) !important;
@@ -1056,10 +1058,11 @@ color: rgb(var(--online)) !important;}
     border-radius: 3px!important;
 }
 
-.chatUnreadCircle{
-background-color: rgb(var(--focus))!important;}
+.chattabs_UnreadCircle_2goOD{
+background-color: rgb(var(--focus))!important;
+    border-radius: 50%!important;}
 
-.chattabs_ChatTab_1WfqA .UnreadGlow {
+.chattabs_UnreadGlow_30PFd {
   background: none !important;
 }
 
@@ -1150,7 +1153,7 @@ fill: rgb(var(--white)) !important;}
 background: rgb(var(--header_dark)) !important;
 border-bottom: 1px transparent!important;}
 
-.chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps {
+.chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps, .chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_ChatRoom_1AI14 {
 filter: grayscale(100%)!important;
 opacity:.5!important;}
 
@@ -1200,7 +1203,7 @@ color: rgb(var(--offline))!important;}
 z-index: 99 !important;}
 
 /*Unread notification circle in chat context menu*/
-.ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
+.ChatTabsContextMenu.compactView .ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
   right: 0px!important;
   background-color: rgb(var(--focus))!important;}
 
@@ -1295,8 +1298,6 @@ background-color: rgb(var(--focus))!important;}
 /* Hide status line of inactive tabs */
 .chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps .avatarHolder .avatarStatus{
 opacity: 0!important;}
-
-
 
 .speakerHoverArea {
    pointer-events: none;}
@@ -1502,11 +1503,10 @@ min-width: 24px!important;
 margin-top: 7px!important;}
 
 /*Unread messages box at chat tabs*/
-.chattabs_ChatTab_1WfqA .chatTabUnreadBadge {
+.chatTab .chatTabUnreadBadge{
 color: rgb(var(--white))!important;
-background: rgb(var(--focus))!important;}
-
-
+background: rgb(var(--focus))!important;
+}
 
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
 opacity: initial!important;}
@@ -1727,7 +1727,7 @@ stroke: rgb(var(--clientBG))!important;}
 .friendSearchClear .SVGIcon_X_Line line, .chattabs_ChatTab_1WfqA .chatTabClose .SVGIcon_X_Line line{
 stroke: rgb(var(--white))!important;}
 
-.chatTabList .chattabs_Active_3sMSI, .chatRoomGroupHeaderName{
+.chatTabList .chattabs_Active_3sMSI, .chattabs_ChatTabContent_ChatRoomName_2avXT{
 color: rgb(var(--white))!important;}
 
 .changeLog .SVGIcon_Scroll path{
