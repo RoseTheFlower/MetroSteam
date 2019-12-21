@@ -1717,7 +1717,7 @@ border: 1px solid #2a2d33!important;
 background: transparent!important;}
 
 .chattabs_ChatTabContent_Friend_3m7Ps .friend.awayOrSnooze .labelHolder,
-.friend.awayOrSnooze .chattabs_ChatTabContent_Friend_3m7Ps .friend .avatarHolder .avatarStatus, .chattabs_ChatTabContent_Friend_3m7Ps .friend.offline .avatarHolder .avatarStatus, .chattabs_ChatTabContent_Friend_3m7Ps .friend.offline .labelHolder {
+ .chattabs_ChatTabContent_Friend_3m7Ps .friend.awayOrSnooze .avatarHolder .avatarStatus, .chattabs_ChatTabContent_Friend_3m7Ps .friend.offline .avatarHolder .avatarStatus, .chattabs_ChatTabContent_Friend_3m7Ps .friend.offline .labelHolder {
 opacity: .5!important;}
 	
 .friend.awayOrSnooze .playerNameQuickAccessContainer, .friend.awayOrSnooze .labelHolder  {
