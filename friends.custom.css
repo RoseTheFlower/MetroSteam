@@ -1512,7 +1512,7 @@ opacity: initial!important;}
 .quickAccessFriends {
 padding-left: 5px!important;}
 
-.chattabs_CloseButton_SzByZ, .friendSearchClear, .emoticon_EmoticonSelector_Item_3muLb, .emoticon_StickerButton_3O95u{
+.chattabs_CloseButton_SzByZ{
 cursor: default!important;}
 
 .chatTabList .chattabs_ChatTab_1WfqA,
@@ -1778,3 +1778,9 @@ width: 0!important;}
 
 .emoticon_StickerButton_3O95u{
 background:none!important;}
+
+.socialListTab.TabSearchActive {
+padding-left: 12px!important;}
+
+.friendSearchInput[type="text"] {
+background-color: rgb(var(--clientBG))!important;}
