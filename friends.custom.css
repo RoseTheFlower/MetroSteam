@@ -75,8 +75,7 @@ margin-right: 12px!important;
 /* Bottom panel bg*/
 .friendListFooter {
     background-color: rgb(var(--clientBG)) !important;
-	min-height:23px!important;
-	border-top: 1px solid rgb(var(--border))!important;
+	min-height:15px!important;
 }
 
 /* Top Panel Avatar Effect*/
@@ -262,7 +261,7 @@ transform: translateX( 0px ) !important;}
 
 .chattabs_ChatTab_1WfqA .chattabs_ChatTabContent_Friend_3m7Ps, .chattabs_ChatTabContent_ChatRoomName_2avXT{
 opacity: 1!important;
--webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 100%)!important;}
+}
 
 /* Favorites Section avatars */
 .friend.online.quickAccessFriend .avatarHolder .avatarStatus,
@@ -854,9 +853,7 @@ color: rgb(var(--ingame)) !important;}
 .online .personanameandstatus_richPresenceLabel_3Q6g1, .online .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a, .online .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:hover, .online .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:active, .online .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 a:visited {
   color: rgb(var(--online)) !important;}
   
-  .CompactFriendsList .friend .ingame .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 {
-  font-size: 11px !important;
-  }
+
   
 .ingame .personanameandstatus_playerName_1uxaf {
   color: rgb(var(--ingame)) !important; }
@@ -1400,13 +1397,16 @@ height: 32px!important;
 }
 
 .chattabs_ChatTabRow_OdWLp .friend .personanameandstatus_statusAndName_9U-hi {
+margin-top: -1px!important;}
+
+.chattabs_ChatTabRow_OdWLp .friend .ingame .personanameandstatus_statusAndName_9U-hi {
 margin-top: -2px!important;}
 
 .friend .personanameandstatus_statusAndName_9U-hi {
 margin-top: -5px!important;}
 
 .compactView .friend .personanameandstatus_statusAndName_9U-hi {
-margin-top: -2px!important;}
+margin-top: -3px!important;}
 
 .currentUserContainer .personanameandstatus_playerName_1uxaf {
 font-size:14px!important;}
@@ -1439,9 +1439,7 @@ padding:1px!important;}
 .title-area-icon .SVGIcon_Button polyline {
   stroke: rgb(var(--white))!important;}
 
-.ChatTabs {
-padding-left: 1px!important;
-}
+
 
 .singlewindow .currentUserContainer .labelHolder.personanameandstatus_twoLine_2wZNn .personanameandstatus_statusAndName_9U-hi, .singlewindow .currentUserContainer .labelHolder.personanameandstatus_twoLine_2wZNn {
 margin-right: 10px!important;}
@@ -1632,7 +1630,7 @@ border: 1px solid #c9bdf7!important;}
     margin-top: 4px!important;}
 
 .personanameandstatus_richPresenceContainer_21cNf {
-width: 100%!important;}
+width: calc(100% - 20px)!important;}
 	
 .ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName{
 	color: rgb(var(--white))!important;}
@@ -1780,8 +1778,8 @@ padding-left: 12px!important;}
 .friendSearchInput[type="text"] {
 background-color: rgb(var(--clientBG))!important;}
 
-.personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1, .personanameandstatus_compactView_2PCWF .personanameandstatus_playerName_1uxaf, .personanameandstatus_compactView_2PCWF .personanameandstatus_playerNickname_3-32P {
-font-size: 12px!important;}
+.friendlist .personanameandstatus_compactView_2PCWF .personanameandstatus_playerName_1uxaf, .friendlist .personanameandstatus_compactView_2PCWF .personanameandstatus_playerNickname_3-32P {
+font-size: 11px!important;}
 
 .personanameandstatus_statusAndName_9U-hi.personanameandstatus_threeLines_2pPym {
 margin-top: -8px!important;}
@@ -1789,11 +1787,21 @@ margin-top: -8px!important;}
 .compactView .personanameandstatus_statusAndName_9U-hi.personanameandstatus_threeLines_2pPym {
 margin-top: -6px!important;}
 
-.compactView .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1{
-font-size: 11px!important;}
+
 
 .SVGIcon_Button.SVGIcon_CopyToClipboard {
 stroke: rgba(var(--white75));}
 
 .steamavatar_avatarHolder_1G7LI.Medium {
 width: auto!important;}
+
+.chattabs_CloseButton_SzByZ .SVGIcon_X_Line line {
+stroke: rgb(113,113,113);}
+
+.FriendsListChatSection.ChatRoomListContainerParent {
+    border-top: 1px solid rgb(var(--border)) !important;
+}
+
+.friendlistListContainer .friend.ingame .labelHolder {
+	padding-bottom: 2px!important;
+}
