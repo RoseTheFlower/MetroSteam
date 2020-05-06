@@ -347,11 +347,10 @@ background: rgb(var(--clientBG)) !important;}
 color: rgb(var(--focus))!important;}
 
 /* Favorites List Unread Indicator */
-.quickAccessFriends .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
-    left: 2px !important;
+.quickAccessFriends .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle {
     top: -4px !important;
     height: 2px !important;
-    width: 87%!important;
+    width: 100%!important;
 }
 
 .Collapsed .chatSectionTitle .ChatUnreadMessageIndicator .chatUnreadCircle {
@@ -1036,7 +1035,7 @@ border-bottom: 2px solid rgb(var(--ingame)) !important;}
 
 .chattabs_UnreadCircle_2goOD{
 background-color: rgb(var(--focus))!important;
-    border-radius: 50%!important;}
+border-radius: 50%!important;}
 
 .chattabs_UnreadGlow_30PFd {
   background: none !important;
@@ -1147,13 +1146,15 @@ color: rgb(var(--online))!important;}
 	color: rgb(var(--ingame))!important;}
 	
 .inviteButton.inviteButtonJoinVoice {
-background:rgb(53,53,53)!important;
+background: rgb(53,53,53)!important;
 }
 
 .inviteButton.inviteButtonJoinVoice:hover {
   background: rgb(var(--focus))!important;}
+  
 .OneOnOneVoiceRoomControls{
 	background-color: rgb(var(--clientBG))!important;}
+
 .msg.voiceChannelInvite {
 	color: rgba(var(--white50))!important;
 	float: center!important;}
@@ -1455,7 +1456,7 @@ stroke: none!important; }
 
 /*Unread messages count near username in friendslist*/
 .FriendMessageCount {
-  background:  rgb(var(--focus))!important;
+  background: rgb(var(--focus))!important;
   color: rgb(var(--white))!important;
   font-size: 15px!important;
   line-height: 30px!important;
@@ -1608,7 +1609,8 @@ width: calc(100% - 20px)!important;}
 	stroke: rgb(var(--focus))!important;}
 
 .personanameandstatus_playerName_1uxaf {
--webkit-mask: none!important;}
+-webkit-mask: none!important;
+margin-right: -2px!important;}
 
 button.DialogButton::before{
 box-shadow: none!important;}
@@ -1617,7 +1619,7 @@ box-shadow: none!important;}
 	transform: none!important;
 filter: none!important;}
 
-.emoticon_EmoticonSelector_Item_3muLb:hover, .emoticon_StickerButton_3O95u:hover {
+.emoticon_EmoticonSelector_Item_3muLb:hover, .emoticon_StickerButton_3O95u:hover, .emoticon_RoomEffectButton_2ztWU:hover {
 background-color: rgba(var(--white05))!important;}
 
 .ChatMessageBlockDelete{
@@ -1739,7 +1741,7 @@ margin-top: 2px!important;}
 .chattabs_ChatTab_1WfqA:before, .chattabs_ChatTab_1WfqA:last-of-type:after{
 width: 0!important;}
 
-.emoticon_StickerButton_3O95u{
+.emoticon_StickerButton_3O95u, .emoticon_RoomEffectButton_2ztWU {
 background:none!important;}
 
 .socialListTab.TabSearchActive {
