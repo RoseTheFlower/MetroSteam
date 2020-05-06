@@ -1370,9 +1370,12 @@ transform: scale(1, 1) translateX(0px)!important;}
   height: 24px!important;
   width: 24px!important;
 }
+
 .steamavatar_avatar_f2laR {
 	border: none!important;
-	height: 100%!important;}
+	height: 100%!important;
+	width: 100%!important;
+}
 	
 .miniprofile_miniProfileContent_25Sge .miniprofile_playerAvatar_1dzWG {
 	padding-bottom: 2px !important;}
@@ -1391,7 +1394,7 @@ margin-top: 4px!important;}
 	padding-left: 14px!important;
 	padding-top: 12px!important;}
 
-.currentUserAvatar {
+.currentUserAvatar img.avatar, .currentUserAvatar .avatarHolder {
 	width:32px!important;
 height: 32px!important;
 }
