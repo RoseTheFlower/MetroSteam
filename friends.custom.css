@@ -347,10 +347,17 @@ background: rgb(var(--clientBG)) !important;}
 color: rgb(var(--focus))!important;}
 
 /* Favorites List Unread Indicator */
-.quickAccessFriends .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle {
+.quickAccessFriends.compactQuickAccess .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
     top: -4px !important;
     height: 2px !important;
     width: 100%!important;
+}
+
+.quickAccessFriends:not(.compactQuickAccess) .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
+    left: 3px !important;
+    top: -4px !important;
+    height: 2px !important;
+    width: calc(100% - 6px)!important;
 }
 
 .Collapsed .chatSectionTitle .ChatUnreadMessageIndicator .chatUnreadCircle {
