@@ -639,6 +639,12 @@ height: 0!important;}
 background-color: transparent!important;
 color: rgb(140,140,140)!important;
 }
+
+.MemberListColumn.MemberListViewCompact ::-webkit-scrollbar {
+    /* Don't show the scrollbar in compact mode (but container remains scrollable) */
+    width: 0 !important;
+    background: transparent !important; }
+
 /* scroll bar*/
 ::-webkit-scrollbar{
 	width: var(--scrollbarSize) !important;
@@ -1764,6 +1770,3 @@ stroke: rgb(113,113,113);}
 
 .FriendPicker .personanameandstatus_compactView_2PCWF .personanameandstatus_richPresenceLabel_3Q6g1 {
 margin-top: 5px!important;}
-
-.MemberListColumn.MemberListViewCompact {
-width: 50px!important;}
