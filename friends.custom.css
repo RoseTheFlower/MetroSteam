@@ -1313,6 +1313,11 @@ filter:opacity(0)!important;}
 .msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ {
 background: rgba(0,0,0,.45)!important;}
 
+.BBCodeCollapsed, .BBCodeCollapsed:hover {
+background-color: rgba(0,0,0,.45)!important;}
+
+.bbcode_ChatMessageTweet_1R69m {
+color: rgb(var(--white75))!important;}
 
 .OpenGraphImgBackground .ChatMessageOpenGraph_Image {
 display:none!important;}
@@ -1353,9 +1358,10 @@ padding-left: 15px!important;
 letter-spacing: 1px!important;}	
 
 .friendlistListContainer .friend .avatarHolder {
-	width: 32px!important;
-height: 32px!important;
-transform: scale(1, 1) translateX(0px)!important;}
+width: 34px!important;
+height: 34px!important;
+transform: scale(1, 1) translateX(0px)!important;
+padding-right: 0px!important;}
 
 .CompactFriendsList .SteamPlayerGroupFooter .SteamPlayerGroupFooterCount,
 .CompactFriendsList .friend .avatarHolder {
@@ -1617,7 +1623,7 @@ width: calc(100% - 20px)!important;}
 
 .personanameandstatus_playerName_1uxaf {
 -webkit-mask: none!important;
-margin-right: -2px!important;}
+}
 
 button.DialogButton::before{
 box-shadow: none!important;}
