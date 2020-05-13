@@ -224,21 +224,24 @@ color: rgb(var(--online))!important;}
 .avatarHolder .avatarStatus {
 display: none !important;}
 
-.friend.offline .steamavatar_avatar_f2laR {
+.miniprofile_miniProfileContent_25Sge .miniprofile_playerAvatar_1dzWG .steamavatar_avatar_f2laR {
+border: none !important;}
+
+.offline .steamavatar_avatar_f2laR {
 border: 1px solid rgb(var(--offline))!important;
 }
 
-.friend.online .steamavatar_avatar_f2laR {
+.online .steamavatar_avatar_f2laR {
 border: 1px solid rgb(var(--online))!important;
 }
 
-.friend.ingame .steamavatar_avatar_f2laR {
+.ingame .steamavatar_avatar_f2laR {
 border: 1px solid rgb(var(--ingame))!important;}
 
-.friend.watchingbroadcast .steamavatar_avatar_f2laR {
+.watchingbroadcast .steamavatar_avatar_f2laR {
 border: 1px solid #c9bdf7!important;}
 
-.friend.golden .steamavatar_avatar_f2laR {
+.golden .steamavatar_avatar_f2laR {
 border: 1px solid rgb(213, 191, 106)!important;}
 }
 
@@ -1383,11 +1386,11 @@ margin-right: 15px!important;
 margin-top: 4px!important;}
 
 .AvatarAndUser {
-	padding-left: 14px!important;
+	padding-left: 15px!important;
 	padding-top: 12px!important;}
 
 .currentUserAvatar img.avatar, .currentUserAvatar .avatarHolder {
-	width:32px!important;
+width: 32px!important;
 height: 32px!important;
 }
 
@@ -1407,8 +1410,7 @@ margin-top: -3px!important;}
 font-size:14px!important;}
 
 .friendlist .labelHolder{
-margin-left: 10px!important;}
-
+margin-left: 9px!important;}
 
 .miniprofile_miniProfileContent_25Sge .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
 margin-bottom: -4px!important;}
@@ -1645,11 +1647,15 @@ top: 25px!important;}
   .chatTabSelector.UnreadMessages .ChatUnreadMessageIndicator{
   width:5px!important;}
   
-  .personanameandstatus_playerName_1uxaf, .personanameandstatus_playerNickname_3-32P{
+.personanameandstatus_playerName_1uxaf, .personanameandstatus_playerNickname_3-32P{
   font-size: 13px!important;}
   
-  .personanameandstatus_richPresenceLabel_3Q6g1 {
-  -webkit-mask: linear-gradient(to right, black 99%, rgba(0, 0, 0, 0) 100%)!important; }
+.friendlist .personanameandstatus_richPresenceLabel_3Q6g1 {
+-webkit-mask: linear-gradient(to right, black calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px))!important;
+}
+
+.personanameandstatus_richPresenceLabel_3Q6g1 {
+-webkit-mask: linear-gradient(to right, black 98%, rgba(0, 0, 0, 0) 98%)!important; }
  
 .contextMenuGameItem {
   -webkit-mask: linear-gradient(to right, black 100%, rgba(0, 0, 0, 0) 100%)!important;}
@@ -1788,3 +1794,8 @@ stroke: rgb(113,113,113);}
 
 .FriendPicker .personanameandstatus_compactView_2PCWF .personanameandstatus_richPresenceLabel_3Q6g1 {
 margin-top: 5px!important;}
+
+.currentUserAvatar {
+width: 34px!important;
+height: 34px!important;
+}
