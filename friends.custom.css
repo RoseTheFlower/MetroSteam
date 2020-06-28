@@ -381,7 +381,7 @@ background-color: transparent!important;}
     background: rgb(var(--clientBG)) !important; /*rgba(var(--white05))*/
     margin-right: 1px!important;
 	border: 0!important;
-	/*border-bottom: 1px solid #0072c6 !important;*/
+	/*border-bottom: 1px solid rgb(var(--focus)) !important;*/
 }
 
 .chattabs_ChatTab_1WfqA {
@@ -973,8 +973,6 @@ transform: none !important;
   filter: none !important;
 }
 
-.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfileHeader_3oBIW {
-background: rgb(var(--clientBG)) !important;}
 .miniprofile_miniProfileBackground_3gfFJ {
   background: rgb(var(--clientBG)) !important;}
 .miniprofile_miniProfileBackgroundBlur_G000o {
@@ -1241,7 +1239,7 @@ width: 0.5px!important;}
 		color: rgb(var(--ingame))!important;}
 
 .chattabs_ChatTabContent_Friend_3m7Ps .friend.offline .avatarHolder, .chattabs_ChatTabContent_Friend_3m7Ps .friend.awayOrSnooze .avatarHolder {
-filter: brightness(60%) saturate(50%)!important; }
+filter: brightness(60%)!important; }
 
 .friend.offline .avatarHolder img.avatar {
 filter: none!important;}
