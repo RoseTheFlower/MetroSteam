@@ -1793,7 +1793,7 @@ stroke: rgb(113,113,113);}
 .FriendPicker .personanameandstatus_compactView_2PCWF .personanameandstatus_richPresenceLabel_3Q6g1 {
 margin-top: 5px!important;}
 
-.currentUserAvatar {
+.currentUserAvatar, .currentUserAvatar .avatarFrame {
 width: 34px!important;
 height: 34px!important;
 }
