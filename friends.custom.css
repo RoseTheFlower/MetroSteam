@@ -249,9 +249,6 @@ border: 1px solid rgb(213, 191, 106)!important;}
 opacity: 1!important;
 }
 
-.CompactFriendsList .friend .avatarHolder img.avatar {
-height: calc( 100% - 2px)!important;}
-
 /* Icons on the friends panel */
 .friendRequestButton .SVGIcon_FriendRequest .friendBodyFull, 
 .friendRequestButton .SVGIcon_FriendRequest .friendHead, 
@@ -1369,6 +1366,9 @@ padding-right: 0px!important;}
   height: 24px!important;
   width: 24px!important;
 }
+
+.CompactFriendsList .friend .avatarHolder {
+padding-right: 2px!important;}
 
 /* Miniprofile avatar */
 .miniprofile_miniProfileContent_25Sge .miniprofile_playerAvatar_1dzWG {
