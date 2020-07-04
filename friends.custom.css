@@ -1278,8 +1278,11 @@ height: 1px!important;
 background-color: rgb(var(--focus))!important;}
 
 /* Hide status line of inactive tabs */
-.chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps .avatarHolder .avatarStatus{
-opacity: 0!important;}
+.chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps .avatarHolder .avatarStatus, .chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps .steamavatar_avatarFrame_1wl8m{
+opacity: 0!important;
+}
+.chattabs_ChatTab_1WfqA:not(.chattabs_Active_3sMSI) .chattabs_ChatTabContent_Friend_3m7Ps .steamavatar_avatar_f2laR{
+border: 1px solid transparent !important;}
 
 .speakerHoverArea {
    pointer-events: none;}
