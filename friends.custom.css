@@ -1503,9 +1503,11 @@ padding-left: 5px!important;}
 .chattabs_CloseButton_SzByZ{
 cursor: default!important;}
 
-.chatTabList .chattabs_ChatTab_1WfqA,
-.ChatTabsBackButton {
+.chatTabList .chattabs_ChatTab_1WfqA, .ChatTabsBackButton {
 width: 170px!important;}
+
+.compactView .steamavatar_avatarHolder_1G7LI .steamavatar_avatarFrame_1wl8m {
+transform: scale(1.16)!important;}
 
 .inviteAnotherFriendButton .SVGIcon_Button{
 fill: rgb(var(--white))!important;
