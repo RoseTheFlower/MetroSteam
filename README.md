@@ -5,7 +5,7 @@ My quest was to make the new windows look as close as possible to those of [the 
 
 ## Installation
 ### Windows
-* [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher to allow for customization.
+* [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher or its [older version](https://github.com/PhantomGamers/EnableNewSteamFriendsSkin/releases) to allow for customization
 * Save the [.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
 * Launch the patcher and wait for it to apply the changes.
 * Close and open the chat and friends windows if necessary.
