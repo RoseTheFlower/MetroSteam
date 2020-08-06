@@ -421,6 +421,7 @@ outline: 0px solid transparent !important; }
   margin-bottom: 2px!important;
   min-width: 32px!important; 
   min-height: 35px!important;
+  cursor: default!important;
 }
 
 .chatWindow .chatEntry > .compactableHeight {
@@ -442,7 +443,7 @@ outline: 0px solid transparent !important; }
   width: 20px!important; 
   height: 20px!important; 
   margin-top: 5px!important;
-     margin-bottom: 2px!important; }
+  margin-bottom: 2px!important; }
 
 .chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip {
   width: 20px!important; 
@@ -1634,7 +1635,7 @@ button.DialogButton::before{
 box-shadow: none!important;}
 
 .emoticon_EmoticonSelector_Item_3muLb:hover .emoticon_emoticon_9hYGN.emoticon_large_p8Q42 {
-	transform: none!important;
+transform: none!important;
 filter: none!important;}
 
 .emoticon_EmoticonSelector_Item_3muLb:hover, .emoticon_StickerButton_3O95u:hover, .emoticon_RoomEffectButton_2ztWU:hover {
@@ -1673,7 +1674,7 @@ border-left: 1px solid rgb(var(--border))!important;}
 border-bottom: 1px solid rgb(var(--border))!important;}
 
 img.emoticon_emoticon_9hYGN.emoticon_large_p8Q42{
-	 margin-top: 0px!important;
+	margin-top: 0px!important;
 	margin-bottom: 0px!important; }
 	
 .friend .watchingbroadcast .personanameandstatus_statusAndName_9U-hi {
@@ -1802,3 +1803,39 @@ margin-top: 5px!important;}
 width: 34px!important;
 height: 34px!important;
 }
+
+/* .addonpicker_ItemList_275Oe .addonpicker_Item_34KHH, */
+.addonpicker_Tab_10fDn, .addonpicker_ItemList_275Oe {
+cursor: default!important;}
+
+.addonpicker_Tab_10fDn.addonpicker_Active_2J8Y1 {
+border-bottom: 4px solid rgb(var(--focus)) !important;}
+
+.addonpicker_Tab_10fDn:hover:not(.addonpicker_Active_2J8Y1) {
+background-color: rgba(var(--white05)) !important;
+border-bottom: 4px solid transparent!important;}
+
+/*emoticon code popup*/
+.emoticon_EmoticonHover_1ME8O {
+background-color: rgba(var(--scrollbarBG)) !important;}
+
+.emoticon_hover_title, .addonpicker_SectionedPageTitle_3rqU_, .addonpicker_SectionTitle_1YfVL {
+  color: rgb(var(--offline))!important;}
+  
+.emoticon_PickerTab_1tnGG svg.SVGIcon_Button {
+  width: 20px!important;
+  height: 20px!important;
+  stroke: rgb(var(--white:))!important;}
+  
+.emoticon_PickerTab_1tnGG.emoticon_Clock_340rx svg.SVGIcon_Button.SVGIcon_Clock {
+    width: 15px!important;
+    height: 15px!important;
+    padding-top: 3px!important;
+	padding-right: 3px!important;}
+  
+.addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:hover, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:focus {
+background-color: rgb(var(--textentry))!important;}
+
+.addonpicker_Tabs_1WUqY {
+	background-color: rgb(var(--header_dark))!important;
+	border-bottom: 1px solid rgb(var(--border))!important;}
