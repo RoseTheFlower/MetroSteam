@@ -439,7 +439,7 @@ outline: 0px solid transparent !important; }
 .chatEntry .activeVoiceFlexBox {
   height: 28px!important; }
 
-.SVGIcon_Submit, .SVGIcon_Emoticon {
+.SVGIcon_Submit, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon {
   width: 20px!important; 
   height: 20px!important; 
   margin-top: 5px!important;
@@ -448,8 +448,8 @@ outline: 0px solid transparent !important; }
 .chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip {
   width: 20px!important; 
   height: 20px!important; 
-   margin-top: 4px!important; 
-   margin-bottom: 2px!important; }
+  margin-top: 4px!important; 
+  margin-bottom: 2px!important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
   max-width: 28px!important;
@@ -1825,13 +1825,15 @@ background-color: rgba(var(--scrollbarBG)) !important;}
 .emoticon_PickerTab_1tnGG svg.SVGIcon_Button {
   width: 20px!important;
   height: 20px!important;
-  stroke: rgb(var(--white:))!important;}
-  
+  stroke: rgb(var(--white))!important;
+  padding-top: 4px!important;
+}
+
 .emoticon_PickerTab_1tnGG.emoticon_Clock_340rx svg.SVGIcon_Button.SVGIcon_Clock {
     width: 15px!important;
     height: 15px!important;
-    padding-top: 3px!important;
-	padding-right: 3px!important;}
+	padding-right: 3px!important;
+	stroke: none!important;}
   
 .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:hover, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:focus {
 background-color: rgb(var(--textentry))!important;}
