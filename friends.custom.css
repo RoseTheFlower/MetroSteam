@@ -729,7 +729,7 @@ border: 1px solid rgb(var(--border))!important;}
 /* friend search input box */
 .friendSearchInput[type="text"]:focus, 
 .friendSearchInput[type="text"] {
-	background-color: rgb(var(--header_dark)) !important;}
+	background-color: rgb(var(--clientBG)) !important;}
 /* Random stuff from groups area on friends list */
 .chatRoomVoiceChannel.ActiveVoiceChannel {
     background-color: #191b1b !important;
@@ -1250,7 +1250,10 @@ color: #8d8d8d!important;}
 padding-left: 10px!important;}
 
 .MultiUserChat .msg {
-padding: 1.2px 0!important;}
+padding: 1.8px 0!important;}
+
+.msg {
+line-height: 20px!important;}
 
 .ChatRoomSpeaker {
 padding-top: 0px!important;
@@ -1417,8 +1420,12 @@ margin-left: 9px!important;}
 .miniprofile_miniProfileContent_25Sge .miniprofile_avatarStatus_23H45.miniprofile_miniProfileAvatarStatus_1VgK8 {
 margin-bottom: -4px!important;}
 
-.title-area-icon{
-padding:3px!important;}
+.title-area-icon {
+padding:3px!important;
+margin-top: 0px!important;}
+
+.title-area .title-bar-actions {
+right: 0px!important;}
 
 /*Gray hover color for every title bar button
 .title-area-icon:hover{
@@ -1562,6 +1569,9 @@ border: 2px dashed rgba(var(--focus), 0.4)!important;}
 .playerNicknameBracket {
 color: rgba(var(--white75))!important;}
 
+.ChatRoomSpeaker .speaker .speakerName {
+margin-top: 3px;!important;}
+
 /* Status line for avatars in chat tabs*/
 .chattabs_ChatTab_1WfqA .ChatTabContent .avatarHolder .avatarStatus{
 	z-index: 3 !important;
@@ -1652,7 +1662,8 @@ top: 25px!important;}
   width:5px!important;}
   
 .personanameandstatus_playerName_1uxaf, .personanameandstatus_playerNickname_3-32P{
-  font-size: 13px!important;}
+  font-size: 13px!important;
+  text-overflow: ellipsis!important;}
   
 .friendlist .personanameandstatus_richPresenceLabel_3Q6g1 {
 -webkit-mask: linear-gradient(to right, black calc(100% - 10px), rgba(0, 0, 0, 0) calc(100% - 10px))!important;
@@ -1730,7 +1741,11 @@ right: 9px!important;}
   background-color: rgba(var(--white05)) !important;}
   
 .currentUserContainer .personanameandstatus_statusAndName_9U-hi {
-margin-right: 55px!important;}
+margin-right: 55px!important;
+-webkit-app-region: drag!important;}
+
+.currentUserContainer .personanameandstatus_playerName_1uxaf {
+-webkit-app-region: drag!important;}
 
 .compactQuickAccess .friend.quickAccessFriend .avatarHolder .avatar, .friend.quickAccessFriend .avatarHolder .avatar {
 height:auto!important;}
@@ -1768,10 +1783,9 @@ width: 0!important;}
 background:none!important;}
 
 .socialListTab.TabSearchActive {
-padding-left: 12px!important;}
-
-.friendSearchInput[type="text"] {
-background-color: rgb(var(--clientBG))!important;}
+padding-left: 12px!important;
+background-color: rgb(var(--textentry)) !important;
+}
 
 .friendlist .friend .personanameandstatus_compactView_2PCWF .personanameandstatus_playerName_1uxaf, .friendlist .friend .personanameandstatus_compactView_2PCWF .personanameandstatus_playerNickname_3-32P, .friendlist .ingame .personanameandstatus_compactView_2PCWF .personanameandstatus_gameName_qvibF.personanameandstatus_richPresenceLabel_3Q6g1 {
 font-size: 11px!important;}
