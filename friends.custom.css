@@ -1836,7 +1836,7 @@ background-color: rgba(var(--scrollbarBG)) !important;}
 .emoticon_hover_title, .addonpicker_SectionedPageTitle_3rqU_, .addonpicker_SectionTitle_1YfVL {
   color: rgb(var(--offline))!important;}
   
-.emoticon_PickerTab_1tnGG svg.SVGIcon_Button {
+.emoticon_PickerTab_1tnGG svg {
   width: 20px!important;
   height: 20px!important;
   stroke: rgb(var(--white))!important;
@@ -1855,3 +1855,6 @@ background-color: rgb(var(--textentry))!important;}
 .addonpicker_Tabs_1WUqY {
 	background-color: rgb(var(--header_dark))!important;
 	border-bottom: 1px solid rgb(var(--border))!important;}
+	
+.title-area-icon .SVGIcon_Maximize, .title-area-icon .SVGIcon_Minimize {
+margin-left: 5px!important;}
