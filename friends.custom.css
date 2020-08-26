@@ -1807,7 +1807,7 @@ stroke: rgb(113,113,113);}
 }
 
 .friendlistListContainer .friend.ingame .labelHolder {
-	padding-bottom: 2px!important;
+padding-bottom: 2px!important;
 }
 
 .FriendPicker .personanameandstatus_compactView_2PCWF .personanameandstatus_richPresenceLabel_3Q6g1 {
@@ -1829,6 +1829,9 @@ border-bottom: 4px solid rgb(var(--focus)) !important;}
 background-color: rgba(var(--white05)) !important;
 border-bottom: 4px solid transparent!important;}
 
+.addonpicker_Tab_10fDn .addonpicker_TabContent_1oDFo:hover:not(.addonpicker_Active_2J8Y1) {
+background-color: transparent !important;}
+
 /*emoticon code popup*/
 .emoticon_EmoticonHover_1ME8O {
 background-color: rgba(var(--scrollbarBG)) !important;}
@@ -1844,9 +1847,9 @@ background-color: rgba(var(--scrollbarBG)) !important;}
 }
 
 .emoticon_PickerTab_1tnGG.emoticon_Clock_340rx svg.SVGIcon_Button.SVGIcon_Clock {
-    width: 15px!important;
-    height: 15px!important;
-	padding-right: 3px!important;
+    width: 18px!important;
+    height: 18px!important;
+	padding-right: 0.5px!important;
 	stroke: none!important;}
   
 .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:hover, .addonpicker_FilterInputContainer_1RAg8 .addonpicker_FilterInput_2tfTm:focus {
