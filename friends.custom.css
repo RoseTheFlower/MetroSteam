@@ -900,6 +900,7 @@ background-image: none !important;
   padding-right: 0px !important; }
 .OneOnOneVoiceClose {
   background-color: rgb(var(--textentry)) !important;
+  
   z-index: 200!important;
 }
 /*emoticons and attachments area*/
@@ -1861,3 +1862,6 @@ background-color: rgb(var(--textentry))!important;}
 	
 .title-area-icon .SVGIcon_Maximize, .title-area-icon .SVGIcon_Minimize {
 margin-left: 5px!important;}
+
+.msg.EmojiOnly {
+    line-height: 32px!important;}
