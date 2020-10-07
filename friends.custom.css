@@ -1114,7 +1114,7 @@ font-size: 12px !important;
 background: rgb(var(--focus)) !important;}
 
 /*URLs*/
-.msg a {
+.msg a, .bbcode_ChatMessageSteamStore_Name_2-b92 {
 color: rgba(var(--white75))!important;
 text-decoration: underline !important;
 border-bottom: none!important;
@@ -1123,7 +1123,7 @@ border-bottom: none!important;
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
 color: rgba(var(--white75))!important;}
 
-.msg a:hover {
+.msg a:hover, .bbcode_ChatMessageSteamStore_Name_2-b92:hover {
 color: !important;
 border-bottom: none!important;
 filter: brightness(.9)!important;}
@@ -1323,13 +1323,16 @@ color: gray!important;}
 filter:opacity(0)!important;}
 
 /*Embedded elements*/
-.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ, .bbcode_ChatMessageSteamStore_Header_3X7hC {
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ {
 background: rgba(0,0,0,.45)!important;}
+
+.bbcode_ChatMessageSteamStore_Header_3X7hC {
+background: none!important;}
 
 .BBCodeCollapsed, .BBCodeCollapsed:hover {
 background-color: rgba(0,0,0,.45)!important;}
 
-.bbcode_ChatMessageTweet_1R69m, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ, .bbcode_ChatMessageSteamStore_Name_2-b92 {
+.bbcode_ChatMessageTweet_1R69m, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ {
 color: rgb(var(--white75))!important;}
 
 .OpenGraphImgBackground .ChatMessageOpenGraph_Image {
@@ -1872,3 +1875,9 @@ margin-left: 5px!important;}
 
 .msg.EmojiOnly {
     line-height: 32px!important;}
+	
+.bbcode_ChatMessageSteamStore_HeaderImage_2s811.bbcode_Blurred_3BKMl {
+filter: opacity(0);}
+
+.YoutubePlayer {
+background-color: none!important;}
