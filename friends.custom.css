@@ -551,8 +551,14 @@ button.DialogButton.roleButton.owner:disabled {
 ._DialogInputContainer .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu{
 	fill: rgba(var(--white75)) !important;
 }
-._DialogInputContainer{
-color: rgb(140,140,140)!important;}
+
+.DialogBody a {
+color: rgb(140,140,140)!important;
+text-decoration: underline !important;}
+
+.DialogBody a:hover {
+color: rgba(var(--white75))!important;
+}
 
 ._DialogTextInputBase, ._DialogInputContainer{
 background: rgb(var(--clientBG))!important;}
@@ -594,14 +600,14 @@ button.DialogButton,
 }
 
 .DialogLabel, 
-.DialogLabelStrong{
+.DialogLabelStrong, ._DialogInputContainer{
 	color: rgb(140,140,140) !important;
 }
 .DialogCheckbox_Container{
 	padding: 0 !important;
 }
 
-._DialogLayout:not(.DialogButton):not(.DialogContent) {
+._DialogLayout:not(.DialogButton):not(.DialogContent), .radio_Group_1Ma_m {
 	background: none !important;
 }
 
@@ -633,6 +639,7 @@ cursor: initial!important;}
 
 .PagedSettingsDialog_PageListItem.Active{
 background-color:rgb(76,76,76)!important;}
+
 .PagedSettingsDialog_PageListItem:not(.Active):hover{
 color:#969696!important;}
 
@@ -1206,9 +1213,9 @@ background-color: rgba(var(--white05)) !important;
 .ContextMenuButton{
 cursor: default!important;}
 
-button.DialogButton{
+button.DialogButton {
 color: rgb(var(--white))!important;
-  background: rgba(255,255,255,0.12)!important;}
+background: rgba(255,255,255,0.12)!important;}
  
 .voiceMicTestContainer{
 padding: 0!important;
@@ -1316,13 +1323,13 @@ color: gray!important;}
 filter:opacity(0)!important;}
 
 /*Embedded elements*/
-.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ {
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile, .BBCodeYouTubeComponent, .bbcode_ChatMessageTweet_1R69m, .BBCodeOEmbedComponent, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ, .bbcode_ChatMessageSteamStore_Header_3X7hC {
 background: rgba(0,0,0,.45)!important;}
 
 .BBCodeCollapsed, .BBCodeCollapsed:hover {
 background-color: rgba(0,0,0,.45)!important;}
 
-.bbcode_ChatMessageTweet_1R69m {
+.bbcode_ChatMessageTweet_1R69m, .bbcode_ChatMessageSteamStore_Failed_2wa0X, .bbcode_ChatMessageSteamStore_gwzSZ, .bbcode_ChatMessageSteamStore_Name_2-b92 {
 color: rgb(var(--white75))!important;}
 
 .OpenGraphImgBackground .ChatMessageOpenGraph_Image {
