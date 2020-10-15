@@ -1123,7 +1123,7 @@ border-bottom: none!important;
 .msg .OpenGraphMessageURL, .OpenGraphMessageURL_full{
 color: rgba(var(--white75))!important;}
 
-.msg a:hover, .bbcode_ChatMessageSteamStore_Name_2-b92:hover {
+.msg a:hover, .bbcode_ChatMessageSteamStore_Name_2-b92:hover, .BBCodeTitle:hover {
 color: !important;
 border-bottom: none!important;
 filter: brightness(.9)!important;}
@@ -1845,7 +1845,9 @@ background-color: transparent !important;}
 
 /*emoticon code popup*/
 .emoticon_EmoticonHover_1ME8O {
-background-color: rgba(var(--scrollbarBG)) !important;}
+background-color: rgba(var(--scrollbarBG)) !important;
+border: 1px solid rgb(var(--border));
+}
 
 .emoticon_hover_title, .addonpicker_SectionedPageTitle_3rqU_, .addonpicker_SectionTitle_1YfVL {
   color: rgb(var(--offline))!important;}
