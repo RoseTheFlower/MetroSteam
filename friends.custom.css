@@ -1,5 +1,6 @@
 :root{
-  --focus: 0, 114, 198; /*default blue accent*/
+  --focus: 102, 36, 226; /* Default Metro skin purple accent */
+  /* 0, 114, 198; /* Blue accent option */
   --clientBG: 26, 26, 26;
   --header_dark: 20, 20, 20;
   --online: 93, 178, 255;
@@ -14,7 +15,7 @@
   --white50: 255,255,255,.5;
   --white75: 255,255,255,.75;
   --white: 255, 255, 255;
-  --border: 15,15,15;
+  --border: 15, 15, 15;
   --textentrybuttons: 200, 200, 200;
 }
 
@@ -525,6 +526,19 @@ outline: 0px solid transparent !important; }
 button.DialogButton:not(.Off) {
 	background: rgb(var(--focus)) !important;
 }
+.radio_Button_3aFxE.radio_Active_3w-nK, .radio_Button_3aFxE.radio_Active_3w-nK:hover {
+background-color: rgb(var(--focus));
+}
+
+.toggle_Toggle_3RkmL .toggle_ToggleSwitch_3Ac8T.toggle_On_2xdfY {
+background-color: rgb(var(--focus));
+background-image: none;
+}
+
+.toggle_Toggle_3RkmL .toggle_ToggleRail_9iU2T.toggle_Highlight_2DAMR {
+background-color: rgba(var(--focus), .3);
+}
+
 button.DialogButton:hover {
     background: rgb(81,81,81) !important;
 }
