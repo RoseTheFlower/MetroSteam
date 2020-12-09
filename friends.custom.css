@@ -1,6 +1,8 @@
 :root{
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
+  --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
+  --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
   --clientBG: 26, 26, 26;
   --header_dark: 20, 20, 20;
   --online: 93, 178, 255;
@@ -39,7 +41,7 @@
 --textentrybuttons: 35,50,50;
 */
 
-/* remove animations, round corners and delays */
+/* Remove animations, round corners and delays */
 *{
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -1457,10 +1459,16 @@ right: 0px!important;}
 background: rgba(var(--white05))!important;}*/
 
 .minimizeButton:hover, .maximizeButton:hover, .restoreButton:hover {
-	background: rgba(var(--white05))!important;}
+background: rgba(var(--white05))!important;}
+	
+.minimizeButton:active, .maximizeButton:active, .restoreButton:active {
+background: rgba(var(--white10))!important;}
 	
 .closeButton:not(.chattabs_CloseButton_SzByZ):hover {
-background: rgb(232,18,35)!important;}
+background: rgb(var(--W10close_Red_h))!important;}
+
+.closeButton:not(.chattabs_CloseButton_SzByZ):active {
+background: rgb(var(--W10close_Red_p))!important;}
 
 .multiChatDialog .title-area-icon {
 padding:1px!important;}
