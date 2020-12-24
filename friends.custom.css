@@ -1313,7 +1313,7 @@ opacity: 0!important;
 border: 1px solid transparent !important;}
 
 .speakerHoverArea {
-   pointer-events: none;}
+pointer-events: none!important;}
   
 .NonInlinedEmbed .SVGIcon_Hyperlink {
 display:none!important;}
@@ -1554,7 +1554,7 @@ transform: scale(1.16)!important;}
 fill: rgb(var(--white))!important;
 opacity:.4!important;}
 .inviteAnotherFriendButton .SVGIcon_Button line, .chatRoomButton .SVGIcon_Button line{
-	stroke: rgb(var(--white))!important;}
+stroke: rgb(var(--white))!important;}
 .inviteAnotherFriendButton:hover{
 background: rgba(var(--white05))!important;
 cursor: initial!important;}
@@ -1603,7 +1603,7 @@ border: 2px dashed rgba(var(--focus), 0.4)!important;}
 color: rgba(var(--white75))!important;}
 
 .ChatRoomSpeaker .speaker .speakerName {
-margin-top: 3px;!important;}
+margin-top: 3px!important;}
 
 /* Status line for avatars in chat tabs*/
 .chattabs_ChatTab_1WfqA .ChatTabContent .avatarHolder .avatarStatus{
@@ -1865,8 +1865,8 @@ border-bottom: 4px solid transparent!important;}
 .addonpicker_Tab_10fDn .addonpicker_TabContent_1oDFo:hover:not(.addonpicker_Active_2J8Y1) {
 background-color: transparent !important;}
 
-/*emoticon code popup*/
-.emoticon_EmoticonHover_1ME8O {
+/*emoticon and reactions code popup*/
+.emoticon_EmoticonHover_1ME8O, .reactions_ReactionHover_2XIL3 {
 background-color: rgba(var(--scrollbarBG)) !important;
 border: 1px solid rgb(var(--border));
 }
@@ -1908,3 +1908,39 @@ filter: opacity(0);}
 
 .YoutubePlayer {
 background-color: transparent!important;}
+
+.messages_MsgWithAddons_lFLbk:hover, .reactions_MessageReaction__flBU:hover {
+background-color:rgb(var(--white05)) !important;}
+
+.reactions_ReactionCount_yvUrJ {
+margin-top: 2px;
+color: rgba(var(--white75))!important;}
+
+.reactions_MessageReaction__flBU {
+border: none;
+background-color: transparent;
+cursor: initial;}
+
+.messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ {
+background-color: rgb(var(--clientBG)) !important;
+border-radius: 50%!important;}
+
+.reactions_OpenPickerButton_1FQhN.reactions_AddReactionIcon_2UK4J path, .messages_MsgWithAddons_lFLbk {
+stroke: rgb(var(--white))!important;}
+.reactions_OpenPickerButton_1FQhN.reactions_AddReactionIcon_2UK4J ellipse {
+fill: rgb(var(--white))!important;}
+
+.reactions_AddReactionIcon_2UK4J {
+cursor: initial;}
+
+.messages_Addons_1aOXJ .messages_Emoticon_ysEyj, .messages_Addons_1aOXJ .messages_Emoticon_ysEyj path {
+stroke: rgb(var(--white))!important;}
+
+.messages_Addons_1aOXJ .messages_Emoticon_ysEyj ellipse {
+fill: rgb(var(--white))!important;}
+
+.messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ .messages_Emoticon_ysEyj {
+cursor: initial;}
+
+.reactions_OpenPickerButton_1FQhN {
+opacity:.4;}
