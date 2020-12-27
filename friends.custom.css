@@ -910,6 +910,7 @@ background-image: none !important;
 
 .inviteAnotherFriendButton {
   background: transparent !important;
+  cursor: initial!important;
 }
 .inviteAnotherFriendButton:hover .invitePlus,
 .chatRoomButton:hover:not(.Disabled) .invitePlus {
@@ -1553,11 +1554,12 @@ transform: scale(1.16)!important;}
 .inviteAnotherFriendButton .SVGIcon_Button{
 fill: rgb(var(--white))!important;
 opacity:.4!important;}
+
 .inviteAnotherFriendButton .SVGIcon_Button line, .chatRoomButton .SVGIcon_Button line{
 stroke: rgb(var(--white))!important;}
+
 .inviteAnotherFriendButton:hover{
-background: rgba(var(--white05))!important;
-cursor: initial!important;}
+background: rgba(var(--white05))!important;}
 
 .chatRoomButton .SVGIcon_Button{
 fill: rgb(var(--white))!important;}
@@ -1917,9 +1919,11 @@ margin-top: 2px;
 color: rgba(var(--white75))!important;}
 
 .reactions_MessageReaction__flBU {
-border: none;
+border-radius: 4px!important;
 background-color: transparent;
-cursor: initial;}
+cursor: initial;
+border: none;
+}
 
 .messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ {
 background-color: rgb(var(--clientBG)) !important;
