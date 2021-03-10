@@ -911,6 +911,7 @@ background-image: none !important;
 .inviteAnotherFriendButton {
   background: transparent !important;
   cursor: initial!important;
+  border-radius: 50%!important;
 }
 .inviteAnotherFriendButton:hover .invitePlus,
 .chatRoomButton:hover:not(.Disabled) .invitePlus {
@@ -1857,6 +1858,9 @@ height: 34px!important;
 .addonpicker_Tab_10fDn, .addonpicker_ItemList_275Oe {
 cursor: default!important;}
 
+.addonpicker_ItemList_275Oe .addonpicker_Item_34KHH:hover {
+background-color: rgba(var(--white05))!important;}
+
 .addonpicker_Tab_10fDn.addonpicker_Active_2J8Y1 {
 border-bottom: 4px solid rgb(var(--focus)) !important;}
 
@@ -1927,7 +1931,12 @@ border: none;
 
 .messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ {
 background-color: rgb(var(--clientBG)) !important;
-border-radius: 50%!important;}
+border-radius: 50%!important;
+border-color: transparent !important;}
+
+.messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ:hover {
+background-color: rgb(53,53,53)!important;
+}
 
 .reactions_OpenPickerButton_1FQhN.reactions_AddReactionIcon_2UK4J path, .messages_MsgWithAddons_lFLbk {
 stroke: rgb(var(--white))!important;}
@@ -1951,3 +1960,6 @@ opacity:.4;}
 
 .socialInputContainer .inputContainer input {
 padding-top: 1px!important;}
+
+.friendListButton:last-child:not(.addFriendButton) {
+margin-right: 0px}
