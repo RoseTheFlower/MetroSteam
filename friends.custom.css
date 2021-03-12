@@ -1931,7 +1931,7 @@ border: none;
 
 .messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ {
 background-color: rgb(var(--clientBG)) !important;
-border-radius: 50%!important;
+border-radius: 6px!important;
 border-color: transparent !important;}
 
 .messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ:hover {
