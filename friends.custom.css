@@ -1947,9 +1947,15 @@ fill: rgb(var(--white))!important;}
 cursor: initial;}
 
 .messages_Addons_1aOXJ .messages_Emoticon_ysEyj, .messages_Addons_1aOXJ .messages_Emoticon_ysEyj path {
+stroke: rgb(var(--white75))!important;}
+
+.messages_Addons_1aOXJ .messages_Emoticon_ysEyj:hover, .messages_Addons_1aOXJ .messages_Emoticon_ysEyj:hover path {
 stroke: rgb(var(--white))!important;}
 
 .messages_Addons_1aOXJ .messages_Emoticon_ysEyj ellipse {
+fill: rgb(var(--white75))!important;}
+
+.messages_Addons_1aOXJ .messages_Emoticon_ysEyj:hover ellipse {
 fill: rgb(var(--white))!important;}
 
 .messages_MsgWithAddons_lFLbk .messages_Addons_1aOXJ .messages_Emoticon_ysEyj {
