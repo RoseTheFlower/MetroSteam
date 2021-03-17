@@ -46,7 +46,6 @@
   box-shadow: none !important;
   border-radius: 0 !important;
   transition: none !important;
-  transition-duration: 0ms !important;
   text-shadow: none !important;
 /*font-family: "Segoe UI", "Motiva Sans", Arial, Helvetica, sans-serif !important;*/
 }
@@ -911,7 +910,6 @@ background-image: none !important;
 .inviteAnotherFriendButton {
   background: transparent !important;
   cursor: initial!important;
-  border-radius: 50%!important;
 }
 .inviteAnotherFriendButton:hover .invitePlus,
 .chatRoomButton:hover:not(.Disabled) .invitePlus {
@@ -1968,4 +1966,4 @@ opacity:.4;}
 padding-top: 1px!important;}
 
 .friendListButton:last-child:not(.addFriendButton) {
-margin-right: 0px}
+margin-right: 0px;}
