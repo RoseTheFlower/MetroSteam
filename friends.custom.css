@@ -1029,11 +1029,14 @@ border-bottom: 2px solid rgb(var(--ingame)) !important;}
   fill: rgb(var(--ingame)) !important;}
 
 /* Settings icon image*/
-.SVGIcon_Settings {
-  fill:  rgb(var(--white)) !important;
+.friendSettingsButton .SVGIcon_Settings {
   width: 15px !important;
   height: 15px !important;
   padding: 5px!important;}
+  
+.friendSettingsButton .SVGIcon_Settings path {
+fill: rgb(var(--white)) !important;}
+	
 
 /* Settings button itself */
 .friendSettingsButton{
@@ -1041,7 +1044,7 @@ border-bottom: 2px solid rgb(var(--ingame)) !important;}
   
 .friendSettingsButton:hover .SVGIcon_Settings {
   background-color: rgba(var(--white05)) !important;
-  animation-name: none!important;
+  animation: none!important;
  }
   
 .friendListButtons {
