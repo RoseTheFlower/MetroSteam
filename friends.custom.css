@@ -511,6 +511,14 @@ outline: 0px solid transparent !important; }
     background: rgba(var(--white05)) !important;
 }
 
+.contextmenu_contextMenuItem_CBC-y.contextmenu_SubMenu_3BzT1 {
+	padding-right: 0px !important;
+}
+
+.contextmenu_contextMenuItem_CBC-y.contextmenu_SubMenu_3BzT1 .SVGIcon_DownArrowContextMenu {
+	fill: rgba(var(--white))!important;
+}
+
 /* ============================= */
 
 /* Global Dialogs */
@@ -1214,9 +1222,9 @@ z-index: 99 !important;}
   right: 0px!important;
   background-color: rgb(var(--focus))!important;}
 
-.ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge{
-	  display:initial!important;
-	  background:none!important;}
+.ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge {
+display: initial!important;
+background: none!important;}
 
 /*Friend request and Add friend buttons*/
 .addFriendButton:hover .SVGIcon_AddFriend .plusCircle, .friendRequestButton:hover .requestsNumber {
