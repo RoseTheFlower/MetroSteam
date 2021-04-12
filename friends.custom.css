@@ -1,4 +1,5 @@
-:root{
+:root {
+  --chatfont: 13px; /* Font size for chat messages */ 
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
   --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
@@ -12,17 +13,18 @@
   --scrollbarSize: 15px;
   --scrollbarBG: 32, 32, 32;
   --textentry: 39, 39, 39;
-  --white05: 255,255,255,.05;
-  --white10: 255,255,255,.1;
-  --white50: 255,255,255,.5;
-  --white75: 255,255,255,.75;
+  --white05: 255, 255, 255, .05;
+  --white10: 255, 255, 255, .1;
+  --white50: 255, 255, 255, .5;
+  --white75: 255, 255, 255, .75;
   --white: 255, 255, 255;
   --border: 15, 15, 15;
   --textentrybuttons: 200, 200, 200;
 }
 
 /* Experimental Metro White theme color values:
---focus: 0, 114, 198;
+--chatfont: 13px;
+--focus: 102, 36, 226;
 --clientBG: 230,230,230;
 --header_dark: 255,255,255;
 --online: 66, 104, 255;
@@ -310,9 +312,9 @@ opacity: 1!important;
 	padding: 0 !important;
 }
 
-.chatWindow{
+.chatWindow {
 	background: rgb(var(--clientBG)) !important;
-	font-size: 13px !important;
+	font-size: var(--chatfont) !important;
 }
 .chatRoomListContainer {
 background: rgb(var(--clientBG)) !important;}
@@ -590,6 +592,10 @@ background: rgb(var(--clientBG))!important;}
 color: rgba(var(--white75))!important;
 padding:3px 5px!important;
 border: 1px solid rgb(53,53,53)!important;}
+
+.voicesettings_TransmissionTypeSettings_2wcxX {
+border: 1px solid rgb(53,53,53)!important;
+}
 
 .DialogDropDown._DialogInputContainer:hover{
 border: 1px solid rgb(81,81,81)!important;}
@@ -1978,3 +1984,55 @@ padding-top: 1px!important;}
 
 .friendListButton:last-child:not(.addFriendButton) {
 margin-right: 0px;}
+
+.friendslist_RemotePlayInviteLinkSection_2XX49 .friendslist_LinkRow_19621 {
+background-color: rgb(var(--focus));
+color: rgb(var(--white));
+cursor: default;
+}
+
+.remoteplay_ContentBox_3pbZf, .remoteplay_BoxButton_Ikqb7.remoteplay_Light_2G5NX, .remoteplay_BoxButton_Ikqb7.remoteplay_Dark_PQopZ, .remoteplay_MediaButton_24SDt, .remoteplay_SliderControlContainer_1nRBi .remoteplay_SliderIconContainer_SqMAs, .remoteplay_SliderControlContainer_1nRBi .remoteplay_SliderContainer_3xuDh, .remoteplay_ControllerDropSlotsContainer_2LbLg .remoteplay_ControllerDropSlots_2lnwB, .remoteplay_ControllerDropSlot_1-nmv {
+    background-color: rgb(var(--white05));
+}
+
+.remoteplay_HeaderActions_2_YSj .remoteplay_GameInfo_35GIE {
+	    color: rgb(var(--ingame));
+		letter-spacing: 0;
+}
+
+.remoteplay_SectionTitle_3Q4Pa, .remoteplay_BoxButton_Ikqb7 {
+    color: rgb(var(--white));
+    letter-spacing: 0;
+}
+
+.remoteplay_MediaBox_14iro .remoteplay_Content_3Ad5H .remoteplay_Top_195du .remoteplay_Title_Hj22p, .remoteplay_InvitedGuestBox_3yy-c .remoteplay_LinkContainer_3Jjey, .ModalPosition_Content, .remoteplay_ControllerDropSlot_1-nmv .remoteplay_Controller_2Zzjj, .remoteplay_SliderControlContainer_1nRBi .remoteplay_SliderIconContainer_SqMAs .remoteplay_SliderIcon_3Q56E, .remoteplay_ControlEnabled_DMubB {
+    color: rgb(var(--white));
+}
+
+.remoteplay_ControllerDropSlotsContainer_2LbLg .remoteplay_ControllerDropSlots_2lnwB .remoteplay_HowToHint_2ePB9 {
+    background-color: rgb(var(--clientBG));
+}	
+
+.remoteplay_ContentBox_3pbZf.remoteplay_Interactable_1ml3I:hover {
+	background-color: rgb(var(--white10));
+}
+
+.friendslist_RemotePlayInviteLinkSection_2XX49 .friendslist_LinkRow_19621 .friendslist_LinkRowText_2OuRr {
+    letter-spacing: 1px;
+}
+
+.friendslist_RemotePlayInviteLinkSection_2XX49 .friendslist_LinkRow_19621:hover {
+    color: rgb(var(--white75));
+}
+
+.radio_Button_3aFxE, .toggle_ToggleRow_332T0 {
+    background-color: rgb(var(--white05));
+}
+
+.radio_Button_3aFxE:hover {
+    background-color: rgb(var(--white10));
+}
+
+.DialogOnOffToggle_Option.Off.Active {
+    color: rgb(var(--white));
+}
