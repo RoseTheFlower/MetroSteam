@@ -708,12 +708,14 @@ color: rgb(140,140,140)!important;
     background: transparent !important; }
 
 /* scroll bar*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: var(--scrollbarSize) !important;
 }
 .ChatTabs ::-webkit-scrollbar-thumb {
-  background-color: transparent!important;}
-::-webkit-scrollbar-thumb{
+  background-color: transparent!important;
+}
+
+::-webkit-scrollbar-thumb {
 	border-radius: 0px !important;
 	background: rgba(var(--white05)) !important;
 	border: 0px solid #131313!important;
@@ -746,13 +748,13 @@ color: rgb(140,140,140)!important;
 /* arrow buttons at scroll bar */
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
-    background-image: url(https://i.imgur.com/MSeJirr.png)!important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
     background-repeat: no-repeat!important;
     background-position: 0px 0px!important;
 }
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement { 
-    background-image: url(https://i.imgur.com/U6H0Z62.png)!important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJUlEQVQI12OAgxQGBsaVDAxsbg4MkowTGFKAcAKDBIMDAwtMBQBYIAP5KnftSQAAAABJRU5ErkJggg==);
     background-repeat: no-repeat!important;
     background-position: 0px 0px!important;
 }
@@ -761,7 +763,7 @@ color: rgb(140,140,140)!important;
 
 /* background behind scrollbar */
 ::-webkit-scrollbar-track {
-    background-color:none!important;
+    background-color: none!important;
 }
 /* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
@@ -781,12 +783,29 @@ border: 1px solid rgb(var(--frameBorder))!important;}
  .chatRoomTextChannel.ActiveTextChannel {
     background: rgb(var(--header_dark)) !important;
 }
-/* friend search input box */
-.friendSearchInput[type="text"]:focus, 
-.friendSearchInput[type="text"] {
-	background-color: rgb(var(--clientBG)) !important;}
+/* Friend search input box */
+.friendSearchInput[type="text"]:focus, .friendSearchInput[type="text"] {
+	background-color: rgb(var(--textentry)) !important;
+}
+
+.SearchActive .friendSearchClear {
+opacity: 0;
+}
+
+.friendSearchClear:hover {
+opacity: 0.5;
+}
+
+.friendSearchClear {
+cursor: default;
+}
+
+.SearchActive:focus-within .friendSearchClear:not(:hover) {
+opacity: 1;
+}
+
 /* Random stuff from groups area on friends list */
-.chatRoomVoiceChannel.ActiveVoiceChannel {
+.chatRoomVoiceChannel .ActiveVoiceChannel {
     background-color: #191b1b !important;
 }
 .ChatRoomListGroupItem .openGroupButton:hover {
@@ -2098,4 +2117,13 @@ border-radius: 50%!important;
 
 .chatRoomGroupHeaderTagline {
 color: rgb(var(--white50));
-}	
+}
+
+.socialInputContainer .friendSearchInput[type="text"]::placeholder {
+color: transparent;
+}
+
+.friendSearchInput[type="text"] {
+background-position: 4px 4px;
+background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20transform%3D%22translate%280%2C-952.36218%29%22%3E%3Cpath%20d%3D%22m%2040.99855%2C964.36216%20c%20-15.9798%2C0%20-28.9986%2C13.01864%20-28.9986%2C28.99862%200%2C15.97992%2013.0188%2C28.99862%2028.9986%2C28.99862%206.9189%2C0%2013.2881%2C-2.4349%2018.2803%2C-6.4997%20l%2023.5927%2C23.6239%20c%201.1714%2C1.1714%203.0784%2C1.1715%204.2498%2C0%201.1716%2C-1.1715%201.1716%2C-3.0783%200%2C-4.2498%20l%20-23.6239%2C-23.5926%20c%204.0649%2C-4.9923%206.4997%2C-11.3615%206.4997%2C-18.28042%200%2C-15.97998%20-13.0187%2C-28.99862%20-28.9986%2C-28.99862%20z%20m%200%2C5.99972%20c%2012.7374%2C0%2022.9989%2C10.26145%2022.9989%2C22.9989%200%2C12.73732%20-10.2615%2C22.99892%20-22.9989%2C22.99892%20-12.7374%2C0%20-22.9989%2C-10.2616%20-22.9989%2C-22.99892%200%2C-12.73745%2010.2615%2C-22.9989%2022.9989%2C-22.9989%20z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
