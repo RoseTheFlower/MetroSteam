@@ -1,5 +1,8 @@
 :root {
-  --chatfont: 13px; /* Font size for chat messages */ 
+  --chatfont: 13px; /* Font size for chat messages */
+  --scrollbarSize: 15px;
+  
+  /* Colors: */
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
   --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
@@ -10,11 +13,12 @@
   --ingame: 130, 186, 0;
   --offline: 145, 145, 145;
   --golden: 255, 255, 99;
-  --scrollbarSize: 15px;
   --scroll: 32, 32, 32;
   --textentry: 39, 39, 39;
   --white05: 255, 255, 255, .05;
   --white10: 255, 255, 255, .1;
+  --white12: 255, 255, 255, .12;
+  --white24: 255, 255, 255, .24;
   --white25: 255, 255, 255, .25;
   --white45: 255, 255, 255, .45;
   --white50: 255, 255, 255, .5;
@@ -24,20 +28,25 @@
   --textentrybuttons: 200, 200, 200;
 }
 
-/* Experimental Metro White theme color values:
---chatfont: 13px;
+/* Experimental Metro White theme color values: */
+/*
 --focus: 102, 36, 226;
+--W10close_Red_h: 232, 18, 35;
+--W10close_Red_p: 241, 112, 121;
 --clientBG: 230,230,230;
 --header_dark: 255,255,255;
 --online: 66, 104, 255;
 --ingame: 94, 150, 15;
 --offline: 0, 0, 0, .45;
 --golden: 255, 255, 99;
---scrollbarSize: 15px;
 --scroll: 0,0,0,.05;
 --textentry: 207,207,207;
 --white05: 0,0,0,.05;
 --white10: 0,0,0,.1;
+--white12: 0, 0, 0, .12;
+--white24: 0, 0, 0, .24;
+--white25: 0, 0, 0, .25;
+--white45: 0, 0, 0, .45;
 --white50: 0,0,0,.5;
 --white75: 0,0,0,.75;
 --white: 0,0,0;
@@ -64,9 +73,10 @@ margin-right: 12px!important;
 -webkit-app-region: drag!important;
 }
 
-/* Top friends list border */
-.currentUserContainer{
+/* Top friends list part */
+.currentUserContainer {
 	border-bottom: 1px solid rgb(var(--frameBorder)) !important;
+	background-color: rgb(var(--header_dark));
 }
 
 /* Friends list window*/
@@ -76,7 +86,7 @@ margin-right: 12px!important;
 
 /* Top friends list panel bg*/
 .friendListHeaderContainer, .friendsListSectionTitle {
-    background-color: rgb(var(--header_dark)) !important;
+    background-color: rgb(var(--clientBG)) !important;
 }
 /* Bottom panel bg*/
 .friendListFooter {
@@ -173,7 +183,7 @@ color: rgb(var(--online))!important;}
 	  border: 0 !important;
 	right: 0px !important;
 	left: 0px !important;
-	z-index: 2!important;
+	z-index: 2 !important;
 }
 /* Make chat screenshots small at startup */
 .chatImageFull{
@@ -357,6 +367,7 @@ color: rgb(var(--focus))!important;}
     top: -4px !important;
     height: 2px !important;
     width: 100%!important;
+	left: 2px !important;
 }
 
 .quickAccessFriends:not(.compactQuickAccess) .friend.quickAccessFriend .ChatUnreadMessageIndicator .chatUnreadCircle{
@@ -1257,9 +1268,6 @@ margin-right: 6px!important;
   
 .MultiUserChat .isCurrentUser .msgText {
 color: rgb(var(--offline))!important;}
-	  
-.FriendMessageCount{
-z-index: 99 !important;}
 
 /*Unread notification circle in chat context menu*/
 .ChatTabsContextMenu.compactView .ChatTabContextMenuItem .TabRightContainer .chatTabUnreadBadge:before {
@@ -1443,7 +1451,9 @@ padding-left: 15px!important;
   height: 27px!important; }
 
 .friendsListSectionTitle {
-letter-spacing: 1px!important;}	
+letter-spacing: 1px!important;
+z-index: 2;
+}	
 
 .friendlistListContainer .friend .avatarHolder {
 width: 34px!important;
@@ -1577,6 +1587,8 @@ stroke: none!important; }
   min-width: 30px!important;
   padding: 0px!important;
   margin-top: 11px!important;
+  z-index: 99 !important;
+  border-radius: 50%!important;
 }
 
 .CompactFriendsList .FriendMessageCount {
@@ -1594,8 +1606,10 @@ background: rgb(var(--focus))!important;
 .quickAccessFriends .friend.friend.awayOrSnooze .avatarHolder img{
 opacity: initial!important;}
 
-.quickAccessFriends {
-padding-left: 5px!important;}
+.quickAccessFriends:not(.emptyQuickAccess) {
+padding-left: 5px!important;
+border-bottom: 1px solid rgb(var(--frameBorder));
+}
 
 .chattabs_CloseButton_SzByZ{
 cursor: default!important;}
@@ -2025,8 +2039,9 @@ padding-top: 1px!important;}
 margin-right: 0px;}
 
 .friendslist_RemotePlayInviteLinkSection_2XX49 .friendslist_LinkRow_19621 {
-background-color: rgb(var(--focus));
-color: rgb(var(--white));
+    background-color: rgb(var(--white12));
+    color: rgb(var(--white));
+    border-bottom: 1px solid rgb(var(--frameBorder));
 }
 
 .remoteplay_ContentBox_3pbZf, .remoteplay_BoxButton_Ikqb7.remoteplay_Light_2G5NX, .remoteplay_BoxButton_Ikqb7.remoteplay_Dark_PQopZ, .remoteplay_MediaButton_24SDt, .remoteplay_SliderControlContainer_1nRBi .remoteplay_SliderIconContainer_SqMAs, .remoteplay_SliderControlContainer_1nRBi .remoteplay_SliderContainer_3xuDh, .remoteplay_ControllerDropSlotsContainer_2LbLg .remoteplay_ControllerDropSlots_2lnwB, .remoteplay_ControllerDropSlot_1-nmv {
@@ -2060,7 +2075,8 @@ color: rgb(var(--white));
 }
 
 .friendslist_RemotePlayInviteLinkSection_2XX49 .friendslist_LinkRow_19621:hover {
-    color: rgb(var(--white75));
+    color: rgb(var(--white));
+	background-color: rgb(var(--white24));
 }
 
 .radio_Button_3aFxE, .toggle_ToggleRow_332T0 {
@@ -2126,4 +2142,12 @@ color: transparent;
 .friendSearchInput[type="text"] {
 background-position: 4px 4px;
 background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20transform%3D%22translate%280%2C-952.36218%29%22%3E%3Cpath%20d%3D%22m%2040.99855%2C964.36216%20c%20-15.9798%2C0%20-28.9986%2C13.01864%20-28.9986%2C28.99862%200%2C15.97992%2013.0188%2C28.99862%2028.9986%2C28.99862%206.9189%2C0%2013.2881%2C-2.4349%2018.2803%2C-6.4997%20l%2023.5927%2C23.6239%20c%201.1714%2C1.1714%203.0784%2C1.1715%204.2498%2C0%201.1716%2C-1.1715%201.1716%2C-3.0783%200%2C-4.2498%20l%20-23.6239%2C-23.5926%20c%204.0649%2C-4.9923%206.4997%2C-11.3615%206.4997%2C-18.28042%200%2C-15.97998%20-13.0187%2C-28.99862%20-28.9986%2C-28.99862%20z%20m%200%2C5.99972%20c%2012.7374%2C0%2022.9989%2C10.26145%2022.9989%2C22.9989%200%2C12.73732%20-10.2615%2C22.99892%20-22.9989%2C22.99892%20-12.7374%2C0%20-22.9989%2C-10.2616%20-22.9989%2C-22.99892%200%2C-12.73745%2010.2615%2C-22.9989%2022.9989%2C-22.9989%20z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.friendListHeaderContainer .title-area {
+height: 54px;
+}
+
+.quickAccessFriends .friend:hover .avatarHolder, .quickAccessFriends .favoriteElement:hover .friend .avatarHolder {
+transform: scale(0.86, 0.86) translateX(0px);
 }
