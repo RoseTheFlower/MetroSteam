@@ -1588,7 +1588,7 @@ stroke: none!important; }
   padding: 0px!important;
   margin-top: 11px!important;
   z-index: 99 !important;
-  border-radius: 50%!important;
+  border-radius: 30px!important;
 }
 
 .CompactFriendsList .FriendMessageCount {
