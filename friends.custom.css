@@ -1013,11 +1013,12 @@ width: 15px!important;
 height: 15px!important;}
 
 .FriendChatTypingNotification {
-  background: rgb(var(--clientbg)) !important;
-  color: #8c8c8c !important;
-  padding: 18px 10px 4px 12px !important;
-  font-weight: 300!important;
-  text-transform: uppercase!important;
+  background-color: transparent;
+  background: linear-gradient(to top, rgb(var(--clientBG)) 95%, transparent 0);
+  color: #8c8c8c;
+  padding: 0px 4px 0px 10px;
+  font-weight: 300;
+  text-transform: uppercase;
  }
 
 .chattabs_ChatTab_1WfqA .chatTabHighlight {
