@@ -24,6 +24,7 @@
   --white50: 255, 255, 255, .5;
   --white75: 255, 255, 255, .75;
   --white: 255, 255, 255;
+  --black35: 0, 0, 0, .35;
   --frameBorder: 15, 15, 15;
   --textentrybuttons: 200, 200, 200;
 }
@@ -50,6 +51,7 @@
 --white50: 0,0,0,.5;
 --white75: 0,0,0,.75;
 --white: 0,0,0;
+--black35: 255, 255, 255, .42;
 --frameBorder: 160, 160, 160;
 --textentrybuttons: 35, 50, 50;
 */
@@ -176,11 +178,11 @@ color: rgb(var(--online))!important;}
 	opacity: 0 !important;
 }
 /* X unread Message in Friends Panel */
-.unreadMessageViolator{
+.unreadMessageViolator {
 	background: rgb(var(--clientBG)) !important;
 	color: rgb(var(--focus)) !important;
     width: calc(100% - 2px)!important;
-	  border: 0 !important;
+	border: 0 !important;
 	right: 0px !important;
 	left: 0px !important;
 	z-index: 2 !important;
@@ -1056,7 +1058,7 @@ html.contextmenu_ContextMenuPopup_1exss .contextmenu_contextMenuContents_1yyTu {
 
 .currentUserAvatar:hover {
 transform: none !important;
-  filter: none !important;
+filter: none !important;
 }
 
 .miniprofile_miniProfileBackground_3gfFJ {
@@ -2151,4 +2153,9 @@ height: 54px;
 
 .quickAccessFriends .friend:hover .avatarHolder, .quickAccessFriends .favoriteElement:hover .friend .avatarHolder {
 transform: scale(0.86, 0.86) translateX(0px);
+}
+
+.miniprofile_miniProfileContent_25Sge.miniprofile_notInOrWatchingGame_3AIC2 .miniprofile_miniProfileBottom_3Agb6,
+.miniprofile_miniProfileContent_25Sge .miniprofile_miniProfileGameContainer_2FyZH {
+	background: rgba(var(--black35));
 }
