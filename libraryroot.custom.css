@@ -1,0 +1,105 @@
+:root {
+  --focus: 102, 36, 226; /* Default Metro skin purple accent */
+  /* 0, 114, 198; /* Blue accent option */
+  --clientBG: 26, 26, 26;
+  --header_dark: 20, 20, 20;
+  --online: 93, 178, 255;
+  --ingame: 130, 186, 0;
+  --offline: 145, 145, 145;
+  --golden: 255, 255, 99;
+  --scrollbarSize: 15px;
+  --scroll: 32, 32, 32;
+  --textentry: 39, 39, 39;
+  --white05: 255, 255, 255, .05;
+  --white10: 255, 255, 255, .1;
+  --white12: 255, 255, 255, .12;
+  --white24: 255, 255, 255, .24;
+  --white25: 255, 255, 255, .25;
+  --white50: 255, 255, 255, .5;
+  --white75: 255, 255, 255, .75;
+  --white: 255, 255, 255;
+  --black45: 38, 38, 38;
+  --border: 15, 15, 15;
+  --textentrybuttons: 200, 200, 200;
+}
+
+*{
+	box-shadow: none !important;	
+	border-radius: 0 !important;
+}
+
+body, body.shared_common_v6_2Lxgd {
+	background: rgb(var(--clientBG));
+}
+
+.libraryhome_UpdatesContainer_17uEB, .libraryhome_LibraryHome_3Sb2o, .allcollections_ScrollContainer_u1xD3 {
+	background: rgb(var(--clientBG));
+}
+
+.libraryhome_LibraryHome_3Sb2o {
+	background-image: none;
+}
+
+.gamelistbar_GameListHomeAndSearch_2TKEa {
+	background-color: rgb(var(--header_dark));
+}
+
+.pagedsettings_PagedSettingsDialog_PageListColumn_2kwFF {
+	background: rgb(var(--clientBG));
+}
+
+.DialogContent, .DialogContentTransition {
+	background: rgb(var(--clientBG));
+}
+
+.appproperties_AppProperties_1FyBL .appproperties_Checkbox_2V2nc, .DialogTextInputBase, ._DialogInputContainer {
+	color: rgb(var(--white50));
+    background: rgb(var(--textentry));
+}
+
+.library_LibraryWindowDivider_276E6 {
+    background-color: rgb(var(--border));
+}
+
+.gamelistbar_Container_3x1Hk {
+    background-image: none;
+    background: rgb(var(--black45));
+}
+
+.gamelistsectionheader_Container_2sYIg {
+    background: none;
+}
+
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover {
+    background-color: rgb(var(--focus));
+}	
+
+.gamelistsectionheader_SectionHeaderContent_3cV3O {
+    color: rgb(var(--white));
+}
+
+.gamelistsectionheader_SectionName_2mZ8L {
+    font-weight: bold;
+}
+
+.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistsectionheader_Container_2sYIg:hover {
+    background-color: rgba(var(--white05));
+}
+
+.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D {
+	color: rgb(var(--white));
+}
+
+button.DialogButton {
+	color: rgb(var(--white));
+    background-color: rgba(var(--white12));
+}
+
+button.DialogButton:hover {
+	color: rgb(var(--white));
+    background-color: rgba(var(--white24));
+}
+
+.ModalPosition_TopBar {
+	display: none;
+}
