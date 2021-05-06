@@ -1,4 +1,4 @@
-# Metro skin for new Steam chat and friends UI
+# Metro skin for Steam chat and friends UI
 
 This skin for the new chat and friends UI was created after Valve made it problematic to revert to the old-style windows.
 My quest was to make the new windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
@@ -6,11 +6,11 @@ My quest was to make the new windows look as close as possible to those of [the 
 ## Installation
 ### Windows
 * [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher or its [older version](https://github.com/PhantomGamers/EnableNewSteamFriendsSkin/releases) to allow for customization.
-* Save the [.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
+* Save the [friends.custom.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
 * Launch the patcher and wait for it to apply the changes.
 * Close and open the chat and friends windows if necessary.
 ### Linux and Mac
-* Copy and add the [css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
+* Copy and add the [friends.custom.css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
 * Search the file contents for *Linux* or *Mac* in any text editor.
 * Remove sections as instructed within the code.
 
