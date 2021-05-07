@@ -756,6 +756,8 @@ color: rgb(140,140,140)!important;
     background-color: rgba(var(--white05)) !important; 
 }
 
+
+
 /* Remove the following sections when on Linux or Mac */
 
 /* arrow buttons at scroll bar */
@@ -773,6 +775,8 @@ color: rgb(140,140,140)!important;
 }
 
 /* Remove the above sections when on Linux or Mac */
+
+
 
 /* background behind scrollbar */
 ::-webkit-scrollbar-track {
@@ -965,7 +969,7 @@ color: rgb(var(--online)) !important;}
   font-size: 13px!important; }
 
 .chatHistoryScroll {
-padding: 5px 0px 12px 1px !important;
+padding: 5px 0px 16px 1px !important;
 }
 .window_resize_grip {
 background-image: none !important;
