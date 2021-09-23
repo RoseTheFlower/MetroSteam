@@ -103,3 +103,47 @@ button.DialogButton:hover {
 .ModalPosition_TopBar {
 	display: none;
 }
+
+.downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1 {
+	background: none;
+}
+
+.downloadgraph_GraphAndStats_3KDkL {
+	background-color: rgb(var(--clientBG));
+}
+
+div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
+	background-image: none;
+}
+
+.downloads_DownloadsPage_1bq4x, .library_AppDetailsTransitionGroup_2Dd4T {
+	background: none;
+}
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+    background-color: rgb(var(--white05));
+}
+
+.downloads_Active_IbePL .downloads_SectionList_OINnO {
+    border: 2px transparent;
+}
+
+.downloads_SectionItem_1VNuY:hover, .downloads_SectionItem_1VNuY.downloads_Dragging_3-SbB {
+    background-color: rgb(var(--white10));
+}
+
+.downloads_TopBar_SEmVp {
+    background: none;
+}
+
+.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1 {
+	background-color: transparent;
+}
+
+.downloads_SectionItem_1VNuY .downloads_Button_3oavR, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:active, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled:active:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR.DialogButton:enabled {
+	border-radius: 50%!important;
+}
+
+.gamelistentry_Container_2-O4Z.gamelistentry_Uninstalled_5YTBr {
+    color: rgb(var(--white50)); /*change to one with no transparency*/
+}
