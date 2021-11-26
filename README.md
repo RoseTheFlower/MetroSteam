@@ -15,7 +15,7 @@ My quest was to make the new windows look as close as possible to those of [the 
 * Remove sections as instructed within the code.
 
 ## Help and options
-The [wiki](https://github.com/RoseTheFlower/newsteamchat/wiki) answers some of the most asked questions and contains a few extras.
+The [wiki](../../wiki) answers some of the most asked questions and contains a few extras.
 
 ## Uninstallation
 ### Windows
