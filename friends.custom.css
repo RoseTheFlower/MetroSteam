@@ -125,7 +125,7 @@ height:0!important;
 /* Remove each category header margin */
 .FriendsListContent .friendlistListContainer .friendGroup{
 	border-top: none !important;
-	margin-top: 1px !important;
+	margin-top: 0px !important;
 }
 
 /* PlusMinus Friends Header */
@@ -146,8 +146,11 @@ height:0!important;
   text-transform: uppercase !important;
   margin-bottom: -3px!important;}
   
- .friendGroup .groupName{
- margin-top: 0px!important;}
+ .friendGroup .groupName {
+margin-top: 0px!important;
+padding-top: 0px;
+padding-bottom: 0px;
+ }
   
 .groupName .gameGroupContainer .groupIcon {
 margin-left: 2px!important;} 
@@ -426,6 +429,7 @@ background-color: transparent!important;}
   color: rgba(var(--white)) !important;
   max-width: 46px !important;
   margin-left: 0px !important;
+  padding: 0;
 }
 .ChatMessageEntryVoice.Disabled {
   opacity: .2;
@@ -437,37 +441,32 @@ outline: 0px solid transparent !important; }
   background-color: rgb(var(--textentry)) !important;
   border: 0px solid #1b1c20 !important;
   margin-top: 0px !important;
-  margin-bottom: 2px!important;
   min-width: 32px!important; 
   min-height: 35px!important;
   cursor: default!important;
 }
 
 .chatWindow .chatEntry > .compactableHeight {
-  height: 39px !important; }
+  height: 40px !important; }
   
 .VoiceToggle {
-  height: 36px!important;
+  height: 40px!important;
   border: 0px transparent !important;
 }
 
 .VoiceToggleIconCtn {
   height: 24px!important; 
-  top: 7px!important; }
+  top: 8px!important;
+  left: 8px;
+  }
 
 .chatEntry .activeVoiceFlexBox {
   height: 28px!important; }
 
-.SVGIcon_Submit, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon {
+.SVGIcon_Submit, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon, .chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip {
   width: 20px!important; 
   height: 20px!important; 
-  margin-top: 5px!important;
-  margin-bottom: 2px!important; }
-
-.chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip {
-  width: 20px!important; 
-  height: 20px!important; 
-  margin-top: 4px!important; 
+  margin-top: 4px!important;
   margin-bottom: 2px!important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
@@ -479,14 +478,6 @@ outline: 0px solid transparent !important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons {
   width: 64px!important; }
-
-.ChatMessageEntryVoice .activeVoiceControls {
-  width: 64px !important; }
-
-.ChatMessageEntryVoice.Active {
-  min-width: 114px!important;
-  max-width: 114px!important;
-  width: 114px!important; }
 
 .ChatMessageEntryVoice.pushToTalkEnabled .activeVoiceButtons {
   margin-top: -2px!important; }
@@ -911,7 +902,7 @@ border-bottom: 1px solid rgb(var(--frameBorder))!important;
   margin-bottom: 0px !important; }
 .chatEntry.compactView .chatentry_chatSubmitButton_3VRfL svg{
   height: 20px !important; 
-  margin-top: 5px !important;
+  margin-top: 4px !important;
 }
 
   .ChatTabs.compactView .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
@@ -999,7 +990,9 @@ background-image: none !important;
 .chatentry_chatEntryActionsGroup_15mWd {
   background-color: rgb(var(--textentry)) !important;
   padding: 0px!important;
-  margin-left: 0px!important; }
+  margin-left: 0px!important;
+  min-height: 40px;
+}
 
 /*arrow at tab selection*/
 .chatTabSelector {
@@ -1665,9 +1658,9 @@ display:none!important;}
 opacity:1!important;}
 
 .friendGroup.offlineFriends .groupName .groupCount, .friendGroup.onlineFriends .groupName .groupCount, .friendGroup .groupName .groupCount.collapsed, .friendGroup .groupName .groupCount {
-	  opacity: 1!important;
+opacity: 1!important;
 color: rgb(var(--white50))!important;
-  transform: translateX(3px)!important;}
+transform: translateX(3px)!important;}
   
 .dropTargetBox {
 border: 2px dashed rgba(var(--focus), 0.4)!important;}
@@ -2163,3 +2156,6 @@ transform: scale(0.86, 0.86) translateX(0px);
 .miniprofile_miniProfileContent_25Sge .miniprofile_miniProfileGameContainer_2FyZH {
 	background: rgba(var(--black35));
 }
+
+.steamavatar_avatarHolder_1G7LI .steamavatar_avatarStatus_1Pwr6.right, .steamavatar_avatarHolder_1G7LI .steamavatar_avatarStatus_1Pwr6.bottom {
+display: none!important;}	
