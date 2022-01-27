@@ -825,10 +825,17 @@ opacity: 1;
 	border-image:none!important;
 	border-color:rgb(0,163,0)!important;
 }
-.OneOnOneVoiceStatusLabel{
-color:rgb(0,163,0)!important;
-margin-top: 1px!important;
-overflow: hidden!important;}
+
+.OneOnOneVoiceStatusLabel {
+color:rgb(0,163,0);
+margin-top: 1px;
+overflow: hidden;
+white-space: normal;
+}
+
+.OneOnOneVoiceRoomControls {
+white-space: nowrap;
+}
 
 .OneOnOneVoiceActive{
 background:rgb(var(--header_dark)) !important;
@@ -1788,9 +1795,13 @@ border-left: 1px solid rgb(var(--frameBorder))!important;}
 .chatRoomGroupHeader{
 border-bottom: 1px solid rgb(var(--frameBorder))!important;}
 
-img.emoticon_emoticon_9hYGN.emoticon_large_p8Q42{
+img.emoticon_emoticon_9hYGN.emoticon_large_p8Q42 {
 	margin-top: 0px!important;
 	margin-bottom: 0px!important; }
+	
+img.emoticon_emoticon_9hYGN {
+	vertical-align: bottom;
+}
 	
 .friend .watchingbroadcast .personanameandstatus_statusAndName_9U-hi {
 margin-top: -8px!important;}
@@ -1820,7 +1831,13 @@ background: transparent!important;}
 opacity: .5!important;}
 	
 .friend.awayOrSnooze .playerNameQuickAccessContainer, .friend.awayOrSnooze .labelHolder  {
-opacity: 1!important;}
+opacity: 1!important;
+}
+
+.friend.awayOrSnooze {
+	opacity: 1;
+    filter: none;
+}
 
 .friendsListSectionTitle .SVGIcon_NewChatGroup line{
 stroke: rgb(var(--clientBG))!important;}
@@ -1943,6 +1960,8 @@ background-color: transparent !important;}
 .emoticon_EmoticonHover_1ME8O, .reactions_ReactionHover_2XIL3 {
 background-color: rgba(var(--scroll)) !important;
 border: 1px solid rgb(var(--frameBorder));
+margin:0 4px;
+padding:8px;min-width:160px;min-height:54px;display:flex;flex-direction:row;align-items:center;
 }
 
 .emoticon_hover_title, .addonpicker_SectionedPageTitle_3rqU_, .addonpicker_SectionTitle_1YfVL {
