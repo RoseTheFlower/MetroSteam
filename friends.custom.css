@@ -432,7 +432,7 @@ background-color: transparent!important;}
   padding: 0;
 }
 .ChatMessageEntryVoice.Disabled {
-  opacity: .2;
+opacity: .2;
 border: 0px solid transparent!important;
 outline: 0px solid transparent !important; }
 
@@ -440,9 +440,9 @@ outline: 0px solid transparent !important; }
   position: relative;
   background-color: rgb(var(--textentry)) !important;
   border: 0px solid #1b1c20 !important;
-  margin-top: 0px !important;
+  margin-top: 0px!important;
   min-width: 32px!important; 
-  min-height: 35px!important;
+  min-height: 40px!important;
   cursor: default!important;
 }
 
@@ -466,8 +466,9 @@ outline: 0px solid transparent !important; }
 .SVGIcon_Submit, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon, .chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip {
   width: 20px!important; 
   height: 20px!important; 
-  margin-top: 4px!important;
-  margin-bottom: 2px!important; }
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
 
 .ChatMessageEntryVoice .activeVoiceButtons button {
   max-width: 28px!important;
@@ -905,17 +906,15 @@ border-bottom: 1px solid rgb(var(--frameBorder))!important;
 	   color: rgb(var(--white))!important;
 }
 
-.compactView .chatentry_chatEntryControls_2O_X7 .chatentry_chatSubmitButton_3VRfL {
-  margin-bottom: 0px !important; }
-.chatEntry.compactView .chatentry_chatSubmitButton_3VRfL svg{
-  height: 20px !important; 
-  margin-top: 4px !important;
+.chatentry_chatEntryControls_2O_X7 .chatentry_chatSubmitButton_3VRfL {
+  margin-bottom: 0px!important;
 }
 
-  .ChatTabs.compactView .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
+.ChatTabs.compactView .friend .personanameandstatus_richPresenceLabel_3Q6g1 {
   line-height: 13px !important;
   font-size: 12px !important; 
-  margin-top: 1px !important }
+  margin-top: 1px !important;
+}
   
 .ChatTabs.compactView .chatTabList .chatTab,
 .ChatTabs.compactView .ChatTabsBackButton {
@@ -1578,11 +1577,15 @@ height: 18px!important;}
 .chatentry_EmbedButton_1vvRh .SVGIcon_Paperclip path, .SVGIcon_Paperclip, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon line, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon circle, .chatentry_EmoticonPickerButton_3fgX0 .SVGIcon_Emoticon path, .VoiceToggleIconCtn .SVGIcon_VoiceRoom {
 stroke: rgb(var(--textentrybuttons))!important;}
 
-.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone, .chatentry_chatSubmitButton_3VRfL .SVGIcon_Submit path{
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone, .chatentry_chatSubmitButton_3VRfL .SVGIcon_Submit path {
 fill: rgb(var(--textentrybuttons))!important;}
 
 .chatentry_chatSubmitButton_3VRfL:not(.chatentry_disabled_2p2vW):hover .SVGIcon_Button.SVGIcon_Submit path {
 stroke: none!important; }
+
+.chatentry_chatSubmitButton_3VRfL .SVGIcon_Submit {
+	margin-top: 6px!important;
+}
 
 /*Unread messages count near username in friendslist*/
 .FriendMessageCount {
