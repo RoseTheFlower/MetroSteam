@@ -475,7 +475,7 @@ outline: 0px solid transparent !important; }
   min-width: 28px!important;
   min-height: 28px!important;
   max-height: 28px!important;
-  margin-top: 2px!important; }
+  margin-top: 5px!important; }
 
 .ChatMessageEntryVoice .activeVoiceButtons {
   width: 64px!important; }
