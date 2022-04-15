@@ -21,7 +21,7 @@ The [wiki](../../wiki) answers some of the most asked questions and contains a f
 ### Windows
 * Use the dedicated patcher button to clear the cache.
 * Alternatively, ensure that Steam and the patcher tool are closed, then remove the %LOCALAPPDATA%\Steam\htmlcache\Cache\ folder.
-* For purity, remove the Steam\clientui\css\ folder (and Steam\steamui\css\ if using a library skin) inside your Steam installation folder.
+* For purity, remove the Steam\clientui\css\ folder (and Steam\steamui\css\ if using the library skin) inside your Steam installation folder.
 
 ## Credits
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that makes customization possible.
