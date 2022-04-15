@@ -5,24 +5,26 @@ My quest was to make the new windows look as close as possible to those of [the 
 
 ## Installation
 ### Windows
-* [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher or its [older version](https://github.com/PhantomGamers/EnableNewSteamFriendsSkin/releases) to allow for customization.
-* Save the [friends.custom.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
-* Launch the patcher and wait for it to apply the changes.
-* Close and open the chat and friends windows if necessary.
+1. Save the [friends.custom.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
+1. [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher or its [newer but more experimental version](https://github.com/PhantomGamers/SFP/releases) to allow for customization.
+1. Launch the patcher and wait for it to apply the changes.
+1. Restart Steam if necessary.
 ### Linux and Mac
-* Copy and add the [friends.custom.css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
-* Search the file contents for *Linux* or *Mac* in any text editor.
-* Remove sections as instructed within the code.
+1. Copy and add the [friends.custom.css code](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to Steam/skins/[skin name]/resource/webkit.css
+1. Search the file contents for *Linux* or *Mac* in any text editor.
+1. Remove sections as instructed within the code.
 
 ## Help and options
 The [wiki](../../wiki) answers some of the most asked questions and contains a few extras.
 
 ## Uninstallation
 ### Windows
-* Simply remove friends.custom.css from Steam\clientui\
+* Use the dedicated patcher UI button to clear the cache.
+* Alternatively, ensure that Steam and the patcher tool are closed, then remove the %LOCALAPPDATA%\Steam\htmlcache\Cache\ folder.
+  - For purity, remove the Steam\clientui\css\ folder (and Steam\steamui\css\ if using a library skin) inside your Steam installation folder.
 
 ## Credits
-* [RedSigma](https://github.com/redsigma) for creating a custom skin for the new chat, which I initially used as a template.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that makes customization possible.
+* [RedSigma](https://github.com/redsigma) for creating a custom skin for the new chat, which I initially used as a template.
 * [Shiina](https://github.com/AikoMidori) for helping me find a few elements and for making me realize where to look.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
