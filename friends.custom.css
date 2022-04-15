@@ -592,17 +592,16 @@ button.DialogButton:not(.Off) {
   background: rgb(var(--focus)) !important;
 }
 
-.radio_Button_3aFxE.radio_Active_3w-nK,
-.radio_Button_3aFxE.radio_Active_3w-nK:hover {
+.radio_Button_13Vf2.radio_Active_o-Mp-, .radio_Button_13Vf2.radio_Active_o-Mp-:hover {
   background-color: rgb(var(--focus));
 }
 
-.toggle_Toggle_3RkmL .toggle_ToggleSwitch_3Ac8T.toggle_On_2xdfY {
+.toggle_Toggle_3yaKQ .toggle_ToggleSwitch_2BcVP.toggle_On_3majd {
   background-color: rgb(var(--focus));
   background-image: none;
 }
 
-.toggle_Toggle_3RkmL .toggle_ToggleRail_9iU2T.toggle_Highlight_2DAMR {
+.toggle_Toggle_3yaKQ .toggle_ToggleRail_1-le9.toggle_Highlight_KbD0o {
   background-color: rgba(var(--focus), 0.3);
 }
 
@@ -686,13 +685,13 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 button.DialogButton,
-.DialogOnOffToggle_Option:hover:not(.Active) {
+.DialogToggleField_Option:hover:not(.Active) {
   background: #4c4c4c;
 }
-.DialogOnOffToggle_Control {
+.DialogToggleField_Option {
   background: #343434 !important;
 }
-.DialogOnOffToggle_Control .Active {
+.DialogToggleField_Option.Active {
   background: rgb(var(--focus)) !important;
 }
 
@@ -706,7 +705,7 @@ button.DialogButton,
 }
 
 ._DialogLayout:not(.DialogButton):not(.DialogContent),
-.radio_Group_1Ma_m {
+.radio_Group_Xpun1 {
   background: none !important;
 }
 
@@ -777,7 +776,7 @@ button.DialogButton,
   height: 0 !important;
 }
 
-.DialogOnOffToggle_Option:hover:not(.Active) {
+.DialogToggleField_Option:hover:not(.Active) {
   background: rgb(75, 75, 75) !important;
 }
 
@@ -2072,7 +2071,7 @@ background: rgba(var(--white05))!important;}*/
   border: 1px solid rgb(var(--frameBorder)) !important;
 }
 
-.DialogOnOffToggle_Option:not(.Active) {
+.DialogToggleField_Option:not(.Active) {
   color: transparent !important;
 }
 
@@ -2692,16 +2691,16 @@ img.emoticon_emoticon_9hYGN {
   background-color: rgb(var(--white24));
 }
 
-.radio_Button_3aFxE,
-.toggle_ToggleRow_332T0 {
+.radio_Button_13Vf2,
+.toggle_ToggleRow_2mggP {
   background-color: rgb(var(--white05));
 }
 
-.radio_Button_3aFxE:hover {
+.radio_Button_13Vf2:hover {
   background-color: rgb(var(--white10));
 }
 
-.DialogOnOffToggle_Option.Off.Active {
+.DialogToggleField_Option.Off.Active {
   color: rgb(var(--white));
 }
 
