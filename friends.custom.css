@@ -218,6 +218,10 @@
   padding: 4px 0 8px 12px !important;
 }
 
+.CompactFriendsList .friend:hover {
+  background-color: rgba(var(--white05));
+}
+
 /* Friends list items hover colors */
 .friendStatusHover.online:hover,
 .friendStatusHover.online.Friend_ContextMenuActive {
