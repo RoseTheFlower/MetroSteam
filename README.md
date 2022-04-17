@@ -6,7 +6,7 @@ My quest was to make the new windows look as close as possible to those of [the 
 ## Installation
 ### Windows
 1. Save the [friends.custom.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\clientui\ folder.
-1. [Download](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) the latest patcher or its [newer but more experimental version](https://github.com/PhantomGamers/SFP/releases) to allow for customization.
+1. [Download](https://github.com/PhantomGamers/SFP/releases) the latest patcher or [its earlier version](https://github.com/PhantomGamers/SteamFriendsPatcher/releases) to allow for customization.
 1. Launch the patcher and wait for it to apply the changes.
 1. Restart Steam if necessary.
 ### Linux and Mac
