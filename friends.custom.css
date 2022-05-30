@@ -218,7 +218,8 @@
   padding: 4px 0 8px 12px !important;
 }
 
-.chatRoomMembers .CompactFriendsList .friend:hover, .MemberListColumn .friend:hover {
+.chatRoomMembers .CompactFriendsList .friend:hover,
+.MemberListColumn .friend:hover {
   background-color: rgba(var(--white05));
 }
 
@@ -273,7 +274,7 @@
 }
 
 .ingame .steamavatar_avatar_f2laR {
-  border: 1px solid rgb(var(--ingame)) !important;}
+  border: 1px solid rgb(var(--ingame)) !important;
 }
 
 .watchingbroadcast .steamavatar_avatar_f2laR {
@@ -596,7 +597,8 @@ button.DialogButton:not(.Off) {
   background: rgb(var(--focus)) !important;
 }
 
-.radio_Button_13Vf2.radio_Active_o-Mp-, .radio_Button_13Vf2.radio_Active_o-Mp-:hover {
+.radio_Button_13Vf2.radio_Active_o-Mp-,
+.radio_Button_13Vf2.radio_Active_o-Mp-:hover {
   background-color: rgb(var(--focus));
 }
 
@@ -1944,7 +1946,6 @@ background: rgba(var(--white05))!important;}*/
   height: 30px !important;
   min-width: 30px !important;
   padding: 0px !important;
-  margin-top: 11px !important;
   z-index: 99 !important;
   border-radius: 30px !important;
 }
@@ -1953,7 +1954,6 @@ background: rgba(var(--white05))!important;}*/
   line-height: 24px !important;
   height: 24px !important;
   min-width: 24px !important;
-  margin-top: 7px !important;
 }
 
 /*Unread messages box at chat tabs*/
@@ -2741,6 +2741,15 @@ body.shared_common_v6_39eAm {
   color: rgb(var(--white));
 }
 
+.BBCodeAlreadyCollapsedText {
+  background-color: rgb(var(--white10));
+}
+
+.BBCodeAlreadyCollapsed.Minimized:hover .BBCodeAlreadyCollapsedText,
+.BBCodeResizableComponent.Minimized:hover .BBCodeCollapsed {
+  background-color: rgb(var(--white24));
+}
+
 .MemberListColumn .friendGroup .groupName .groupCountCollapsed {
   color: rgb(var(--white));
 }
@@ -2781,4 +2790,13 @@ body.shared_common_v6_39eAm {
 .steamavatar_avatarHolder_1G7LI .steamavatar_avatarStatus_1Pwr6.right,
 .steamavatar_avatarHolder_1G7LI .steamavatar_avatarStatus_1Pwr6.bottom {
   display: none !important;
+}
+
+.suggestdialog_suggestOption_t54xp.suggestdialog_selected_e-sy7 {
+  padding-left: 22px;
+}
+
+.mentionAvatar {
+  left: 4px;
+  margin-top: 2px;
 }
