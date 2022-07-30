@@ -2,7 +2,7 @@
   --chatfont: 13px; /* Font size for chat messages */
   --scrollbarSize: 15px;
 
-  /* Colors: */
+  /* Color presets: */
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
   --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
@@ -41,7 +41,7 @@
 --offline: 0, 0, 0, .45;
 --golden: 255, 255, 99;
 --scroll: 0,0,0,.05;
---textentry: 207,207,207;
+--textentry: 207, 207, 207;
 --white05: 0,0,0,.05;
 --white10: 0,0,0,.1;
 --white12: 0, 0, 0, .12;
@@ -779,7 +779,7 @@ button.DialogButton,
 }
 
 .ModalPosition_TopBar {
-  height: 0 !important;
+  display: none;
 }
 
 .DialogToggleField_Option:hover:not(.Active) {
