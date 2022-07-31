@@ -1,3 +1,5 @@
+/* Still a lot to be skinned and improved */
+
 :root {
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
@@ -36,6 +38,15 @@ body, body.shared_common_v6_2Lxgd {
 	background: rgb(var(--clientBG));
 }
 
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn, .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:not(.pagedsettings_Active_Myra7):hover {
+	text-transform: none;
+    font-size: 14px;
+    margin-bottom: 3px;
+    padding: 5px 15px;
+    cursor: default;
+	color: rgb(140, 140, 140); /* To convert to a variable */ 
+}
+
 .libraryhome_LibraryHome_3Sb2o {
 	background-image: none;
 }
@@ -44,8 +55,10 @@ body, body.shared_common_v6_2Lxgd {
 	background-color: rgb(var(--header_dark));
 }
 
-.pagedsettings_PagedSettingsDialog_PageListColumn_2kwFF {
-	background: rgb(var(--clientBG));
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB {
+	background: rgb(var(--header_dark));
+    padding-left: 0px;
+    min-width: 205px;
 }
 
 .DialogContent, .DialogContentTransition {
@@ -132,6 +145,19 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
     background-color: rgb(var(--white10));
 }
 
+.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA .posttextentry_Label_3jvEk {
+	color: rgb(var(--white));
+}
+
+.gamelisthome_Bar_3pSPl {
+    background-color: rgb(var(--white10));
+	color: rgb(var(--white));
+}
+
+.gamelisthome_Bar_3pSPl:hover {
+    background-color: rgb(var(--white24));
+}
+
 .downloads_TopBar_SEmVp {
     background: none;
 }
@@ -140,10 +166,78 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
 	background-color: transparent;
 }
 
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase, .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
+	background-color: rgb(var(--clientBG));
+}
+
 .downloads_SectionItem_1VNuY .downloads_Button_3oavR, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:active, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled:active:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR.DialogButton:enabled {
 	border-radius: 50%!important;
 }
 
 .gamelistentry_Container_2-O4Z.gamelistentry_Uninstalled_5YTBr {
     color: rgb(var(--white50)); /*change to one with no transparency*/
+}
+
+/* Steam logo removal */
+.gamelisthome_Bar_3pSPl .gamelisthome_Icon_1ooRO svg {
+	display: none;
+}
+
+.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI, .appactivityday_PartnerEvent_1AYE1, .appactivityday_PartnerEventMediumImage_Container_1HZy7:hover {
+	background: rgb(var(--white05));
+}
+
+.appactivityday_PartnerEventTextOnly_3QRf- {
+	background: rgb(var(--white05));
+    border-image: none;
+}
+
+.collectionview_OuterContainer_2sNr7 {
+	background: none;
+}
+
+.appactivityday_PartnerEventMediumImage_Container_1HZy7 {
+	background: none;
+}
+
+.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_ColumnContainer_OhSdL, .appdetailsplaysection_Glassy_3DeO9 .appdetailsplaysection_PlayBar_3fLo1, .appdetails_ScrollContainer_2l416 {
+	background: rgb(var(--clientBG));
+}
+
+.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA, .posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D button.posttextentry_EmoticonButton_bACIu {
+	background-color: rgb(var(--white10));
+}
+
+.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA:hover, .posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D button.posttextentry_EmoticonButton_bACIu:hover {
+    background-color: rgb(var(--white24));
+}
+
+.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_EmoticonButton_bACIu {
+	cursor: default;
+}
+
+.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2 {
+	background: rgb(var(--textentry));
+}
+
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5.DialogButton:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:active, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled:active:hover, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.DialogButton:enabled {
+	background: rgb(var(--white10));
+}
+
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5:hover.DialogButton:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover {
+    background: rgb(var(--white24));
+}
+
+.pagedsettings_PagedSettingsDialog_Title_3qEgQ {
+	color: rgb(var(--white));
+    font-size: 16px;
+    text-transform: none;
+    margin-left: 15px;
+    margin-top: -3px;
+    font-weight: 200;
+}
+
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7 {
+	background-color: rgb(var(--white25));
+    color: rgb(var(--white));
 }
