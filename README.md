@@ -28,3 +28,4 @@ The [wiki](../../wiki) answers some of the most asked questions and contains a f
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the new chat, which I initially used as a template.
 * [Shiina](https://github.com/AikoMidori) for helping me find a few elements and for making me realize where to look.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
+* [Laser](https://github.com/LaserFlash) for an idea on tackling randomized class names.
