@@ -24,7 +24,7 @@ The [wiki](../../wiki) answers some of the most asked questions and contains a f
 * For purity, remove the Steam\clientui\css\ folder (and Steam\steamui\css\ if using the library skin) inside your Steam installation folder.
 
 ## Credits
-* [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that makes customization possible.
+* [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that allows to apply skins, and for tips on managing the randomized class names.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the new chat, which I initially used as a template.
 * [Shiina](https://github.com/AikoMidori) for helping me find a few elements and for making me realize where to look.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
