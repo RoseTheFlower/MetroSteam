@@ -1694,7 +1694,7 @@ button.DialogButton.Primary:hover {
 [class*="bbcode_ChatMessageTweet_"],
 .BBCodeOEmbedComponent,
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
-[class*="bbcode_ChatMessageSteamStore_"] {
+[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]) {
   background: rgba(0, 0, 0, 0.45) !important;
 }
 
@@ -1709,7 +1709,7 @@ button.DialogButton.Primary:hover {
 
 [class*="bbcode_ChatMessageTweet_"],
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
-[class*="bbcode_ChatMessageSteamStore_"] {
+[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]) {
   color: rgb(var(--white75)) !important;
 }
 
