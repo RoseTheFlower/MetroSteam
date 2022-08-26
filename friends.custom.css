@@ -938,15 +938,10 @@ button.DialogButton,
 .chatRoomListContainer[style="height: 0px; max-height: 0px; min-height: 0px;"] {
   display: none !important;
 }
-.chatRoomListContainer[style*="height: 150px; max-height: 222px; min-height: 0px;"] {
-  height: 100em !important;
-  max-height: 100em !important;
-  min-height: 100em !important;
-}
+
 .chatRoomListContainer {
-  height: 100em !important;
-  max-height: 100% !important;
-  width: 100% !important;
+  height: 100vh !important;
+  max-height: calc(100vh - 120px)!important;
 }
 
 /* Friends remove height and remake height */
@@ -1691,10 +1686,10 @@ button.DialogButton.Primary:hover {
 .msg div.ChatMessageOpenGraph,
 .msg div.SteamPublishedFile,
 .BBCodeYouTubeComponent,
-[class*="bbcode_ChatMessageTweet_"],
+[class*="bbcode_ChatMessageTweet_"]:not([class*="bbcode_ChatMessageTweet_NameSection"]),
 .BBCodeOEmbedComponent,
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
-[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]) {
+[class*="bbcode_ChatMessageSteamStore_"]:not([class*="_ViewStore_"]):not([class*="_Footer_"]):not([class*="_Header"]):not([class*="Details"]):not([class*="_Name"]):not([class*="_GameNameAndIcon"]):not([class*="_Description"]):not([class*="bbcode_ChatMessageSteamStore_Body"]) {
   background: rgba(0, 0, 0, 0.45) !important;
 }
 
