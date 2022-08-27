@@ -1,6 +1,8 @@
 /* Still a lot to be skinned */
 
 :root {
+  --scrollbarSize: 15px;
+  
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
   --clientBG: 26, 26, 26;
@@ -133,7 +135,7 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
 	background: none;
 }
 
-.downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL, .appdetailscommunityfeed_CommunityItem_3QS6O, [class*="appportrait_RecentGameFooter_"] {
     background-color: rgb(var(--white05));
 }
 
@@ -162,13 +164,20 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
     background: none;
 }
 
-.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1 {
+.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1, .writereview_RatingContainer_2SAb6 {
 	background-color: transparent;
 }
 
 .gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase, .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
 	background-color: rgb(var(--transparent));
 }
+
+/*[class*="gamelistsearchbar_Container_"] {
+	padding-bottom: 6px;
+	border-bottom: 1px solid rgb(var(--border));
+    border-top: 1px solid rgb(var(--border));
+}
+*/
 
 .downloads_SectionItem_1VNuY .downloads_Button_3oavR, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:active, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled:active:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR.DialogButton:enabled {
 	border-radius: 50%!important;
@@ -183,7 +192,7 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
 	display: none;
 }
 
-.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI, .appactivityday_PartnerEvent_1AYE1, .appactivityday_PartnerEventMediumImage_Container_1HZy7:hover {
+.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI, .appactivityday_PartnerEvent_1AYE1, .appactivityday_PartnerEventMediumImage_Container_1HZy7:hover, [class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"], [class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_TopSectionInner_"], [class*="appdetailscommunityfeed_AuthorSection_"] {
 	background: rgb(var(--white05));
 }
 
@@ -250,6 +259,16 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
     background: rgb(var(--clientBG));
 }
 
+/* In-game text color (poor contrast with the focus color)
+[class*="libraryhome_Container_"] {
+    background: rgb(var(--clientBG));
+}
+*/
+
+[class*="appdetails_Glassy_"] [class*="appdetails_ScrollContainer_"] {
+    background-image: none;
+}
+
 .collapseicon_CollapseIconParent_ehAsU .collapseicon_Container_3SFRZ {
 	stroke: rgb(var(--white25));
 }
@@ -258,10 +277,57 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
     fill: rgb(var(--ingame));
 }
 
+[class*="gamelistentry_Container_"][class*="gamelistentry_Running_"] {
+	color: rgb(var(--ingame));
+}
+
 .gamelisthome_CollectionIcon_nC-pL .gamelisthome_CollectionIconBox_2tyaV {
 	background: rgb(var(--white));
 }
 
-.gamelisthome_Label_3O48L {
+[class*="gamelisthome_Label_"], [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"], [class*="appdetailssectionheader_SectionHeader_"], [class*="pageablecontainer_HeaderPageControls_"], [class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer {
 	color: rgb(var(--white));
 }
+
+[class*="gamelistentry_Container_"] {
+	cursor: default;
+}
+
+[class*="steamavatar_avatarHolder_"]:hover {
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: var(--scrollbarSize)!important;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(var(--white05))!important;
+	border: none!important;
+	border-radius: 0 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(var(--white10)) !important;
+	border-radius: 0px !important;
+}
+
+[class*="appportrait_FooterBlurImageContainer_"] {
+	filter: opacity(0);
+}
+
+[class*="appportrait_LibraryItemBoxShine_"] {
+	display: none;
+}
+
+
+/* Filter buttons colors
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd.gamelistdropdown_Active_1QFFk svg path, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd.gamelistdropdown_Active_1QFFk svg line, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd.gamelistdropdown_Active_1QFFk svg polyline, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd.gamelistdropdown_Active_1QFFk svg circle {
+	stroke: rgb(var(--focus));
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_Filters_1PgAo .gamelistdropdown_CheckboxWithImage_3mzKd.gamelistdropdown_Active_1QFFk svg {
+    fill: rgb(var(--focus));
+}
+*/
