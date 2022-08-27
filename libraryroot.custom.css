@@ -101,7 +101,7 @@ body, body.shared_common_v6_2Lxgd {
     background-color: rgba(var(--white05));
 }
 
-.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D {
+.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D, .appdetailsplaysection_PlayBarLabel_34lrt {
 	color: rgb(var(--white));
 }
 
@@ -259,11 +259,11 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
     background: rgb(var(--clientBG));
 }
 
-/* In-game text color (poor contrast with the focus color)
+
 [class*="libraryhome_Container_"] {
     background: rgb(var(--clientBG));
 }
-*/
+
 
 [class*="appdetails_Glassy_"] [class*="appdetails_ScrollContainer_"] {
     background-image: none;
@@ -320,6 +320,27 @@ div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM
 	display: none;
 }
 
+[class*="appportrait_HoversEnabled_"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="appportrait_Landscape_"]) {
+	filter: none;
+	transform: scale(1.08);
+}
+
+[class*="smartscrollcontainer_ScrollToTopButton_"] div {
+	background: rgb(var(--focus));
+}
+
+[class*="smartscrollcontainer_ScrollToTopButton_"] {
+	color: rgb(var(--white));
+}
+
+[class*="appdetailsplaysection_MenuButton_"] svg {
+    fill: rgba(var(--white));
+    color: rgba(var(--white));
+}
+
+[class*="appdetailsplaysection_MenuButton_"] svg circle, [class*="appdetailsplaysection_MenuButton_"] svg polyline, [class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"] svg path {
+	stroke: rgba(var(--white));
+}
 
 /* Filter buttons colors
 
