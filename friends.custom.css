@@ -593,8 +593,8 @@
   background: rgba(var(--white75)) !important;
 }
 
-button.DialogButton:not(.Off) {
-  background: rgb(var(--focus)) !important;
+button.Primary.DialogButton:not(.Off):not(.Disabled) {
+  background: rgb(var(--focus));
 }
 
 [class*="radio_Button_"][class*="radio_Active_"],
@@ -609,6 +609,10 @@ button.DialogButton:not(.Off) {
 
 [class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"][class*="toggle_Highlight_"] {
   background-color: rgba(var(--focus), 0.3);
+}
+
+[class*="radio_Group_"] {
+  color: rgb(var(--white));
 }
 
 button.DialogButton:hover {
@@ -649,7 +653,11 @@ button.DialogButton.roleButton.owner:disabled {
 
 ._DialogTextInputBase,
 ._DialogInputContainer {
-  background: rgb(var(--clientBG)) !important;
+  background: rgb(var(--textentry));
+}
+
+.FriendPicker_SuggestedFriend .friend:hover {
+  background: rgb(var(--white05));
 }
 
 .DialogDropDown._DialogInputContainer {
@@ -1527,8 +1535,8 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 }
 
 button.DialogButton {
-  color: rgb(var(--white)) !important;
-  background: rgba(255, 255, 255, 0.12) !important;
+  color: rgb(var(--white));
+  background: rgba(var(--white12));
 }
 
 .voiceMicTestContainer {
@@ -2423,6 +2431,10 @@ img[class*="emoticon_emoticon_"] {
   font-size: 11px !important;
 }
 
+.friendlist {
+  background: rgb(var(--clientBG));
+}
+
 [class*="personanameandstatus_statusAndName_"][class*="personanameandstatus_threeLines_"] {
   margin-top: -8px !important;
 }
@@ -2794,4 +2806,8 @@ body[class*="shared_common_v6_"] {
 .mentionAvatar {
   left: 4px;
   margin-top: 2px;
+}
+
+[class*="bbcode_ImageModalBackground_"] {
+  background: rgb(var(--clientBG));
 }
