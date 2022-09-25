@@ -1,10 +1,10 @@
 /* Still a lot to be skinned */
 
 :root {
-  --scrollbarSize: 15px;
-  
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
+  --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
+  --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
   --clientBG: 26, 26, 26;
   --header_dark: 20, 20, 20;
   --online: 93, 178, 255;
@@ -14,332 +14,575 @@
   --scrollbarSize: 15px;
   --scroll: 32, 32, 32;
   --textentry: 39, 39, 39;
-  --white05: 255, 255, 255, .05;
-  --white10: 255, 255, 255, .1;
-  --white12: 255, 255, 255, .12;
-  --white24: 255, 255, 255, .24;
-  --white25: 255, 255, 255, .25;
-  --white50: 255, 255, 255, .5;
-  --white75: 255, 255, 255, .75;
+  --white05: 255, 255, 255, 0.05;
+  --white10: 255, 255, 255, 0.1;
+  --white12: 255, 255, 255, 0.12;
+  --white24: 255, 255, 255, 0.24;
+  --white25: 255, 255, 255, 0.25;
+  --white50: 255, 255, 255, 0.5;
+  --white75: 255, 255, 255, 0.75;
   --white: 255, 255, 255;
+  --black: 0, 0, 0;
   --black45: 38, 38, 38;
-  --border: 15, 15, 15;
+  --frameBorder: 15, 15, 15;
   --textentrybuttons: 200, 200, 200;
+  --white05onclientBG: 49, 49, 49;
 }
 
-*{
-	box-shadow: none !important;	
-	border-radius: 0 !important;
+* {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  cursor: default !important;
 }
 
-body, body.shared_common_v6_2Lxgd {
-	background: rgb(var(--clientBG));
+body,
+body.shared_common_v6_2Lxgd {
+  background: rgb(var(--clientBG));
 }
 
-.libraryhome_UpdatesContainer_17uEB, .libraryhome_LibraryHome_3Sb2o, .allcollections_ScrollContainer_u1xD3 {
-	background: rgb(var(--clientBG));
+.libraryhome_UpdatesContainer_17uEB,
+.libraryhome_LibraryHome_3Sb2o,
+.allcollections_ScrollContainer_u1xD3 {
+  background: rgb(var(--clientBG));
 }
 
-.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn, .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:not(.pagedsettings_Active_Myra7):hover {
-	text-transform: none;
-    font-size: 14px;
-    margin-bottom: 3px;
-    padding: 5px 15px;
-    cursor: default;
-	color: rgb(140, 140, 140); /* To convert to a variable */ 
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn,
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:not(.pagedsettings_Active_Myra7):hover {
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 3px;
+  padding: 5px 15px;
+  cursor: default;
+  color: rgb(140, 140, 140); /* To convert to a variable */
 }
 
 .libraryhome_LibraryHome_3Sb2o {
-	background-image: none;
+  background-image: none;
 }
 
 .gamelistbar_GameListHomeAndSearch_2TKEa {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .pagedsettings_PagedSettingsDialog_PageListColumn_RTicB {
-	background: rgb(var(--header_dark));
-    padding-left: 0px;
-    min-width: 205px;
+  background: rgb(var(--header_dark));
+  padding-left: 0px;
+  min-width: 205px;
 }
 
-.DialogContent, .DialogContentTransition {
-	background: rgb(var(--clientBG));
+.DialogContent,
+.DialogContentTransition {
+  background: rgb(var(--clientBG));
 }
 
-.appproperties_AppProperties_1FyBL .appproperties_Checkbox_2V2nc, .DialogTextInputBase, ._DialogInputContainer {
-	color: rgb(var(--white50));
-    background: rgb(var(--textentry));
+.appproperties_AppProperties_1FyBL .appproperties_Checkbox_2V2nc,
+.DialogTextInputBase,
+._DialogInputContainer {
+  color: rgb(var(--white50));
+  background: rgb(var(--textentry));
 }
 
 .library_LibraryWindowDivider_276E6 {
-    background-color: rgb(var(--border));
+  background-color: rgb(var(--frameBorder));
 }
 
 .gamelistbar_Container_3x1Hk {
-    background-image: none;
-    background: rgb(var(--black45));
+  background-image: none;
+  background: rgb(var(--black45));
 }
 
 .gamelistsectionheader_Container_2sYIg {
-    background: none;
+  background: none;
 }
 
-.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover, .gamelistsectionheader_Container_2sYIg.gamelistsectionheader_Selected_sXMOs {
-    background-color: rgb(var(--focus))!important;
-}	
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover,
+.gamelistsectionheader_Container_2sYIg.gamelistsectionheader_Selected_sXMOs {
+  background-color: rgb(var(--focus)) !important;
+}
 
 .gamelistsectionheader_SectionHeaderContent_3cV3O {
-    color: rgb(var(--white));
+  color: rgb(var(--white));
 }
 
 .gamelistsectionheader_SectionName_2mZ8L {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistsectionheader_Container_2sYIg:hover, .gamelistsectionheader_Container_2sYIg:hover {
-    background-color: rgba(var(--white05));
+.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z
+  .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover,
+.gamelistentry_Selected_1UBpA
+  .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover,
+.gamelistentry_Selected_1UBpA
+  .gamelistentry_Container_2-O4Z
+  .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistsectionheader_Container_2sYIg:hover,
+.gamelistsectionheader_Container_2sYIg:hover {
+  background-color: rgba(var(--white05));
 }
 
-.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D, .appdetailsplaysection_PlayBarLabel_34lrt {
-	color: rgb(var(--white));
+.gamelistentry_Container_2-O4Z:hover {
+  background-color: rgba(var(--white05onclientBG));
+}
+
+.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D,
+.appdetailsplaysection_PlayBarLabel_34lrt {
+  color: rgb(var(--white));
 }
 
 button.DialogButton {
-	color: rgb(var(--white));
-    background-color: rgba(var(--white12));
+  color: rgb(var(--white));
+  background-color: rgba(var(--white12));
 }
 
 button.DialogButton:hover {
-	color: rgb(var(--white));
-    background-color: rgba(var(--white24));
+  color: rgb(var(--white));
+  background-color: rgba(var(--white24));
 }
 
 .ModalPosition_TopBar {
-	display: none;
+  display: none;
 }
 
 .downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1 {
-	background: none;
+  background: none;
 }
 
 .downloadgraph_GraphAndStats_3KDkL {
-	background-color: rgb(var(--clientBG));
+  background-color: rgb(var(--clientBG));
 }
 
-div.MediumWindow .downloadgraph_DownloadGraph_1BxZD .downloadgraph_Gradient_RfMM3 {
-	background-image: none;
+div.MediumWindow
+  .downloadgraph_DownloadGraph_1BxZD
+  .downloadgraph_Gradient_RfMM3 {
+  background-image: none;
 }
 
-.downloads_DownloadsPage_1bq4x, .library_AppDetailsTransitionGroup_2Dd4T {
-	background: none;
+.downloads_DownloadsPage_1bq4x,
+.library_AppDetailsTransitionGroup_2Dd4T {
+  background: none;
 }
 
-.downloads_SectionItem_1VNuY.downloads_Active_IbePL, .appdetailscommunityfeed_CommunityItem_3QS6O, [class*="appportrait_RecentGameFooter_"] {
-    background-color: rgb(var(--white05));
+[class*="downloads_SectionItem_"].downloads_Active_IbePL,
+.appdetailscommunityfeed_CommunityItem_3QS6O,
+[class*="appportrait_RecentGameFooter_"] {
+  background-color: rgb(var(--white05));
 }
 
 .downloads_Active_IbePL .downloads_SectionList_OINnO {
-    border: 2px transparent;
+  border: 2px transparent;
 }
 
-.downloads_SectionItem_1VNuY:hover, .downloads_SectionItem_1VNuY.downloads_Dragging_3-SbB {
-    background-color: rgb(var(--white10));
+[class*="downloads_SectionItem_"]:hover,
+[class*="downloads_SectionItem_"].downloads_Dragging_3-SbB {
+  background-color: rgb(var(--white10));
 }
 
-.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA .posttextentry_Label_3jvEk {
-	color: rgb(var(--white));
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  .posttextentry_PostButton_2JSyA
+  .posttextentry_Label_3jvEk {
+  color: rgb(var(--white));
 }
 
 .gamelisthome_Bar_3pSPl {
-    background-color: rgb(var(--white12));
-	color: rgb(var(--white));
+  background-color: rgb(var(--white12));
+  color: rgb(var(--white));
 }
 
 .gamelisthome_Bar_3pSPl:hover {
-    background-color: rgb(var(--white24));
+  background-color: rgb(var(--white24));
 }
 
 .downloads_TopBar_SEmVp {
-    background: none;
+  background: none;
 }
 
-.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1, .writereview_RatingContainer_2SAb6 {
-	background-color: transparent;
+.downloads_SectionTitle_qq2xI .downloads_Rule_1CTr1,
+.writereview_RatingContainer_2SAb6 {
+  background-color: transparent;
 }
 
-.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogTextInputBase, .gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY, .gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
-	background-color: rgb(var(--transparent));
+.gamelistsearchbar_Container_20QAC
+  .gamelistsearchbar_SearchInput_12vo5
+  .DialogTextInputBase,
+.gamelistsearchbar_Container_20QAC
+  .gamelistsearchbar_AdvancedSearchContainer_vCCmY,
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
+  background-color: rgb(var(--transparent));
+}
+
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
+  color: rgb(var(--white));
+  border: 1px solid rgb(var(--white05));
+  cursor: default;
+}
+
+.gamelistsearchbar_Container_20QAC
+  .gamelistsearchbar_SearchInput_12vo5
+  .DialogInput_Wrapper {
+  border: 1px solid rgb(var(--white05));
 }
 
 /*[class*="gamelistsearchbar_Container_"] {
 	padding-bottom: 6px;
-	border-bottom: 1px solid rgb(var(--border));
-    border-top: 1px solid rgb(var(--border));
+	border-bottom: 1px solid rgb(var(--frameBorder));
+    border-top: 1px solid rgb(var(--frameBorder));
 }
 */
 
-.downloads_SectionItem_1VNuY .downloads_Button_3oavR, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:active, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR:enabled:active:hover, .downloads_SectionItem_1VNuY .downloads_Button_3oavR.DialogButton:enabled {
-	border-radius: 50%!important;
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"],
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled,
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active,
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover,
+[class*="downloads_SectionItem_"]
+  [class*="downloads_Button_"]:enabled:active:hover,
+[class*="downloads_SectionItem_"]
+  [class*="downloads_Button_"].DialogButton:enabled {
+  border-radius: 50% !important;
 }
 
 .gamelistentry_Container_2-O4Z.gamelistentry_Uninstalled_5YTBr {
-    color: rgb(var(--white50)); /*change to one with no transparency*/
+  color: rgb(var(--white50)); /*change to one with no transparency*/
 }
 
 /* Steam logo removal */
 .gamelisthome_Bar_3pSPl .gamelisthome_Icon_1ooRO svg {
-	display: none;
+  display: none;
 }
 
-.appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI, .appactivityday_PartnerEvent_1AYE1, .appactivityday_PartnerEventMediumImage_Container_1HZy7:hover, [class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"], [class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_TopSectionInner_"], [class*="appdetailscommunityfeed_AuthorSection_"] {
-	background: rgb(var(--white05));
+[class*="appdetailssection_AppDetailsSectionContainer_"][class*="appdetailssection_RightColumnSection_"],
+[class*="appactivityday_PartnerEvent_"],
+[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover,
+[class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"],
+[class*="appdetailscommunityfeed_Guide_"]
+  [class*="appdetailscommunityfeed_TopSectionInner_"],
+[class*="appdetailscommunityfeed_AuthorSection_"],
+[class*="appactivityday_PartnerEventLargeImage_Container_"] {
+  background: rgba(var(--black), 0.35) !important;
 }
 
 .appactivityday_PartnerEventTextOnly_3QRf- {
-	background: rgb(var(--white05));
-    border-image: none;
+  background: rgb(var(--white05));
+  border-image: none;
 }
 
 .collectionview_OuterContainer_2sNr7 {
-	background: none;
+  background: none;
 }
 
 .appactivityday_PartnerEventMediumImage_Container_1HZy7 {
-	background: none;
+  background: none;
 }
 
-.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_ColumnContainer_OhSdL, .appdetailsplaysection_Glassy_3DeO9 .appdetailsplaysection_PlayBar_3fLo1, .appdetails_ScrollContainer_2l416 {
-	background: rgb(var(--clientBG));
+.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_ColumnContainer_OhSdL,
+.appdetailsplaysection_Glassy_3DeO9 .appdetailsplaysection_PlayBar_3fLo1,
+.appdetails_ScrollContainer_2l416 {
+  background: rgb(var(--clientBG));
 }
 
-.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA, .posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D button.posttextentry_EmoticonButton_bACIu {
-	background-color: rgb(var(--white10));
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  .posttextentry_PostButton_2JSyA,
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  button.posttextentry_EmoticonButton_bACIu {
+  background-color: rgb(var(--white10));
 }
 
-.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_PostButton_2JSyA:hover, .posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D button.posttextentry_EmoticonButton_bACIu:hover {
-    background-color: rgb(var(--white24));
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  .posttextentry_PostButton_2JSyA:hover,
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  button.posttextentry_EmoticonButton_bACIu:hover {
+  background-color: rgb(var(--white24));
 }
 
-.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D .posttextentry_EmoticonButton_bACIu {
-	cursor: default;
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_Controls_37e7D
+  .posttextentry_EmoticonButton_bACIu {
+  cursor: default;
 }
 
-.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2 {
-	background: rgb(var(--textentry));
+.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2,
+.posttextentry_PostTextEntry_3x31A
+  .posttextentry_PostTextEntryArea_1JlC2:focus {
+  background: rgb(var(--textentry));
 }
 
-.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5.DialogButton:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:active, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled:active:hover, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.DialogButton:enabled {
-	background: rgb(var(--white10));
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5.DialogButton:enabled,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:active,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:enabled:active:hover,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.DialogButton:enabled {
+  background: rgb(var(--white10));
 }
 
-.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5:hover.DialogButton:enabled, .downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover {
-    background: rgb(var(--white24));
+.downloads_RemoveAllButton_1GdR5.downloads_RemoveAllButton_1GdR5:hover.DialogButton:enabled,
+.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8.downloadgraph_Button_3Tfp8:hover {
+  background: rgb(var(--white24));
 }
 
 .pagedsettings_PagedSettingsDialog_Title_3qEgQ {
-	color: rgb(var(--white));
-    font-size: 16px;
-    text-transform: none;
-    margin-left: 15px;
-    margin-top: -3px;
-    font-weight: 200;
+  color: rgb(var(--white));
+  font-size: 16px;
+  text-transform: none;
+  margin-left: 15px;
+  margin-top: -3px;
+  font-weight: 200;
 }
 
 .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7 {
-	background-color: rgb(var(--white25));
-    color: rgb(var(--white));
+  background-color: rgb(var(--white25));
+  color: rgb(var(--white));
 }
 
 .appdetailsoverview_Glassy_2OOzY .appdetailsoverview_BackdropGlass_Jbe-- {
-	display: none;
+  display: none;
 }
 
-.appdetailsplaysection_Glassy_3DeO9.appdetailsplaysection_PlayBar_3fLo1, .appdetailsprimarylinkssection_LinksSection_3-V8v, div.LowPerfMode .appdetailsplaysection_Glassy_3DeO9.appdetailsplaysection_PlayBar_3fLo1 {
-    background: rgb(var(--clientBG));
+.appdetailsplaysection_Glassy_3DeO9.appdetailsplaysection_PlayBar_3fLo1,
+.appdetailsprimarylinkssection_LinksSection_3-V8v,
+div.LowPerfMode
+  .appdetailsplaysection_Glassy_3DeO9.appdetailsplaysection_PlayBar_3fLo1 {
+  background: rgb(var(--clientBG));
 }
-
 
 [class*="libraryhome_Container_"] {
-    background: rgb(var(--clientBG));
+  background: rgb(var(--clientBG));
 }
 
-
-[class*="appdetails_Glassy_"] [class*="appdetails_ScrollContainer_"] {
-    background-image: none;
+[class*="appdetails_Glassy_"][class*="appdetails_ScrollContainer_"] {
+  background-image: none !important;
 }
 
 .collapseicon_CollapseIconParent_ehAsU .collapseicon_Container_3SFRZ {
-	stroke: rgb(var(--white25));
+  stroke: rgb(var(--white25));
 }
 
-.gamelistentry_FriendIsPlaying_cNZ3w svg circle, .gamelistentry_FriendIsPlaying_cNZ3w svg path {
-    fill: rgb(var(--ingame));
+.gamelistentry_FriendIsPlaying_cNZ3w svg circle,
+.gamelistentry_FriendIsPlaying_cNZ3w svg path {
+  fill: rgb(var(--ingame));
 }
 
+/* Not bright enough
 [class*="gamelistentry_Container_"][class*="gamelistentry_Running_"] {
 	color: rgb(var(--ingame));
 }
+*/
 
 .gamelisthome_CollectionIcon_nC-pL .gamelisthome_CollectionIconBox_2tyaV {
-	background: rgb(var(--white));
+  background: rgb(var(--white));
 }
 
-[class*="gamelisthome_Label_"], [class*="spotlightgameplaysummary_GamePlaySummaryHeader_"], [class*="appdetailssectionheader_SectionHeader_"], [class*="pageablecontainer_HeaderPageControls_"], [class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer {
-	color: rgb(var(--white));
+[class*="gamelisthome_Label_"],
+[class*="spotlightgameplaysummary_GamePlaySummaryHeader_"],
+[class*="appdetailssectionheader_SectionHeader_"],
+[class*="pageablecontainer_HeaderPageControls_"],
+[class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer {
+  color: rgb(var(--white));
 }
 
-[class*="gamelistentry_Container_"] {
-	cursor: default;
+[class*="gamelistentry_Container_"],
+[class*="gamelistsectionheader_Container_"] {
+  cursor: default;
 }
 
 [class*="steamavatar_avatarHolder_"]:hover {
-	cursor: pointer;
+  cursor: pointer !important;
 }
 
 ::-webkit-scrollbar {
-	width: var(--scrollbarSize)!important;
+  width: var(--scrollbarSize) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(var(--white05))!important;
-	border: none!important;
-	border-radius: 0 !important;
+  background: rgba(var(--white05)) !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: rgba(var(--white10)) !important;
-	border-radius: 0px !important;
+  background-color: rgba(var(--white10)) !important;
+  border-radius: 0px !important;
+}
+
+.DialogBody::-webkit-scrollbar-button {
+  display: none !important;
 }
 
 [class*="appportrait_FooterBlurImageContainer_"] {
-	filter: opacity(0);
+  filter: opacity(0);
 }
 
 [class*="appportrait_LibraryItemBoxShine_"] {
-	display: none;
+  display: none;
 }
 
-[class*="appportrait_HoversEnabled_"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="appportrait_Landscape_"]) {
-	filter: none;
-	transform: scale(1.08);
+[class*="appportrait_HoversEnabled_"]
+  [class*="appportrait_LibraryItemBox_"]:hover:not([class*="appportrait_Landscape_"]) {
+  filter: none;
+  transform: scale(1.08);
 }
 
 [class*="smartscrollcontainer_ScrollToTopButton_"] div {
-	background: rgb(var(--focus));
+  background: rgb(var(--focus));
 }
 
 [class*="smartscrollcontainer_ScrollToTopButton_"] {
-	color: rgb(var(--white));
+  color: rgb(var(--white));
 }
 
 [class*="appdetailsplaysection_MenuButton_"] svg {
-    fill: rgba(var(--white));
-    color: rgba(var(--white));
+  fill: rgba(var(--white));
+  color: rgba(var(--white));
 }
 
-[class*="appdetailsplaysection_MenuButton_"] svg circle, [class*="appdetailsplaysection_MenuButton_"] svg polyline, [class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"] svg path {
-	stroke: rgba(var(--white));
+[class*="appdetailsplaysection_MenuButton_"] svg circle,
+[class*="appdetailsplaysection_MenuButton_"] svg polyline,
+[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"]
+  svg
+  path {
+  stroke: rgba(var(--white));
+}
+
+[class*="artworkmodal_ArtworkModal_"] {
+  border: 1px solid rgb(var(--frameBorder));
+}
+
+[class*="artworkmodal_ModalBox_"] {
+  background: rgb(var(--clientBG));
+}
+
+.closeButton:hover {
+  background: rgb(var(--W10close_Red_h));
+}
+
+.closeButton:active {
+  background: rgb(var(--W10close_Red_p));
+}
+
+.title-area-icon {
+  padding: 3px;
+  margin-top: 0px;
+}
+
+.title-area-icon .SVGIcon_X_Line line {
+  stroke: rgb(var(--white));
+}
+
+[class*="appdetailsachievementssection_AchievementProgressContainer_"]
+  [class*="appdetailsachievementssection_AchievementProgress_"] {
+  background-color: rgb(var(--focus));
+}
+
+[class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Play_"]:not([class*="appportrait_Disabled_"]),
+[class*="appportrait_FeaturedCapsule_"]
+  [class*="appportrait_LibraryItemActionButton_"] {
+  background: transparent;
+  border: 1px solid rgb(var(--white));
+  border-radius: 50% !important;
+}
+
+[class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Play_"]:not([class*="appportrait_Disabled_"])
+  .SVGIcon_Play {
+  fill: rgb(var(--white));
+}
+
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"],
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled,
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active,
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover,
+[class*="downloads_SectionItem_"]
+  [class*="downloads_Button_"]:enabled:active:hover,
+[class*="downloads_SectionItem_"]
+  [class*="downloads_Button_"].DialogButton:enabled {
+  background: transparent;
+  border: 1px solid rgb(var(--white));
+}
+
+[class*="aappdetails_PlayBar_"] {
+  width: calc(100% - 15px);
+}
+
+.appactionbutton_Green_3cI5T > .appactionbutton_ButtonChild_2AzIX {
+  background: #01a75b; /* Probably needs to be changed */
+  transition: none;
+}
+
+[class*="gamelistsearchbar_Container_"]
+  .gamelistsearchbar_AdvancedSearchContainer_vCCmY
+  .gamelistsearchbar_AdvancedSearchButton_1TxHd
+  svg
+  path {
+  fill: rgb(var(--white));
+}
+
+.gamelistsearchbar_Container_20QAC
+  .gamelistsearchbar_SearchInput_12vo5
+  .DialogTextInputBase {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='SVGIcon_Button SVGIcon_MagnifyingGlass' version='1.1' x='0px' y='0px' viewBox='0 0 100 100'%3E%3Cg transform='translate(0,-952.36218)'%3E%3Cpath class='ColorSelector' d='m 40.99855,964.36216 c -15.9798,0 -28.9986,13.01864 -28.9986,28.99862 0,15.97992 13.0188,28.99862 28.9986,28.99862 6.9189,0 13.2881,-2.4349 18.2803,-6.4997 l 23.5927,23.6239 c 1.1714,1.1714 3.0784,1.1715 4.2498,0 1.1716,-1.1715 1.1716,-3.0783 0,-4.2498 l -23.6239,-23.5926 c 4.0649,-4.9923 6.4997,-11.3615 6.4997,-18.28042 0,-15.97998 -13.0187,-28.99862 -28.9986,-28.99862 z m 0,5.99972 c 12.7374,0 22.9989,10.26145 22.9989,22.9989 0,12.73732 -10.2615,22.99892 -22.9989,22.99892 -12.7374,0 -22.9989,-10.2616 -22.9989,-22.99892 0,-12.73745 10.2615,-22.9989 22.9989,-22.9989 z' fill='%23ffffff' fill-opacity='1' stroke='none' visibility='visible' display='inline' overflow='visible'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-size: 22px 22px;
+  background-position: 6px center;
+}
+
+[class*="contextmenu_contextMenu_"] {
+  border: 1px solid rgb(var(--frameBorder));
+  background: rgb(var(--clientBG));
+  padding: 0px;
+}
+[class*="contextmenu_contextMenuItem_"]:hover,
+[class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"] {
+  background: rgba(var(--white05));
+}
+
+[class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"] {
+  padding-right: 0px;
+}
+
+[class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"]
+  .SVGIcon_DownArrowContextMenu {
+  fill: rgba(var(--white));
+}
+
+[class*="contextmenu_contextMenuContents_"] {
+  font-size: 12px;
+}
+
+[class*="contextmenu_contextMenuItem_"] {
+  padding: 4px 8px;
+  line-height: 15px;
+  color: rgb(var(--white)) !important;
+  border-top: none;
+  border-bottom: none;
+}
+
+.contextMenuUnselectable:hover,
+.contextMenuGameTitle,
+.contextMenuBroadcast,
+.contextMenuGameOptions {
+  background-color: rgb(var(--clientBG));
+}
+.contextMenuGameTitle {
+  border-top: 1px solid rgb(53, 53, 53);
+}
+
+.contextMenuGameOptions .SVGIcon_Play {
+  display: none;
+}
+
+html[class*="contextmenu_ContextMenuPopup_"]
+  [class*="contextmenu_contextMenuContents_"] {
+  padding: 0;
 }
 
 /* Filter buttons colors
