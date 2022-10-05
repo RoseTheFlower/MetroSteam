@@ -560,22 +560,21 @@
 
 [class*="contextmenu_contextMenu_"] {
   border: 1px solid rgb(var(--frameBorder));
-  background: rgb(var(--clientBG)) !important;
-  box-shadow: none !important;
-  padding: 0px !important;
+  background: rgb(var(--clientBG));
+  padding: 0px;
 }
 [class*="contextmenu_contextMenuItem_"]:hover,
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"] {
-  background: rgba(var(--white05)) !important;
+  background: rgba(var(--white05));
 }
 
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"] {
-  padding-right: 0px !important;
+  padding-right: 0px;
 }
 
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"]
   .SVGIcon_DownArrowContextMenu {
-  fill: rgba(var(--white)) !important;
+  fill: rgba(var(--white));
 }
 
 /* Settings windows */
@@ -1694,7 +1693,7 @@ button.DialogButton.Primary:hover {
 .msg div.ChatMessageOpenGraph,
 .msg div.SteamPublishedFile,
 .BBCodeYouTubeComponent,
-[class*="bbcode_ChatMessageTweet_"]:not([class*="bbcode_ChatMessageTweet_NameSection"]),
+[class*="bbcode_ChatMessageTweet_"]:not([class*="bbcode_ChatMessageTweet_Body"]):not([class*="bbcode_ChatMessageTweet_Header"]):not([class*="bbcode_ChatMessageTweet_Logo"]):not([class*="bbcode_ChatMessageTweet_ScreenName"]):not([class*="bbcode_ChatMessageTweet_Verified"]):not([class*="bbcode_ChatMessageTweet_Footer"]):not([class*="bbcode_ChatMessageTweet_Name"]):not([class*="bbcode_ChatMessageTweet_Created"]),
 .BBCodeOEmbedComponent,
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
 [class*="bbcode_ChatMessageSteamStore_"]:not([class*="_ViewStore_"]):not([class*="_Footer_"]):not([class*="_Header"]):not([class*="Details"]):not([class*="_Name"]):not([class*="_GameNameAndIcon"]):not([class*="_Description"]):not([class*="bbcode_ChatMessageSteamStore_Body"]):not([class*="bbcode_ChatMessageSteamStore_Pricing"]) {
