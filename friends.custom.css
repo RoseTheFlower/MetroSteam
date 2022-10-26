@@ -565,7 +565,7 @@
 }
 [class*="contextmenu_contextMenuItem_"]:hover,
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"] {
-  background: rgba(var(--white05));
+  background: rgba(var(--white05))!important;
 }
 
 [class*="contextmenu_contextMenuItem_"][class*="contextmenu_SubMenu_"] {
