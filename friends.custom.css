@@ -2443,7 +2443,7 @@ img[class*="emoticon_emoticon_"] {
 }
 
 [class*="personanameandstatus_statusAndName_"][class*="personanameandstatus_threeLines_"] {
-  margin-top: -8px !important;
+  margin-top: -7px !important;
 }
 
 .compactView
@@ -2569,6 +2569,10 @@ img[class*="emoticon_emoticon_"] {
 [class*="messages_MsgWithAddons_"]:hover,
 [class*="reactions_MessageReaction_"]:hover {
   background-color: rgb(var(--white05)) !important;
+}
+
+[class*="messages_MsgWithAddons_"] .msgText div {
+  cursor: default !important;
 }
 
 [class*="reactions_ReactionCount_"] {
