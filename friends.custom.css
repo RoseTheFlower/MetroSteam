@@ -2864,3 +2864,15 @@ body[class*="shared_common_v6_"] {
 .voiceSelfDirections .friend .labelHolder {
   min-width: 35px;
 }
+
+svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
+  fill: rgb(var(--white));
+}
+
+ .currentUserContainer .ContextMenuButton:hover .SVGIcon_DownArrowContextMenu, .friend:hover .ContextMenuButton:hover .SVGIcon_DownArrowContextMenu {
+  fill: rgb(var(--white75))!important;
+}
+
+:not(.friendInviteContainer) .online .ContextMenuButton .SVGIcon_DownArrowContextMenu {
+  fill: rgb(var(--online));
+}
