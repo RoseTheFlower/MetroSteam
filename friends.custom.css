@@ -475,7 +475,7 @@
 [class*="chatentry_chatSubmitButton_"] {
   position: relative;
   background-color: rgb(var(--textentry)) !important;
-  border: 0px solid #1b1c20 !important;
+  border: 0px solid #1b1c20 !important; /* Hardcoded, must be changed */
   margin-top: 0px !important;
   min-width: 32px !important;
   min-height: 40px !important;
@@ -541,8 +541,8 @@
   right: 0px !important;
   width: 66px !important;
   text-align: center !important;
-  color: #74c069;
-  background-color: #0000;
+  color: #74c069; /* Hardcoded, must be changed */
+  background-color: #0000; /* Hardcoded, must be changed */
 }
 
 .VoiceToggle,
@@ -615,7 +615,7 @@ button.Primary.DialogButton:not(.Off):not(.Disabled) {
 }
 
 button.DialogButton:hover {
-  background: rgb(81, 81, 81) !important;
+  background: rgb(81, 81, 81) !important; /* Hardcoded, must be changed */
 }
 button.DialogButton:disabled,
 button.DialogButton:disabled:hover {
@@ -630,10 +630,10 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 .Disabled .DialogOnOffToggle_Option.Active {
-  background-color: #4f4f4f !important;
+  background-color: #4f4f4f !important; /* Hardcoded, must be changed */
 }
 .DialogDropDownMenu._DialogInputContainer {
-  border: 1px solid #383535 !important;
+  border: 1px solid #383535 !important; /* Hardcoded, must be changed */
   background: rgb(var(--header_dark)) !important;
 }
 
@@ -642,7 +642,7 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 .DialogBody a {
-  color: rgb(140, 140, 140) !important;
+  color: rgb(140, 140, 140) !important; /* Hardcoded, must be changed */
   text-decoration: underline !important;
 }
 
@@ -662,15 +662,15 @@ button.DialogButton.roleButton.owner:disabled {
 .DialogDropDown._DialogInputContainer {
   color: rgba(var(--white75)) !important;
   padding: 3px 5px !important;
-  border: 1px solid rgb(53, 53, 53) !important;
+  border: 1px solid rgb(53, 53, 53) !important; /* Hardcoded, must be changed */
 }
 
 [class*="voicesettings_TransmissionTypeSettings_"] {
-  border: 1px solid rgb(53, 53, 53) !important;
+  border: 1px solid rgb(53, 53, 53) !important; /* Hardcoded, must be changed */
 }
 
 .DialogDropDown._DialogInputContainer:hover {
-  border: 1px solid rgb(81, 81, 81) !important;
+  border: 1px solid rgb(81, 81, 81) !important; /* Hardcoded, must be changed */
 }
 
 .DialogDropDown_Arrow {
@@ -679,9 +679,9 @@ button.DialogButton.roleButton.owner:disabled {
 
 .Dialog_EditNickName .friend.online ._DialogTextInputBase,
 .Dialog_ChangePersonaName .friend.online ._DialogTextInputBase {
-  border: 1px solid rgb(53, 53, 53) !important;
+  border: 1px solid rgb(53, 53, 53) !important; /* Hardcoded, must be changed */
   color: rgba(var(--white75)) !important;
-  background: rgb(39, 39, 39) !important;
+  background: rgb(39, 39, 39) !important; /* Hardcoded, must be changed */
 }
 
 .DialogDropDown {
@@ -699,10 +699,10 @@ button.DialogButton.roleButton.owner:disabled {
 
 button.DialogButton,
 .DialogToggleField_Option:hover:not(.Active) {
-  background: #4c4c4c;
+  background: #4c4c4c; /* Hardcoded, must be changed */
 }
 .DialogToggleField_Option {
-  background: #343434 !important;
+  background: #343434 !important; /* Hardcoded, must be changed */
 }
 .DialogToggleField_Option.Active {
   background: rgb(var(--focus)) !important;
@@ -773,6 +773,10 @@ button.DialogButton,
   color: rgb(var(--white)) !important;
 }
 
+[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover {
+  background-color: rgb(var(--white12));
+}
+
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover,
 [class*="pagedcontent_Nav_"]
@@ -781,8 +785,7 @@ button.DialogButton,
 [class*="pagedcontent_Nav_"]
   [class*="pagedcontent_NavItems_"]
   [class*="pagedcontent_NavItem_"]:not([class*="pagedcontent_Active_"]):hover {
-  color: rgb(140, 140, 140) !important;
-  background-color: transparent;
+  color: rgb(140, 140, 140); /* Hardcoded, must be changed */
 }
 
 [class*="chatroomgroupsettings_LeaveButton_"] {
@@ -794,7 +797,7 @@ button.DialogButton,
 }
 
 .DialogToggleField_Option:hover:not(.Active) {
-  background: rgb(75, 75, 75) !important;
+  background: rgb(75, 75, 75) !important; /* Hardcoded, must be changed */
 }
 
 .DialogCheckbox .SVGIcon_DialogCheck {
@@ -803,7 +806,7 @@ button.DialogButton,
 
 .FriendsSettingsNotificationRow {
   background-color: transparent !important;
-  color: rgb(140, 140, 140) !important;
+  color: rgb(140, 140, 140) !important; /* Hardcoded, must be changed */
 }
 
 .MemberListColumn.MemberListViewCompact ::-webkit-scrollbar {
@@ -2866,7 +2869,7 @@ body[class*="shared_common_v6_"] {
 }
 
 svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
-  fill: rgb(var(--white));
+  fill: rgb(var(--offline));
 }
 
  .currentUserContainer .ContextMenuButton:hover .SVGIcon_DownArrowContextMenu, .friend:hover .ContextMenuButton:hover .SVGIcon_DownArrowContextMenu {
