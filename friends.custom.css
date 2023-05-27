@@ -1865,7 +1865,7 @@ button.DialogButton.Primary:hover {
 background: rgba(var(--white05))!important;}*/
 
 .friendsui-container .title-area-icon .SVGIcon_Minimize {
-    margin-top: -5px;
+    margin-top: 2px;
     width: 11px;
     height: 12px;
 }
@@ -2878,4 +2878,17 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 
 :not(.friendInviteContainer) .online .ContextMenuButton .SVGIcon_DownArrowContextMenu {
   fill: rgb(var(--online));
+}
+
+.ToggleGroupChatList .SVGIcon_DoubleArrow polyline.Arrow1 {
+  display: none;
+}
+
+.ToggleGroupChatList .SVGIcon_DoubleArrow polyline {
+  stroke: rgb(var(--white));
+}
+
+.ToggleGroupChatList:hover .SVGIcon_DoubleArrow polyline {
+  stroke: rgb(var(--white75));
+  fill: none;
 }
