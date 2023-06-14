@@ -2850,16 +2850,16 @@ body[class*="shared_common_v6_"] {
 }
 
 .friendsui-container .title-area-icon {
-  height: 26px;
+  height: 24px;
   width: 26px;
 }
 
 .friendsui-container .title-bar-actions {
-  max-height: 27px;
+  max-height: 25px;
 }
 
 .friendlist .title-area-icon {
-  height: 22px !important;
+  height: 20px !important;
 }
 
 .voiceSelfHeader .friend .avatarHolder .avatarStatus {
