@@ -883,10 +883,10 @@ button.DialogButton,
   border: 1px solid rgb(var(--frameBorder)) !important;
 }
 
-/* ======== Friend Panel Group ======== */
-.friendsListSectionTitle.chatSectionTitle .groupChatSectionTitle {
+.friendsListSectionTitle .chatSectionTitle .groupChatSectionTitle {
   position: absolute !important;
   left: 15px !important;
+  font-weight: normal;
 }
 /* Groups chat selected category on servers */
 .chatRoomTextChannel.ActiveTextChannel {
@@ -1759,7 +1759,10 @@ button.DialogButton.Primary:hover {
 .socialListTab {
   letter-spacing: 1px !important;
   padding-left: 15px !important;
+  font-weight: normal;
 }
+
+
 
 .compactView .socialListTab {
   height: 27px !important;
@@ -1836,6 +1839,7 @@ button.DialogButton.Primary:hover {
 
 .currentUserContainer [class*="personanameandstatus_playerName_"] {
   font-size: 14px !important;
+  font-weight: normal;
 }
 
 .friendlist .labelHolder {
@@ -2845,9 +2849,17 @@ body[class*="shared_common_v6_"] {
   border-radius: 0 !important;
 }
 
-.DesktopUI .title-area-icon, .friendsui-container .title-area-icon {
-  height: 20px;
+.friendsui-container .title-area-icon {
+  height: 26px;
   width: 26px;
+}
+
+.friendsui-container .title-bar-actions {
+  max-height: 27px;
+}
+
+.friendlist .title-area-icon {
+  height: 22px !important;
 }
 
 .voiceSelfHeader .friend .avatarHolder .avatarStatus {
@@ -2891,4 +2903,8 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .ToggleGroupChatList:hover .SVGIcon_DoubleArrow polyline {
   stroke: rgb(var(--white75));
   fill: none;
+}
+
+.popup_chat_frame {
+  border: 0;
 }
