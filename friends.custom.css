@@ -91,6 +91,9 @@
 .friendsListSectionTitle {
   background-color: rgb(var(--clientBG)) !important;
 }
+.friendListHeaderContainer {
+  border: 0;
+}
 /* Bottom panel bg*/
 .friendListFooter {
   background-color: rgb(var(--clientBG)) !important;
