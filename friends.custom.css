@@ -1771,6 +1771,7 @@ button.DialogButton.Primary:hover {
 .friendsListSectionTitle {
   letter-spacing: 1px !important;
   z-index: 2;
+  padding-left: 16px;
 }
 
 .friendlistListContainer .friend .avatarHolder {
