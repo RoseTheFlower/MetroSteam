@@ -929,6 +929,10 @@ button.DialogButton,
   left: 15px !important;
   font-weight: normal;
 }
+.groupChatSectionTitle {
+  font-weight: normal;
+}
+
 /* Groups chat selected category on servers */
 .chatRoomTextChannel.ActiveTextChannel {
   background: rgb(var(--header_dark)) !important;
@@ -1812,7 +1816,7 @@ button.DialogButton.Primary:hover {
 .friendsListSectionTitle {
   letter-spacing: 1px !important;
   z-index: 2;
-  padding-left: 16px;
+  padding-left: 15px;
 }
 
 .friendlistListContainer .friend .avatarHolder {
