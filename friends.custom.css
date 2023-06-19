@@ -5,56 +5,94 @@
   /* Color presets: */
   --focus: 102, 36, 226; /* Default Metro skin purple accent */
   /* 0, 114, 198; /* Blue accent option */
+  
+  /* For themes: */
   --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
   --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
   --clientBG: 26, 26, 26;
   --header_dark: 20, 20, 20;
+  --frameBorder: 15, 15, 15;
+  --textentrybuttons: 200, 200, 200;
   --online: 93, 178, 255;
   --ingame: 130, 186, 0;
   --offline: 145, 145, 145;
   --golden: 255, 255, 99;
   --scroll: 32, 32, 32;
   --textentry: 39, 39, 39;
+
+  --white03: 255, 255, 255, 0.03;
   --white05: 255, 255, 255, 0.05;
-  --white10: 255, 255, 255, 0.1;
+  --white08: 255, 255, 255, 0.08;
+  --white10: 255, 255, 255, 0.10;
   --white12: 255, 255, 255, 0.12;
+  --white20: 255, 255, 255, 0.20;
   --white24: 255, 255, 255, 0.24;
   --white25: 255, 255, 255, 0.25;
+  --white35: 255, 255, 255, 0.35;
   --white45: 255, 255, 255, 0.45;
-  --white50: 255, 255, 255, 0.5;
+  --white50: 255, 255, 255, 0.50;
   --white75: 255, 255, 255, 0.75;
   --white: 255, 255, 255;
-  --black35: 0, 0, 0, 0.35;
-  --frameBorder: 15, 15, 15;
-  --textentrybuttons: 200, 200, 200;
+
+  --black05: 255, 255, 255, 0.05;
+  --black10: 0, 0, 0, 0.10;
+  --black12: 0, 0, 0, 0.12;
+  --black20: 0, 0, 0, 0.20;
+  --black24: 0, 0, 0, 0.24;
+  --black25: 0, 0, 0, 0.25;
+  --black45: 0, 0, 0, 0.45;
+  --black50: 0, 0, 0, 0.50;
+  --black75: 0, 0, 0, 0.75;
+  --black: 0, 0, 0;
+  
+  /* Theme end */
 }
 
 /* Experimental Metro White theme color values: */
 /*
---focus: 102, 36, 226;
 --W10close_Red_h: 232, 18, 35;
 --W10close_Red_p: 241, 112, 121;
---clientBG: 230,230,230;
---header_dark: 255,255,255;
---online: 66, 104, 255;
---ingame: 94, 150, 15;
---offline: 0, 0, 0, .45;
---golden: 255, 255, 99;
---scroll: 0,0,0,.05;
---textentry: 207, 207, 207;
---white05: 0,0,0,.05;
---white10: 0,0,0,.1;
---white12: 0, 0, 0, .12;
---white24: 0, 0, 0, .24;
---white25: 0, 0, 0, .25;
---white45: 0, 0, 0, .45;
---white50: 0,0,0,.5;
---white75: 0,0,0,.75;
---white: 0,0,0;
---black35: 255, 255, 255, .42;
+--clientBG: 230, 230, 230;
+--header_dark: 255, 255, 255;
 --frameBorder: 160, 160, 160;
 --textentrybuttons: 35, 50, 50;
+--online: 66, 104, 255;
+--ingame: 94, 150, 15;
+--offline: 0, 0, 0, 0.45;
+--golden: 255, 255, 99;
+--scroll: 0, 0, 0, 0.05;
+--textentry: 207, 207, 207;
+
+--white03: 0, 0, 0, 0.03;
+--white05: 0, 0, 0, 0.05;
+--white08: 0, 0, 0, 0.08;
+--white10: 0, 0, 0, 0.10;
+--white12: 0, 0, 0, 0.12;
+--white15: 0, 0, 0, 0.15;
+--white20: 0, 0, 0, 0.20;
+--white24: 0, 0, 0, 0.24;
+--white25: 0, 0, 0, 0.25;
+--white35: 0, 0, 0, 0.35;
+--white45: 0, 0, 0, 0.45;
+--white50: 0, 0, 0, 0.50;
+--white75: 0, 0, 0, 0.75;
+--white: 0, 0, 0;
+
+--black03: 255, 255, 255, 0.03;
+--black08: 255, 255, 255, 0.08;
+--black05: 255, 255, 255, 0.05;
+--black10: 255, 255, 255, 0.10;
+--black12: 255, 255, 255, 0.12;
+--black15: 255, 255, 255, 0.15;
+--black20: 255, 255, 255, 0.20;
+--black24: 255, 255, 255, 0.24;
+--black35: 255, 255, 255, 0.35;
+--black25: 255, 255, 255, 0.25;
+--black45: 255, 255, 255, 0.45;
+--black75: 255, 255, 255, 0.75;
+--black: 255, 255, 255;
 */
+
 
 /* Remove animations, round corners and delays */
 * {
@@ -2202,7 +2240,7 @@ background: rgba(var(--white05))!important;}*/
 }
 
 .confirmInviteRequestContainer .cancelAddFriends .SVGIcon_Arrow polyline {
-  stroke: rgb(var(--focus)) !important;
+  stroke: rgb(var(--white));
 }
 
 [class*="personanameandstatus_playerName_"] {
@@ -2824,7 +2862,7 @@ body[class*="shared_common_v6_"] {
   [class*="miniprofile_miniProfileBottom_"],
 [class*="miniprofile_miniProfileContent_"]
   [class*="miniprofile_miniProfileGameContainer_"] {
-  background: rgba(var(--black35));
+  background: rgba(var(--black45));
 }
 
 [class*="steamavatar_avatarHolder_"] [class*="steamavatar_avatarStatus_"].right,
@@ -2911,4 +2949,30 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 
 .popup_chat_frame {
   border: 0;
+}
+
+.confirmInviteRequestContainer .cancelAddFriends {
+	top: 0px;
+    right: 0px;
+	background: rgb(var(--clientBG));
+    padding: 0px 6px;
+}
+
+.ModalDialogPopup .ModalDialogBody:not(.DesktopUI) .PopupFullWindow .TitleBar {
+    height: 25px;
+}
+
+.confirmInviteRequestContainer .confirmInviteButton {
+    background-color: rgb(var(--white12));
+    color: rgb(var(--white));
+    font-size: 13px;
+}
+
+.confirmInviteRequestContainer .confirmInviteButton:hover {
+    color: rgb(var(--white));
+    background-color: rgb(var(--white24));
+}
+
+.ChatTabs .title-area {
+	background: rgb(var(--header_dark));
 }
