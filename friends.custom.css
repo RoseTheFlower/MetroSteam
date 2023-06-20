@@ -1776,6 +1776,10 @@ button.DialogButton.Primary:hover {
   background-color: rgb(var(--clientBG)) !important;
 }
 
+.TabSearchButton {
+	margin-top: 3px;
+}
+
 /*Hide single window switch button*/
 .title-area-icon.singleWindowToggle {
   display: none !important;
