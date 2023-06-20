@@ -5,9 +5,10 @@ My quest was to make the windows look as close as possible to those of [the orig
 
 ## Installation
 1. Go to your Steam\steamui\css\ folder and ensure there is no library.css file.
-1. Save the [friends.custom.css file](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\steamui\ folder.
+1. Save the [friends and chat skin](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\steamui\ folder.
+1. Save the [library skin](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/libraryroot.custom.css) to your PC and put in your Steam\steamui\ folder.
 1. [Download](https://github.com/PhantomGamers/SFP/releases) the latest version of SFP to modify Steam.
-1. Run the patcher alongside Steam and wait for it to apply the changes.
+1. Run the tool alongside Steam and wait for it to apply the changes.
 1. Restart Steam if necessary.
 
 ## Help and options
