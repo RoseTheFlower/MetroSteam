@@ -15,6 +15,39 @@ Known issues / things to improve:
     /* Default Metro skin purple accent */
     /* 0, 114, 198;
     /* Blue accent option */
+	
+   /* Decals go here: */
+	--decal: none;
+    --decalXY: none;
+	
+   /* Decal options:
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
+    --decalXY: right top;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/2.png);
+    --decalXY: right bottom;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/3.png);
+    --decalXY: right bottom;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/4.png);
+    --decalXY: calc(100% - 1px) 3px;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/5_top.png);
+    --decalXY: calc(100% - 2px) top;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/5_bot_sm.png);
+    --decalXY: right bottom;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/6.png);
+    --decalXY: right 41px;
+	
+	--decal: url(https://rosetheflower.github.io/MetroSteam/decals/decal_steam_btmr.png);
+    --decalXY: calc(100% - 174px) calc(100% - 79px);
+	*/	
+
+	--basefont: "Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
+	/* Used occasionally, not for everything */
     --W10close_Red_h: 232, 18, 35;
     /* Window close button color on hover */
     --W10close_Red_p: 241, 112, 121;
@@ -167,7 +200,7 @@ body[class*="shared_common_v6_"] {
 
 [class*="gamelistsectionheader_SectionHeaderContent_"] {
     color: rgb(var(--white));
-    font-family: "Segoe UI","Motiva Sans",Arial,Helvetica,sans-serif;
+    font-family: var(--basefont);
 }
 [class*="gamelistsectionheader_SectionHeaderContent_"]:hover [class*="gamelistsectionheader_SectionName_"] {
     color: rgb(var(--white));
@@ -179,7 +212,7 @@ body[class*="shared_common_v6_"] {
 
 [class*="gamelistsectionheader_SectionName_"] {
     font-weight: 500;
-	font-family: "Segoe UI", "Motiva Sans", Arial, Helvetica, sans-serif;
+	font-family: var(--basefont);
     font-size: 14px;
 	letter-spacing: 0px;
 }
@@ -212,7 +245,7 @@ button.DialogButton:hover {
     background: none;
 }
 [class*="downloadgraph_GraphAndStats_"] {
-    background-color: rgb(var(--clientBG));
+    background-color: transparent;
 }
 div.MediumWindow
     [class*="downloadgraph_DownloadGraph_"]
@@ -222,6 +255,9 @@ div.MediumWindow
 [class*="downloads_DownloadsPage_"],
 [class*="library_AppDetailsTransitionGroup_"] {
     background: rgb(var(--clientBG));
+	background-repeat: no-repeat;
+    background-image: var(--decal);
+    background-position: var(--decalXY);
 }
 [class*="launchoptionsdialog_LaunchOptionDialog_"] {
     background: rgb(var(--clientBG));
@@ -451,6 +487,9 @@ div.LowPerfMode
 }
 [class*="libraryhome_Container_"] {
     background: rgb(var(--clientBG));
+	background-repeat: no-repeat;
+	background-image: var(--decal);
+    background-position: var(--decalXY);
 }
 [class*="appdetails_Glassy_"][class*="appdetails_ScrollContainer_"] {
     background-image: none !important;
@@ -503,6 +542,37 @@ div.LowPerfMode
 .DialogBody::-webkit-scrollbar-button {
     display: none !important;
 }
+[class*="downloads_SectionItem_"][class*="downloads_Active_"]::-webkit-scrollbar-button {
+    display: none;	
+}
+
+[class*="downloads_ItemLists_"]::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-button:single-button {
+  height: 16px;
+  border-radius: 0px;
+  background-color: none;
+  border: 2px solid transparent;
+  display: block;
+}
+::-webkit-scrollbar-button:hover {
+  background-color: rgba(var(--white05));
+}
+/* Down */
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJUlEQVQI12OAgxQGBsaVDAxsbg4MkowTGFKAcAKDBIMDAwtMBQBYIAP5KnftSQAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
 [class*="appportrait_FooterBlurImageContainer_"] {
     filter: opacity(0);
 }
@@ -681,7 +751,7 @@ button[class*="downloads_Button_"]:not(
 }
 [class*="downloads_SectionItemStatus_"],
 [class*="downloadgraph_StatsPanel_"] [class*="downloadgraph_Stat_"] {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
     font-weight: normal;
 }
 .friendPlayerLevel {
@@ -805,8 +875,7 @@ button[class*="downloads_Button_"]:not(
 
 [class*="supernav_SuperNavMenu_"] {
     font-size: 13px;
-    font-family: "Segoe UI", "Motiva Sans", "Twemoji", "Noto Sans", Helvetica,
-        sans-serif;
+    font-family: var(--basefont);
     padding: 11px 8px 10px;
     height: fit-content;
 }
@@ -1187,7 +1256,7 @@ button[class*="downloads_Button_"]:not(
     color: rgb(var(--white));
     padding: 6px 8px;
     font-size: 13px;
-    font-family: "Segoe UI", "Motiva Sans", Arial, Helvetica, sans-serif;
+    font-family: var(--basefont);
 }
 
 [class*="steamdesktop_TitleBar_"] [class*="steamdesktop_RootMenuBar_"] {
@@ -1566,3 +1635,31 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 [class*="standardtemplates_PinnedTemplateDesktop_"]:hover {
     background-color: rgb(var(--white24));
 }
+
+button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogButton.Disabled, button.DialogButton.Disabled:hover {
+    color: rgb(var(--white45));
+	/* background: ? */
+}
+
+[class*="gamepaddialog_ToggleRail_"] {
+	background: rgb(var(--white12));
+}
+
+[class*="standardtemplates_StandardTemplateDesktop_"][class*="standardtemplates_Unread_"] {
+    background: rgb(var(--white12)); /* Unsure */
+}
+
+/* Bug fixing for Valve */
+[class*="pageablecontainer_HeaderPageControls_"] {
+	padding-bottom: 5px; 
+}
+
+[class*="contentmanagement_LibraryContent_"] [class*="contentmanagement_LibraryHeader_"] {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageContent_"].DesktopUI .DialogBody, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogBody {
+	padding-right: 24px;
+}
+/* Bug fixing over */
