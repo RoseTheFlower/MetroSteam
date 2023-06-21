@@ -198,10 +198,13 @@ body[class*="shared_common_v6_"] {
     background-color: rgb(var(--white05onClientBGtwice));
 }
 
-[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"],
-[class*="appdetailsplaysection_PlayBarLabel_"] {
+[class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"] {
     color: rgb(var(--white));
 }
+[class*="appdetailsplaysection_PlayBarLabel_"] {
+	color: rgb(var(--white50));
+}
+
 button.DialogButton {
     color: rgb(var(--white));
     background-color: rgba(var(--white12));
@@ -246,7 +249,7 @@ div.MediumWindow
 [class*="downloads_SectionItem_"][class*="downloads_Active_"],
 [class*="appdetailscommunityfeed_CommunityItem_"],
 [class*="appportrait_RecentGameFooter_"] {
-    background-color: rgb(var(--white05));
+    background-color: rgb(var(--black45));
 }
 [class*="launchoptionsdialog_LaunchOptionDialog_"]
     [class*="launchoptionsdialog_OptionList_"]
@@ -367,12 +370,15 @@ div.MediumWindow
 [class*="appactivityday_PartnerEvent_"],
 [class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"],
 [class*="appdetailscommunityfeed_Guide_"]
-    [class*="appdetailscommunityfeed_TopSectionInner_"],
+[class*="appdetailscommunityfeed_TopSectionInner_"],
 [class*="appdetailscommunityfeed_AuthorSection_"],
-[class*="appactivityday_PartnerEventLargeImage_Container_"],
-[class*="appdetailscommunityfeed_HeaderStyles_"] {
-    background: rgba(var(--black), 0.35) !important;
+[class*="appactivityday_PartnerEventLargeImage_Container_"] {
+    background: rgb(var(--black45)) !important;
 }
+[class*="appdetailscommunityfeed_HeaderStyles_"] {
+	background: transparent;
+}
+
 [class*="appactivityday_PartnerEventTextOnly_Container_"] {
     border-image: none;
 }
@@ -396,7 +402,7 @@ div.MediumWindow
 [class*="posttextentry_PostTextEntry_"]
     [class*="posttextentry_Controls_"]
     button[class*="posttextentry_EmoticonButton_"] {
-    background-color: rgb(var(--white10));
+    background-color: rgb(var(--white12));
 }
 [class*="posttextentry_PostTextEntry_"]
     [class*="posttextentry_Controls_"]
@@ -903,6 +909,7 @@ button[class*="downloads_Button_"]:not(
     background-color: transparent;
     text-transform: uppercase;
     height: 38px;
+	gap: 11px
 }
 
 .offline [class*="steamavatar_avatar_"] {
@@ -1000,8 +1007,7 @@ button[class*="downloads_Button_"]:not(
 }
 
 [class*="titlebarcontrols_AccountMenu_"] [class*="titlebarcontrols_Chevron_"] {
-    width: 4px;
-    opacity: 0;
+    display: none;
 }
 
 [class*="titlebarcontrols_TitleBarControls_"] [class*="titlebarcontrols_BranchBar_"],
@@ -1101,8 +1107,7 @@ button[class*="downloads_Button_"]:not(
 
 @media (max-width: 1180px) {
     [class*="titlebarcontrols_AccountMenu_"] > div:nth-of-type(2) {
-        font-size: 0px;
-		gap: 0px
+        display: none;
     }
 }
 
@@ -1448,4 +1453,104 @@ button[class*="downloads_Button_"]:not(
 
 [class*="appdetailsspotlight_AppDetailsSpotlightDemo_"] {
     background: rgb(var(--black45));
+}
+
+.title-area-icon.maximizeButton.windowControlButton svg line {
+    display: none;
+}
+
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] {
+	background: rgb(var(--clientBG));
+}
+
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_StatusIcon_"] {
+    color: rgb(var(--white));
+}
+
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_URLBarText_"] [class*="steamdesktop_URL_"] {
+    color: rgb(var(--white));
+}
+
+[class*="appactivityday_PartnerEventTextOnly_Container_"]:hover {
+    background: rgb(var(--white12))!important;
+}
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailsactivitysection_FetchMoreContainer_"] {
+    color: rgb(var(--white));
+    background-color: rgb(var(--white12));
+    width: calc(100% - 16px - 2px);
+}
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailsactivitysection_FetchMoreContainer_"]:hover {
+    background-color: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+
+[class*="appdetailscommunityfeed_ArtItem_"]:hover {
+    filter: opacity(0.75);
+}
+
+[class*="appdetailscommunityfeed_Guide_"]:hover {
+    background: rgb(var(--white12));
+}
+
+[class*="appdetailsprimarylinkssection_Anchor_"] [class*="appdetailsprimarylinkssection_Link_"]:hover {
+    background-color: rgb(var(--white05));
+}
+
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdetailsbutton_BottomRight_"]:hover {
+    background-color: rgb(var(--white05));
+	color: rgb(var(--white75));
+}
+
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"] {
+	color: rgb(var(--white50));
+}
+
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdetailsbutton_Left_"]:hover {
+    background-color: rgb(var(--white05));
+    color: rgb(var(--white75));
+}
+
+[class*="appactivityday_PartnerEventMediumImage_Title_"] {
+    color: rgb(var(--white));
+}
+
+
+[class*="appdetailsprimarylinkssection_Anchor_"] [class*="appdetailsprimarylinkssection_Link_"] [class*="appdetailsprimarylinkssection_Text_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="appdetailsplaysection_PlayBarDetailLabel_"], [class*="appdetailsplaysection_LastPlayed_"] [class*="appdetailsplaysection_LastPlayedInfo_"] {
+    color: rgb(var(--white50));
+	/* Seems to be white75 in the original but it was left to right, not top to bottom */
+}
+
+[class*="appactivityday_PartnerEventType_"] {
+	color: rgb(var(--white50));
+	text-transform: initial;
+}
+
+[class*="appactivityday_PartnerEventMediumImage_Summary_"] {
+    color: rgb(var(--white75));
+}
+
+[class*="appactivityday_AppActivityDay_"] [class*="appactivityday_AppActivityDate_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="appdetailsplaysection_MenuButton_"] {
+	background-color: rgb(var(--white12));
+}
+
+[class*="appdetailsplaysection_MenuButton_"]:hover {
+	background-color: rgb(var(--white24));
+}
+
+[class*="libraryhomenewupdates_EventTime_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_GuideTitle_"] {
+	color: rgb(var(--white50));
 }
