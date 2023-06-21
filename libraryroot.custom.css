@@ -6,7 +6,7 @@ Known issues / things to improve:
 */
 
 
-/* Ads removal. Delete the line(s) below if you want them enabled */
+/* Steam ads removal. Delete the line(s) below if you want them enabled */
 @import url("https://rosetheflower.github.io/AdblockSteam/libraryroot.custom.css");
 /*---------------------------------------------------------------- */
 
@@ -1547,4 +1547,22 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 
 [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"] {
     background: rgb(var(--focus));
+}
+
+[class*="titlebarcontrols_NotificationHeader_"] [class*="titlebarcontrols_AllNotificationsButton_"] {
+    background-color: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+
+[class*="titlebarcontrols_NotificationHeader_"] [class*="titlebarcontrols_AllNotificationsButton_"]:hover {
+    background-color: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+
+[class*="standardtemplates_PinnedTemplateDesktop_"] {
+    background-color: rgb(var(--white12));
+}
+
+[class*="standardtemplates_PinnedTemplateDesktop_"]:hover {
+    background-color: rgb(var(--white24));
 }
