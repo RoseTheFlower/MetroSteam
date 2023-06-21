@@ -108,7 +108,7 @@ body[class*="shared_common_v6_"] {
 [class*="libraryhome_UpdatesContainer_"],
 [class*="libraryhome_LibraryHome_"],
 [class*="allcollections_ScrollContainer_"] {
-    background: rgb(var(--clientBG));
+    background: transparent;
 }
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover {
@@ -150,26 +150,17 @@ body[class*="shared_common_v6_"] {
 }
 [class*="gamelistsectionheader_Container_"] {
     background: none;
+	border: none;
 }
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"],
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]:hover,
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]:hover,
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] :hover,
-[class*="gamelistentry_Selected_"]
-    [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] :hover,
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]:hover,
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover,
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"]:hover,
-[class*="gamelistentry_Selected_"]
-    [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] :hover {
+
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]:hover, [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"], [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] :hover, [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"]:hover, [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] :hover {
     background-color: rgb(var(--focus));
-    /*!important;*/
 }
+
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] {
+	background-color: rgb(var(--focus));
+}
+
 [class*="gamelistsectionheader_Container_"][class*="gamelistsectionheader_Selected_"] {
     background: rgb(var(--focus));
 }
@@ -194,7 +185,8 @@ body[class*="shared_common_v6_"] {
 }
 [class*="gamelistentry_Container_"]:hover,
 [class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],
-[class*="gamelistsectionheader_Container_"]:not([class*="gamelistsectionheader_Selected_"]):hover {
+[class*="gamelistsectionheader_Container_"]:not([class*="gamelistsectionheader_Selected_"]):hover,
+[class*="gamelistsectionheader_Container_"]:not([class*="gamelistsectionheader_Selected_"])[class*="gamelistsectionheader_HoverOverlay_"] {
     background-color: rgb(var(--white05onClientBGtwice));
 }
 
@@ -1185,11 +1177,9 @@ button[class*="downloads_Button_"]:not(
 }
 
 [class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"][class*="gamelistentry_Updating_"],
-[class*="gamelistentry_Selected_"]
-    [class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"],
-[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]
-    [class*="gamelistentry_GameListEntryContainer_"]
-    [class*="gamelistentry_DownloadProgress_"] {
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"],
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"][class*="gamelistentry_GameListEntryContainer_"]
+[class*="gamelistentry_DownloadProgress_"] {
     color: rgb(var(--white));
 }
 
@@ -1553,4 +1543,8 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 
 [class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_GuideTitle_"] {
 	color: rgb(var(--white50));
+}
+
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"] {
+    background: rgb(var(--focus));
 }
