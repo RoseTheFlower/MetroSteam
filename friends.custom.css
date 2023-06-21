@@ -876,11 +876,12 @@ button.DialogButton,
   width: var(--scrollbarSize) !important;
 }
 /* scroll bar button */
-::-webkit-scrollbar-button {
+::-webkit-scrollbar-button:single-button {
   height: 16px !important;
   border-radius: 0px !important;
   background-color: none !important;
   border: 2px solid transparent !important;
+  display: block;
 }
 
 /* disables scroll buttons at settings */
