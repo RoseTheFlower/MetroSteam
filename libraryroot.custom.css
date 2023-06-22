@@ -1345,6 +1345,29 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 [class*="libraryhome_UpdatesContainer_"] {
 	height:300px;
 }
+[class*="appportraithover_AppTitle_"] {
+	color: rgb(var(--white));
+}
+[class*="appportraithover_PlaytimeDetails_"] {
+	color: rgb(var(--white50));
+}
+[class*="appportraithover_PlaytimeDetails_"] [class*="appportraithover_Header_"] {
+	color: rgb(var(--white50));
+}
+[class*="appportraithover_CapsuleBackgroundContainer_"] {
+	display: none;
+}
+
+[class*="appportraithover_AppPortraitHover_"] {
+	background-color: rgb(var(--clientBG));
+	border: 1px solid rgb(var(--frameBorder));
+}
+
+[class*="appportraithover_ScreenshotCrossfade_"] {
+	background: transparent;
+	-webkit-mask-image: none;
+}
+
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
