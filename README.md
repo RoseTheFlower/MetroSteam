@@ -11,17 +11,19 @@ My quest was to make the windows look as close as possible to those of [the orig
 1. Run the tool alongside Steam and wait for it to apply the changes.
 1. Restart Steam if necessary.
 
-## Help and options
-The [wiki](../../wiki) answers some of the most asked questions and contains a few extras.
+## Extra options
+- If you'd like to customize the colors, decals and more, also download [custom.css](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/custom.css) and put in the same folder as the rest of the files, then edit this file in any text editor as desired.
+- Check out the [wiki](../../wiki) to enable automatic skin updates or learn more about customizing the skin.
 
 ## Uninstallation
 * Ensure that Steam and the patcher tool are closed, then remove the %LOCALAPPDATA%\Steam\htmlcache\Cache\ folder.
 * For purity, remove the Steam\clientui\css\ and Steam\steamui\css\ folders inside your Steam installation folder.
 
 ## Credits
+* [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that allows to apply skins, and for tips on managing the randomized class names.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the chat and friends windows, which I initially used as a template.
-* [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu and the dynamic placement of bottom bar buttons.
+* [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu and to the dynamic placement of bottom bar buttons.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
-* [Shiina](https://github.com/AikoMidori) for helping me find a few elements and for making me realize where to look.
+* [Shiina](https://github.com/AikoMidori) for helping me find a few elements and realize where to look.
 * [Laser](https://github.com/LaserFlash) for an idea on tackling randomized class names.
