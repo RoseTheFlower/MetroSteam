@@ -68,7 +68,7 @@ Known issues / things to improve:
 	box-shadow:none !important;
 	border-radius:0 !important;
 	cursor:default !important;
-	transition-duration:0 !important;
+	transition:none !important;
 	border-image-source:none !important;
 	text-shadow:none !important;
 }
@@ -1367,7 +1367,49 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 	background: transparent;
 	-webkit-mask-image: none;
 }
-
+[class*="appgrid_SortingDropDownContainer_"]>div.DesktopUI, .DesktopUI [class*="appgrid_SortingDropDownContainer_"]>div {
+    background: rgb(var(--clientBG))!important;
+}
+[class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"].DesktopUI, .DesktopUI [class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"] {
+    color: rgb(var(--white));
+}
+[class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"]:hover.DesktopUI, .DesktopUI [class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"]:hover {
+    background: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"]:hover {
+    background-color: rgb(var(--white05));
+}
+.DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer {
+    background: rgb(var(--clientBG)) !important;
+    color: rgb(var(--white));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] [class*="libraryhomeshowcases_DropDownItems_"]:hover {
+    background: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="appportrait_LibraryItemBox_"]:hover~[class*="appportrait_LibraryItemBoxSubscript_"] {
+    transform: none;
+}
+[class*="appportrait_LibraryItemBoxSubscript_"] {
+    color: rgb(var(--white));
+    background-color: rgb(var(--black75));
+}
+[class*="tooltip_ToolTipCustom_"] {
+    background-color: rgb(var(--clientBG));
+    color: rgb(var(--white));
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="tooltip_ToolTipCustom_"] [class*="tooltip_ToolTipInsetContent_"] {
+    color: rgb(var(--white));
+}
+[class*="tooltip_ToolTipCustom_"] [class*="tooltip_ToolTipTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="libraryhomenewupdates_GameIconAndName_"]:hover {
+    background-color: rgb(var(--white05));
+}
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
