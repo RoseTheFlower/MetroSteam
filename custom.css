@@ -7,18 +7,18 @@ html:root {
 }
 
 /* Accent color ideas (from the original Metro)
---focus: rgb(220, 79, 173)
---focus: rgb(172, 25, 61)
---focus: rgb(210, 71, 38)
---focus: rgb(255, 143, 50)
---focus: rgb(130, 186, 0)
---focus: rgb(0, 138, 23)
---focus: rgb(3, 179, 178)
---focus: rgb(0, 130, 152)
---focus: rgb(93, 178, 255)
---focus: rgb(0, 114, 198)
---focus: rgb(70, 23, 180)
---focus: rgb(140, 0, 149)
+--focus: rgb(220, 79, 173);
+--focus: rgb(172, 25, 61);
+--focus: rgb(210, 71, 38);
+--focus: rgb(255, 143, 50);
+--focus: rgb(130, 186, 0);
+--focus: rgb(0, 138, 23);
+--focus: rgb(3, 179, 178);
+--focus: rgb(0, 130, 152);
+--focus: rgb(93, 178, 255);
+--focus: rgb(0, 114, 198);
+--focus: rgb(70, 23, 180);
+--focus: rgb(140, 0, 149);
 */
 
 /*Decal options:
