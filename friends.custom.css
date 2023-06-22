@@ -1667,11 +1667,16 @@ button.DialogButton.Primary:hover {
     left: 0% !important;
 }
 
-    [class*="emoticon_NewEmoticonIndicator_"] [class*="emoticon_NewEmoticonCircle_"] {
-        width: 100% !important;
-        height: 1px !important;
-        background-color: rgb(var(--focus)) !important;
-    }
+[class*="emoticon_NewEmoticonIndicator_"] [class*="emoticon_NewEmoticonCircle_"] {
+    width: 100% !important;
+    height: 1px !important;
+    background-color: rgb(var(--focus)) !important;
+}
+
+[class*="steamavatar_avatarFrame_"] {
+    display: var(--avatarframes);
+}
+
 
 /* Hide status line of inactive tabs */
 [class*="chattabs_ChatTab_"]:not([class*="chattabs_Active_"])
