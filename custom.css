@@ -6,6 +6,10 @@ html:root {
     --focus: 0, 114, 198; /* Blue accent */
 }
 
+/* Option to disable custom avatar frames
+	--avatarframes: none;
+*/
+
 /* Accent color ideas (from the original Metro)
 --focus: 220, 79, 173;
 --focus: 172, 25, 61;
