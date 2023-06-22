@@ -1,6 +1,6 @@
 /*
 Known issues / things to improve:
-- Still multiple elements to be skinned,particularly the least used or visible
+- Still multiple elements to be skinned, particularly the least used or visible
 - Having all buttons visually react to hovering over them if clickable
 - Some library elements were changed to make them tolerable without much thinking and need to be revisited
 */
@@ -8,19 +8,20 @@ Known issues / things to improve:
 
 /* Steam ads removal. Delete the line(s) below if you want them enabled */
 @import url("https://rosetheflower.github.io/AdblockSteam/libraryroot.custom.css");
-	/*---------------------------------------------------------------- */
+/*--------------------------------------------------------------------- */
 
 /* For custom variables stored locally */
 @import url('custom.css');
+
 	:root {
 	--focus:102,36,226;
 	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
-	/* Used occasionally,not for everything */
-    --W10close_Red_h:232,18,35;
+	/* Used occasionally, not for everything */
+	--W10close_Red_h:232,18,35;
 	/* Window close button color on hover */
-    --W10close_Red_p:241,112,121;
+	--W10close_Red_p:241,112,121;
 	/* Window close button color when pressed */
-    --clientBG:26,26,26;
+	--clientBG:26,26,26;
 	--header_dark:20,20,20;
 	--online:93,178,255;
 	--ingame:130,186,0;
@@ -57,11 +58,11 @@ Known issues / things to improve:
 	--black50:0,0,0,0.50;
 	--black75:0,0,0,0.75;
 	--black:0,0,0;
-	--downloadicon:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFNJREFUKM/ljksOgDAIRKee1vH+++fCkrSUJrp2EkJgHp8GqBCSWm4e+qBfwH7JWjwyoCFItaNxdvPawOF7mhwGykWqNvS8XFT6LQCK1xY4X5i8G2p94Wk6Gb41AAAAAElFTkSuQmCC);
-	--forwardicon:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFBJREFUKM/FjsEJgDAQBOfAJq0jacPKkp7GTwjBR9CIuK+D22EWJlGTWtTE0zS4rsK5mfOquc/e7oIRcagAu0qoZfwDDncXXjrv5n4O1X+hEy69bKDDJqaPAAAAAElFTkSuQmCC);
-	--notificationicon:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAF5JREFUKM/VkUEOgCAMBFvCY8EH6XPHg5osWCNyc5OGTdhpG3AAm1A+T//IkWxSue/0kvcn0P870UfB4YnT35FkRa0qmRLcmwF9LRyqQBHf5CJQ4RACbo9zaRW/RYEdeJNsPLOc8hwAAAAASUVORK5CYII=);
-	--notificationsiconactive:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHNJREFUKM/VkcsJw0AMRJ9C2nAFuqWFLSQdpBlX4x7i49bzfAgh6w857MkeIZCGGQahQKQDNzrRbby3ixj/xEH4mztvPFlim7BPv8wfA3m2RJKvSn1suLlSx5VTXTUypDnjp9J8I8NetyG+5mKZimU6Mqks+MZfZSU7urkAAAAASUVORK5CYII=);
-	--friendsicon:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAOFJREFUKM+F0TFKA1EQxvGJIGhlzmCjBC2C2GmdI0RPIDG3SK6gOUq8R1BQN5jKC2hhYeBn4WxcNhvzwfCYb96feTMvEJXYxxAzfOV5m/7qXh2YosA1znCV+UMVrEJDvKBd636Q/qAJmqFfA8ro47HMd+JPRxExj2YVEXFYJlXoNcEmHUfE8yqrPOEGbw0ztTHP+tpMe7mlApfpXSSwcXuBc3z61VOeH+mv/dMuRvjGHbrpdXGf/ji9FTTCOzobVt7J+riETrH8B6iCS5y0MImIVkQMYrsm5coX6G3pUkYPix8u49iyFwTN0AAAAABJRU5ErkJggg==);
+	--downloadicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFNJREFUKM/ljksOgDAIRKee1vH+++fCkrSUJrp2EkJgHp8GqBCSWm4e+qBfwH7JWjwyoCFItaNxdvPawOF7mhwGykWqNvS8XFT6LQCK1xY4X5i8G2p94Wk6Gb41AAAAAElFTkSuQmCC);
+	--forwardicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFBJREFUKM/FjsEJgDAQBOfAJq0jacPKkp7GTwjBR9CIuK+D22EWJlGTWtTE0zS4rsK5mfOquc/e7oIRcagAu0qoZfwDDncXXjrv5n4O1X+hEy69bKDDJqaPAAAAAElFTkSuQmCC);
+	--notificationicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAF5JREFUKM/VkUEOgCAMBFvCY8EH6XPHg5osWCNyc5OGTdhpG3AAm1A+T//IkWxSue/0kvcn0P870UfB4YnT35FkRa0qmRLcmwF9LRyqQBHf5CJQ4RACbo9zaRW/RYEdeJNsPLOc8hwAAAAASUVORK5CYII=);
+	--notificationsiconactive: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHNJREFUKM/VkcsJw0AMRJ9C2nAFuqWFLSQdpBlX4x7i49bzfAgh6w857MkeIZCGGQahQKQDNzrRbby3ixj/xEH4mztvPFlim7BPv8wfA3m2RJKvSn1suLlSx5VTXTUypDnjp9J8I8NetyG+5mKZimU6Mqks+MZfZSU7urkAAAAASUVORK5CYII=);
+	--friendsicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAOFJREFUKM+F0TFKA1EQxvGJIGhlzmCjBC2C2GmdI0RPIDG3SK6gOUq8R1BQN5jKC2hhYeBn4WxcNhvzwfCYb96feTMvEJXYxxAzfOV5m/7qXh2YosA1znCV+UMVrEJDvKBd636Q/qAJmqFfA8ro47HMd+JPRxExj2YVEXFYJlXoNcEmHUfE8yqrPOEGbw0ztTHP+tpMe7mlApfpXSSwcXuBc3z61VOeH+mv/dMuRvjGHbrpdXGf/ji9FTTCOzobVt7J+riETrH8B6iCS5y0MImIVkQMYrsm5coX6G3pUkYPix8u49iyFwTN0AAAAABJRU5ErkJggg==);
 }
 * {
 	box-shadow:none !important;
@@ -76,12 +77,13 @@ Known issues / things to improve:
 	from {
 	width:100%;
 	background:rgb(var(--header_dark));
-}
-to {
+		}
+	to {
 	width:100%;
 	background:rgb(var(--header_dark));
+		}
 }
-}body,body[class*="shared_common_v6_"] {
+body,body[class*="shared_common_v6_"] {
 	background:rgb(var(--clientBG));
 }
 [class*="rootmenu_RootMenuBar_"] {
@@ -589,8 +591,7 @@ path {
 	color:rgb(var(--white)) !important;
 	border-top:none;
 	border-bottom:none;
-	/*font-family:"Segoe UI","Motiva Sans",Arial,Helvetica,sans-serif;
-	*/
+	/*font-family:"Segoe UI","Motiva Sans",Arial,Helvetica,sans-serif; */
 }
 .DesktopUI [class*="contextmenu_contextMenuItem_"]:hover,.DesktopUI [class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"],[class*="contextmenu_ForceDesktop_"] [class*="contextmenu_contextMenuItem_"]:hover,[class*="contextmenu_ForceDesktop_"] [class*="contextmenu_contextMenuItem_"][class*="contextmenu_active_"] {
 	background:rgb(var(--white05));
@@ -709,11 +710,11 @@ button[class*="downloads_Button_"]:not( [class*="downloads_RemoveFromQueue_"] ).
 [class*="steamdesktop_FocusBar_"] {
 	display:none !important;
 }
-/* Hiding the separate Big Picture mode icon,as it's accessible from the View menu */
+/* Hiding the separate Big Picture mode icon, as it's accessible from the View menu */
 [class*="titlebarcontrols_GamepadUIToggle_"] {
 	display:none;
 }
-/* Hiding the separate Add a Game button,as it's accessible from the Games menu */
+/* Hiding the separate Add a Game button, as it's accessible from the Games menu */
 [class*="bottombar_AddGameButton_"] {
 	display:none;
 }
@@ -1228,7 +1229,7 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 }
 [class*="appdetailsplaysection_PlayBarDetailLabel_"],[class*="appdetailsplaysection_LastPlayed_"] [class*="appdetailsplaysection_LastPlayedInfo_"] {
 	color:rgb(var(--white50));
-	/* Seems to be white75 in the original but it was left to right,not top to bottom */
+	/* Seems to be white75 in the original but it was left to right, not top to bottom */
 }
 [class*="appactivityday_PartnerEventType_"] {
 	color:rgb(var(--white50));
@@ -1284,10 +1285,10 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 [class*="appdetailsspotlight_AppDetailsSpotlightDemo_"] [class*="appdetailsspotlight_Info_"] [class*="appdetailsspotlight_Title_"] {
 	color:rgb(var(--white));
 }
-[class*="libraryhomeshowcases_ShowcaseHeader_"] [class*="SVGIcon_"]ToPlay path {
+[class*="libraryhomeshowcases_ShowcaseHeader_"] .SVGIcon_ReadyToPlay path {
 	fill:rgb(var(--white));
 }
-[class*="libraryhomeshowcases_ShowcaseHeader_"] [class*="SVGIcon_"]ToPlay circle {
+[class*="libraryhomeshowcases_ShowcaseHeader_"] .SVGIcon_ReadyToPlay circle {
 	stroke:rgb(var(--white));
 }
 [class*="libraryhomenewupdates_SettingsButton_"] svg {
@@ -1310,7 +1311,7 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 	background-color:rgb(var(--clientBG));
 	border:1px solid rgb(var(--frameBorder));
 }
-[class*="appfilterpane_Container_"] [class*="appfilterpane_FilterArea_"] [class*="appfilterpane_FilterBucket_"] [class*="DialogInput_"]er .DialogTextInputBase {
+[class*="appfilterpane_Container_"] [class*="appfilterpane_FilterArea_"] [class*="appfilterpane_FilterBucket_"] .DialogInput_Wrapper .DialogTextInputBase {
 	background:rgb(var(--textentry));
 }
 [class*="appdetailsprimarylinkssection_Anchor_"] [class*="appdetailsprimarylinkssection_Link_"]:hover [class*="appdetailsprimarylinkssection_Text_"] {
