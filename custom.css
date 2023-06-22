@@ -1,0 +1,96 @@
+/* Just an example. Modify as needed. */
+
+html:root {
+    --decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
+    --decalXY: right top;
+    --focus: 0, 114, 198; /* Blue accent */
+}
+
+/* Accent color ideas (from the original Metro)
+--focus: rgb(220, 79, 173)
+--focus: rgb(172, 25, 61)
+--focus: rgb(210, 71, 38)
+--focus: rgb(255, 143, 50)
+--focus: rgb(130, 186, 0)
+--focus: rgb(0, 138, 23)
+--focus: rgb(3, 179, 178)
+--focus: rgb(0, 130, 152)
+--focus: rgb(93, 178, 255)
+--focus: rgb(0, 114, 198)
+--focus: rgb(70, 23, 180)
+--focus: rgb(140, 0, 149)
+*/
+
+/*Decal options:
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
+--decalXY: right top;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/2.png);
+--decalXY: right bottom;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/3.png);
+--decalXY: right bottom;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/4.png);
+--decalXY: calc(100% - 1px) 3px;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/5_top.png);
+--decalXY: calc(100% - 2px) top;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/5_bot_sm.png);
+--decalXY: right bottom;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/6.png);
+--decalXY: right 41px;
+
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/decal_steam_btmr.png);
+--decalXY: calc(100% - 174px) calc(100% - 79px);
+*/
+
+/* Highly experimental Metro White theme color values:
+
+--white05onClientBGtwice: 207, 207, 207;
+
+--W10close_Red_h: 232, 18, 35;
+--W10close_Red_p: 241, 112, 121;
+--clientBG: 230, 230, 230;
+--header_dark: 255, 255, 255;
+--frameBorder: 160, 160, 160;
+--textentrybuttons: 35, 50, 50;
+--online: 66, 104, 255;
+--ingame: 94, 150, 15;
+--offline: 0, 0, 0, 0.45;
+--golden: 255, 255, 99;
+--scroll: 0, 0, 0, 0.05;
+--textentry: 207, 207, 207;
+
+--white03: 0, 0, 0, 0.03;
+--white05: 0, 0, 0, 0.05;
+--white08: 0, 0, 0, 0.08;
+--white10: 0, 0, 0, 0.10;
+--white12: 0, 0, 0, 0.12;
+--white15: 0, 0, 0, 0.15;
+--white20: 0, 0, 0, 0.20;
+--white24: 0, 0, 0, 0.24;
+--white25: 0, 0, 0, 0.25;
+--white35: 0, 0, 0, 0.35;
+--white45: 0, 0, 0, 0.45;
+--white50: 0, 0, 0, 0.50;
+--white75: 0, 0, 0, 0.75;
+--white: 0, 0, 0;
+
+--black03: 255, 255, 255, 0.03;
+--black08: 255, 255, 255, 0.08;
+--black05: 255, 255, 255, 0.05;
+--black10: 255, 255, 255, 0.10;
+--black12: 255, 255, 255, 0.12;
+--black15: 255, 255, 255, 0.15;
+--black20: 255, 255, 255, 0.20;
+--black24: 255, 255, 255, 0.24;
+--black35: 255, 255, 255, 0.35;
+--black25: 255, 255, 255, 0.25;
+--black45: 255, 255, 255, 0.45;
+--black75: 255, 255, 255, 0.75;
+--black: 255, 255, 255;
+
+*/
