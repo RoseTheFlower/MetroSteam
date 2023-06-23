@@ -856,9 +856,10 @@ button[class*="downloads_Button_"]:not( [class*="downloads_RemoveFromQueue_"] ).
 	margin-top:-39px;
 	margin-right:120px;
 	margin-left:auto;
-	z-index:1;
+	z-index:3;
 	gap:1px;
 	padding:0px 1px;
+	order: -1;
 }
 [class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_WasNew_"],[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_NoNew_"],[class*="titlebarcontrols_AnnouncementsButton_"] {
 	background-color:transparent;
@@ -1670,7 +1671,7 @@ a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"]:hover {
 [class*="libraryhomeshowcases_AddShowcaseRow_"][class*="libraryhomeshowcases_ButtonHovered_"] [class*="libraryhomeshowcases_AddShowcase_"] {
     color: rgb(var(--white));
 }
-[class*="libraryhomenewupdates_SettingsButton_"] {
+[class*="libraryhomenewupdates_SettingsButton_"], [class*="libraryhomenewupdates_SettingsButton_"] svg path, [class*="libraryhomenewupdates_SettingsButton_"] svg {
     cursor: pointer!important;
 }
 [class*="writereview_RatingContainer_"] [class*="writereview_RecommendGame_"] {
@@ -1852,6 +1853,36 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ColumnResizer_"] {
     background: transparent;
+}
+[class*="libraryhomenewupdates_WhatsNewSettingsContainer_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleSwitch_"][class*="toggle_Off_"] {
+    background-color: rgb(var(--white));
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleSwitch_"][class*="toggle_On_"] {
+    background-color: rgb(var(--white));
+    background-image: none;
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"][class*="toggle_Highlight_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="updatealert_AlertButton_"] {
+    color: rgb(var(--white));
+}
+[class*="updatealert_PatchNotesLink_"] {
+    cursor: pointer!important;
+    color: rgb(var(--white));
+}
+[class*="updatealert_Alert_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="updatealert_PrimaryMessage_"] {
+    font-size: 15px;
+    color: rgb(var(--white));
 }
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
