@@ -10,6 +10,10 @@ html:root {
 --avatarframes: none;
 */
 
+/* Option to disable the What's New / Library updates part
+--whatsnew: none;
+*/
+
 /* Accent color ideas (from the original Metro)
 --focus: 220, 79, 173;
 --focus: 172, 25, 61;
