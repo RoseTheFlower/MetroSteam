@@ -12,7 +12,7 @@ html:root {
 --avatarframes: none;
 */
 
-/* Option to disable the What's New / Library updates part
+/* Option to remove the What's New / Library updates section
 --whatsnew: none;
 */
 
@@ -56,6 +56,7 @@ html:root {
 --decal: url(https://rosetheflower.github.io/MetroSteam/decals/decal_steam_btmr.png);
 --decalXY: calc(100% - 174px) calc(100% - 79px);
 */
+
 
 /* Experimental Metro White theme color values and images:
 
