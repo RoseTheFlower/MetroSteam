@@ -1761,6 +1761,10 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--offline));
 }
 
+[class*="libraryhome_UpdatesContainer_"] {
+    display: var(--whatsnew);
+}
+
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
