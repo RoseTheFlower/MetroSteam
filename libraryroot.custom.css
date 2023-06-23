@@ -17,6 +17,7 @@ Known issues / things to improve:
 	--focus:102,36,226;
 	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
 	/* Used occasionally, not for everything */
+	--whatsnew:block; /* The default */
 	--W10close_Red_h:232,18,35;
 	/* Window close button color on hover */
 	--W10close_Red_p:241,112,121;
@@ -34,7 +35,6 @@ Known issues / things to improve:
 	--textentrybuttons:200,200,200;
 	--white05onClientBGtwice:49,49,49;
 	/* Just a hacky way to deal with two overlapping hover overlays for library highlights */
-
     --white03:255,255,255,0.03;
 	--white05:255,255,255,0.05;
 	--white08:255,255,255,0.08;
@@ -1764,7 +1764,71 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="libraryhome_UpdatesContainer_"] {
     display: var(--whatsnew);
 }
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="steamdesktopoverlay_OverlayPopup_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="steamdesktopoverlay_GameOverview_"] {
+    background: transparent;
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_GameOverviewSectionHeader_"] {
+    color: rgb(var(--white));
+	background-color: rgb(var(--white10));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_GuideListItem_"] {
+    color: rgb(var(--white75));
+	background-color: rgb(var(--black20));
+}
+[class*="steamdesktopoverlay_FocusIndicator_"] {
+	display: none;
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_GameOverviewSectionHeader_"]>svg {
+    color: rgb(var(--white50));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_GameOverviewSectionHeader_"]>svg:hover {
+    color: rgb(var(--white));
+}
+[class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"][class*="steamdesktopoverlay_Toggled_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TopSectionRightSide_"] [class*="steamdesktopoverlay_BackToGame_"] [class*="steamdesktopoverlay_BackToGameBtn_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TopSectionRightSide_"] [class*="steamdesktopoverlay_BackToGame_"] [class*="steamdesktopoverlay_BackToGameBtn_"] {
+    background-color: rgb(var(--white12));
+}
 
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_Playtime_"] {
+    color: rgb(var(--white75));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"][class*="steamdesktopoverlay_HasBackground_"] {
+    background-color: rgb(var(--black20));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_RecentNewsItem_"] {
+    color: rgb(var(--white75));
+    background-color: rgb(var(--black20));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_PlayersSection_"] [class*="steamdesktopoverlay_ViewPlayersBtn_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_PlayersSection_"] [class*="steamdesktopoverlay_ViewPlayersBtn_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_ExitGameBtn_"] {
+    color: rgb(var(--white));
+    background-color: rgb(var(--white12));
+}
+[class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"] {
+    background-color: rgb(var(--white12));
+}
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
