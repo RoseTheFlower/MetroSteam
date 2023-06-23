@@ -83,9 +83,9 @@ Known issues / things to improve:
 	background:rgb(var(--header_dark));
 		}
 }
-body,body[class*="shared_common_v6_"] {
-	background:rgb(var(--clientBG));
-	color: rgb(var(--white));
+body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay BG */
+{
+	color: rgb(var(--white)); 
 }
 [class*="rootmenu_RootMenuBar_"] {
 	width:28px;
@@ -1828,6 +1828,30 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"] {
     background-color: rgb(var(--white12));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_BottomControlsRow_"] [class*="serverbrowserdialog_ToggleShowFilterDetailsButton_"][class*="serverbrowserdialog_Selected_"] {
+    color: rgb(var(--white));
+    background: rgb(var(--focus));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] button.DialogButton svg {
+    color: rgb(var(--white));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.ModalPosition_Content {
+    color: rgb(var(--white));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ServerListHeaderCtr_"] {
+    background: rgb(var(--white10));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_TopControlsCtr_"] button[class*="serverbrowserdialog_SwitchTabButton_"][class*="serverbrowserdialog_Selected_"] {
+    color: rgb(var(--white));
+    background: rgb(var(--focus));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ColumnResizer_"] {
+    background: transparent;
 }
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
