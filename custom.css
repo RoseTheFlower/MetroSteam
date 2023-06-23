@@ -1,10 +1,12 @@
-/* Just an example. Modify as needed. Some options are below, commented out */
+/* Just an example. Modify as needed. */
 
 html:root {
     --decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
     --decalXY: right top;
     --focus: 0, 114, 198; /* Blue accent */
 }
+
+/* Each of the options (variables) below should be inside the curly brackets above to make it active. */
 
 /* Option to disable custom avatar frames
 --avatarframes: none;
