@@ -40,6 +40,7 @@
     --black50: 0, 0, 0, 0.50;
     --black75: 0, 0, 0, 0.75;
     --black: 0, 0, 0;
+	--red: 255, 0, 0;
 }
 
 /* Remove animations, round corners and delays */
@@ -2969,4 +2970,8 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 
 .ChatTabs .title-area {
     background: rgb(var(--header_dark));
+}
+
+.online .SVGIcon_DoNotDisturb circle, .online .SVGIcon_DoNotDisturb line {
+    stroke: rgb(var(--red));
 }
