@@ -1757,6 +1757,10 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appactivityday_PartnerEventMediumImage_Container_"]:hover [class*="appactivityday_PartnerEventMediumImage_Title_"] {
     color: rgb(var(--white));
 }
+[class*="titlebarcontrols_AccountMenu_"].offline {
+    color: rgb(var(--offline));
+}
+
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
