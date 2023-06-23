@@ -1372,6 +1372,7 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 }
 [class*="appgrid_SortingDropDownContainer_"]>div.DesktopUI, .DesktopUI [class*="appgrid_SortingDropDownContainer_"]>div {
     background: rgb(var(--clientBG))!important;
+	border: 1px solid rgb(var(--frameBorder));
 }
 [class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"].DesktopUI, .DesktopUI [class*="appgrid_SortingDropDownContainer_"] [class*="appgrid_SortingDropDownItems_"] {
     color: rgb(var(--white));
@@ -1421,7 +1422,7 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
     background-color: rgb(var(--white05));
 }
 button.DialogButton.Primary {
-    background: rgb(var(--focus)); /* Questionable but let's try */
+    background: rgb(var(--white12));
 }
 [class*="pageablecontainer_PageClickContainer_"] [class*="pageablecontainer_PageLeft_"] svg polyline, [class*="pageablecontainer_PageClickContainer_"] [class*="pageablecontainer_PageRight_"] svg polyline {
     stroke: rgb(var(--white)); /* Unsure */
@@ -1620,6 +1621,141 @@ button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] {
 }
 [class*="appactionbutton_ButtonChild_"] {
     background: #2d89ef;
+}
+a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"] {
+    color: rgb(var(--white50));
+}
+a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"]:hover {
+    background-color: rgb(var(--white05));
+    color: rgb(var(--white75));
+}
+.LibraryDisplaySizeMedium [class*="libraryhome_UpdatesContainer_"] {
+    height: 280px;
+}
+[class*="appgrid_SortingDropDown_"] ._DialogInputContainer [class*="DialogDropDown_"] svg {
+	fill: rgb(var(--white50));
+}
+[class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer [class*="DialogDropDown_"] svg {
+    fill: rgb(var(--white50));
+}
+[class*="appgrid_SortingDropDown_"] ._DialogInputContainer {
+    outline: 1px solid rgb(var(--white12));
+    color: rgb(var(--white75));
+}
+[class*="appgrid_SortingDropDown_"] ._DialogInputContainer.DialogDropDown:hover {
+    color: rgb(var(--white75));
+    outline: 1px solid rgb(var(--white24));
+}
+[class*="appgrid_SortingDropDown_"] ._DialogInputContainer [class*="DialogDropDown_"] {
+    background-color: transparent;
+}
+[class*="appgrid_SortingDropDown_"] ._DialogInputContainer [class*="DialogDropDown_"]ntDisplay {
+    background-color: transparent;
+}
+[class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer [class*="DialogDropDown_"]:hover svg {
+	fill: rgb(var(--white));
+}
+[class*="allcollections_ScrollContainer_"] [class*="allcollections_Header_"] {
+    color: rgb(var(--white));
+}
+[class*="libraryhomeshowcases_AddShowcaseRow_"] {
+    color: rgb(var(--white50));
+}
+[class*="libraryhomeshowcases_AddShowcaseRow_"] svg line, [class*="libraryhomeshowcases_AddShowcaseRow_"] svg circle {
+    stroke: rgb(var(--white50));
+}
+[class*="libraryhomeshowcases_AddShowcaseRow_"][class*="libraryhomeshowcases_ButtonHovered_"] svg line, [class*="libraryhomeshowcases_AddShowcaseRow_"][class*="libraryhomeshowcases_ButtonHovered_"] svg circle {
+    stroke: rgb(var(--white));
+}
+[class*="libraryhomeshowcases_AddShowcaseRow_"][class*="libraryhomeshowcases_ButtonHovered_"] [class*="libraryhomeshowcases_AddShowcase_"] {
+    color: rgb(var(--white));
+}
+[class*="libraryhomenewupdates_SettingsButton_"] {
+    cursor: pointer!important;
+}
+[class*="writereview_RatingContainer_"] [class*="writereview_RecommendGame_"] {
+    color: rgb(var(--white));
+}
+[class*="writereview_RatingContainer_"] [class*="writereview_LeftContainer_"] [class*="writereview_Playtime_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailsspotlight_ReviewContainer_"] {
+    background-color: rgb(var(--white05)); /* Not the usual style of black; aiming to highlight the area among the rest */
+}
+[class*="writereview_ReviewThumbButton_"] {
+    background: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+[class*="writereview_ReviewThumbButton_"]:not([class*="writereview_Selected_"]):hover {
+    color: rgb(var(--white))!important;
+    background: rgb(var(--white24));
+}
+[class*="writereview_ThumbIcon_"] {
+    fill: rgb(var(--white));
+}
+[class*="radio_Button_"][class*="radio_Active_"], [class*="radio_Button_"][class*="radio_Active_"]:hover {
+    background-color: rgb(var(--focus));
+    color: rgb(var(--white));
+}
+[class*="radio_Group_"] {
+    background-color: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="radio_Button_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="radio_Button_"] {
+    background-color: rgb(var(--white12));
+}
+button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
+    background: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+[class*="contentmanagement_IsSelected_"] {
+    background-color: rgb(var(--white05));
+}
+[class*="contentmanagement_InstallFolder_"] {
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_LibraryContent_"] [class*="contentmanagement_DriveUsage_"] [class*="contentmanagement_DriveName_"] {
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_DriveSettingsButton_"] {
+    background-color: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+[class*="contentmanagement_DriveSettingsButton_"]:hover, [class*="contentmanagement_DriveSettingsButton_"]:focus {
+    color: rgb(var(--white));
+    background: rgb(var(--white24));
+}
+[class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBody_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="contentmanagement_InstallFolder_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="contentmanagement_ActionButton_"].DialogButton.DesktopUI, .DesktopUI [class*="contentmanagement_ActionButton_"].DialogButton {
+    background-color: rgb(var(--white12));
+}
+[class*="voicesettings_MicrophoneTest_"] [class*="voicesettings_VolumeBar_"] {
+    background: rgb(var(--black));
+}
+[class*="remoteplaysettings_TableHeader_"] {
+    color: rgb(var(--white));
+}
+[class*="gamepaddialog_LabelFieldValue_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsplaysection_GameStat_"] [class*="appdetailsplaysection_CloudIconSVG_"],
+[class*="appdetailsplaysection_GameStat_"] [class*="appdetailsplaysection_AchievementSVG_"]
+{
+    color: rgb(var(--white50));
+}
+[class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIcon_"] svg polyline, [class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIcon_"] svg path, [class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIconForced_"] svg polyline, [class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIconForced_"] svg path {
+    stroke: rgb(var(--white50));
+}
+[class*="appactivityday_PartnerEventMediumImage_Container_"]:hover [class*="appactivityday_PartnerEventMediumImage_Title_"] {
+    color: rgb(var(--white));
 }
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
