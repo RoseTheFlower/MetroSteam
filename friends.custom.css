@@ -2975,3 +2975,6 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .online .SVGIcon_DoNotDisturb circle, .online .SVGIcon_DoNotDisturb line {
     stroke: rgb(var(--red));
 }
+[class*="personastatusicons_PersonaStatusIcon_"].ingame svg path {
+    fill: rgb(var(--ingame));
+}
