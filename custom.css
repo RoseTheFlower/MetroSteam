@@ -6,7 +6,7 @@ html:root {
     --focus: 0, 114, 198; /* Blue accent */
 }
 
-/* Each of the options (variables) below should be inside the curly brackets above to make it active. */
+/* The preferred options (variables) from below should be inside the curly brackets above to make them active. */
 
 /* Option to disable custom avatar frames
 --avatarframes: none;
