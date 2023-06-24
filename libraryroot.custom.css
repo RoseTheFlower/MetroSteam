@@ -1510,6 +1510,7 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
 }
 [class*="downloadgraph_Throttle_"] [class*="downloadgraph_ThrottleValue_"] {
     color: rgb(var(--white50));
+	cursor: pointer!important;
 }
 [class*="downloadgraph_StatsPanel_"] [class*="downloadgraph_Throttle_"]:hover {
     color: rgb(var(--white));
@@ -1883,6 +1884,33 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="updatealert_PrimaryMessage_"] {
     font-size: 15px;
     color: rgb(var(--white));
+}
+[class*="screenshotmanagerdialog_ComboboxSelectorContextMenu_"] {
+    background-color: rgb(var(--clientBG));
+	border: 1px solid rgb(var(--frameBorder));
+}
+[class*="screenshotmanagerdialog_ComboboxSelector_"] [class*="screenshotmanagerdialog_Option_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="screenshotmanagerdialog_ComboboxSelector_"] {
+    color: rgb(var(--white));
+}
+[class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="dropdown_DialogDropDownMenu_Item_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="standardtemplates_StandardTemplateDesktop_"][class*="standardtemplates_Unread_"]:hover {
+    background: rgb(var(--white24));
+}
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_ReloadButton_"]:hover {
+    background: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_URLBarText_"]:hover {
+    background: rgb(var(--white05));
 }
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
