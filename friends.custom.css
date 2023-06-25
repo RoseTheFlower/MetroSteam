@@ -4,7 +4,6 @@
     --chatfont: 13px; /* Font size for chat messages */
     --scrollbarSize: 15px;
     --focus: 102, 36, 226; /* Default Metro skin purple accent */
-
     --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
     --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
     --clientBG: 26, 26, 26;
@@ -15,7 +14,7 @@
     --ingame: 130, 186, 0;
     --offline: 145, 145, 145;
     --golden: 255, 255, 99;
-    --scroll: 32, 32, 32;
+    --slashhover: 32, 32, 32;
     --textentry: 39, 39, 39;
     --white03: 255, 255, 255, 0.03;
     --white05: 255, 255, 255, 0.05;
@@ -95,7 +94,7 @@
 }
 /* Top Panel Focus Effect*/
 .title-area-highlight {
-    height: 0 !important;
+    display:none;
 }
 
 /*Top Panel Focus Line*/
@@ -376,6 +375,10 @@
     padding: 0 !important;
 }
 
+.ChatTabsContextMenu {
+    padding-top: 0;
+}
+
 .ScrollToBottomButton {
     padding-top: 0px !important;
     color: rgb(var(--white)) !important;
@@ -427,6 +430,7 @@
     background: rgb(var(--clientBG)) !important;
     min-height: 0px !important;
     border-top: 1px solid rgb(var(--frameBorder)) !important;
+	z-index: 2;
 }
 
 .chatTabList [class*="chattabs_ChatTab_"],
@@ -1948,7 +1952,7 @@ background: rgba(var(--white05))!important;}*/
 }
 
 .multiChatDialog .title-area-icon {
-    padding: 1px !important;
+    padding: 0 !important;
 }
 
 .title-area-icon .SVGIcon_Button rect,
@@ -2565,7 +2569,7 @@ img[class*="emoticon_emoticon_"] {
 /*emoticon and reactions code popup*/
 [class*="emoticon_EmoticonHover_"],
 [class*="reactions_ReactionHover_"] {
-    background-color: rgba(var(--scroll)) !important;
+    background-color: rgba(var(--slashhover)) !important;
     border: 1px solid rgb(var(--frameBorder));
     margin: 0 4px;
     padding: 8px;
@@ -2887,16 +2891,19 @@ body[class*="shared_common_v6_"] {
 }
 
 .friendsui-container .title-area-icon {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
 }
 
 .friendsui-container .title-bar-actions {
-    max-height: 25px;
+    max-height: 28px;
 }
 
 .friendlist .title-area-icon {
     height: 20px !important;
+}
+.chatTabSetContainer.inclient {
+    padding-right: 88px;
 }
 
 .voiceSelfHeader .friend .avatarHolder .avatarStatus {
