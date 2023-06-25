@@ -1817,7 +1817,7 @@ button.DialogButton.Primary:hover {
 .friendsListSectionTitle {
     letter-spacing: 1px !important;
     z-index: 2;
-    padding-left: 15px;
+    padding-left: 15px!important;
 }
 
 .friendlistListContainer .friend .avatarHolder {
@@ -2981,4 +2981,7 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 }
 [class*="personastatusicons_PersonaStatusIcon_"].ingame svg path {
     fill: rgb(var(--ingame));
+}
+.titleBarContainer .currentUserContainer [class*="personanameandstatus_twoLine_"] [class*="personanameandstatus_richPresenceLabel_"] {
+    margin-top: 0px!important;
 }
