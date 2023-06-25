@@ -29,12 +29,11 @@ Known issues / things to improve:
 	--offline:145,145,145;
 	--golden:255,255,99;
 	--scrollbarSize:15px;
-	--scroll:32,32,32;
 	--textentry:39,39,39;
 	--frameBorder:15,15,15;
-	--textentrybuttons:200,200,200;
-	--white05onClientBGtwice:49,49,49;
-	/* Just a hacky way to deal with two overlapping hover overlays for library highlights */
+	--bgGameList: 38,38,38;
+	--white05onbgGameList:49,49,49;
+	/* Just a workaround to deal with two overlapping hover overlays for library highlights */
     --white03:255,255,255,0.03;
 	--white05:255,255,255,0.05;
 	--white08:255,255,255,0.08;
@@ -138,7 +137,7 @@ body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay 
 }
 [class*="gamelistbar_Container_"] {
 	background-image:none;
-	background:rgb(var(--white05));
+	background:rgb(var(--bgGameList));
 }
 [class*="gamelistsectionheader_Container_"] {
 	background:none;
@@ -171,7 +170,7 @@ body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay 
 	letter-spacing:0px;
 }
 [class*="gamelistentry_Container_"]:hover,[class*="gamelistentry_Container_"][class*="gamelistentry_HoverOverlay_"],[class*="gamelistsectionheader_Container_"]:not([class*="gamelistsectionheader_Selected_"]):hover,[class*="gamelistsectionheader_Container_"]:not([class*="gamelistsectionheader_Selected_"])[class*="gamelistsectionheader_HoverOverlay_"] {
-	background-color:rgb(var(--white05onClientBGtwice));
+	background-color:rgb(var(--white05onbgGameList));
 }
 [class*="gamelistentry_Container_"][class*="gamelistentry_Installed_"] {
 	color:rgb(var(--white));
@@ -490,7 +489,7 @@ button[class*="posttextentry_EmoticonButton_"] {
 	background:rgb(var(--focus));
 }
 [class*="smartscrollcontainer_ScrollToTopButton_"] {
-	color:rgb(var(--white));
+	color: white;
 }
 [class*="appdetailsplaysection_MenuButton_"] svg {
 	fill:rgba(var(--white));
@@ -1911,6 +1910,16 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_URLBarText_"]:hover {
     background: rgb(var(--white05));
+}
+[class*="gamelistentry_FriendStatusHover_"] {
+    background-color: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="appdetailscommunityfeed_ArtItem_"] [class*="appdetailscommunityfeed_DescriptionRow_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailscommunityfeed_ArtItem_"] [class*="appdetailscommunityfeed_BottomSection_"] {
+    background: rgb(var(--black75));
 }
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
