@@ -1,3 +1,3 @@
-decals/* export-ignore
+decals/ export-ignore
 *.md export-ignore
 preview.png export-ignore
