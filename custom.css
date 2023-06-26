@@ -3,7 +3,8 @@ html:root
 --focus: 102, 36, 226; /* Default purple, here as an example */
 }
 
-/* The preferred option lines from below should be put inside the curly brackets above to make them active. */
+/* The preferred option lines from below should be put inside the curly brackets above to make them active */
+/* Don't forget to save the changes and restart Steam after the fact */
 
 /* Option to disable custom avatar frames
 --avatarframes: none;
