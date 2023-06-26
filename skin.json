@@ -1,0 +1,9 @@
+{
+    "UseDefaultPatches": true,
+    "Patches": [
+        {
+          "MatchRegexString": "^DUMMYFORCONFIG$",
+          "TargetCss": "custom.css"
+        }
+    ]
+}
