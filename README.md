@@ -18,7 +18,7 @@ My quest was to make the windows look as close as possible to those of [the orig
 1. In SFP, click on Start Injection unless already done.
 
 ## Extra options
-- If you'd like to customize the colors, decals and more, edit custom.css in any text editor as desired.
+- If you'd like to customize the colors, decals and more, also download [custom.css](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/custom.css) and put in the same folder as the rest of the files, then edit this file in any text editor as desired.
 - Check out the [wiki](../../wiki) to enable automatic skin updates or learn more about customizing the skin.
 
 ## Credits
