@@ -4,7 +4,12 @@ This skin for the new UI framework was created after Valve made it problematic t
 My quest was to make the windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
 
 ## Applying the skin
-1. Go to your Steam\steamui\css folder and ensure there is no library.css file.
+<details>
+<summary><strong>Breakage prevention for returning skin users (clickable)</strong></summary>
+1. Close Steam.<br>
+2. Navigate to its folder, back up and remove the clientui, skins, and steamui\css folders.
+</details>
+
 1. [Download the skin archive](/../../archive/refs/heads/master.zip).
 1. Extract the archive to **Steam\steamui\skins** (create the skins folder if doing this for the first time).
    - If you like, rename the MetroSteam-master folder to `Metro by Rose`.
