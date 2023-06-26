@@ -1605,10 +1605,9 @@ button.DialogButton.Primary:hover {
 }
 
 .ChatRoomSpeaker .speaker .speakerAvatar,
-.ChatMsgSlashEmote .speaker .speakerAvatar,
-.speaker .speakerStatus {
-    opacity: 0 !important;
-    width: 0.5px !important;
+.ChatMsgSlashEmote .speaker .speakerAvatar {
+    visibility: hidden;
+    width: 9px !important;
 }
 
 [class*="messages_SpeakerName_Online_"] {
@@ -2984,4 +2983,7 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 }
 .titleBarContainer .currentUserContainer [class*="personanameandstatus_twoLine_"] [class*="personanameandstatus_richPresenceLabel_"] {
     margin-top: 0px!important;
+}
+.ChatRoomSpeaker .speaker .speakerStatus, .ChatMsgSlashEmote .speaker .speakerStatus {
+	display: none;
 }
