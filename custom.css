@@ -1,12 +1,9 @@
-/* Just an example. Modify as needed. */
-
-html:root {
-    --decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
-    --decalXY: right top;
-    --focus: 0, 114, 198; /* Blue accent */
+html:root
+{
+--focus: 102, 36, 226; /* Default purple, here as an example */
 }
 
-/* The preferred options (variables) from below should be inside the curly brackets above to make them active. */
+/* The preferred option lines from below should be put inside the curly brackets above to make them active. */
 
 /* Option to disable custom avatar frames
 --avatarframes: none;
@@ -31,7 +28,7 @@ html:root {
 --focus: 140, 0, 149;
 */
 
-/* Decal options:
+/* Decal options (use both lines):
 --decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
 --decalXY: right top;
 
