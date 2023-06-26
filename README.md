@@ -3,7 +3,7 @@
 This skin for the new UI framework was created after Valve made it problematic to revert to the old-style windows and subsequently removed support for user-made themes.
 My quest was to make the windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
 
-## Installation
+## Applying the skin
 1. Go to your Steam\steamui\css folder and ensure there is no library.css file.
 1. [Download the skin archive](/../../archive/refs/heads/master.zip).
 1. Extract the archive to **Steam\steamui\skins** (create the skins folder if doing this for the first time).
