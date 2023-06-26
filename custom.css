@@ -1,6 +1,10 @@
+/* Just an example. Modify as needed. */
+
 html:root
 {
---focus: 102, 36, 226; /* Default purple, here as an example */
+--decal: url(https://rosetheflower.github.io/MetroSteam/decals/1.png);
+--decalXY: right top;
+--focus: 0, 114, 198; /* Blue accent */
 }
 
 /* The preferred option lines from below should be put inside the curly brackets above to make them active */
