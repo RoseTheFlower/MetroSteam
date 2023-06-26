@@ -15,10 +15,6 @@ My quest was to make the windows look as close as possible to those of [the orig
 - If you'd like to customize the colors, decals and more, also download [custom.css](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/custom.css) and put in the same folder as the rest of the files, then edit this file in any text editor as desired.
 - Check out the [wiki](../../wiki) to enable automatic skin updates or learn more about customizing the skin.
 
-## Uninstallation
-* Ensure that Steam and the patcher tool are closed, then remove the %LOCALAPPDATA%\Steam\htmlcache\Cache\ folder.
-* For purity, remove the Steam\clientui\css\ and Steam\steamui\css\ folders inside your Steam installation folder.
-
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that allows to apply skins, and for tips on managing the randomized class names.
