@@ -4,15 +4,16 @@ This skin for the new UI framework was created after Valve made it problematic t
 My quest was to make the windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
 
 ## Installation
-1. Go to your Steam\steamui\css\ folder and ensure there is no library.css file.
-1. Save the [friends and chat skin](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/friends.custom.css) to your PC and put in your Steam\steamui\ folder.
-1. Save the [library skin](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/libraryroot.custom.css) to your PC and put in your Steam\steamui\ folder.
+1. Go to your Steam\steamui\css folder and ensure there is no library.css file.
+1. [Download the skin archive](/../../archive/refs/heads/master.zip).
+1. Extract the archive to **Steam\steamui\skins** (create the skins folder if doing this for the first time).
+   - If you like, rename the MetroSteam-master folder to `Metro by Rose`.
 1. [Download](https://github.com/PhantomGamers/SFP/releases) the latest version of SFP to modify Steam.
-1. Run the tool alongside Steam and wait for it to apply the changes.
-1. Restart Steam if necessary.
+1. Run the tool and select the skin under *Steam skin* in its settings.
+1. In SFP, click on Start Injection unless already done.
 
 ## Extra options
-- If you'd like to customize the colors, decals and more, also download [custom.css](https://raw.githubusercontent.com/RoseTheFlower/newsteamchat/master/custom.css) and put in the same folder as the rest of the files, then edit this file in any text editor as desired.
+- If you'd like to customize the colors, decals and more, edit custom.css in any text editor as desired.
 - Check out the [wiki](../../wiki) to enable automatic skin updates or learn more about customizing the skin.
 
 ## Credits
