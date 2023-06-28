@@ -17,7 +17,7 @@ Known issues / things to improve:
 	--focus:102,36,226;
 	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
 	--semibold:"Segoe UI Semibold","Helvetica Neue Medium","Motiva Sans",Arial,Helvetica,sans-serif;
-	/* Used occasionally, not for everything */
+	/* Both used occasionally, not for everything */
 	--whatsnew:block; /* The default */
 	--W10close_Red_h:232,18,35;
 	/* Window close button color on hover */
@@ -35,7 +35,7 @@ Known issues / things to improve:
 	--bgGameList: 38,38,38;
 	--white05onbgGameList:49,49,49;
 	/* Just a workaround to deal with two overlapping hover overlays for library highlights */
-    --white03:255,255,255,0.03;
+	--white03:255,255,255,0.03;
 	--white05:255,255,255,0.05;
 	--white08:255,255,255,0.08;
 	--white10:255,255,255,0.10;
@@ -61,7 +61,7 @@ Known issues / things to improve:
 	--downloadicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFNJREFUKM/ljksOgDAIRKee1vH+++fCkrSUJrp2EkJgHp8GqBCSWm4e+qBfwH7JWjwyoCFItaNxdvPawOF7mhwGykWqNvS8XFT6LQCK1xY4X5i8G2p94Wk6Gb41AAAAAElFTkSuQmCC);
 	--forwardicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFBJREFUKM/FjsEJgDAQBOfAJq0jacPKkp7GTwjBR9CIuK+D22EWJlGTWtTE0zS4rsK5mfOquc/e7oIRcagAu0qoZfwDDncXXjrv5n4O1X+hEy69bKDDJqaPAAAAAElFTkSuQmCC);
 	--notificationicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAF5JREFUKM/VkUEOgCAMBFvCY8EH6XPHg5osWCNyc5OGTdhpG3AAm1A+T//IkWxSue/0kvcn0P870UfB4YnT35FkRa0qmRLcmwF9LRyqQBHf5CJQ4RACbo9zaRW/RYEdeJNsPLOc8hwAAAAASUVORK5CYII=);
-	--notificationsiconactive: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHNJREFUKM/VkcsJw0AMRJ9C2nAFuqWFLSQdpBlX4x7i49bzfAgh6w857MkeIZCGGQahQKQDNzrRbby3ixj/xEH4mztvPFlim7BPv8wfA3m2RJKvSn1suLlSx5VTXTUypDnjp9J8I8NetyG+5mKZimU6Mqks+MZfZSU7urkAAAAASUVORK5CYII=);
+	--notificationsiconactive: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRABmACQA4p5xVPoAAAAJcEhZcwAACxMAAAsTAQCanBgAAABMSURBVCjP1ZHRCgAQDEWRn8X/8LnHiyIm2hO3bm11btuaBTAKOaOUOuin3h54dkH+nchtkHf/6Npdo5PAxYUDJEe6gsT4zSZ5qIsEVOL0ONL0MCgGAAAAAElFTkSuQmCC');
 	--friendsicon: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAOFJREFUKM+F0TFKA1EQxvGJIGhlzmCjBC2C2GmdI0RPIDG3SK6gOUq8R1BQN5jKC2hhYeBn4WxcNhvzwfCYb96feTMvEJXYxxAzfOV5m/7qXh2YosA1znCV+UMVrEJDvKBd636Q/qAJmqFfA8ro47HMd+JPRxExj2YVEXFYJlXoNcEmHUfE8yqrPOEGbw0ztTHP+tpMe7mlApfpXSSwcXuBc3z61VOeH+mv/dMuRvjGHbrpdXGf/ji9FTTCOzobVt7J+riETrH8B6iCS5y0MImIVkQMYrsm5coX6G3pUkYPix8u49iyFwTN0AAAAABJRU5ErkJggg==);
 	--searchicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewBox='0 0 100 100'%3E%3Cg transform='translate(0,-952.36218)'%3E%3Cpath class='ColorSelector' d='m 40.99855,964.36216 c -15.9798,0 -28.9986,13.01864 -28.9986,28.99862 0,15.97992 13.0188,28.99862 28.9986,28.99862 6.9189,0 13.2881,-2.4349 18.2803,-6.4997 l 23.5927,23.6239 c 1.1714,1.1714 3.0784,1.1715 4.2498,0 1.1716,-1.1715 1.1716,-3.0783 0,-4.2498 l -23.6239,-23.5926 c 4.0649,-4.9923 6.4997,-11.3615 6.4997,-18.28042 0,-15.97998 -13.0187,-28.99862 -28.9986,-28.99862 z m 0,5.99972 c 12.7374,0 22.9989,10.26145 22.9989,22.9989 0,12.73732 -10.2615,22.99892 -22.9989,22.99892 -12.7374,0 -22.9989,-10.2616 -22.9989,-22.99892 0,-12.73745 10.2615,-22.9989 22.9989,-22.9989 z' fill='%23ffffff' fill-opacity='1' stroke='none' visibility='visible' display='inline' overflow='visible'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
@@ -73,16 +73,22 @@ Known issues / things to improve:
 	border-image-source: none !important;
 	text-shadow: none !important;
 }
+::before {
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
 /* Thanks to Sims for the idea and initial implementation of the root menu as an animation */
 @keyframes steam-show-menu {
-	from {
+from
+	{
 	width:100%;
 	background:rgb(var(--header_dark));
-		}
-	to {
+	}
+to 
+	{
 	width:100%;
 	background:rgb(var(--header_dark));
-		}
+	}
 }
 body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay BG */
 {
@@ -185,7 +191,7 @@ button.DialogButton {
 }
 button.DialogButton:hover {
 	color:rgb(var(--white));
-	background-color:rgba(var(--white24));
+	background-color:rgba(var(--white24))!important;
 }
 .ModalPosition_TopBar {
 	display:none;
@@ -372,6 +378,7 @@ button[class*="posttextentry_EmoticonButton_"] {
 [class*="posttextentry_PostTextEntryArea_"],[class*="posttextentry_PostTextEntry_"]
 [class*="posttextentry_PostTextEntryArea_"]:focus {
 	background:rgb(var(--textentry));
+	color: rgb(var(--white));
 }
 [class*="downloads_RemoveAllButton_"][class*="downloads_RemoveAllButton_"].DialogButton:enabled,[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"],[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"]:enabled,[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"]:active,[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"]:hover,[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"]:enabled:active:hover,[class*="downloadgraph_Button_"][class*="downloadgraph_Button_"].DialogButton:enabled {
 	background:rgb(var(--white10));
@@ -1504,7 +1511,8 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
 }
 [class*="downloadgraph_Throttle_"] {
     color: rgb(var(--white50));
-	text-decoration-line: underline;
+	/*text-decoration-line: underline; 
+	Creates an unwanted line that appears at all times*/
 	cursor: pointer!important;
 }
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_RemoveFromQueue_"].DialogButton:enabled {
@@ -2052,7 +2060,158 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"] {
     background: rgb(var(--online));
 }
-
+[class*="downloads_SectionItem_"]:hover [class*="downloads_Button_"].DialogButton:enabled {
+    background: transparent;
+}
+[class*="downloads_SectionItem_"]:hover [class*="downloads_Button_"].DialogButton:enabled:hover {
+    background: rgb(var(--white12));
+}
+[class*="emoticon_NewEmoticonIndicator_"] {
+    background: none;
+}
+[class*="emoticon_NewEmoticonIndicator_"] [class*="emoticon_NewEmoticonCircle_"] {
+    background-color: rgb(var(--focus));
+    border-radius: 50%!important;
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_PostButton_"][class*="posttextentry_Enabled_"]:hover {
+    background: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_PostButton_"][class*="posttextentry_Enabled_"] {
+    background: rgb(var(--white12));
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"] line, [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"] circle, [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"] path {
+    stroke: rgb(var(--white));
+}
+[class*="appproperties_AppProperties_"][class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) [class*="appproperties_SettingsDialogButton_"], [class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) [class*="appproperties_AppProperties_"] [class*="appproperties_SettingsDialogButton_"] {
+    color: rgb(var(--white));
+    background-color: rgb(var(--white12));
+}
+[class*="pagedsettings_PagedSettingsDialog_"] .DialogDropDown._DialogInputContainer {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--white12))!important;
+    color: rgb(var(--white));
+}
+[class*="appproperties_AppProperties_"][class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) .DialogDropDown:hover, [class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) [class*="appproperties_AppProperties_"] .DialogDropDown:hover {
+	background: rgb(var(--clientBG));
+    color: rgb(var(--white));
+    border: 1px solid rgb(var(--white24))!important;
+}
+[class*="contentmanagement_InstallFolder_"]:focus {
+    background-color: rgb(var(--focus));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_SelectedRow_"],
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_SelectedRow_"]:hover {
+    background: rgb(var(--focus));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ColumnResizer_"] span {
+    border-left: 1px solid rgb(var(--frameBorder));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_SelectColumnsButton_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ServerRow_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] button.DialogButton.Disabled svg {
+    color: rgb(var(--white45));
+}
+[class*="appdetailsprimarylinkssection_MenuButton_"] svg:hover {
+    background: rgb(var(--white05));
+}
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Primary_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Primary_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="screenshotmanagerdialog_IconButton_"] [class*="screenshotmanagerdialog_IconButtonIcon_"][class*="screenshotmanagerdialog_Active_"] {
+    color: rgb(var(--focus));
+}
+[class*="screenshotmanagerdialog_CaptionField_"] {
+    background-color: rgb(var(--textentry));
+    color: rgb(var(--white));
+}
+[class*="screenshotmanagerdialog_Metadata_"] {
+    color: rgb(var(--white50));
+}
+[class*="screenshotmanagerdialog_CloudStorageImpact_"] {
+    color: rgb(var(--white50));
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"] {
+    background: rgb(var(--ingame))!important;
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"]:hover {
+    background: rgb(var(--ingame));
+    filter: brightness(1.1);
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"], [class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_CancelButton_"] {
+    background: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"]:hover, [class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_CancelButton_"]:hover {
+    background: rgb(var(--white24));
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_OptionList_"] [class*="launchoptionsdialog_ListContainer_"] [class*="launchoptionsdialog_ListItem_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="appportrait_LibraryItemBox_"] {
+    border-top: none;
+	border-bottom: none;
+}
+[class*="allcollections_Collection_"] {
+    background: rgb(var(--black45));
+}
+[class*="allcollections_Collection_"]:focus, [class*="allcollections_Collection_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="allcollections_ScrollContainer_"] [class*="allcollections_Header_"] [class*="allcollections_Label_"] {
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+[class*="libraryhomeplaynext_PlayNextSubHead_"] {
+    color: rgb(var(--white50));
+}
+[class*="achievementslist_AchievementList_"] {
+    background-color: rgb(var(--clientBG));
+}
+[class*="gamepadtabbedpage_Tab_"][class*="gamepadtabbedpage_Selected_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="achievementsheader_StatsBlock_"] {
+    background-color: rgb(var(--white05));
+}
+[class*="achievementslist_AchievementListItemBase_"] {
+    background-color: rgb(var(--black));
+}
+[class*="achievementslist_AchievementDescription_"] {
+    color: rgb(var(--white75));
+}
+[class*="achievementslist_AchievementTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="pagedsettings_HidePageListButton_"]:hover {
+    background: rgb(var(--white24));
+}
+[class*="pagedsettings_HidePageListButton_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="prosemirror_ToolbarRow_"] [class*="prosemirror_CommandButton_"][class*="prosemirror_Toggled_"] {
+    background: rgb(var(--focus));
+}
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TimeStats_"] [class*="steamdesktopoverlay_CurrentDate_"],
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TimeStats_"] [class*="steamdesktopoverlay_PlaytimeCurrentSession_"] {
+    color: #fff;
+}
+/* Experimental */
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TimeStats_"] [class*="steamdesktopoverlay_CurrentTime_"] {
+    font-size: 36px;
+    line-height: 44px;
+}
+[class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] {
+    display: none;
+}
 /*Fine but affects the padding, which must be adjusted as well
 [class*="gamelistentry_Container_"] {
     font-family: var(--basefont);
