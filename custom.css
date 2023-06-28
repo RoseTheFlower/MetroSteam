@@ -70,9 +70,9 @@ html:root
 --clientBG: 0, 0, 0;
 --frameBorder: 64, 64, 64;
 --header_dark: 12, 12, 12;
---bgGameList: 12, 12, 12;
+--bgGameList: var(--header_dark);
 --white05onbgGameList: 24, 24, 24;
---textentry: 12, 12, 12;
+--textentry: var(--header_dark);
 
 */
 
@@ -86,17 +86,6 @@ html:root
 
 /* Highly experimental Metro White theme color values:
 
---clientBG: 230, 230, 230;
---textentrybuttons: 35, 50, 50;
---ingame: 94, 150, 15;
---online: 66, 104, 255;
---offline: 0, 0, 0, 0.45;
---frameBorder: 160, 160, 160;
---header_dark: 255, 255, 255;
---textentry: 207, 207, 207;
---bgGameList: 217, 217, 217;
---white05onbgGameList: 206, 206, 206;
-
 --white03: 0, 0, 0, 0.03;
 --white05: 0, 0, 0, 0.05;
 --white08: 0, 0, 0, 0.08;
@@ -125,6 +114,17 @@ html:root
 --black45: 255, 255, 255, 0.45;
 --black75: 255, 255, 255, 0.75;
 --black: 255, 255, 255;
+
+--clientBG: 230, 230, 230;
+--textentrybuttons: 35, 50, 50;
+--ingame: 94, 150, 15;
+--online: 66, 104, 255;
+--offline: var(--white45);
+--frameBorder: 160, 160, 160;
+--header_dark: 255, 255, 255;
+--textentry: 207, 207, 207;
+--bgGameList: 217, 217, 217;
+--white05onbgGameList: 206, 206, 206;
 
 --forwardicon: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABZSURBVCjPxdC7DYAwDEXRE1ET1oM52BEK2AmaROIjIBSI29iW3pVsc0+PKdUd1YM4IqJDneYicSu3aDCUilI4yxFjqXhaO6TjMwHLps8sh8xrLr/8iTT/K61sQhRDs82RqwAAAABJRU5ErkJggg==');
 --downloadicon: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABWSURBVCjP3c45DsAgDETRmZw25v79TxGQ0EBB2lhCLH62MaAM2wDO90sf4v/Ydp3A4ZBUgMaSRNyrO9390HZ4yldWthlnI207vPs6Mf42AAkXnBMy9wCHn37Vv9YKsgAAAABJRU5ErkJggg==');
@@ -137,16 +137,6 @@ html:root
 
 /* Highly experimental Metro Blue theme color values:
 
---clientBG: 230, 230, 230;
---header_dark: 0, 160, 240;
---frameBorder: 40, 120, 160;
---online: 66, 104, 255;
---ingame: 94, 150, 15;
---offline: 0, 0, 0, 0.45;
---textentry: 51, 153, 204;
---bgGameList: 229, 229, 229;
---white05onbgGameList: 217, 217, 217;
-
 --white03: 0, 0, 0, 0.03;
 --white05: 0, 0, 0, 0.05;
 --white08: 0, 0, 0, 0.08;
@@ -175,6 +165,16 @@ html:root
 --black45: 255, 255, 255, 0.45;
 --black75: 255, 255, 255, 0.75;
 --black: 255, 255, 255;
+
+--clientBG: 230, 230, 230;
+--header_dark: 0, 160, 240;
+--frameBorder: 40, 120, 160;
+--online: 66, 104, 255;
+--ingame: 94, 150, 15;
+--offline: var(--white45);
+--textentry: 51, 153, 204;
+--bgGameList: 229, 229, 229;
+--white05onbgGameList: 217, 217, 217;
 
 --forwardicon: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABZSURBVCjPxdC7DYAwDEXRE1ET1oM52BEK2AmaROIjIBSI29iW3pVsc0+PKdUd1YM4IqJDneYicSu3aDCUilI4yxFjqXhaO6TjMwHLps8sh8xrLr/8iTT/K61sQhRDs82RqwAAAABJRU5ErkJggg==');
 --downloadicon: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABWSURBVCjP3c45DsAgDETRmZw25v79TxGQ0EBB2lhCLH62MaAM2wDO90sf4v/Ydp3A4ZBUgMaSRNyrO9390HZ4yldWthlnI207vPs6Mf42AAkXnBMy9wCHn37Vv9YKsgAAAABJRU5ErkJggg==');
