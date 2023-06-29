@@ -69,7 +69,8 @@ Known issues / things to improve:
 	box-shadow: none !important;
 	border-radius: 0 !important;
 	cursor: default !important;
-	transition: none !important;
+	transition-delay: 0s !important;
+	transition-duration: 1ms !important;
 	border-image-source: none !important;
 	text-shadow: none !important;
 }
@@ -191,7 +192,7 @@ button.DialogButton {
 }
 button.DialogButton:hover {
 	color:rgb(var(--white));
-	background-color:rgba(var(--white24))!important;
+	background-color:rgba(var(--white24));/*!important;*/
 }
 .ModalPosition_TopBar {
 	display:none;
@@ -1513,7 +1514,8 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
     color: rgb(var(--white50));
 	/*text-decoration-line: underline; 
 	Creates an unwanted line that appears at all times*/
-	cursor: pointer!important;
+	/*cursor: pointer!important;
+	*/
 }
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_RemoveFromQueue_"].DialogButton:enabled {
     background: transparent;
@@ -2049,7 +2051,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--online));
 }
 [class*="downloads_SectionItemStatus_"] [class*="downloads_Downloading_"] [class*="downloads_State_"] {
-    color: rgb(var(--online));
+    color: rgb(var(--white));
 }
 [class*="downloads_SectionItemStatus_"] [class*="downloads_ProgressBar_"] div {
     background-color: rgb(var(--focus));
@@ -2068,10 +2070,15 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="emoticon_NewEmoticonIndicator_"] {
     background: none;
+	top: calc(100% - 2px);
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 [class*="emoticon_NewEmoticonIndicator_"] [class*="emoticon_NewEmoticonCircle_"] {
     background-color: rgb(var(--focus));
-    border-radius: 50%!important;
+	width: 100%;
+    height: 2px;
 }
 [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_PostButton_"][class*="posttextentry_Enabled_"]:hover {
     background: rgb(var(--white24));
@@ -2212,6 +2219,32 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_CurrentGameLogoContainer_"] {
     display: none;
 }
+.DesktopUI [class*="installrequest_AppName_"] {
+    color: rgb(var(--white));
+}
+[class*="euladialog_EULAContent_"] {
+    background: rgb(var(--clientBG));
+}
+.DesktopUI [class*="euladialog_EulaDialogContent_"] {
+    color: rgb(var(--white50));
+}
+/*
+.achievementspage_Background_ODpLj .achievementspage_Blur_3Fjw7 {
+    backdrop-filter: brightness(10%);
+    background: none;
+}
+.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
+    background-image: none;
+	border: 1px solid rgb(var(--frameBorder));
+}
+.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP .library_CloseButton_iYW5h svg line {
+    stroke: rgb(var(--white));
+}
+.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP .library_CloseButton_iYW5h {
+    background-color: rgb(var(--header_dark));
+    border: 1px solid rgb(var(--white50));
+}*/
+
 /*Fine but affects the padding, which must be adjusted as well
 [class*="gamelistentry_Container_"] {
     font-family: var(--basefont);
