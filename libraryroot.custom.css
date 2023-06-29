@@ -69,7 +69,7 @@ Known issues / things to improve:
 	box-shadow: none !important;
 	border-radius: 0 !important;
 	cursor: default !important;
-	transition-delay: 0s !important;
+	transition-delay: 1ms !important;
 	transition-duration: 1ms !important;
 	border-image-source: none !important;
 	text-shadow: none !important;
