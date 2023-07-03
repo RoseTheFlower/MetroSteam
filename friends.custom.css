@@ -2,6 +2,7 @@
 
 :root {
     --chatfont: 13px; /* Font size for chat messages */
+	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
     --scrollbarSize: 15px;
     --focus: 102, 36, 226; /* Default Metro skin purple accent */
     --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
@@ -39,16 +40,16 @@
     --black50: 0, 0, 0, 0.50;
     --black75: 0, 0, 0, 0.75;
     --black: 0, 0, 0;
-	--red: 255, 0, 0;
+    --red: 255, 0, 0;
 }
 
 /* Remove animations, round corners and delays */
 * {
     box-shadow: none !important;
     border-radius: 0 !important;
-    transition: none !important;
+    transition-delay: 1ms !important;
+	transition-duration: 1ms !important;
     text-shadow: none !important;
-    /*font-family: "Segoe UI", "Motiva Sans", Arial, Helvetica, sans-serif !important;*/
 }
 
 /* User's name and status */
@@ -2505,7 +2506,7 @@ img[class*="emoticon_emoticon_"] {
 }
 
 [class*="personanameandstatus_statusAndName_"][class*="personanameandstatus_threeLines_"] {
-    margin-top: -7px !important;
+    margin-top: -6px !important;
 }
 
 .compactView
