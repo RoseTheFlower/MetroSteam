@@ -542,12 +542,26 @@ button[class*="posttextentry_EmoticonButton_"] {
     .SVGIcon_Play {
 	fill:rgb(var(--white));
 }
-[class*="downloads_SectionItem_"] [class*="downloads_Button_"],[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled,[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active,[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover,[class*="downloads_SectionItem_"]
-[class*="downloads_Button_"]:enabled:active:hover,[class*="downloads_SectionItem_"]
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"],[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled,[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active,[class*="downloads_SectionItem_"]
 [class*="downloads_Button_"].DialogButton:enabled {
 	background:transparent;
-	border:1px solid rgb(var(--white));
+	border:1px solid rgb(var(--white50));
 }
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover,
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled:active:hover {
+	background:transparent!important;
+	border:1px solid rgb(var(--white))!important;
+}
+
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"], [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active, [class*="downloads_SectionItem_"] [class*="downloads_Button_"].DialogButton:enabled {
+    color: rgb(var(--white50));
+}
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled {
+	color: rgb(var(--white50));
+}
+ [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active:hover {
+	color: rgb(var(--white)); 
+ }
 [class*="aappdetails_PlayBar_"] {
 	width:calc(100% - 15px);
 }
@@ -626,9 +640,6 @@ path {
 html[class*="contextmenu_ContextMenuPopup_"]
 [class*="contextmenu_contextMenuContents_"] {
 	padding:0;
-}
-button[class*="downloads_Button_"]:not( [class*="downloads_RemoveFromQueue_"] ).DialogButton._DialogLayout.Secondary.Focusable {
-	min-width:20px !important;
 }
 [class*="contentmanagement_ContentManagement_"] {
 	background:initial;
@@ -1442,7 +1453,7 @@ button.DialogButton.Primary {
     stroke: rgb(var(--white)); /* Unsure */
 }
 [class*="gamelistentry_FriendIsPlaying_"] {
-    left: 2px;
+    left: 3px;
 }
 [class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] {
     padding-left: 18px;
@@ -2228,11 +2239,62 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 .DesktopUI [class*="euladialog_EulaDialogContent_"] {
     color: rgb(var(--white50));
 }
-/*
-.achievementspage_Background_ODpLj .achievementspage_Blur_3Fjw7 {
+[class*="appdetailsplaysection_SharedLibrary_"] [class*="appdetailsplaysection_Label_"] {
+    color: rgb(var(--white50));
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover {
+	
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Button_"], [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled:active:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"].DialogButton:enabled {
+    height: 14px; /*Ends up being 32x32, while it's 30x30 in the original Metro - perhaps too small*/
+    width: 14px;
+}
+[class*="downloads_SectionItemStatus_"] [class*="downloads_State_"] [class*="downloads_InProgress_"] {
+    color: rgb(var(--white));
+}
+[class*="appportrait_AppPortraitBanner_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="appportraithover_GameUpdatedContainer_"] [class*="appportraithover_GameUpdatedCircle_"] {
+    border-radius: 50%!important;
+    background: rgb(var(--online));
+}
+[class*="appportraithover_GameUpdatedContainer_"] [class*="appportraithover_ImportantUpdate_"] {
+    color: rgb(var(--online));
+}
+[class*="appportraithover_GameUpdatedContainer_"] {
+    font-weight: normal;
+	background: rgb(var(--clientBG));
+}
+[class*="gamenotes_NoteEditorArea_"] [class*="gamenotes_NoteActions_"] .DialogButton {
+    opacity: 1;
+}
+[class*="gamenotes_NoteEditorArea_"] [class*="gamenotes_NoteActions_"] .DialogButton:hover {
+    opacity: 1;
+}
+[class*="achievementspage_Background_"] [class*="achievementspage_Blur_"] {
     backdrop-filter: brightness(10%);
     background: none;
 }
+[class*="achievementslist_GlobalAchievementListItem_"] {
+    background: rgb(var(--black));
+}
+[class*="achievementslist_GlobalAchievementListItem_"] [class*="achievementslist_Content_"] [class*="achievementslist_ProgressFill_"] {
+    background-color: rgb(var(--white20));
+}
+[class*="achievementslist_GlobalAchievementListItem_"] [class*="achievementslist_Content_"] [class*="achievementslist_Info_"] [class*="achievementslist_Title_"] {
+    color: rgb(var(--white));
+}
+[class*="achievementslist_AchievementGlobalPercentage_"] {
+    color: rgb(var(--white50));
+}
+[class*="achievementslist_UnlockDate_"] {
+    color: rgb(var(--white50));
+}
+[class*="achievementslist_GlobalAchievementListItem_"] [class*="achievementslist_Content_"] [class*="achievementslist_Info_"] [class*="achievementslist_Description_"] {
+    color: rgb(var(--white75));
+}
+/*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
 	border: 1px solid rgb(var(--frameBorder));
