@@ -2294,6 +2294,48 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="achievementslist_GlobalAchievementListItem_"] [class*="achievementslist_Content_"] [class*="achievementslist_Info_"] [class*="achievementslist_Description_"] {
     color: rgb(var(--white75));
 }
+[class*="desktopbrowser_URLBar_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="desktopbrowser_URLBar_"] [class*="desktopbrowser_StatusIcon_"] {
+    color: rgb(var(--white));
+}
+.TabbedPopupBrowser [class*="steamdesktopoverlay_WindowControls_"] {
+    background: rgb(var(--header_dark));
+}
+[class*="desktopbrowser_URLBar_"] [class*="desktopbrowser_NavigationButton_"]:hover {
+    background: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="desktopbrowser_URLBar_"] [class*="desktopbrowser_URLBarText_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="desktopbrowser_BrowserTabs_"] [class*="desktopbrowser_BrowserTab_"][class*="desktopbrowser_Active_"] {
+    background-color: rgb(var(--white12));
+    border: 2px solid rgb(var(--focus));
+    border-left: 2px solid rgb(var(--focus));
+}
+[class*="desktopbrowser_BrowserTabs_"] [class*="desktopbrowser_BrowserTab_"] {
+    background-color: rgb(var(--white12));
+    border: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+[class*="desktopbrowser_BrowserTabs_"] [class*="desktopbrowser_BrowserTab_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="desktopbrowser_BrowserTabs_"] {
+    gap: 2px;
+}
+[class*="desktopbrowser_URLBar_"] .DialogTextInputBase:not(:disabled):hover {
+    background: rgb(var(--white05));
+}
+[class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within:hover {
+    background: rgb(var(--white));
+}
+[class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within {
+    background: rgb(var(--white));
+    color: rgb(var(--black));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
