@@ -1037,10 +1037,10 @@ html[class*="contextmenu_ContextMenuPopup_"]
 }
 [class*="supernav_Arrow_"] {
 	width:14px;
-	min-height:11px;
-	height:11px;
+	min-height:38px;
+	height:38px;
 	color:transparent;
-	padding:13px 14px 14px;
+	padding:0 12px;
 	background-repeat:no-repeat;
 	background-position:center;
 	background-image:var(--forwardicon);
@@ -2341,6 +2341,37 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="appdetails_PlayBar_"] {
     width: calc(100% - 15px);
+}
+[class*="partnereventdisplay_EventBackgroundBlur_"] {
+    filter: brightness(10%);
+}
+[class*="apppartnereventspage_PartnerEvent_"] {
+    background-color: rgb(var(--clientBG));
+    background-image: none;
+}
+[class*="partnereventdisplay_InLibraryView_"] [class*="partnereventdisplay_EventDetailTitleContainer_"] {
+    background: none;
+}
+[class*="discussionwidget_Container_"] {
+    background-image: none;
+}
+[class*="libraryhomerecentgames_RecentGame_"] [class*="libraryhomerecentgames_AddedDate_"] {
+    color: rgb(var(--white50));
+}
+[class*="appportrait_PlaytimeDetails_"][class*="appportrait_PlayedTotal_"], [class*="appportrait_PlaytimeDetails_"][class*="appportrait_PlayedRecent_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsadditionalcontentsection_AdditionalItem_"] [class*="appdetailsadditionalcontentsection_Title_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailstradingcardssection_BadgeInfo_"] [class*="appdetailstradingcardssection_BadgeName_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailstradingcardssection_BadgeInfo_"] [class*="appdetailstradingcardssection_BadgeLevel_"] {
+    color: rgb(var(--white75));
+}
+[class*="supernav_Arrow_"]:first-child {
+    padding-left: 12px;
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
