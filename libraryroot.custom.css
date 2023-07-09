@@ -1107,7 +1107,6 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	stroke:rgb(var(--white));
 }
 [class*="appdetailsplaysection_StickyHeaderShadow_"] {
-	height:1px;
 	background:rgb(var(--frameBorder));
 }
 [class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] .DialogTextInputBase:hover {
@@ -1462,7 +1461,7 @@ button.DialogButton.Primary {
     color: rgb(var(--white));
 }
 [class*="appdetailsachievementssection_Featured_"] [class*="appdetailsachievementssection_TextSection_"] [class*="appdetailsachievementssection_Desc_"] {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="appactivityday_PartnerEventLargeImage_Container_"]:hover [class*="appactivityday_PartnerEventLargeImage_Title_"] {
     color: rgb(var(--white));
@@ -2204,7 +2203,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     background-color: rgb(var(--black));
 }
 [class*="achievementslist_AchievementDescription_"] {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="achievementslist_AchievementTitle_"] {
     color: rgb(var(--white));
@@ -2292,7 +2291,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--white50));
 }
 [class*="achievementslist_GlobalAchievementListItem_"] [class*="achievementslist_Content_"] [class*="achievementslist_Info_"] [class*="achievementslist_Description_"] {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="desktopbrowser_URLBar_"] {
     background: rgb(var(--clientBG));
@@ -2368,10 +2367,45 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--white));
 }
 [class*="appdetailstradingcardssection_BadgeInfo_"] [class*="appdetailstradingcardssection_BadgeLevel_"] {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="supernav_Arrow_"]:first-child {
     padding-left: 12px;
+}
+[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_MenuActive_"] {
+    background-color: rgb(var(--focus));
+}
+[class*="appdetailsgameinfocontainer_Glassy_"][class*="appdetailsgameinfocontainer_AppGameInfoContainer_"] {
+    background-color: rgb(var(--clientBG));
+}
+[class*="appdetailsgameinfocontainer_AppGameInfoContainer_"][class*="appdetailsgameinfocontainer_AppDetailsExpanded_"] {
+    padding-top: 5px;
+}
+[class*="appdetailsgameinfopanel_AssociationList_"] [class*="appdetailsgameinfopanel_Label_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsgameinfopanel_Container_"] {
+    color: rgb(var(--white50));
+    background-color: rgb(var(--black45));
+}
+[class*="appdetailsfeatureicon_Container_"] [class*="appdetailsfeatureicon_Label_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsgameinfopanel_Container_"] [class*="appdetailsgameinfopanel_Stats_"] [class*="appdetailsgameinfopanel_Release_"] [class*="appdetailsgameinfopanel_Date_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailsgameinfopanel_AssociationList_"] [class*="appdetailsgameinfopanel_Association_"] [class*="appdetailsgameinfopanel_Name_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailsgameinfopanel_Container_"] [class*="appdetailsgameinfopanel_SectionContainer_"] [class*="appdetailsgameinfopanel_GameDescription_"] {
+    color: rgb(var(--white75));
+	font-size: 13px;
+}
+[class*="appdetailsgameinfopanel_SocialMedia_"] [class*="appdetailsgameinfopanel_Account_"] [class*="appdetailsgameinfopanel_Icon_"] {
+    opacity: .5;
+}
+[class*="appdetailsgameinfopanel_SocialMedia_"] [class*="appdetailsgameinfopanel_Account_"]:hover [class*="appdetailsgameinfopanel_Icon_"] {
+    opacity: 1;
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
