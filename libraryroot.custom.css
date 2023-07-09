@@ -1109,6 +1109,9 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="appdetailsplaysection_StickyHeaderShadow_"] {
 	background:rgb(var(--frameBorder));
 }
+[class*="appdetailsplaysection_StickyHeaderShadow_"][class*="appdetailsplaysection_Visible_"] {
+	height: 1px;
+}
 [class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] .DialogTextInputBase:hover {
 	background-color:transparent;
 }
