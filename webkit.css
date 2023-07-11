@@ -1,3 +1,44 @@
+:root {
+	--focus:102,36,226;
+	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
+	--semibold:"Segoe UI Semibold","Helvetica Neue Medium","Motiva Sans",Arial,Helvetica,sans-serif;
+	--W10close_Red_h:232,18,35;
+	--W10close_Red_p:241,112,121;
+	--clientBG:26,26,26;
+	--header_dark:20,20,20;
+	--online:93,178,255;
+	--ingame:130,186,0;
+	--offline:145,145,145;
+	--golden:255,255,99;
+	--scrollbarSize:15px;
+	--textentry:39,39,39;
+	--frameBorder:15,15,15;
+	--bgGameList: 38,38,38;
+	--white03:255,255,255,0.03;
+	--white05:255,255,255,0.05;
+	--white08:255,255,255,0.08;
+	--white10:255,255,255,0.10;
+	--white12:255,255,255,0.12;
+	--white20:255,255,255,0.20;
+	--white24:255,255,255,0.24;
+	--white25:255,255,255,0.25;
+	--white35:255,255,255,0.35;
+	--white45:255,255,255,0.45;
+	--white50:255,255,255,0.50;
+	--white75:255,255,255,0.75;
+	--white:255,255,255;
+	--black05:255,255,255,0.05;
+	--black10:0,0,0,0.10;
+	--black12:0,0,0,0.12;
+	--black20:0,0,0,0.20;
+	--black24:0,0,0,0.24;
+	--black25:0,0,0,0.25;
+	--black45:0,0,0,0.45;
+	--black50:0,0,0,0.50;
+	--black75:0,0,0,0.75;
+	--black:0,0,0;
+}
+
 body {
     background: rgb(var(--clientBG));
 }
