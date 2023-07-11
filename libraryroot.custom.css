@@ -437,9 +437,6 @@ button[class*="posttextentry_EmoticonButton_"] {
 [class*="gamelistsearchbar_AdvancedSearchButton_"] {
 	cursor:default;
 }
-[class*="steamavatar_avatarHolder_"]:hover {
-	cursor:pointer !important;
-}
 ::-webkit-scrollbar {
 	width:var(--scrollbarSize) !important;
 }
@@ -1082,9 +1079,6 @@ html[class*="contextmenu_ContextMenuPopup_"]
 .contextMenuGameTitle {
 	border-top:1px solid rgb(var(--white12));
 }
-[class*="appdetailsfriendssection_Friends_"][class*="steamavatar_avatarHolder_"]:hover {
-	filter:opacity(0.75);
-}
 [class*="gamelistsectionheader_SectionCount_"] {
 	color:rgb(var(--white50));
 	font-size:14px;
@@ -1212,6 +1206,8 @@ html[class*="contextmenu_ContextMenuPopup_"]
 }
 [class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] {
 	background:rgb(var(--clientBG));
+	border-bottom: 1px solid rgb(var(--frameBorder));
+	padding-bottom: 0;
 }
 [class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_StatusIcon_"] {
 	color:rgb(var(--white));
@@ -2424,6 +2420,21 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="sharedappdetailsheader_ImgSrc_"][class*="sharedappdetailsheader_ImgBlurBackdrop_"] {
     opacity: 0;
+}
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_URLBarText_"]:hover [class*="steamdesktop_URL_"],
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] [class*="steamdesktop_URLBarText_"]:hover [class*="steamdesktop_StatusIcon_"] {
+    color: rgb(var(--white));
+}
+[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"] {
+    color: rgb(var(--white));
+    background: rgb(var(--white12));
+}
+[class*="partnereventshared_Button_"][class*="partnereventshared_Icon_"]:hover {
+    background: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+[class*="discussionwidget_VoteContainer_"], [class*="discussionwidget_ShareContainer_"], [class*="discussionwidget_DiscussContainer_"] {
+    background-color: rgb(var(--black45)); /* transparent is also worth considering */
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
