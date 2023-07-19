@@ -1970,7 +1970,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemDetailsContainer_"] [class*="appdetailsworkshopsection_FeaturedItemDesc_"] {
     color: rgb(var(--white75));
 }
-[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] [class*="SVGIcon_"]e line {
+[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] .SVGIcon_X_Line {
     stroke: rgb(var(--white50));
 }
 .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"] {
