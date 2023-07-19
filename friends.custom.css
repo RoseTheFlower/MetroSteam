@@ -2993,7 +2993,7 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .clanInvitesGroupContainer .statMembersTotal {
     color: rgb(var(--white50));
 }
-/* This comes at the cost of not showintg miniprofiles in group chats
+/* This comes at the cost of not showing miniprofiles in group chats
 but at least it doesn't break pointer events */
 .client_chat_frame.fullheight.ChatPopup .miniProfileHover {
     display: none;
