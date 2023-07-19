@@ -721,7 +721,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	background:rgb(var(--white05));
 }
 [class*="supernav_SuperNavMenu_"]:hover:not([class*="supernav_Disabled_"])
-        [class*="supernav_MenuButton_"] {
+[class*="supernav_MenuButton_"] {
 	color:rgb(var(--white75));
 }
 [class*="steamdesktop_LocalContentContainer_"]
@@ -1125,7 +1125,9 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	color:rgb(var(--white));
 }
 [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogHeader.DesktopUI,.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogHeader {
-	font-weight:normal;
+	font-weight: 300;
+    font-family: var(--basefont);
+    font-size: 20px;
 }
 [class*="settings_SettingsDialogFatButton_"] {
 	background-color:rgb(var(--white12));
@@ -1167,7 +1169,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="settings_SettingsModal_"] ._DialogInputContainer:hover {
 	background:rgb(var(--clientBG));
 	color:rgb(var(--white));
-	border:1px solid rgb(var(--white24));
+	border:1px solid rgb(var(--white24))!important;
 }
 [class*="collapseicon_Container_"] .SVGIcon_PlusCircle:hover {
 	filter:invert(0.7);
@@ -1639,10 +1641,11 @@ button[class*="accountpanel_FatButton_"] svg {
     font-weight: normal;
 }
 .DialogSubHeader {
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 0;
     color: rgb(var(--white));
     text-transform: none;
+	font-family: var(--basefont);
 }
 button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] {
     color: rgb(var(--white));
@@ -2117,7 +2120,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="pagedsettings_PagedSettingsDialog_"] .DialogDropDown._DialogInputContainer {
     background: rgb(var(--clientBG));
-    border: 1px solid rgb(var(--white12))!important;
+    border: 1px solid rgb(var(--white12));
     color: rgb(var(--white));
 }
 [class*="appproperties_AppProperties_"][class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) .DialogDropDown:hover, [class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) [class*="appproperties_AppProperties_"] .DialogDropDown:hover {
@@ -2435,6 +2438,73 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="discussionwidget_VoteContainer_"], [class*="discussionwidget_ShareContainer_"], [class*="discussionwidget_DiscussContainer_"] {
     background-color: rgb(var(--black45)); /* transparent is also worth considering */
+}
+[class*="appproperties_AppProperties_"][class*="appproperties_AppProperties_"]:not([class*="appproperties_GamepadUI_"]) [class*="appproperties_SettingsDialogButton_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="appdetailsspotlight_Info_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailsspotlight_SpotlightButton_"] {
+    background-color: transparent;
+}
+[class*="menu_MenuWrapper_"][class*="menu_MenuOpen_"] {
+    background: rgb(var(--white05));
+}
+[class*="notificationssettings_NotificationSection_"] button.DialogButton:hover {
+    background: rgb(var(--white24));
+}
+.DialogCheckbox.Active svg path {
+    stroke: rgb(var(--white));
+}
+.DialogCheckbox {
+    background-color: rgb(var(--white08));
+}
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background-color: rgba(var(--white), 0.17);
+}
+[class*="gamepaddialog_Field_"][class*="gamepaddialog_Disabled_"] [class*="gamepaddialog_FieldLabel_"] {
+    color: rgb(var(--white50));
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"] {
+    background: rgb(var(--white08));
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"]:hover {
+    background: rgb(var(--white08));
+    color: rgb(var(--white75));
+}
+[class*="writereview_ReviewTextArea_"] {
+    background: rgb(var(--textentry));
+    color: rgb(var(--white));
+}
+[class*="writereview_FormContainer_"] [class*="writereview_ReviewTextArea_"] {
+    border: 1px solid transparent;
+}
+[class*="writereview_ReviewThumbButton_"][class*="writereview_Selected_"] {
+    background: rgb(var(--focus));
+}
+[class*="appdetailsreviewsection_ReviewIconThumbsUp_"] {
+    background: #2b526c; /* One of the colors of the original gradient */
+}
+[class*="appdetailsreviewsection_ReviewMetadata_"]:hover {
+    background: rgb(var(--white12));
+}
+[class*="screenshots_ClickableScreenshot_"]:hover::after {
+	opacity:1;
+}
+[class*="screenshots_ClickableScreenshot_"]::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: rgb(var(--white12));
+	z-index: 1;
+	opacity: 0;
+}
+[class*="appportrait_Draggable_"][class*="appportrait_HoversEnabled_"]:not([class*="appportrait_Soundtrack_"]):hover [class*="appportrait_AppPortraitBannerContainer_"] {
+    transform: none;
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
