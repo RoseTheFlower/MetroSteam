@@ -2,7 +2,7 @@
 
 :root {
     --chatfont: 13px; /* Font size for chat messages */
-	--basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
+    --basefont:"Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
     --scrollbarSize: 15px;
     --focus: 102, 36, 226; /* Default Metro skin purple accent */
     --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
@@ -1700,10 +1700,6 @@ button.DialogButton.Primary:hover {
     border: 1px solid transparent !important;
 }
 
-.speakerHoverArea {
-    pointer-events: none;
-}
-
 .NonInlinedEmbed .SVGIcon_Hyperlink {
     display: none !important;
 }
@@ -2987,4 +2983,21 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 }
 .ChatRoomSpeaker .speaker .speakerStatus, .ChatMsgSlashEmote .speaker .speakerStatus {
 	display: none;
+}
+.clanInvitesGroupContainer .clanInviteTitle {
+    color: rgb(var(--white));
+}
+.clanInviteContainer .clanName {
+    color: rgb(var(--white));
+}
+.clanInvitesGroupContainer .statMembersTotal {
+    color: rgb(var(--white50));
+}
+/* This comes at the cost of not showintg miniprofiles in group chats
+but at least it doesn't break pointer events */
+.client_chat_frame.fullheight.ChatPopup .miniProfileHover {
+    display: none;
+}
+[class*="personastatusicons_PersonaStatusIcon_"][class*="personastatusicons_MobilePhoneIcon_"] {
+    margin-top: -1px;
 }
