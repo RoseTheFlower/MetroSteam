@@ -1242,6 +1242,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	background-color: rgb(var(--white12));
 	z-index: 1;
 	opacity: 0;
+	pointer-events: none;
 }
 
 [class*="appdetailscommunityfeed_Guide_"]:hover {
@@ -2502,9 +2503,13 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 	background-color: rgb(var(--white12));
 	z-index: 1;
 	opacity: 0;
+	pointer-events: none;
 }
 [class*="appportrait_Draggable_"][class*="appportrait_HoversEnabled_"]:not([class*="appportrait_Soundtrack_"]):hover [class*="appportrait_AppPortraitBannerContainer_"] {
     transform: none;
+}
+[class*="moveappsdialog_MoveAppsBar_"] {
+    background-color: rgb(var(--focus));
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
