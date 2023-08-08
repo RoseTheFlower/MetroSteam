@@ -2511,6 +2511,24 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="moveappsdialog_MoveAppsBar_"] {
     background-color: rgb(var(--focus));
 }
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextCtn_"]:hover {
+    background: rgb(var(--white05));
+}
+[class*="screenshotmanagerdialog_FocusedScreenshots_"] {
+    background-color: transparent;
+}
+[class*="screenshotmanagerdialog_Text_"][class*="screenshotmanagerdialog_Secondary_"] {
+    color: rgb(var(--white50));
+}
+[class*="screenshotmanagerdialog_ExplainerBox_"] {
+    background-color: transparent;
+}
+[class*="screenshotmanagerdialog_ExplainerBox_"] [class*="screenshotmanagerdialog_Explainer_"] {
+    color: rgb(var(--white));
+}
+[class*="screenshotmanagerdialog_SpoilerField_"] [class*="screenshotmanagerdialog_Label_"], [class*="screenshotmanagerdialog_VisibilityField_"] [class*="screenshotmanagerdialog_Label_"] {
+    color: rgb(var(--white));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
