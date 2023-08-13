@@ -2529,6 +2529,28 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="screenshotmanagerdialog_SpoilerField_"] [class*="screenshotmanagerdialog_Label_"], [class*="screenshotmanagerdialog_VisibilityField_"] [class*="screenshotmanagerdialog_Label_"] {
     color: rgb(var(--white));
 }
+.ChatMessageInvite {
+    background: rgb(var(--clientBG));
+    color: rgb(var(--white50));
+}
+.inviteButton {
+    background: rgb(var(--white12));
+}
+.inviteButton:hover {
+    background: rgb(var(--white24));
+}
+[class*="appdetailscommunityfeed_Controls_"] [class*="appdetailscommunityfeed_Control_"] {
+    background-color: rgb(var(--white75)); /*Probably temporary, just to match Valve's intent with white*/
+}
+[class*="appdetailscommunityfeed_Controls_"] [class*="appdetailscommunityfeed_Control_"]:hover {
+    background-color: rgb(var(--white)); /*Probably temporary, just to match Valve's intent with white*/
+}
+[class*="appdetailscommunityfeed_Controls_"] [class*="appdetailscommunityfeed_Icon16_"][class*="appdetailscommunityfeed_ThumbsUp_"]:hover {
+    background-position: -112px -16px;
+}
+[class*="appdetailscommunityfeed_Controls_"] [class*="appdetailscommunityfeed_Icon16_"][class*="appdetailscommunityfeed_ThumbsDown_"]:hover {
+    background-position: -64px -16px;
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
