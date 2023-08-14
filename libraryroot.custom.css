@@ -69,8 +69,8 @@ Known issues / things to improve:
 	box-shadow: none !important;
 	border-radius: 0 !important;
 	cursor: default !important;
-	transition-delay: 1ms !important;
-	transition-duration: 1ms !important;
+	transition-delay: 0 !important;
+	transition-duration: 0 !important;
 	border-image-source: none !important;
 	text-shadow: none !important;
 }
@@ -2550,6 +2550,9 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="appdetailscommunityfeed_Controls_"] [class*="appdetailscommunityfeed_Icon16_"][class*="appdetailscommunityfeed_ThumbsDown_"]:hover {
     background-position: -64px -16px;
+}
+[class*="downloads_SectionItem_"] {
+    transition-duration: .1s!important;
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
