@@ -2555,6 +2555,25 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     transition-duration: 1ms!important;
     transition-delay: 1ms!important;
 }
+[class*="screenshotmanagerdialog_FocusedScreenshotContainer_"] [class*="screenshotmanagerdialog_FocusedScreenshotImageContainer_"] {
+    cursor: pointer!important;
+}
+[class*="spotlightgameplaysummary_EventHeaderBlock_"] {
+    color: rgb(var(--white50));
+}
+[class*="spotlightgameplaysummary_SummaryCarouselContainer_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="appdetailshover_AppDetailsHover_"] [class*="appdetailshover_Background_"] {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="screenshots_Hover_"] {
+    color: rgb(var(--white));
+}
+[class*="spotlightgameplaysummary_SummaryCarouselContainer_"]:after {
+    box-shadow: inset 1px 1px 1px rgb(var(--frameBorder));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
