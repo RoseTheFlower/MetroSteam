@@ -1,0 +1,162 @@
+{
+    "name": "Metro by Rose",
+    "author": "Rose",
+    "target": "Desktop",
+    "version": "v1.0",
+    "description": "Metro skin for Steam",
+    "manifest_version": 8,
+    "tabs": {
+        "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
+        "friends": ["desktopchat"],
+        "all": ["library", "friends"]
+    },
+    "patches": {
+        "Friends & Chat": {
+            "type": "checkbox",
+            "values": {
+                "Yes": {
+                    "friends.custom.css": ["friends"]
+                },
+                "No": {}
+            }
+        },
+        "Main Window": {
+            "type": "checkbox",
+            "values": {
+                "Yes": {
+                    "libraryroot.custom.css": ["library"]
+                },
+                "No": {}
+            }
+        },
+        "Store/Community Pages": {
+            "type": "checkbox",
+            "values": {
+                "Yes": {
+                    "webkit.css": ["store"]
+                },
+                "No": {}
+            }
+        },
+        "Green Notification Icon": {
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "--notificationsiconactive": ["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtSKVDnYQEYlQneyiIo6likWwUNoKrTqYXPohNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhEaFqWZXDFA1y0gn4mIuvyIGXtGDEASMYFRipp7MLGThOb7u4ePrXZRneZ/7c/QrBZMBPpE4xnTDIl4nntm0dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpOeIwsVjqYLmDWdlQiaeJI4qqUb6Qc1nhvMVZrdRY6578hcGCtpzhOs1hJLCIJFIQIaOGDVRgIUqrRoqJNO3HPfxDjj9FLplcG2DkmEcVKiTHD/4Hv7s1i1OTblIwDnS/2PbHGBDYBZp12/4+tu3mCeB/Bq60tr/aAGY/Sa+3tcgRENoGLq7bmrwHXO4Ag0+6ZEiO5KcpFIvA+xl9Ux4YuAX6Vt3eWvs4fQCy1NXSDXBwCIyXKHvN4929nb39e6bV3w+SAXKzL6wiVgAAAAZiS0dEAJkAAADnGzuJxQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHNJREFUKM/VkcsJw0AMRJ9C2nAFuqWFLSQdpBlX4x7i49bzfAgh6w857MkeIZCGGQahQKQDNzrRbby3ixj/xEH4mztvPFlim7BPv8wfA3m2RJKvSn1suLlSx5VTXTUypDnjp9J8I8NetyG+5mKZimU6Mqks+MZfZSU7urkAAAAASUVORK5CYII=)", "library"]
+                }
+            }
+        },
+        "Accent Color": {
+            "type": "dropdown",
+            "values": {
+                "Blue": {
+                    "--focus": ["0, 114, 198", "all"]
+                },
+                "Pink": {
+                    "--focus": ["220, 79, 173", "all"]
+                },
+                "Red": {
+                    "--focus": ["172, 25, 61", "all"]
+                },
+                "OrangeRed": {
+                    "--focus": ["210, 71, 38", "all"]
+                },
+                "Orange": {
+                    "--focus": ["255, 143, 50", "all"]
+                },
+                "Lime": {
+                    "--focus": ["130, 186, 0", "all"]
+                },
+                "Green": {
+                    "--focus": ["0, 138, 23", "all"]
+                },
+                "Aqua": {
+                    "--focus": ["3, 179, 178", "all"]
+                },
+                "Dark Aqua": {
+                    "--focus": ["0, 130, 152", "all"]
+                },
+                "Sky Blue": {
+                    "--focus": ["93, 178, 255", "all"]
+                },
+                "Purple": {
+                    "--focus": ["70, 23, 180", "all"]
+                },
+                "Magenta": {
+                    "--focus": ["140, 0, 149", "all"]
+                },
+                "Custom": {
+                    "--focus": ["var(--metrosteam-custom_rgb)", "all"]
+                }
+            },
+            "components": [
+                {
+                    "name": "Accent Color",
+                    "type": "color-picker",
+                    "on": "Custom",
+                    "default": "#6624E2",
+                    "css_variable": "metrosteam-custom",
+                    "tabs": ["all"]
+                }
+            ]
+        },
+        "Decal": {
+            "type": "dropdown",
+            "values": {
+                "Fish": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/1.png)", "all"],
+                    "--decalXY": ["right top", "all"]
+                },
+                "Wind": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/2.png)", "all"],
+                    "--decalXY": ["right bottom", "all"]
+                },
+                "Wave": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/3.png)", "all"],
+                    "--decalXY": ["right bottom", "all"]
+                },
+                "Bird": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/4.png)", "all"],
+                    "--decalXY": ["calc(100% - 1px) 3px", "all"]
+                },
+                "Circles": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/5_top.png)", "all"],
+                    "--decalXY": ["calc(100% - 2px) top", "all"]
+                },
+                "Grass": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/5_bot_sm.png)", "all"],
+                    "--decalXY": ["right bottom", "all"]
+                },
+                "Artistic Fish": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/6.png)", "all"],
+                    "--decalXY": ["right 41px", "all"]
+                },
+                "Steam": {
+                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/decal_steam_btmr.png)", "all"],
+                    "--decalXY": ["calc(100% - 174px) calc(100% - 79px)", "all"]
+                },
+                "None":{}
+            }
+        },
+        "Variation": {
+            "type": "dropdown",
+            "values": {
+                "Standard": {},
+                "Dark": {
+                    "--clientBG": ["0,0,0", "all"],
+                    "--frameBorder": ["64,64,64", "all"],
+                    "--header_dark": ["12,12,12", "all"],
+                    "--bgGameList": ["var(--header_dark)", "all"],
+                    "--white05onbgGameList": ["24,24,24", "all"],
+                    "--textentry": ["var(--header_dark)", "all"]
+                },
+                "Midnight": {
+                    "--frameBorder": ["23, 19, 102", "all"],
+                    "--header_dark": ["0, 22, 45", "all"],
+                    "--textentry": ["0, 14, 45", "all"]
+                }
+            }
+        }
+    }
+}
