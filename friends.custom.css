@@ -15,7 +15,6 @@
     --ingame: 130, 186, 0;
     --offline: 145, 145, 145;
     --golden: 255, 255, 99;
-    --slashhover: 32, 32, 32;
     --textentry: 39, 39, 39;
     --white03: 255, 255, 255, 0.03;
     --white05: 255, 255, 255, 0.05;
@@ -2565,7 +2564,7 @@ img[class*="emoticon_emoticon_"] {
 /*emoticon and reactions code popup*/
 [class*="emoticon_EmoticonHover_"],
 [class*="reactions_ReactionHover_"] {
-    background-color: rgba(var(--slashhover)) !important;
+    background-color: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
     margin: 0 4px;
     padding: 8px;
@@ -3000,4 +2999,7 @@ but at least it doesn't break pointer events */
 }
 [class*="personastatusicons_PersonaStatusIcon_"][class*="personastatusicons_MobilePhoneIcon_"] {
     margin-top: -1px;
+}
+[class*="addonpicker_Tab_"] .SVGIcon_Button {
+    fill: rgb(var(--white));
 }
