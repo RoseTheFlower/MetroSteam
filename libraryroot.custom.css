@@ -2574,6 +2574,27 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="spotlightgameplaysummary_SummaryCarouselContainer_"]:after {
     box-shadow: inset 1px 1px 1px rgb(var(--frameBorder));
 }
+[class*="downloads_SectionTitle_"] [class*="downloads_TitleAndCount_"] [class*="downloads_Title_"], [class*="downloads_SectionJumpBar_"] [class*="downloads_TitleAndCount_"] [class*="downloads_Title_"] {
+    color: rgb(var(--white));
+}
+[class*="titlebarcontrols_NotificationsMenu_"] {
+    color: rgb(var(--white));
+}
+[class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_PinnedBody_"] {
+    color: rgb(var(--white75)); /* Random */
+}
+[class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Icon_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailsplaysection_MenuButton_"]:hover [class*="appdetailsplaysection_DotDotDot_"] .SVGIcon_Information .I {
+    fill: rgb(var(--white));
+}
+[class*="appdetailsplaysection_MenuButton_"]:hover [class*="appdetailsplaysection_DotDotDot_"] svg circle, [class*="appdetailsplaysection_MenuButton_"]:hover [class*="appdetailsplaysection_DotDotDot_"] svg polyline {
+    stroke: rgb(var(--white));
+}
+[class*="appdetailsplaysection_MenuButton_"]:hover .SVGIcon_Settings path {
+    fill: rgb(var(--white));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
