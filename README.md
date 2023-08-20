@@ -25,7 +25,7 @@ My quest was to make the windows look as close as possible to those of [the orig
 ### Using CSSLoader
 1. Download [CSSLoader](https://deckthemes.com/download/windows).
 1. Go to the Store tab.
-1. Search for Metro and install **Metro by Rose**.
+1. Search for *Metro* and install **Metro by Rose**.
 * Note that the skin version available via the CSSLoader store may not have the latest updates of this repo.
 
 ## Credits
