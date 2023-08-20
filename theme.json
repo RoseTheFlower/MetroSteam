@@ -3,7 +3,7 @@
     "author": "Rose",
     "target": "Desktop",
     "version": "v1.0",
-    "description": "Metro skin for Steam",
+    "description": "A skin heavily inspired by the original Metro for Steam",
     "manifest_version": 8,
     "tabs": {
         "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
