@@ -2085,11 +2085,6 @@ path {
     background-color: rgb(var(--focus)) !important;
 }
 
-.confirmInviteButton.confirmInvites {
-    background: rgb(var(--focus)) !important;
-    background-color: none !important;
-}
-
 .friendlistListContainer .Collapsed .ExpandPlusMinus .SVGIcon_PlusCircle {
     stroke: rgba(var(--white50)) !important;
 }
@@ -3002,4 +2997,58 @@ but at least it doesn't break pointer events */
 }
 [class*="addonpicker_Tab_"] .SVGIcon_Button {
     fill: rgb(var(--white));
+}
+.friendGroup.friendOutgoingRequests .groupName, .friendGroup.friendRequests .groupName {
+	padding-left: 0;
+}
+.clanInvitesGroupContainer {
+    padding-left: 0;
+}
+.clanInvitesGroupContainer .clanInviteTitle {
+    margin-left: 15px;
+}
+.clanInviteContainer {
+    padding-left: 14px;
+}
+.clanInviteContainer:hover {
+    background: rgb(var(--white05));
+}
+.friend.offline {
+    color: rgb(var(--offline));
+}
+
+.friendInviteContainer .friend .inviteLabel {
+    color: rgb(var(--online))!important;
+}
+.mutualFriendNumber {
+    color: rgb(var(--online));
+}
+.friendInviteButton {
+    border-radius: 50%!important;
+}
+[class*="chattabs_CloseButton_"]:hover .SVGIcon_X_Line line {
+    stroke: rgb(var(--white));
+}
+.confirmInviteRequestContainer .confirmInviteButton.dim:hover, .confirmInvites.dim:hover, .confirmInvites.dim {
+    color: rgb(var(--white));
+    border-color: transparent;
+    background: rgb(var(--white24));
+}
+[class*="steamavatar_avatarHolder_"] [class*="steamavatar_avatarFrame_"] {
+    transform: scale(1.2) translateY(.5px);
+}
+.Dialog_EditNickName .friend.online .DialogTextInputBase, .Dialog_ChangePersonaName .friend.online .DialogTextInputBase {
+    color: rgb(var(--online));
+}
+.DialogBodyText {
+    color: rgb(var(--white50));
+}
+.DialogTextInputBase:focus, .DialogTextInputBase:focus-within,
+.DialogTextInputBase:not(:disabled):hover,
+.DesktopUI .DialogTextInputBase:focus, .DialogTextInputBase:focus-within {
+    background: rgb(var(--textentry));
+}
+.ChatRoomListGroupItem .openGroupButton .SVGIcon_DoubleArrow polyline,
+.ChatRoomListGroupItem_header:hover .openGroupButton .SVGIcon_DoubleArrow polyline {
+    stroke: rgb(var(--white));
 }
