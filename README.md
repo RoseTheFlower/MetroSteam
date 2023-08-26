@@ -14,7 +14,7 @@ My quest was to make the windows look as close as possible to those of [the orig
 1. [Download the skin archive](/../../archive/refs/heads/master.zip).
 1. Extract the archive to **Steam\steamui\skins** (create the skins folder if doing this for the first time).
    - If you like, rename the MetroSteam-master folder to `Metro by Rose`.
-1. [Download](https://github.com/PhantomGamers/SFP/releases) the latest version of SFP to modify Steam.
+1. [Download the latest version of SFP](https://github.com/PhantomGamers/SFP/releases) to modify Steam.
 1. Run the tool and select the skin under *Steam skin* in its settings.
 1. In SFP, click on Start Injection unless already done.
 
@@ -23,14 +23,14 @@ My quest was to make the windows look as close as possible to those of [the orig
 - Check out the [wiki](../../wiki) to enable automatic skin updates or learn more about customizing the skin.
 
 ### Using CSSLoader
-1. Download [CSSLoader](https://deckthemes.com/download/windows).
+1. [Download CSSLoader](https://deckthemes.com/download/windows).
 1. Go to the Store tab.
 1. Search for *Metro* and install **Metro by Rose**.
 * Note that the skin version available via the CSSLoader store may not have the latest updates of this repo.
 
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
-* [PhantomGamers](https://github.com/PhantomGamers) for creating the tool that allows to apply skins, and for tips on managing the randomized class names.
+* [PhantomGamers](https://github.com/PhantomGamers) for creating SFP, and for tips on managing the randomized class names.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the chat and friends windows, which I initially used as a template.
 * [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu and to the dynamic placement of the repositioned bottom bar buttons, as well as for helping prepare the skin for their CSSLoader.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
