@@ -2595,6 +2595,22 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appdetailsplaysection_MenuButton_"]:hover .SVGIcon_Settings path {
     fill: rgb(var(--white));
 }
+[class*="downloads_ProgressDetails_"] [class*="downloads_Value_"][class*="downloads_InProgress_"] {
+    color: rgb(var(--white75));
+}
+.videoControlButton.buttonPlayPause {
+    border-radius: 50%!important;
+}
+[class*="appdetailsfriendssection_PlaytimeSection_"] {
+    background: transparent;
+}
+[class*="appdetailsfriendssection_PlaytimeSection_"] [class*="appdetailsfriendssection_PlaytimeContent_"] {
+    color: rgb(var(--online));
+}
+[class*="appdetailsfriendssection_PlaytimeSection_"] [class*="appdetailsfriendssection_PlaytimeContent_"] [class*="appdetailsfriendssection_TimePlayed_"] {
+    color: rgb(var(--online));
+}
+
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
