@@ -2610,7 +2610,95 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appdetailsfriendssection_PlaytimeSection_"] [class*="appdetailsfriendssection_PlaytimeContent_"] [class*="appdetailsfriendssection_TimePlayed_"] {
     color: rgb(var(--online));
 }
-
+[class*="appactivityday_PartnerEventTextOnly_Icon_"] svg path {
+    fill: rgb(var(--white));
+}
+[class*="comment_thread_RatingBar_"] [class*="comment_thread_LikeButton_"][class*="comment_thread_CanClick_"]:hover, [class*="comment_thread_RatingBar_"] [class*="comment_thread_CommentButton_"][class*="comment_thread_CanClick_"]:hover, [class*="comment_thread_RatingBar_"] [class*="comment_thread_Reactions_"][class*="comment_thread_CanClick_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="appdetailsachievementssection_Hover_"] [class*="appdetailsachievementssection_Unlocked_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailshover_AppDetailsHover_"] [class*="appdetailshover_BlurContainer_"] {
+    display: none;
+}
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdetailsbutton_MoreVisible_"] {
+    color: rgb(var(--white));
+    background-color: rgb(var(--white12));
+}
+button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdetailsbutton_MoreVisible_"]:hover {
+    background-color: rgb(var(--white24));
+    color: rgb(var(--white));
+}
+[class*="titlebarcontrols_ParentalToggleButton_"] {
+    background-color: transparent;
+	padding: 12px 6px;
+}
+[class*="titlebarcontrols_ParentalToggleButton_"] [class*="titlebarcontrols_Icon_"] {
+    color: rgb(var(--white));
+}
+[class*="titlebarcontrols_ParentalToggleButton_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="titlebarcontrols_Button_"]:hover {
+    color: rgb(var(--white));
+}
+[class*="titlebarcontrols_ParentalToggleButton_"]:hover [class*="titlebarcontrols_Icon_"] {
+    color: rgb(var(--white));
+}
+[class*="titlebarcontrols_ParentalToggleButton_"] [class*="titlebarcontrols_Icon_"] g {
+    opacity: 1;
+}
+.DesktopUI [class*="contextmenu_contextMenuItem_"].disabled, [class*="contextmenu_ForceDesktop_"] [class*="contextmenu_contextMenuItem_"].disabled {
+    color: rgb(var(--white50))!important; /* Random, needs a proper reference color from the original Metro */ 
+}
+[class*="supernav_SuperNavMenu_"][class*="supernav_Disabled_"] [class*="supernav_MenuButton_"] {
+    color: rgb(var(--white10));
+}
+[class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] svg:not(.SVGIcon_FriendIcon) {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
+[class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadDash_"] {
+    color: rgb(var(--online)); /* Also affects the selected items, but it shouldn't */ 
+}
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailsachievementssection_UnachievedSection_"] [class*="appdetailsachievementssection_Label_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsachievementssection_UnlockedLabelPercent_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsscreenshotssection_ScreenshotsSection_"] [class*="appdetailsscreenshotssection_NoneTaken_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsscreenshotssection_ScreenshotsSection_"] [class*="appdetailsscreenshotssection_InstructionText_"] {
+    color: rgb(var(--white50));
+}
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_HeadlineGameName_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsactivitysection_ViewLastNews_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailscommunityfeed_AuthorSection_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailscommunityfeed_NoContent_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsactivitysection_ViewLastNews_"]:hover {
+    background-color: rgb(var(--white05));
+}
+[class*="localdateandtime_ShortDateAndTime_"] {
+    color: rgb(var(--white50));
+}
+[class*="localdateandtime_RightSideTitles_"] {
+    color: rgb(var(--white50));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
