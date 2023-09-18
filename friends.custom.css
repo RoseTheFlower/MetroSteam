@@ -3052,3 +3052,6 @@ but at least it doesn't break pointer events */
 .ChatRoomListGroupItem_header:hover .openGroupButton .SVGIcon_DoubleArrow polyline {
     stroke: rgb(var(--white));
 }
+.statCircle {
+    background-color: rgb(var(--white));
+}
