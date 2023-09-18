@@ -2699,6 +2699,17 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 [class*="localdateandtime_RightSideTitles_"] {
     color: rgb(var(--white50));
 }
+[class*="titlebarcontrols_SupportAlertsButton_"] {
+    margin-right: 10px;
+	height: 40px!important;
+}
+[class*="libraryhome_InnerContainer_"] {
+    color: rgb(var(--white)); /*The alpha is .8 in Valve's*/
+}
+[class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIcon_"] svg circle, [class*="appdetailsplaysection_Playtime_"] [class*="appdetailsplaysection_PlaytimeIconForced_"] svg circle {
+    stroke: rgb(var(--white50));
+    fill: rgb(var(--white50));
+}
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
     background-image: none;
