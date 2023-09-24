@@ -7,8 +7,8 @@
     "manifest_version": 9,
     "tabs": {
         "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
-        "friends": ["desktopchat", "!client_chat_frame"],
-        "all": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu", "desktopchat"]
+        "friends": ["desktopchat"],
+        "all": ["library", "friends"]
     },
     "patches": {
         "Main Window": {
