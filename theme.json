@@ -4,11 +4,11 @@
     "target": "Desktop",
     "version": "v1.1",
     "description": "A skin heavily inspired by the original Metro for Steam",
-    "manifest_version": 8,
+    "manifest_version": 9,
     "tabs": {
         "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
-        "friends": ["desktopchat"],
-        "all": ["library", "friends"]
+        "friends": ["desktopchat", "!client_chat_frame"],
+        "all": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu", "desktopchat"]
     },
     "patches": {
         "Main Window": {
