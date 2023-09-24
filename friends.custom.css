@@ -1741,7 +1741,7 @@ button.DialogButton.Primary:hover {
 .BBCodeOEmbedComponent,
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
 [class*="bbcode_ChatMessageSteamStore_"]:not([class*="_ViewStore_"]):not([class*="_Footer_"]):not([class*="_Header"]):not([class*="Details"]):not([class*="_Name"]):not([class*="_GameNameAndIcon"]):not([class*="_Description"]):not([class*="bbcode_ChatMessageSteamStore_Body"]):not([class*="bbcode_ChatMessageSteamStore_Pricing"]) {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: rgb(var(--black45));
 }
 
 [class*="bbcode_ChatMessageSteamStore_Header_"] {
@@ -3054,4 +3054,62 @@ but at least it doesn't break pointer events */
 }
 .statCircle {
     background-color: rgb(var(--white));
+}
+.friendsui-container .SVGIcon_Button.SVGIcon_CopyToClipboard {
+    stroke: rgb(var(--white));
+}
+.friendsui-container .SVGIcon_Button.SVGIcon_CopyToClipboard:hover {
+    stroke: rgb(var(--white50)); /* Random */
+}
+.friendsui-container .SVGIcon_Pin.Pinned .head {
+    fill: rgb(var(--clientBG));
+}
+.friendsui-container .SVGIcon_Pin .head {
+    stroke: rgb(var(--white));
+}
+.friendsui-container .SVGIcon_Pin .ground {
+    stroke: rgb(var(--white));
+}
+.friendsui-container .SVGIcon_Pin .ground, .friendsui-container .SVGIcon_Pin .point, .friendsui-container .SVGIcon_Pin .head {
+    fill: rgb(var(--white));
+}
+.chatRoomGroupNavColumn {
+    border-right: 1px solid rgb(var(--frameBorder));
+}
+.bbcode_ImageModalBackground_1feGl {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.confirmInviteButton.confirmInvites {
+    background: rgb(var(--white12));
+}
+.confirmInviteButton.confirmInvites:hover {
+    background: rgb(var(--white24));
+}
+[class*="pagedcontent_Nav_"] {
+    background: rgb(var(--header_dark));
+}
+[class*="pagedcontent_Content_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="pagedcontent_Nav_"] [class*="pagedcontent_NavTitle_"] {
+    color: rgb(var(--white));
+    text-transform: none;
+    font-weight: 200;
+    font-size: 16px;
+}
+[class*="pagedcontent_Nav_"] [class*="pagedcontent_NavItems_"] [class*="pagedcontent_NavItem_"][class*="pagedcontent_Active_"] {
+    color: rgb(var(--white));
+}
+[class*="pagedcontent_Nav_"] [class*="pagedcontent_NavItems_"] [class*="pagedcontent_NavItem_"] {
+    text-transform: none;
+}
+.friend.offline {
+    color: rgb(var(--offline));
+}
+.FriendPicker_SuggestedFriend:hover {
+    background: rgb(var(--white05));
+}
+.DialogLabel, .DialogLabelStrong {
+    color: rgb(var(--white50));
 }
