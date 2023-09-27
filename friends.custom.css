@@ -40,6 +40,7 @@
     --black75: 0, 0, 0, 0.75;
     --black: 0, 0, 0;
     --red: 255, 0, 0;
+	--searchicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewBox='0 0 100 100'%3E%3Cg transform='translate(0,-952.36218)'%3E%3Cpath class='ColorSelector' d='m 40.99855,964.36216 c -15.9798,0 -28.9986,13.01864 -28.9986,28.99862 0,15.97992 13.0188,28.99862 28.9986,28.99862 6.9189,0 13.2881,-2.4349 18.2803,-6.4997 l 23.5927,23.6239 c 1.1714,1.1714 3.0784,1.1715 4.2498,0 1.1716,-1.1715 1.1716,-3.0783 0,-4.2498 l -23.6239,-23.5926 c 4.0649,-4.9923 6.4997,-11.3615 6.4997,-18.28042 0,-15.97998 -13.0187,-28.99862 -28.9986,-28.99862 z m 0,5.99972 c 12.7374,0 22.9989,10.26145 22.9989,22.9989 0,12.73732 -10.2615,22.99892 -22.9989,22.99892 -12.7374,0 -22.9989,-10.2616 -22.9989,-22.99892 0,-12.73745 10.2615,-22.9989 22.9989,-22.9989 z' fill='%23ffffff' fill-opacity='1' stroke='none' visibility='visible' display='inline' overflow='visible'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Remove animations, round corners and delays */
@@ -482,7 +483,7 @@
 [class*="chatentry_chatSubmitButton_"] {
     position: relative;
     background-color: rgb(var(--textentry)) !important;
-    border: 0px solid #1b1c20 !important; /* Hardcoded, must be changed */
+    border: 0 !important;
     margin-top: 0px !important;
     min-width: 32px !important;
     min-height: 40px !important;
@@ -978,7 +979,7 @@ button.DialogButton,
 
 .chatRoomListContainer {
     height: 100vh !important;
-    max-height: calc(100vh - 120px) !important;
+    max-height: calc(100vh - 121px) !important;
 }
 
 /* Friends remove height and remake height */
@@ -2835,7 +2836,7 @@ body[class*="shared_common_v6_"] {
 
 .friendSearchInput[type="text"] {
     background-position: 4px 4px;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cg%20transform%3D%22translate%280%2C-952.36218%29%22%3E%3Cpath%20d%3D%22m%2040.99855%2C964.36216%20c%20-15.9798%2C0%20-28.9986%2C13.01864%20-28.9986%2C28.99862%200%2C15.97992%2013.0188%2C28.99862%2028.9986%2C28.99862%206.9189%2C0%2013.2881%2C-2.4349%2018.2803%2C-6.4997%20l%2023.5927%2C23.6239%20c%201.1714%2C1.1714%203.0784%2C1.1715%204.2498%2C0%201.1716%2C-1.1715%201.1716%2C-3.0783%200%2C-4.2498%20l%20-23.6239%2C-23.5926%20c%204.0649%2C-4.9923%206.4997%2C-11.3615%206.4997%2C-18.28042%200%2C-15.97998%20-13.0187%2C-28.99862%20-28.9986%2C-28.99862%20z%20m%200%2C5.99972%20c%2012.7374%2C0%2022.9989%2C10.26145%2022.9989%2C22.9989%200%2C12.73732%20-10.2615%2C22.99892%20-22.9989%2C22.99892%20-12.7374%2C0%20-22.9989%2C-10.2616%20-22.9989%2C-22.99892%200%2C-12.73745%2010.2615%2C-22.9989%2022.9989%2C-22.9989%20z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-image: var(--searchicon);
 }
 
 .friendListHeaderContainer .title-area {
@@ -3112,4 +3113,11 @@ but at least it doesn't break pointer events */
 }
 .DialogLabel, .DialogLabelStrong {
     color: rgb(var(--white50));
+}
+.Dialog_EditNickName .friend.online .DialogTextInputBase, .Dialog_ChangePersonaName .friend.online .DialogTextInputBase {
+    color: rgb(var(--online));
+}
+.DialogTextInputBase:not(:disabled):hover {
+    background: rgb(var(--textentry));
+	cursor: text!important;
 }
