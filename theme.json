@@ -47,6 +47,15 @@
                 }
             }
         },
+        "Disable Custom Avatar Frames": {
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "--avatarframes": [ "none", "friends"]
+                }
+            }
+        },
         "Accent Color": {
             "type": "dropdown",
             "values": {
