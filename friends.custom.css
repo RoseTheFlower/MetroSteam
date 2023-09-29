@@ -209,7 +209,7 @@
 .CompactFriendsList .friendGroup .friend,
 .CompactFriendsList .friendGroup .SteamPlayerGroupFooter,
 .CompactFriendsList .friendGroup.gameGroup:not(.OtherGamesGroup) .friend {
-    padding: 4px 0 8px 12px !important;
+    padding: 4px 0 8px 12px;
 }
 
 .chatRoomMembers .CompactFriendsList .friend:hover,
@@ -912,8 +912,15 @@ button.DialogButton,
 }
 
 /* Groups chat selected category on servers */
-.chatRoomTextChannel.ActiveTextChannel {
-    background: rgb(var(--header_dark)) !important;
+.chatRoomTextChannel.ActiveTextChannel,
+.chatRoomGroupNavCollapsed .chatRoomTextChannel.ActiveTextChannel:hover {
+    background: rgb(var(--white25));
+}
+.chatRoomGroupNavCollapsed .chatRoomTextChannel.ActiveTextChannel:hover .chatRoomTextChannelName {
+	background: transparent;
+}
+.chatRoomGroupNavCollapsed .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover .chatRoomVoiceChannelName, .chatRoomGroupNavCollapsed .chatRoomTextChannel:hover .chatRoomTextChannelName {
+    background-color: transparent;
 }
 /* Friend search input box */
 .friendSearchInput[type="text"]:focus,
@@ -1429,8 +1436,8 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 }
 
 .msg.timeDivision {
-    font-size: 12px !important;
-    color: #8d8d8d !important;
+    font-size: 12px;
+    color: rgb(var(--offline));
 }
 
 /*Connection issues message*/
@@ -1629,8 +1636,8 @@ button.DialogButton.Primary:hover {
 }
 
 .speakerTimeStamp {
-    font-size: 11px !important;
-    color: #8d8d8d !important;
+    font-size: 11px;
+    color: rgb(var(--offline));
 }
 
 .MultiUserChat .msg:not(.ChatMsgSlashEmote) {
@@ -1656,7 +1663,7 @@ button.DialogButton.Primary:hover {
 }
 
 [class*="miniprofile_miniProfile_"] {
-    border: 1px solid black !important;
+    border: 1px solid rgb(var(--frameBorder)) !important;
 }
 
 /*Nickname * indicator in chat window*/
@@ -1840,8 +1847,8 @@ button.DialogButton.Primary:hover {
 
 .friendGroup .friend,
 .friendGroup .SteamPlayerGroupFooter {
-    padding-left: 15px !important;
-    padding-top: 8px !important;
+    padding-left: 15px;
+    padding-top: 8px;
 }
 
 .FriendInGameIcon {
@@ -2302,8 +2309,11 @@ button.DialogButton::before {
     top: 5px !important;
 }
 
-.chatRoomMembers {
+.MemberListColumn {
     border-left: 1px solid rgb(var(--frameBorder)) !important;
+}
+.chatRoomMembers {
+    border-left: none;
 }
 
 .chatRoomGroupHeader {
@@ -2625,8 +2635,8 @@ svg.SVGIcon_Button.SVGIcon_Clock {
     background-color: rgb(var(--white05)) !important;
 }
 
-[class*="messages_MsgWithAddons_"] .msgText div {
-    cursor: default !important;
+[class*="bbcode_ChatMessageSteamStore_"] {
+    cursor: pointer;
 }
 
 [class*="reactions_ReactionCount_"] {
@@ -2819,7 +2829,7 @@ body[class*="shared_common_v6_"] {
 }
 
 .MemberListColumn .friendGroup .groupName .groupCountCollapsed {
-    color: rgb(var(--white));
+    color: white; /* Intentionally not a variable */
 }
 
 .PopupFullWindow {
@@ -3077,7 +3087,7 @@ but at least it doesn't break pointer events */
 .chatRoomGroupNavColumn {
     border-right: 1px solid rgb(var(--frameBorder));
 }
-.bbcode_ImageModalBackground_1feGl {
+[class*="bbcode_ImageModalBackground_"] {
     background: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
 }
@@ -3120,4 +3130,117 @@ but at least it doesn't break pointer events */
 .DialogTextInputBase:not(:disabled):hover {
     background: rgb(var(--textentry));
 	cursor: text!important;
+}
+.chatRoomVoiceChannelsGroup, .chatRoomTextChannelsGroup {
+    color: rgb(var(--white50));
+}
+.chatRoomTextChannel:hover, .chatRoomVoiceChannel:hover .chatRoomVoiceChannelName, .chatRoomTextChannel:hover .chatRoomTextChannel{
+    color: rgb(var(--white50));
+}
+.chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover {
+    background-color: rgb(var(--white05));
+}
+.friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom {
+    stroke: rgb(var(--white));
+}
+.friendsui-container .SVGIcon_TextRoom .TextLines {
+    stroke: rgb(var(--white));
+}
+.ActiveTextChannel .chatRoomTextChannelName.IsCommonsChannel {
+	color: rgb(var(--white))!important;
+}
+.chatRoomTextChannel:hover .chatRoomTextChannelName.IsCommonsChannel {
+	color: rgb(var(--white50));
+}
+.chatRoomTextChannelName.IsCommonsChannel {
+    color: rgb(var(--white50));
+}
+.chatRoomTextChannelName.ActiveTextChannel.IsCommonsChannel {
+    color: rgb(var(--white));
+}
+.chatRoomVoiceChannel {
+    border: none;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+.friendsui-container .SVGIcon_VoiceRoom .Microphone, .friendsui-container .SVGIcon_VoiceRoom .AudioLines {
+    fill: rgb(var(--white));
+}
+
+.chatRoomTextChannel:not(.ActiveTextChannel):hover {
+	background: rgb(var(--white05));
+}
+[class*="chattabs_ChatTab_"][class*="chattabs_Active_"] [class*="chattabs_MicStatus_"] [class*="SVGIcon_"]n {
+    fill: green;
+}
+[class*="chattabs_ChatTab_"][class*="chattabs_Active_"] [class*="chattabs_MicStatus_"] {
+    background: none;
+}
+.chatRoomVoiceChannelIconGlow {
+    display: none;
+}
+.VoiceChannelInvite .leftInviteContainer .SVGIcon_VoiceRoom .Bubble, .OneOnOneVoiceRoomControls.OneOnOneVoiceActive .SVGIcon_VoiceRoom .Bubble, .chatRoomVoiceChannel.ActiveVoiceChannel .SVGIcon_VoiceRoom .Bubble, .VoiceToggle.Active .SVGIcon_VoiceRoom .Bubble {
+    fill: green;
+}
+[class*="chattabs_ChatTab_"]:not([class*="chattabs_Active_"]) * {
+    stroke: green;
+    fill: green;
+}
+.chatRoomVoiceChannel.ActiveVoiceChannel {
+    background-color: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.emptyChannelNotice {
+    color: rgb(var(--white50));
+}
+.chatRoomVoiceChannel.ActiveVoiceChannel {
+    width: 100%;
+}
+.ChatRoomListGroupItemChatRooms {
+    margin-left: 0;
+}
+.friendListHeaderContainer .activeVoiceControls:before {
+    background: none;
+}
+[class*="chattabs_ChatTab_"][class*="chattabs_Active_"][class*="chattabs_MicMuted_"] [class*="chattabs_MicStatus_"] {
+    background: none;
+}
+[class*="chattabs_ChatTab_"][class*="chattabs_Active_"][class*="chattabs_MicMuted_"] [class*="chattabs_MicStatus_"] .SVGIcon_Button {
+    fill: red;
+}
+.ChatRoomListGroupItem.ShowAllChannels .detailsView {
+    background-color: transparent;
+}
+.ChatRoomListGroupItemChatRooms .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover {
+    border: none;
+    background-color: rgb(var(--white05));
+}
+.ChatRoomListGroupItem .SVGIcon_VoiceRoom {
+    margin-top: 0px;
+}
+.ChatRoomListGroupItem .chatRoomVoiceChannelIcon {
+    margin-left: 16px;
+}
+.chatRoomTextChannel {
+    cursor: default;
+}
+.VoiceRoomChatHistory .chatHistory {
+    margin-top: 20px;
+}
+
+.VoiceChannelParticipants .chatRoomGroupNavCollapsed .CompactFriendsList .friend {
+	padding-left: 8px; 
+}
+.VoiceChannelParticipants .friend {
+    padding-left: 16px;
+}
+.chatRoomGroupNavCollapsed .ChannelTypeTitle .ChatRoomAddRoomBtn {
+    margin-left: 53px;
+}
+.groupMemberList .friend, .groupMemberList .friendGroup .friend {
+    padding-left: 11px;
+}
+.isCurrentUser [class*="messages_SpeakerName_Default_"] {
+    color: rgb(var(--offline));
 }
