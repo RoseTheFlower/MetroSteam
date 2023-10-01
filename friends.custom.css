@@ -486,12 +486,12 @@
     border: 0 !important;
     margin-top: 0px !important;
     min-width: 32px !important;
-    min-height: 39px !important;
+    min-height: 40px !important;
     cursor: default !important;
 }
 
 .chatWindow .chatEntry > .compactableHeight {
-    height: 39px !important;
+    height: 40px !important;
 }
 
 .VoiceToggle {
@@ -1156,7 +1156,7 @@ a:visited {
     }
 
 .chatWindow .chatEntry > * {
-    margin-bottom: 1px !important;
+    margin-bottom: 0;
 }
 
 .singlewindow .chatWindow .chatEntry {
