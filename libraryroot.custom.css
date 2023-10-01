@@ -1527,7 +1527,7 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
     color: rgb(var(--white));
 }
 [class*="downloads_AutoUpdateHours_"]:hover [class*="downloads_UpdateHours_"], [class*="downloads_AutoUpdateHours_"]:hover[class*="downloads_NoHours_"] {
-    color: rgb(var(--white));
+    color: rgb(var(--white75));
 }
 [class*="downloadgraph_DownloadGraphLegend_"] [class*="downloadgraph_LegendText_"] {
     color: rgb(var(--white));
@@ -1588,10 +1588,10 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
     fill: rgb(var(--white));
 }
 .DialogBody a:hover {
-    color: rgb(var(--white));
+    color: rgb(var(--white75)); /* In the original Metro, some link hovers are white75, while others are white */
 }
 .DialogBody a {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50)); /* In the original Metro, some links are white50, while others are white75 */
     text-decoration: underline;
 	cursor: pointer!important;
 }
@@ -1645,7 +1645,7 @@ button[class*="accountpanel_FatButton_"] svg {
     color: rgb(var(--white50));
 }
 [class*="settings_SettingsDialogSubHeader_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogSubHeader_"] {
-    color: rgb(var(--white50));
+    color: rgb(var(--white75));
 }
 [class*="notificationssettings_FriendsDescription_"][class*="notificationssettings_FriendsDescription_"].DesktopUI, .DesktopUI [class*="notificationssettings_FriendsDescription_"][class*="notificationssettings_FriendsDescription_"] {
     color: rgb(var(--white50));
@@ -1902,6 +1902,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_TopControlsCtr_"] button[class*="serverbrowserdialog_SwitchTabButton_"][class*="serverbrowserdialog_Selected_"] {
     color: rgb(var(--white));
     background: rgb(var(--focus));
+	font-weight: 300;
 }
 [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ColumnResizer_"] {
     background: transparent;
@@ -2723,10 +2724,10 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
     color: rgb(var(--white50));
 }
 [class*="appproperties_AppProperties_"] [class*="appproperties_LocalFilesLink_"] a {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="appproperties_AppProperties_"] [class*="appproperties_LocalFilesLink_"] a:hover {
-    color: rgb(var(--white));
+    color: rgb(var(--white75));
 }
 [class*="appproperties_AppProperties_"] .DialogBody {
     color: rgb(var(--white50));
@@ -2763,10 +2764,10 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 }
 [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_SteamInputLink_"] {
     cursor: pointer!important;
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_SteamInputLink_"]:hover {
-    color: rgb(var(--white));
+    color: rgb(var(--white75));
 }
 [class*="dropdownlabel_DropDownLabelTitle_"] {
     color: rgb(var(--white));
@@ -2915,7 +2916,14 @@ button.DialogButton.Primary:enabled:active, button.DialogButton.Primary:enabled:
     stroke: rgb(var(--white));
 }
 .DialogInput_ClearAction:hover .SVGIcon_X_Line line {
-    stroke: rgb(var(--white50));
+    stroke: rgb(var(--white));
+}
+.DialogInput_ClearAction:hover {
+    background-color: rgb(var(--white10));
+}
+.DialogInput_ClearAction svg {
+    width: 12px;
+    height: 12px;
 }
 [class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Row_"]:hover {
     background: rgb(var(--white05));
@@ -3110,6 +3118,76 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"]:hover {
 [class*="downloads_SectionItem_"] [class*="downloads_Button_"][class*="downloads_RemoveFromQueue_"], [class*="downloads_SectionItem_"] [class*="downloads_Button_"][class*="downloads_RemoveFromQueue_"]:enabled, [class*="downloads_SectionItem_"] [class*="downloads_Button_"][class*="downloads_RemoveFromQueue_"]:active, [class*="downloads_SectionItem_"] [class*="downloads_Button_"][class*="downloads_RemoveFromQueue_"]:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"][class*="downloads_RemoveFromQueue_"]:enabled:active:hover {
     height: 14px;
     width: 14px;
+}
+.appactivityday_CommentsGroup_1-KuQ .appactivityday_CommentsContainer_3uiPs .appactivityday_CommentsLabel_3t5Nr {
+    color: rgb(var(--white50));
+}
+.appactivityday_CommentsGroup_1-KuQ .appactivityday_CommentsContainer_3uiPs .appactivityday_CommentCount_1VRbH {
+    color: rgb(var(--white50));
+}
+button.TextButton:hover, button.TextButton.gpfocus {
+    color: rgb(var(--white75)); /* Random */
+}
+.DesktopUI .DialogTextInputBase:focus, .DialogTextInputBase:focus-within {
+    background-color: rgb(var(--textentry));
+}
+[class*="hardwaresurveydialog_HardwareSurveyDialog_"][class*="hardwaresurveydialog_Desktop_"] [class*="hardwaresurveydialog_HardwareSurveySections_"] h3 {
+    color: rgb(var(--white));
+}
+[class*="hardwaresurveydialog_HardwareSurveyDialog_"][class*="hardwaresurveydialog_Desktop_"] [class*="hardwaresurveydialog_HardwareSurveySections_"] [class*="hardwaresurveydialog_HardwareSurveySection_"] {
+    color: rgb(var(--white));
+}
+[class*="hardwaresurveydialog_HardwareSurveyDialog_"][class*="hardwaresurveydialog_Desktop_"] [class*="hardwaresurveydialog_HardwareSurveySections_"] {
+    background: rgb(var(--header_dark));
+    border: none;
+}
+[class*="aboutsteamdialog_AboutSteamDialog_"][class*="aboutsteamdialog_Desktop_"] [class*="aboutsteamdialog_DialogBodyText_"] {
+    color: rgb(var(--white50));
+}
+[class*="aboutsteamdialog_AboutSteamDialog_"] [class*="aboutsteamdialog_DialogBodyLabel_"] {
+    color: rgb(var(--white50));
+}
+[class*="aboutsteamdialog_AboutSteamDialog_"] {
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="appdetailsfeatureicon_Container_"] [class*="appdetailsfeatureicon_Icon_"] {
+    opacity: 1;
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_BlueHighlight_"] {
+    color: rgb(var(--white50));
+    font-weight: 500;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] .DialogInput_Wrapper .DialogInput::placeholder {
+    font-size: 0;
+}
+[class*="activateproductdialog_ProductActivationInfoContainerDesktop_"] [class*="activateproductdialog_InfoExample_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailstradingcardssection_CardsLeft_"][class*="appdetailstradingcardssection_BadgeMaxed_"] {
+    color: rgb(var(--white75));
+}
+[class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBodyLeft_"] [class*="contentmanagement_AppInfo_"] [class*="contentmanagement_AppUsageText_"] {
+    margin-left: 4px;
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBodyLeft_"] [class*="contentmanagement_AppInfo_"] [class*="contentmanagement_AppUsageValue_"] {
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBodyLeft_"] [class*="contentmanagement_AppInfo_"] svg.DesktopUI, .DesktopUI [class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBodyLeft_"] [class*="contentmanagement_AppInfo_"] svg {
+    color: rgb(var(--white50));
+}
+[class*="sortingdropdowncontrolbutton_BasicHomeDropDownControlButton_"]:hover, [class*="sortingdropdowncontrolbutton_BasicHomeDropDownControlButton_"]:active {
+    background: rgb(var(--white05));
+    color: rgb(var(--white));
+}
+[class*="contentmanagement_DriveName_"] {
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_InstallDropdownOption_"] {
+    color: rgb(var(--white50));
+}
+[class*="contentmanagement_DriveSize_"] {
+    color: rgb(var(--white50));
 }
 /*
 .library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
