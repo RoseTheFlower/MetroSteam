@@ -486,12 +486,12 @@
     border: 0 !important;
     margin-top: 0px !important;
     min-width: 32px !important;
-    min-height: 40px !important;
+    min-height: 39px !important;
     cursor: default !important;
 }
 
 .chatWindow .chatEntry > .compactableHeight {
-    height: 40px !important;
+    height: 39px !important;
 }
 
 .VoiceToggle {
@@ -675,7 +675,7 @@ button.DialogButton.roleButton.owner:disabled {
 .DialogDropDown._DialogInputContainer {
     color: rgba(var(--white75)) !important;
     padding: 3px 5px !important;
-    border: 1px solid rgb(53, 53, 53) !important; /* Hardcoded, must be changed */
+    border: 1px solid rgb(var(--white12));
 }
 
 [class*="voicesettings_TransmissionTypeSettings_"] {
@@ -683,7 +683,7 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 .DialogDropDown._DialogInputContainer:hover {
-    border: 1px solid rgb(81, 81, 81) !important; /* Hardcoded, must be changed */
+    border: 1px solid rgb(var(--white24));
 }
 
 .DialogDropDown_Arrow {
@@ -726,7 +726,7 @@ button.DialogButton,
 .DialogLabel,
 .DialogLabelStrong,
 ._DialogInputContainer {
-    color: rgb(140, 140, 140) !important;
+    color: rgb(var(--white50));
 }
 
 .DialogCheckbox_Container {
@@ -801,7 +801,7 @@ button.DialogButton,
     [class*="pagedcontent_Nav_"]
     [class*="pagedcontent_NavItems_"]
     [class*="pagedcontent_NavItem_"]:not([class*="pagedcontent_Active_"]):hover {
-        color: rgb(140, 140, 140); /* Hardcoded, must be changed */
+        color: rgb(var(--white50));
     }
 
 [class*="chatroomgroupsettings_LeaveButton_"] {
@@ -813,7 +813,7 @@ button.DialogButton,
 }
 
 .DialogToggleField_Option:hover:not(.Active) {
-    background: rgb(75, 75, 75) !important; /* Hardcoded, must be changed */
+    background: rgb(var(--white12));
 }
 
 .DialogCheckbox .SVGIcon_DialogCheck {
@@ -926,6 +926,7 @@ button.DialogButton,
 .friendSearchInput[type="text"]:focus,
 .friendSearchInput[type="text"] {
     background-color: rgb(var(--textentry)) !important;
+	color: rgb(var(--white));
 }
 
 .SearchActive .friendSearchClear {
@@ -2520,7 +2521,7 @@ img[class*="emoticon_emoticon_"] {
 }
 
 [class*="chattabs_CloseButton_"] .SVGIcon_X_Line line {
-    stroke: rgb(113, 113, 113);
+    stroke: rgb(var(--white35));
 }
 
 .FriendsListChatSection.ChatRoomListContainerParent {
@@ -2957,11 +2958,6 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
     background: rgb(var(--clientBG));
     padding: 0px 6px;
 }
-
-.ModalDialogPopup .ModalDialogBody:not(.DesktopUI) .PopupFullWindow .TitleBar {
-    height: 25px;
-}
-
 .confirmInviteRequestContainer .confirmInviteButton {
     background-color: rgb(var(--white12));
     color: rgb(var(--white));
@@ -3038,7 +3034,7 @@ but at least it doesn't break pointer events */
     border-radius: 50%!important;
 }
 [class*="chattabs_CloseButton_"]:hover .SVGIcon_X_Line line {
-    stroke: rgb(var(--white));
+    stroke: rgb(var(--white75));
 }
 .confirmInviteRequestContainer .confirmInviteButton.dim:hover, .confirmInvites.dim:hover, .confirmInvites.dim {
     color: rgb(var(--white));
@@ -3243,4 +3239,14 @@ but at least it doesn't break pointer events */
 }
 .isCurrentUser [class*="messages_SpeakerName_Default_"] {
     color: rgb(var(--offline));
+}
+.friendSearchClear .SVGIcon_X_Line {
+    width: 12px;
+    height: 12px;
+}
+.friendSearchClear:hover .SVGIcon_X_Line {
+    background-color: rgb(var(--white10));
+}
+.friendSearchClear:hover {
+	opacity: 1;
 }
