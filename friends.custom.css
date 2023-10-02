@@ -531,7 +531,7 @@
 }
 
 .ChatMessageEntryVoice.pushToTalkEnabled .activeVoiceButtons {
-    margin-top: -2px !important;
+    margin-top: 0;
 }
 
 .ChatMessageEntryVoice.pushToTalkEnabled .VoiceControlPanelButton {
@@ -545,12 +545,12 @@
 }
 
 .ChatMessageEntryVoice .activeVoicePushToTalk {
-    top: 18px !important;
+    top: 24px;
     right: 0px !important;
     width: 66px !important;
     text-align: center !important;
     color: #74c069; /* Hardcoded, must be changed */
-    background-color: #0000; /* Hardcoded, must be changed */
+    background-color: transparent;
 }
 
 .VoiceToggle,
@@ -961,7 +961,6 @@ button.DialogButton,
 }
 
 .OneOnOneVoiceStatusLabel {
-    color: rgb(0, 163, 0);
     margin-top: 1px;
     overflow: hidden;
     white-space: normal;
@@ -1514,12 +1513,12 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 }
 
 .inviteButton.inviteButtonJoinVoice {
-    background: rgb(53, 53, 53) !important;
+    background: rgb(var(--white12));
 }
 
-    .inviteButton.inviteButtonJoinVoice:hover {
-        background: rgb(var(--focus)) !important;
-    }
+.inviteButton.inviteButtonJoinVoice:hover {
+    background: rgb(var(--white24));
+}
 
 .OneOnOneVoiceRoomControls {
     background-color: rgb(var(--clientBG)) !important;
@@ -1724,12 +1723,12 @@ button.DialogButton.Primary:hover {
 }
 
 .inviteButton {
-    background: rgb(var(--focus)) !important;
+    background: rgb(var(--white12));
 }
 
-    .inviteButton:hover {
-        background: rgba(var(--white05)) !important;
-    }
+.inviteButton:hover {
+    background: rgb(var(--white24));
+}
 
 .msg.ChatMessageInvite .invitedTimeLabel,
 .Invite_ExpireTime {
@@ -3138,6 +3137,7 @@ but at least it doesn't break pointer events */
 }
 .friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom {
     stroke: rgb(var(--white));
+	margin-right: 0;
 }
 .friendsui-container .SVGIcon_TextRoom .TextLines {
     stroke: rgb(var(--white));
@@ -3249,4 +3249,7 @@ but at least it doesn't break pointer events */
 }
 .friendSearchClear:hover {
 	opacity: 1;
+}
+.ChatMessageEntryVoice.pushToTalkEnabled .activeVoiceButtons .SVGIcon_Button.SVGIcon_Shadow {
+	display: none;
 }
