@@ -18,6 +18,10 @@ html:root
 --whatsnew: none;
 */
 
+/* Option to remove the popups that appear on hovering over a game cover
+--gamehoverinfo: none;
+*/
+
 /* Accent color ideas (from the original Metro)
 --focus: 220, 79, 173;
 --focus: 172, 25, 61;
