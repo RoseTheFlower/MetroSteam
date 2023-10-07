@@ -56,6 +56,15 @@
                 }
             }
         },
+        "Disable Game Hover Info Popup": {
+            "type": "checkbox",
+            "values": {
+                "No": {},
+                "Yes": {
+                    "--gamehoverinfo": [ "none", "library"]
+                }
+            }
+        },
         "Accent Color": {
             "type": "dropdown",
             "values": {
