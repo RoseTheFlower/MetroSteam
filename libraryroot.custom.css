@@ -3242,7 +3242,7 @@ button.TextButton:hover, button.TextButton.gpfocus {
 [class*="personanameandstatus_playerName_"] {
     -webkit-mask: none;
 }
-[class*="hoverposition_HoverPosition_"] {
+[class*="appportraithover_AppPortraitHover_"] {
 	display: var(--gamehoverinfo);
 }
 div.LowPerfMode [class*="appdetailsplaysection_StickyHeader_"] [class*="appdetailsplaysection_Glassy_"],
