@@ -3265,6 +3265,7 @@ div.LowPerfMode [class*="appdetailsplaysection_Glassy_"][class*="appdetailsplays
 [class*="sharedappdetailsheader_ImgSrc_"] {
 	-webkit-mask-image: none;
 	opacity: var(--gameimageopacity);
+	max-width: unset;
 }
 [class*="sharedappdetailsheader_ImgContainer_"], 
 [class*="sharedappdetailsheader_ImgSrc_"][class*="sharedappdetailsheader_ImgBlur_"] {
