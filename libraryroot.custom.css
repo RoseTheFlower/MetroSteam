@@ -1616,11 +1616,21 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
 [class*="gamepadslider_SliderTrack_"] {
     --left-track-color: rgb(var(--focus));
 }
+[class*="gamepadslider_SliderControl_"]:hover [class*="gamepadslider_SliderTrack_"] {
+    --left-track-color: rgb(var(--focus));
+	filter: brightness(1.2);
+}
+[class*="gamepadslider_SliderControl_"] {
+	border-radius: 0;
+}
 [class*="gamepadslider_SliderHandle_"] {
     background: rgb(var(--white));
 }
 [class*="gamepadslider_SliderTrack_"] {
     background: rgb(var(--black));
+}
+[class*="gamepadslider_SliderTrack_"]::before {
+	border-radius: 0;
 }
 button[class*="accountpanel_FatButton_"] [class*="accountpanel_Label_"] {
     color: rgb(var(--white));
