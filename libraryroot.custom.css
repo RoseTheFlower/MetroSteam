@@ -21,6 +21,7 @@ Known issues / things to improve:
 	--whatsnew:block; /* Displayed */
 	--gamehoverinfo:block; /* Displayed */
 	--gameimageopacity:0.25;
+	--gameimageBG:rgb(var(--clientBG));
 	--W10close_Red_h:232,18,35;
 	/* Window close button color on hover */
 	--W10close_Red_p:241,112,121;
@@ -582,7 +583,7 @@ button[class*="posttextentry_EmoticonButton_"]:hover {
 .DialogTextInputBase {
 	background-image:var(--searchicon);
 	background-size:18px 18px;
-	background-position:6px center;
+	background-position:4px center;
 	background-color:transparent;
 }
 [class*="contextmenu_contextMenu_"] {
@@ -1616,21 +1617,11 @@ button.TextButton[class*="appdetailsfriendssection_ShowMore_"] {
 [class*="gamepadslider_SliderTrack_"] {
     --left-track-color: rgb(var(--focus));
 }
-[class*="gamepadslider_SliderControl_"]:hover [class*="gamepadslider_SliderTrack_"] {
-    --left-track-color: rgb(var(--focus));
-	filter: brightness(1.2);
-}
-[class*="gamepadslider_SliderControl_"] {
-	border-radius: 0;
-}
 [class*="gamepadslider_SliderHandle_"] {
     background: rgb(var(--white));
 }
 [class*="gamepadslider_SliderTrack_"] {
     background: rgb(var(--black));
-}
-[class*="gamepadslider_SliderTrack_"]::before {
-	border-radius: 0;
 }
 button[class*="accountpanel_FatButton_"] [class*="accountpanel_Label_"] {
     color: rgb(var(--white));
@@ -1900,6 +1891,8 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"] {
     background-color: rgb(var(--white12));
+	border: 1px solid rgb(var(--white));
+    border-radius: 50%!important;
 }
 [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_BottomControlsRow_"] [class*="serverbrowserdialog_ToggleShowFilterDetailsButton_"][class*="serverbrowserdialog_Selected_"] {
     color: rgb(var(--white));
@@ -3064,7 +3057,7 @@ div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder::aft
 [class*="console_Console_"] {
     background-color: rgb(var(--clientBG));
 }
-[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] [class*="SVGIcon_"]e line {
+[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] .SVGIcon_X_Line {
     stroke: rgb(var(--white50));
 }
 [class*="appdetailsworkshopsection_WorkshopContainer_"] {
@@ -3396,6 +3389,144 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 [class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_RecentNewsItem_"]:hover {
     color: rgb(var(--white75));
     background-color: rgb(var(--white05));
+}
+[class*="gamenotes_NoteEditorArea_"] {
+    color: white; /* We probably don't want this to be black in the overlay when the theme is White */
+}
+[class*="library_LibraryWindowDivider_"][class*="library_Sizable_"] {
+    cursor: ew-resize!important;
+}
+[class*="libraryhomenewupdates_SettingsButton_"]:hover {
+    background: rgb(var(--white05)); /* Too subtle. Temporary */
+}
+._DialogInputContainer [class*="libraryhomenewupdates_DialogLabelSoft_"], .DialogLabel[class*="libraryhomenewupdates_DialogLabelSoft_"] {
+    color: rgb(var(--white50));
+}
+.DialogLabel, .DialogLabelStrong {
+    color: rgb(var(--white75));
+}
+[class*="contentmanagement_AppsGrid_"] [class*="contentmanagement_AppBodyRight_"] [class*="contentmanagement_AppSize_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailsprimarylinkssection_MenuButton_"] {
+    stroke: none;
+    fill: rgb(var(--white50));
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_PostTextEntryArea_"] {
+    border: 1px solid rgb(var(--black45));
+}
+[class*="comment_thread_ActivityCommentThread_"],
+[class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"] {
+    margin-left: 0;
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] {
+	color: rgb(var(--white50));
+}
+[class*="desktoptoasts_DesktopToastPopup_"]{
+    background: rgb(var(--clientBG));
+}
+[class*="desktoptoasts_DesktopToastBackground_"] {
+	display: none;
+}
+[class*="standardtemplates_AvatarStatus_"].online{
+    background-color: rgb(var(--online));
+}
+[class*="standardtemplates_AvatarStatus_"].ingame{
+    background-color:rgb(var(--ingame));
+}
+[class*="standardtemplates_AvatarStatus_"].offline{
+    background-color:rgb(var(--offline));
+}
+[class*="standardtemplates_AvatarStatus_"] {
+    width:2px;
+}
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] [class*="standardtemplates_GroupMessageIcon_"]{
+    display:none;
+}
+
+.ModalDialogPopup:not([class*="steamdesktopoverlay_NoTitlebarSpacer_"]) [class*="steamdesktopoverlay_OverlayPopup_"] [class*="steamdesktopoverlay_WindowControls_"] {
+    height: 38px;
+}
+[class*="desktopbrowser_URLBar_"] [class*="desktopbrowser_NavigationButton_"] {
+    padding: 4px 0px 4px 4px;
+}
+[class*="appportraithover_DownloadStatus_"] {
+    background-color: transparent;
+}
+[class*="appportraithover_DownloadStatus_"] [class*="appportraithover_DownloadContainer_"] [class*="appportraithover_DownloadStatusTitle_"],
+[class*="appportraithover_DownloadStatus_"] [class*="appportraithover_DownloadContainer_"] [class*="appportraithover_DownloadStatusDetails_"] {
+    color: rgb(var(--online));
+}
+[class*="appdetailsheader_InCollection_"][class*="appdetailsheader_InHidden_"] {
+    background-color: rgb(var(--black45));
+    color: rgb(var(--white));
+    border: none;
+}
+[class*="appdetailsheader_InCollection_"]:focus {
+    color: white;
+    background-color: rgb(var(--focus));
+}
+[class*="appdetailsheader_InCollection_"]:hover {
+    background-color: rgb(var(--white10));
+}
+[class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] {
+    padding: 8px;
+    background: rgb(var(--black45));
+}
+[class*="appproperties_BetasDropDown_"] ._DialogInputContainer::-webkit-scrollbar-button {
+	display:none!important;
+}
+[class*="downloads_AutoUpdateSettings_"] {
+    color: rgb(var(--white50));
+}
+[class*="downloads_AutoUpdateSettings_"]:hover {
+    color: rgb(var(--white75));
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_PlayButton_"] [class*="appactionbutton_ButtonText_"] {
+	display: none;
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_PlayButtonContainer_"] {
+    height: 32px;
+    min-width: 32px;
+    width: 32px;
+	border: 1px solid rgb(var(--white50));
+	border-radius: 50%!important;
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_PlayButtonContainer_"]:hover {
+	border: 1px solid rgb(var(--white));
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"] {
+	background: transparent;
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_PlayButton_"] {
+	width: 100%;
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] [class*="appactionbutton_PlayButton_"] svg {
+	fill: rgb(var(--white50));
+    margin-right: 0;
+	width: 16px;
+    height: 16px;
+    margin-left: 1px;
+}
+[class*="downloads_SectionItem_"] [class*="downloads_Buttons_"] :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_Green_"]>[class*="appactionbutton_ButtonChild_"]:hover {
+    color: rgb(var(--white));
+}
+[class*="appdetailsheader_Container_"] {
+    background-color: var(--gameimageBG);
+}
+.AssignCategoriesDialog_Friend {
+    background: rgb(var(--white05)); /* --focus and white as color is another option */
+}
+[class*="gamepadslider_SliderControl_"]:hover [class*="gamepadslider_SliderTrack_"] {
+    --left-track-color: rgb(var(--focus));
+	filter: brightness(1.2);
+}
+[class*="gamepadslider_SliderTrack_"]::before {
+	border-radius: 0;
+}
+[class*="pageablecontainer_PageClickContainer_"] .SVGIcon_Button {
+	fill: rgb(var(--white));
 }
 /*
 button.appdetailsheader_ExitEditModeButton_i7jBC.appdetailsheader_ExitEditModeButton_i7jBC:hover {
