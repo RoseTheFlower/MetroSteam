@@ -148,7 +148,9 @@
 }
 
 .groupName .gameGroupContainer .groupIcon {
-    margin-left: 2px !important;
+    height: 16px;
+    width: 16px;
+    margin-top: 3px;
 }
 
 /* PlusMinus Friends Header Color*/
@@ -326,7 +328,7 @@
 
 .SteamPlayerGroupFooterCount .count {
     position: absolute !important;
-    margin-top: -50px !important;
+    margin-top: -42px !important;
     color: rgba(var(--ingame), 1) !important;
     font-size: 14px !important;
     line-height: 14px !important;
@@ -393,6 +395,7 @@
 
     .ScrollToBottomButton.UnreadMessages > span {
         color: rgb(var(--focus)) !important;
+		font-weight: 600;
     }
 
 /* Favorites List Unread Indicator */
@@ -603,7 +606,7 @@
 }
 
 button.Primary.DialogButton:not(.Off):not(.Disabled) {
-    background: rgb(var(--focus));
+    background: rgb(var(--white12));
 }
 
 [class*="radio_Button_"][class*="radio_Active_"],
@@ -887,10 +890,6 @@ button.DialogButton,
 
 /* Remove the above sections when on Linux or Mac */
 
-/* background behind scrollbar */
-::-webkit-scrollbar-track {
-    background-color: none !important;
-}
 /* hovering for the scrollbar itself */
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(var(--white10)) !important;
@@ -1052,7 +1051,7 @@ button.DialogButton,
 .ingame [class*="personanameandstatus_richPresenceLabel_"] a:hover,
 .ingame [class*="personanameandstatus_richPresenceLabel_"] a:active,
 .ingame [class*="personanameandstatus_richPresenceLabel_"] a:visited {
-    color: rgba(var(--ingame), 0.5) !important;
+    color: rgba(var(--ingame), 0.75) !important;
 }
 
 .ingame
@@ -1178,7 +1177,7 @@ a:visited {
 /*arrow at tab selection*/
 .chatTabSelector {
     background: none !important;
-    border: 0px solid black !important;
+    border: 0 !important;
     width: 16px !important;
     height: 16px !important;
     left: 2px !important;
@@ -1595,7 +1594,7 @@ button.DialogButton {
 }
 
 button.DialogButton.Primary:hover {
-    background: rgba(255, 255, 255, 0.24) !important;
+    background: rgb(var(--white24));
 }
 
 .NonInlinedEmbed .SVGIcon_Video path,
@@ -1763,7 +1762,8 @@ button.DialogButton.Primary:hover {
 
 [class*="bbcode_ChatMessageTweet_"],
 [class*="bbcode_ChatMessageSteamStore_Failed_"],
-[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]) {
+[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]),
+[class*="bbcode_ChatMessageSteamStore_"]:not([class*="bbcode_ChatMessageSteamStore_ViewStore_"]) span {
     color: rgb(var(--white75)) !important;
 }
 
@@ -1974,13 +1974,9 @@ background: rgba(var(--white05))!important;}*/
     margin-right: 10px !important;
 }
 
-.chatTabSelector.UnreadMessages {
-    background-color: none !important;
+.chatTabSelector.UnreadMessages .SVGIcon_DownArrowContextMenu {
+    fill: rgb(var(--focus)) !important;
 }
-
-    .chatTabSelector.UnreadMessages .SVGIcon_DownArrowContextMenu {
-        fill: rgb(var(--focus)) !important;
-    }
 
 .title-area-icon .SVGIcon_Maximize line {
     display: none !important;
@@ -1991,10 +1987,10 @@ background: rgba(var(--white05))!important;}*/
     width: 15px !important;
 }
 
-    .chatTabDraggableSpace.ChromeClearance {
-        width: 80px !important;
-        height: 18px !important;
-    }
+.chatTabDraggableSpace.ChromeClearance {
+    width: 80px !important;
+    height: 18px !important;
+}
 
 [class*="chatentry_EmbedButton_"] .SVGIcon_Paperclip path,
 .SVGIcon_Paperclip,
@@ -2005,10 +2001,10 @@ background: rgba(var(--white05))!important;}*/
     stroke: rgb(var(--textentrybuttons)) !important;
 }
 
-    .VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone,
-    [class*="chatentry_chatSubmitButton_"] .SVGIcon_Submit path {
-        fill: rgb(var(--textentrybuttons)) !important;
-    }
+.VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone,
+[class*="chatentry_chatSubmitButton_"] .SVGIcon_Submit path {
+    fill: rgb(var(--textentrybuttons)) !important;
+}
 
 [class*="chatentry_chatSubmitButton_"]:not([class*="chatentry_disabled_"]):hover
 .SVGIcon_Button.SVGIcon_Submit
@@ -3252,4 +3248,46 @@ but at least it doesn't break pointer events */
 }
 .ChatMessageEntryVoice.pushToTalkEnabled .activeVoiceButtons .SVGIcon_Button.SVGIcon_Shadow {
 	display: none;
+}
+.inviteeNameLabel {
+    color: rgb(var(--white));
+}
+.clanActionButtons button.TextButton {
+    color: rgb(var(--white50)); /* Random */
+}
+.clanActionButtons button.TextButton:hover {
+    color: rgb(var(--white75));
+}
+[class*="bbcode_ChatMessageSteamStore_Pricing_"] {
+    background-color: rgb(var(--black45));
+}
+[class*="bbcode_ChatMessageSteamStore_ViewStore_"] {
+    background: #4b82b8;
+}
+.MemberListOption .SVGIcon_DoubleArrow polyline {
+    stroke: rgb(var(--white)); /* Temporary */
+}
+.gameGroup:not(.OtherGamesGroup):not(.NonSteamGamesGroup) .gameGroupContainer {
+	width: 27px;
+    height: 24px;
+}
+.friendGroup.gameGroup:not(.OtherGamesGroup) .SteamPlayerGroupFooter, .friendGroup.gameGroup:not(.OtherGamesGroup) .friend {
+    padding: 2px 0px 2px 22px;
+}
+.CompactFriendsList .gameGroup:not(.OtherGamesGroup):not(.NonSteamGamesGroup) .gameGroupContainer {
+    margin-right: 7px;
+	height: 22px;
+}
+.CompactFriendsList .ExpandPlusMinus {
+    margin-top: 1px !important;
+}
+.CompactFriendsList .gameGroupContainer .groupIcon {
+    margin-top: 1px
+}
+.CompactFriendsList .friendlistListContainer .friendGroup.gameGroup .friend {
+    padding-left: 12px;
+}
+[class*="addonpicker_Tab_"] [class*="addonpicker_TabContent_"][class*="addonpicker_Active_"],
+[class*="addonpicker_Tab_"] [class*="addonpicker_TabContent_"] {
+	color: rgb(var(--white));
 }
