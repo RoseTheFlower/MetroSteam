@@ -22,6 +22,10 @@ html:root
 --gamehoverinfo: none;
 */
 
+/* Removes the background behind the game header/image, revealing the decal of choice
+--gameimageBG: transparent;
+*/
+
 /* Accent color ideas (from the original Metro)
 --focus: 220, 79, 173;
 --focus: 172, 25, 61;
