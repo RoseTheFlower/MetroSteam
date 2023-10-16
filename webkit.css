@@ -43,7 +43,7 @@
 }
 
 body {
-    background: rgb(var(--clientBG));
+    background: rgb(26,26,26); /* Making this into a variable and using a light theme makes it almost white */
 }
 ::-webkit-scrollbar {
 	width: var(--scrollbarSize) !important;
