@@ -1423,8 +1423,9 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 
 .timeDivision.time_passes .preHorizDivider,
 .timeDivision.time_passes .horizDivider {
-    border: 1px dashed rgb(26, 26, 26) !important;
-    margin-left: 1px !important;
+    border: none;
+	border-top: 1px solid rgb(var(--white12));
+    margin-left: 0;
 }
 
 .timeDivision .preHorizDivider {
@@ -2505,7 +2506,7 @@ img[class*="emoticon_emoticon_"] {
 }
 
 [class*="personanameandstatus_statusAndName_"][class*="personanameandstatus_threeLines_"] {
-    margin-top: -6px !important;
+    margin-top: -7px !important;
 }
 
 .compactView
@@ -2843,8 +2844,12 @@ body[class*="shared_common_v6_"] {
 }
 
 .friendSearchInput[type="text"] {
-    background-position: 4px 4px;
+    background-position: 0px 4px;
     background-image: var(--searchicon);
+}
+
+.friendSearchInput[type=text]:focus {
+    background-position: 0px 4px;
 }
 
 .friendListHeaderContainer .title-area {
@@ -3292,4 +3297,27 @@ but at least it doesn't break pointer events */
 [class*="addonpicker_Tab_"] [class*="addonpicker_TabContent_"][class*="addonpicker_Active_"],
 [class*="addonpicker_Tab_"] [class*="addonpicker_TabContent_"] {
 	color: rgb(var(--white));
+}
+.chatRoomVoiceChannelNameContainer .chatRoomVoiceChannelName {
+    padding-left: 20px;
+}
+.MemberListColumn .CompactFriendsList .friend.ingame .labelHolder {
+    margin-top: 1px;
+}
+:not(.friendInviteContainer) .ingame .ContextMenuButton .SVGIcon_DownArrowContextMenu {
+    fill: rgb(var(--ingame));
+}
+
+.ChatRoomMemberScrollList_List .ContextMenuButton .SVGIcon_DownArrowContextMenu {
+	margin-bottom: 0;
+}
+
+.ChatRoomMemberScrollList_List .friend [class*="personanameandstatus_twoLine_"] [class*="personanameandstatus_statusAndName_"] {
+	margin-top: -3px !important;
+}
+.DialogTextInputBase, ._DialogInputContainer {
+    color: rgb(var(--white));
+}
+.chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover .SVGIcon_VoiceRoom .Microphone, .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover .SVGIcon_VoiceRoom .AudioLines {
+    fill: rgb(var(--white));
 }
