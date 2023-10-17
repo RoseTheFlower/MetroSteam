@@ -1,6 +1,6 @@
 /*
 Known issues / things to improve:
-- Still multiple elements to be skinned, particularly the least used or visible
+- Still some elements to be skinned, particularly the least used or visible
 - Having all buttons visually react to hovering over them if clickable
 - Some library elements were changed to make them tolerable without much thinking and need to be revisited
 */
@@ -333,7 +333,7 @@ img,[class*="appportrait_HoversEnabled_"]
 [class*="downloads_Button_"].DialogButton:enabled {
 	border-radius:50% !important;
 }
-[class*="gamelistentry_Container_"]:not([class*="gamelistentry_Selected_"])[class*="gamelistentry_Uninstalled_"]:hover, [class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled_"][class*="gamelistentry_HoverOverlay_"] {
+[class*="gamelistentry_Container_"]:not([class*="gamelistentry_Selected_"])[class*="gamelistentry_Uninstalled_"]:hover, [class*="gamelistentry_Container_"]:not([class*="gamelistentry_Selected_"])[class*="gamelistentry_Uninstalled_"][class*="gamelistentry_HoverOverlay_"] {
 	color:rgb(var(--white50));
 	/*change to one with no transparency*/
 }
@@ -919,9 +919,10 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="bottombar_FriendsButton_"] [class*="bottombar_Icon_"] {
 	height:15px;
 	width:15px;
-	background-image:var(--friendsicon);
-	background-repeat:no-repeat;
-	background-position:center;
+    -webkit-mask-image: var(--friendsicon);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: rgb(var(--white));
 }
 [class*="bottombar_ProgressBarWrapper_"] [class*="bottombar_StatusLine_"],[class*="bottombar_DownloadStatusContent_"] [class*="bottombar_Queue_"] {
 	display:none;
@@ -999,8 +1000,15 @@ html[class*="contextmenu_ContextMenuPopup_"]
 }
 [class*="rootmenu_SteamButton_"] {
 	gap:6px;
-	/*gap:0;
-	font-size:0;
+	/*
+	-webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNS45MDIiIGhlaWdodD0iMTAuOTMzIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMC40OCAwLjMzIj48cGF0aCBmaWxsPSIjMDgwMzQxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0uNDguMDNIMFYwaC40OFpNLjQ4LjE4SDBWLjE1aC40OFpNLjQ4LjMzSDBWLjNoLjQ4WiIgY2xpcC1ydWxlPSJldmVub2RkIiBzdHlsZT0iZmlsbDojZmZmO3N0cm9rZS13aWR0aDouMDI1Mjk4NCIvPjwvc3ZnPg==);
+    gap: 6px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    height: 38px;
+    font-size: 0px;
+    padding: 0px 4px;
+    background-color: rgb(var(--white));
 	*/
 }
 [class*="menu_MenuItem_"][class*="menu_Separator_"] {
@@ -1020,6 +1028,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	color:rgb(var(--white));
 	padding:6px 8px;
 	font-size:13px;
+	line-height:14px;
 	font-family:var(--basefont);
 }
 [class*="steamdesktop_TitleBar_"] [class*="steamdesktop_RootMenuBar_"] {
@@ -1678,9 +1687,6 @@ button[class*="accountpanel_FatButton_"] svg {
 button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] {
     color: rgb(var(--white));
 }
-[class*="gamelistentry_Container_"]:not([class*="gamelistentry_Selected_"])[class*="gamelistentry_Uninstalled_"]:hover, [class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled_"][class*="gamelistentry_HoverOverlay_"] {
-    color: rgb(var(--white50));
-}
 [class*="gamelistdropdown_Bar_"] [class*="gamelistdropdown_MenuHeader_"] [class*="gamelistdropdown_Arrow_"] polygon {
     fill: rgb(var(--white50));
 }
@@ -2291,7 +2297,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     opacity: 1;
 }
 [class*="achievementspage_Background_"] [class*="achievementspage_Blur_"] {
-    backdrop-filter: brightness(40%);
+    backdrop-filter: brightness(25%);
     background: none;
 }
 [class*="achievementslist_GlobalAchievementListItem_"] {
@@ -3528,27 +3534,85 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 [class*="pageablecontainer_PageClickContainer_"] .SVGIcon_Button {
 	fill: rgb(var(--white));
 }
+[class*="apppartnereventspage_ScrollButton_"] svg polygon {
+    fill: rgb(var(--white));
+}
+[class*="library_AchievementsOverlayContainer_"] [class*="library_AchievementsPageContainer_"] [class*="library_CloseButton_"] svg line,
+[class*="apppartnereventspage_CloseButton_"] svg line {
+    stroke: rgb(var(--white));
+}
+[class*="library_AchievementsOverlayContainer_"] [class*="library_AchievementsPageContainer_"] [class*="library_CloseButton_"],
+[class*="apppartnereventspage_ScrollButton_"],
+[class*="apppartnereventspage_CloseButton_"] {
+    background-color: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--white)); /* Random */
+}
+[class*="library_AchievementsOverlayContainer_"] [class*="library_AchievementsPageContainer_"] [class*="library_CloseButton_"]:hover,
+[class*="apppartnereventspage_ScrollButton_"]:hover,
+[class*="apppartnereventspage_CloseButton_"]:hover {
+    background-color: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--white)); /* Random */
+    filter: brightness(2);
+}
+[class*="libraryhomeshowcases_ShowcaseHeader_"] [class*="libraryhomeshowcases_PageButtons_"] polyline.Arrow1 {
+    stroke: rgb(var(--white));
+}
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageUserName_"] {
+	color: rgb(var(--white)); /* As in Valve's */
+}
+[class*="libraryhomenewupdates_SettingsButton_"]:hover .SVGIcon_Settings path {
+    fill: rgb(var(--white));
+}
+[class*="libraryhomeshowcases_CollectionDropDown_"] ._DialogInputContainer.DialogDropDown:hover {
+    color: rgb(var(--white)); /* Mindless */
+}
+[class*="appactivityday_PartnerEventTextOnly_"]:hover [class*="appactivityday_PartnerEventTextOnly_Title_"] {
+    color: rgb(var(--white));
+}
+[class*="library_AchievementsOverlayContainer_"] [class*="library_AchievementsPageContainer_"] [class*="library_CloseButton_"]:hover svg line,
+[class*="apppartnereventspage_CloseButton_"]:hover svg line {
+    stroke: rgb(var(--white));
+}
+[class*="achievementslist_ListTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="notificationssettings_ToggleHeader_"][class*="notificationssettings_ToggleHeader_"] {
+    color: rgb(var(--white)); /* Random */
+}
+[class*="settings_SettingsDialogBodyText_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogBodyText_"] {
+    color: rgb(var(--white50));
+}
+[class*="activateproductdialog_ProductActivationInfoContainerDesktop_"] [class*="activateproductdialog_InfoExampleHeader_"] {
+    color: rgb(var(--white)); /* Random */
+}
+[class*="downloads_RemoveAllButton_"][class*="downloads_RemoveAllButton_"].DialogButton:enabled {
+    color: rgb(var(--white));
+}
+[class*="libraryhomeshowcases_ShowcaseHeader_"] [class*="libraryhomeshowcases_DragHandle_"] {
+    stroke: none;
+    fill: rgb(var(--white));
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"]:hover line, [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"]:hover circle, [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_Controls_"] [class*="posttextentry_EmoticonButton_"]:hover path {
+    stroke: rgb(var(--white));
+}
+[class*="appdetailssection_AppDetailsSection_"] {
+    color: rgb(var(--white)); /* Random */
+}
+[class*="partnereventdisplay_EventDetailTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="partnereventdisplay_EventDetailsBody_"] {
+    color: rgb(var(--white75)); /* Random */
+}
+[class*="discussionwidget_VoteUpIcon_"],
+[class*="discussionwidget_VoteDownIcon_"],
+[class*="discussionwidget_ShareIcon_"] {
+    fill: rgb(var(--white));
+}
 /*
 button.appdetailsheader_ExitEditModeButton_i7jBC.appdetailsheader_ExitEditModeButton_i7jBC:hover {
 	background: !important;
 }
-.gamelistentry_Container_2-O4Z .gamelistentry_GameIcon_ga1hy,
-.gamelistentry_AppIconDownloading_2kzMb {
-    height: 16px;
-    width: 16px;
-    margin-top: 1px;
-
-.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP>div {
-    background-image: none;
-	border: 1px solid rgb(var(--frameBorder));
-}
-.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP .library_CloseButton_iYW5h svg line {
-    stroke: rgb(var(--white));
-}
-.library_AchievementsOverlayContainer_HruWV .library_AchievementsPageContainer_gioyP .library_CloseButton_iYW5h {
-    background-color: rgb(var(--header_dark));
-    border: 1px solid rgb(var(--white50));
-}*/
 
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
