@@ -1528,7 +1528,7 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 
 .msg.voiceChannelInvite {
     color: rgba(var(--white50)) !important;
-    float: center !important;
+    float: left;
 }
 
 .SlashCommandSuggestion_SlashCommandDescription {
@@ -1711,10 +1711,6 @@ button.DialogButton.Primary:hover {
 
 .NonInlinedEmbed .SVGIcon_Hyperlink {
     display: none !important;
-}
-
-.msg.voiceChannelInvite {
-    float: left !important;
 }
 
 /*Invite box*/
