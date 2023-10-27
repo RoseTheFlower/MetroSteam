@@ -248,8 +248,8 @@
 }
 
 /*Group chats hover*/
-.ChatRoomListGroupItem:hover {
-    background-color: rgba(var(--white05)) !important;
+.ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header {
+    background-color: rgba(var(--white05));
 }
 
 /* Avatar status boxes */
@@ -3137,6 +3137,7 @@ but at least it doesn't break pointer events */
 .friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom {
     stroke: rgb(var(--white));
 	margin-right: 0;
+	margin-top: 0;
 }
 .friendsui-container .SVGIcon_TextRoom .TextLines {
     stroke: rgb(var(--white));
@@ -3316,4 +3317,10 @@ but at least it doesn't break pointer events */
 }
 .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover .SVGIcon_VoiceRoom .Microphone, .chatRoomVoiceChannel:not(.ActiveVoiceChannel):hover .SVGIcon_VoiceRoom .AudioLines {
     fill: rgb(var(--white));
+}
+[class*="chatentry_chatEntryControls_"] [class*="chatentry_chatSubmitButton_"]:not([class*="chatentry_disabled_"]) {
+    background: none;
+}
+[class*="chattabs_ChatTab_"] svg {
+    width: 12px;
 }
