@@ -10,7 +10,6 @@
     --clientBG: 26, 26, 26;
     --header_dark: 20, 20, 20;
     --frameBorder: 15, 15, 15;
-    --textentrybuttons: 200, 200, 200;
     --online: 93, 178, 255;
     --ingame: 130, 186, 0;
     --offline: 145, 145, 145;
@@ -505,9 +504,8 @@
 }
 
 .VoiceToggleIconCtn {
-    height: 24px !important;
     top: 8px !important;
-    left: 8px;
+    left: 10px;
 }
 
 .chatEntry .activeVoiceFlexBox {
@@ -1990,19 +1988,9 @@ background: rgba(var(--white05))!important;}*/
     width: 80px !important;
     height: 18px !important;
 }
-
-[class*="chatentry_EmbedButton_"] .SVGIcon_Paperclip path,
-.SVGIcon_Paperclip,
-[class*="chatentry_EmoticonPickerButton_"] .SVGIcon_Emoticon line,
-[class*="chatentry_EmoticonPickerButton_"] .SVGIcon_Emoticon circle,
-[class*="chatentry_EmoticonPickerButton_"] .SVGIcon_Emoticon path,
-.VoiceToggleIconCtn .SVGIcon_VoiceRoom {
-    stroke: rgb(var(--textentrybuttons)) !important;
-}
-
 .VoiceToggleIconCtn .SVGIcon_VoiceRoom .Microphone,
 [class*="chatentry_chatSubmitButton_"] .SVGIcon_Submit path {
-    fill: rgb(var(--textentrybuttons)) !important;
+    fill: rgb(var(--white75))!important;
 }
 
 [class*="chatentry_chatSubmitButton_"]:not([class*="chatentry_disabled_"]):hover
@@ -3135,7 +3123,7 @@ but at least it doesn't break pointer events */
     background-color: rgb(var(--white05));
 }
 .friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom {
-    stroke: rgb(var(--white));
+    stroke: rgb(var(--white75));
 	margin-right: 0;
 	margin-top: 0;
 }
@@ -3323,4 +3311,12 @@ but at least it doesn't break pointer events */
 }
 [class*="chattabs_ChatTab_"] svg {
     width: 12px;
+}
+.friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom,
+[class*="chatentry_chatSubmitButton_"][class*="chatentry_EmbedButton_"] SVG, [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmoticonPickerButton_"] SVG {
+    color: rgb(var(--white75));
+}
+.chatRoomChannelGroups svg.SVGIcon_Button.SVGIcon_VoiceRoom {
+    padding-left: 3px;
+    padding-top: 2px;
 }
