@@ -2216,13 +2216,13 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--white50));
 }
 [class*="achievementslist_AchievementList_"] {
-    background-color: rgb(var(--clientBG));
+    background-color: transparent;
 }
 [class*="gamepadtabbedpage_Tab_"][class*="gamepadtabbedpage_Selected_"] {
     background-color: rgb(var(--focus));
 }
 [class*="achievementsheader_StatsBlock_"] {
-    background-color: rgb(var(--white05));
+    background-color: rgb(var(--black45));
 }
 [class*="achievementslist_AchievementListItemBase_"] {
     background-color: rgb(var(--black));
@@ -3609,11 +3609,28 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 [class*="discussionwidget_ShareIcon_"] {
     fill: rgb(var(--white));
 }
+[class*="achievementspage_AchievementTabs_"] ._TabContentsScroll {
+	background: rgb(var(--clientBG));
+}
+[class*="progressbar_ProgressBar_"] [class*="progressbar_Percent_"] {
+    background: rgb(var(--focus))!important;
+}
+[class*="standardtemplates_StandardTemplateContainer_"]:hover, [class*="standardtemplates_StandardTemplateContainer_"].gpfocus {
+    background-color: transparent;
+}
+[class*="achievementspage_Page_"] [class*="achievementspage_Container_"].DesktopUI, .DesktopUI [class*="achievementspage_Page_"] [class*="achievementspage_Container_"] {
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="library_AppDetailsOverlayTransitionGroup_"] [class*="library_OverlayAppDetailsTransitionEntered_"] {
+    backdrop-filter: brightness(0.15);
+}
+[class*="library_AppDetailsMain_"] {
+    border-top: none;
+}
 /*
-button.appdetailsheader_ExitEditModeButton_i7jBC.appdetailsheader_ExitEditModeButton_i7jBC:hover {
+button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
 	background: !important;
 }
-
 /* Bug fixing for Valve */
 [class*="pageablecontainer_HeaderPageControls_"] {
 	padding-bottom:5px;
