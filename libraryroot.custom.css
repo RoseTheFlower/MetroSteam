@@ -693,6 +693,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="appactivityday_Event_"]
 [class*="appactivityday_PartnerEventFeaturedHeader_"] {
 	background:none;
+	color: rgb(var(--white));
 }
 [class*="appactivityday_PartnerEventLargeImage_Image_"][class*="appactivityday_Blur_"] {
 	display:none;
@@ -2472,11 +2473,20 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     color: rgb(var(--white50));
 }
 [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"] {
-    background: rgb(var(--white10));
+    background: rgb(var(--clientBG))
 }
 [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"]:hover {
-    background: rgb(var(--white10));
+    background: rgb(var(--clientBG));
     color: rgb(var(--white75));
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] [class*="appproperties_DlcHeader_"]::after {
+    background: rgb(var(--white10));
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 [class*="writereview_ReviewTextArea_"] {
     background: rgb(var(--textentry));
@@ -3626,6 +3636,40 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 }
 [class*="library_AppDetailsMain_"] {
     border-top: none;
+}
+.DialogRoundCheckboxField_Control .DialogRoundCheckboxField_InnerCircle {
+    background: rgb(var(--white));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_SelectColumnsButton_"]:hover {
+    color: rgb(var(--white));
+    background: rgb(var(--white05));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_TopControlsCtr_"] [class*="serverbrowserdialog_SearchButton_"][class*="serverbrowserdialog_NewSearchButton_"] {
+    background: rgb(var(--white12));
+}
+[class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_TopControlsCtr_"] [class*="serverbrowserdialog_SearchButton_"][class*="serverbrowserdialog_NewSearchButton_"]:hover {
+    background: rgb(var(--white24));
+}
+.DialogRoundCheckboxField_Control {
+    background-color: rgb(var(--white08));
+}
+.DialogRoundCheckboxField_Container:hover .DialogRoundCheckboxField_OuterCircle {
+    background-color: rgba(var(--white), 0.17);
+}
+[class*="downloads_ItemLists_"] :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_Green_"]>[class*="appactionbutton_ButtonChild_"]:hover svg {
+    fill: rgb(var(--white));
+}
+[class*="appdetailsplaysection_PlayBar_"] :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_Green_"]>[class*="appactionbutton_ButtonChild_"]:hover svg {
+	fill: white;
+}
+[class*="gamelistdropdown_ScrollToTop_"]:hover [class*="SVGIcon_"] polyline {
+    stroke: rgb(var(--white));
+}
+[class*="chatentry_chatSubmitButton_"][class*="chatentry_EmbedButton_"] SVG, [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmoticonPickerButton_"] SVG {
+    color: rgb(var(--white));
+}
+[class*="mediamanagerutils_ProgressContainer_"] [class*="mediamanagerutils_Progress_"] {
+    background-color: rgb(var(--focus));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
