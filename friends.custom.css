@@ -449,6 +449,7 @@
 [class*="chattabs_ChatTab_"] {
     background: rgb(var(--clientBG)) !important;
     padding-right: 5px !important;
+	padding-left: 7px;
 }
 
 .chatEntry {
@@ -471,18 +472,20 @@
     }
 
 .ChatMessageEntryVoice {
-    background-color: rgb(var(--textentry)) !important;
+    background: transparent;
     color: rgba(var(--white)) !important;
     max-width: 46px !important;
     margin-left: 0px !important;
     padding: 0;
 }
-
-    .ChatMessageEntryVoice.Disabled {
+.ChatMessageEntryVoice.Active {
+    background: #11541c;
+}
+.ChatMessageEntryVoice.Disabled {
         opacity: 0.2;
         border: 0px solid transparent !important;
         outline: 0px solid transparent !important;
-    }
+}
 
 [class*="chatentry_chatSubmitButton_"] {
     position: relative;
@@ -500,10 +503,11 @@
 
 .VoiceToggle {
     height: 40px !important;
-    border: 0px transparent !important;
+    border: 0;
+	cursor: default;
 }
 
-.VoiceToggleIconCtn {
+.buttonsContainer .VoiceToggleIconCtn {
     top: 8px !important;
     left: 10px;
 }
@@ -556,9 +560,8 @@
     background-color: transparent;
 }
 
-.VoiceToggle,
-.chatTextarea {
-    background: rgb(var(--textentry)) !important;
+.VoiceToggle, .chatTextarea {
+    background: rgb(var(--textentry));
 }
 
 .ChatMessageBlock.SingletonMsg .FriendChatTimeStamp {
@@ -965,10 +968,6 @@ button.DialogButton,
     white-space: normal;
 }
 
-.OneOnOneVoiceRoomControls {
-    white-space: nowrap;
-}
-
 .OneOnOneVoiceActive {
     background: rgb(var(--header_dark)) !important;
     border-bottom: 1px solid rgb(var(--frameBorder)) !important;
@@ -1163,7 +1162,7 @@ a:visited {
 }
 
 .OneOnOneVoiceClose {
-    background-color: rgb(var(--textentry)) !important;
+    background-color: rgb(var(--white12));
     z-index: 200 !important;
 }
 /*emoticons and attachments area*/
@@ -1176,22 +1175,21 @@ a:visited {
 
 /*arrow at tab selection*/
 .chatTabSelector {
-    background: none !important;
-    border: 0 !important;
-    width: 16px !important;
-    height: 16px !important;
-    left: 2px !important;
-    top: 7px !important;
+    background: none!important;
+    border: 0;
+    width: 18px;
+    height: 16px;
+    margin: 9px 3px 0px 6px;
     cursor: initial !important;
 }
 
-    .chatTabSelector .SVGIcon_DownArrowContextMenu {
-        margin-left: 2px !important;
-        margin-top: 4px !important;
-        fill: rgb(113, 113, 113) !important;
-        width: 15px !important;
-        height: 15px !important;
-    }
+.chatTabSelector .SVGIcon_DownArrowContextMenu {
+    margin-left: 2px;
+    margin-top: 2px;
+    fill: rgb(var(--white35))!important;
+    width: 100%;
+    height: 100%;
+}
 
 .FriendChatTypingNotification {
     background-color: transparent;
@@ -1427,12 +1425,12 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 }
 
 .timeDivision .preHorizDivider {
-    width: 15% !important;
+    display: none;
 }
 
 .timeDivision .preHorizDivider,
 .timeDivision .horizDivider {
-    background-color: rgb(var(--clientBG)) !important;
+    background-color: transparent;
 }
 
 .msg.timeDivision {
@@ -1477,7 +1475,7 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 
 .chatTabSelector .SVGIcon_DownArrowContextMenu:hover,
 .chatTabSelector.UnreadMessages .SVGIcon_DownArrowContextMenu:hover {
-    fill: rgb(var(--white)) !important;
+    fill: rgb(var(--white75)) !important;
 }
 
 .chatTabList [class*="chattabs_ChatTab_"]:not([class*="chattabs_Active_"]) {
@@ -1522,6 +1520,8 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 
 .OneOnOneVoiceRoomControls {
     background-color: rgb(var(--clientBG)) !important;
+	white-space: nowrap;
+	border-bottom: 1px solid rgb(var(--frameBorder));
 }
 
 .msg.voiceChannelInvite {
@@ -2039,6 +2039,7 @@ path {
 
 [class*="chattabs_CloseButton_"] {
     cursor: default !important;
+	margin-left: 1px;
 }
 
 .chatTabList [class*="chattabs_ChatTab_"],
@@ -2427,6 +2428,7 @@ img[class*="emoticon_emoticon_"] {
 .chatTabOpenFriendsList {
     color: rgba(var(--white75)) !important;
     background-color: rgb(var(--clientBG)) !important;
+	height: 36px;
 }
 
     .chatTabOpenFriendsList:hover {
@@ -2886,11 +2888,6 @@ body[class*="shared_common_v6_"] {
 .friendsui-container .title-bar-actions {
     max-height: 28px;
 }
-
-.chatTabSetContainer.inclient {
-    padding-right: 88px;
-}
-
 .voiceSelfHeader .friend .avatarHolder .avatarStatus {
     width: 0px;
 }
@@ -2980,9 +2977,9 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .clanInvitesGroupContainer .statMembersTotal {
     color: rgb(var(--white50));
 }
-/* This comes at the cost of not showing miniprofiles in group chats
+/* This comes at the cost of not showing miniprofiles
 but at least it doesn't break pointer events */
-.client_chat_frame.fullheight.ChatPopup .miniProfileHover {
+.client_chat_frame .miniProfileHover {
     display: none;
 }
 [class*="personastatusicons_PersonaStatusIcon_"][class*="personastatusicons_MobilePhoneIcon_"] {
@@ -3310,7 +3307,7 @@ but at least it doesn't break pointer events */
     background: none;
 }
 [class*="chattabs_ChatTab_"] svg {
-    width: 12px;
+    width: 12px!important;
 }
 .friendsui-container .SVGIcon_TextRoom, .friendsui-container .SVGIcon_Button.SVGIcon_TextRoom, .friendsui-container .SVGIcon_VoiceRoom, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom,
 [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmbedButton_"] SVG, [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmoticonPickerButton_"] SVG {
@@ -3319,4 +3316,83 @@ but at least it doesn't break pointer events */
 .chatRoomChannelGroups svg.SVGIcon_Button.SVGIcon_VoiceRoom {
     padding-left: 3px;
     padding-top: 2px;
+}
+[class*="messages_SpeakerName_Default_"] {
+    color: rgb(var(--offline));
+}
+.FriendPicker_ChosenFriend {
+    background: rgb(var(--focus));
+}
+.FriendPicker_ChosenFriend .SVGIcon_X_Line line {
+    stroke: rgb(255, 255, 255, 0.75); /* Intentionally not a var, as it's on --focus */
+}
+.DialogHighlight {
+    color: rgb(var(--focus));
+}
+.VoiceToggle.Active svg,
+.VoiceToggle.Active:hover svg {
+    color: rgb(var(--white75));
+}
+.VoiceToggle.Active:hover {
+    background: rgb(var(--white05));
+}
+.VoiceToggle.Active {
+    background-color: transparent;
+	border: none!important;
+}
+.OneOnOneVoiceClose .SVGIcon_X_Line line,
+.OneOnOneVoiceClose:hover .SVGIcon_X_Line line, .OneOnOneVoiceClose.gpfocus .SVGIcon_X_Line line {
+    stroke: rgb(var(--white));
+}
+.OneOnOneVoiceClose:hover, .OneOnOneVoiceClose.gpfocus {
+    background-color: rgb(var(--white24));
+}
+.recentName {
+    color: rgb(var(--white));
+}
+[class*="chattabs_ChatTabTransitionGroup_"] {
+    border-right: 2px solid transparent;
+}
+.HorizontalMiniSliderScroll::-webkit-scrollbar {
+	display: none;
+}
+.ChatTabs.HasWindowControls {
+    padding-top: 28px;
+}
+.chatTabSetContainer.inclient {
+    padding-right: 0;
+}
+.singlewindow .titleBarContainer.ChatTabs {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.ChatTabs .dropTargetBox {
+    margin-top: 28px;
+}
+[class*="chattabs_ChatTabContent_ChatRoomName_"] {
+	text-overflow: ellipsis;
+	-webkit-mask: none;
+}
+[class*="chattabs_ChatTabRow_"] [class*="personanameandstatus_richPresenceContainer_"] {
+    width: calc(100% - 24px) !important;
+}
+
+[class*="chattabs_ChatTabRow_"] [class*="friendsnooze_SnoozeContainer_"] {
+	margin-right: 4px;
+}
+.chatFileUploadPreviewContainer {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.chatFileUploadCancel:hover {
+    background-color: rgb(var(--W10close_Red_h));
+}
+.chatFileUploadCancel {
+    top: 0;
+    right: 0;
+    background-color: transparent;
+	cursor: default;
+}
+.chatFileUploadCancel .SVGIcon_X_Line line {
+    stroke: rgb(var(--white));
 }
