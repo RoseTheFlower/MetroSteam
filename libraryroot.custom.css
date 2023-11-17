@@ -1998,9 +1998,6 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemDetailsContainer_"] [class*="appdetailsworkshopsection_FeaturedItemDesc_"] {
     color: rgb(var(--white75));
 }
-[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] .SVGIcon_X_Line {
-    stroke: rgb(var(--white50));
-}
 .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"] {
     background: rgb(var(--focus));
 }
@@ -2498,9 +2495,6 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="writereview_ReviewThumbButton_"][class*="writereview_Selected_"] {
     background: rgb(var(--focus));
 }
-[class*="appdetailsreviewsection_ReviewIconThumbsUp_"] {
-    background: #2b526c; /* One of the colors of the original gradient */
-}
 [class*="appdetailsreviewsection_ReviewMetadata_"]:hover {
     background: rgb(var(--white12));
 }
@@ -2985,6 +2979,9 @@ button.DialogButton.Primary:enabled:active, button.DialogButton.Primary:enabled:
     background: #254c6f; /* One of Valve's gradient colors made solid */
 	flex-shrink: 0;
 }
+[class*="appactivityday_ReviewIconThumbsUp_"] {
+    background: #254c6f; /* One of Valve's gradient colors made solid */
+}
 .DialogTextInputBase:not(:disabled):hover {
     background-color: rgb(var(--textentry));
     cursor: text!important;
@@ -3073,7 +3070,7 @@ div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder::aft
 [class*="console_Console_"] {
     background-color: rgb(var(--clientBG));
 }
-[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] .SVGIcon_X_Line {
+[class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"] .SVGIcon_X_Line line {
     stroke: rgb(var(--white50));
 }
 [class*="appdetailsworkshopsection_WorkshopContainer_"] {
@@ -3670,6 +3667,48 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 }
 [class*="mediamanagerutils_ProgressContainer_"] [class*="mediamanagerutils_Progress_"] {
     background-color: rgb(var(--focus));
+}
+[class*="miniprofile_miniProfileBackdropBlur_"] {
+    backdrop-filter: none;
+}
+[class*="playersdialog_PlayersList_"] {
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="playersdialog_NameColumn_"] [class*="playersdialog_AvatarAndName_"] {
+    color: rgb(var(--white));
+}
+[class*="playersdialog_PlayersListBody_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="playersdialog_NameColumn_"] {
+    cursor: pointer !important;
+}
+button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogButton.Disabled, button.DialogButton.Disabled:hover {
+    background: rgb(var(--white12));
+}
+[class*="steamdesktopoverlay_ToolbarContainer_"] [class*="steamdesktopoverlay_Toolbar_"] [class*="steamdesktopoverlay_ToolbarButton_"].Settings>svg {
+    margin-right: 1px;
+}
+[class*="gamepaddialog_Field_"][class*="gamepaddialog_Clickable_"]:not([class*="gamepaddialog_Disabled_"]):hover {
+    background: transparent; /* The class name is Clickable but the items are not clickable at the In Game tab of the settings */
+}
+[class*="gamepaddialog_Field_"][class*="gamepaddialog_WithBottomSeparatorStandard_"]::after {
+    background: rgb(var(--white12));
+}
+[class*="mediamanagerutils_UploadProgressIndicatorContainer_"] [class*="mediamanagerutils_Label_"] {
+    color: rgb(var(--white));
+}
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_ActorName_"]:hover {
+    filter: brightness(1.2); /* Imperfect, should be temporary */
+}
+[class*="steamtemplates_WishlistBlurImage_"] {
+    display: none;
+}
+[class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"] {
+    color: rgb(var(--white));
+}
+[class*="bottombar_AddGameButton_"], [class*="bottombar_FriendsButton_"] {
+    gap: 0;
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
