@@ -44,6 +44,8 @@
 	--arrow_down: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
 }
 
+/* The abundance of !important overrides is a remnant of the time when SFP required one for everything. */
+
 /* Remove animations, round corners and delays */
 * {
     box-shadow: none !important;
@@ -67,6 +69,7 @@
 .currentUserContainer {
     border-bottom: 1px solid rgb(var(--frameBorder)) !important;
     background-color: rgb(var(--header_dark));
+	padding-right:0;
 }
 
 /* Friends list window*/
@@ -1425,7 +1428,7 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 }
 
 .timeDivision .preHorizDivider {
-    display: none;
+	width: 15%;
 }
 
 .timeDivision .preHorizDivider,
@@ -2405,7 +2408,7 @@ img[class*="emoticon_emoticon_"] {
     }
 
 .currentUserContainer [class*="personanameandstatus_statusAndName_"] {
-    margin-right: 55px !important;
+    margin-right: 72px;
     -webkit-app-region: drag !important;
 }
 
