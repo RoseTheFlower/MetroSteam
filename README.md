@@ -9,6 +9,7 @@ My quest was to make the windows look as close as possible to those of [the orig
 <summary><strong>Breakage prevention for returning skin users (clickable)</strong></summary>
 1. Close Steam.<br>
 2. Navigate to its folder, back up and remove the clientui, skins, and steamui\css folders.
+<hr>
 </details>
 
 1. [Download the skin archive](/../../archive/refs/heads/master.zip).
