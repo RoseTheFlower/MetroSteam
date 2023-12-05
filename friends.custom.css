@@ -1657,7 +1657,7 @@ button.DialogButton.Primary:hover {
 
 .ChatRoomSpeaker {
     padding-top: 0px !important;
-    margin-top: -4px !important;
+	margin-top: 0px;
 }
 
 .msg.serverMsg .msgText {
@@ -2642,13 +2642,21 @@ svg.SVGIcon_Button.SVGIcon_Clock {
 [class*="messages_MsgWithAddons_"] [class*="messages_Addons_"] {
     background-color: rgb(var(--clientBG)) !important;
     border-radius: 6px !important;
-    border-color: transparent !important;
+    border: 1px solid rgb(var(--frameBorder));
 }
-
-    [class*="messages_MsgWithAddons_"] [class*="messages_Addons_"]:hover {
-        background-color: rgb(53, 53, 53) !important;
-    }
-
+[class*="messages_MsgWithAddons_"] [class*="messages_Addons_"]:hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(var(--white12));
+    z-index: 1;
+    opacity: 1;
+    pointer-events: none;
+    border-radius: 6px;
+}
 [class*="reactions_OpenPickerButton_"][class*="reactions_AddReactionIcon_"] path,
 [class*="messages_MsgWithAddons_"] {
     stroke: rgb(var(--white)) !important;
@@ -3398,4 +3406,17 @@ but at least it doesn't break pointer events */
 }
 .chatFileUploadCancel .SVGIcon_X_Line line {
     stroke: rgb(var(--white));
+}
+.insetShadow {
+    background: none;
+}
+.confirmInviteRequestContainer .cancelAddFriends:hover .SVGIcon_Arrow polyline {
+    stroke: rgb(var(--white75));
+	transform: none;
+}
+.timeDivision.new_messages .preHorizDivider, .timeDivision.new_messages .horizDivider {
+    background-color: transparent;
+}
+.ChatRoomSpeaker .speaker {
+	margin-top: 0;
 }
