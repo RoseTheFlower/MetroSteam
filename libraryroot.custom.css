@@ -3490,7 +3490,7 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
     background: rgb(var(--black45));
 }
 [class*="appproperties_BetasDropDown_"] ._DialogInputContainer::-webkit-scrollbar-button {
-	display:none!important;
+	display: none!important;
 }
 [class*="downloads_AutoUpdateSettings_"] {
     color: rgb(var(--white50));
@@ -3919,6 +3919,23 @@ div[class*="eventbbcodeparser_Header1_"], div[class*="eventbbcodeparser_Header2_
 }
 [class*="libraryhomeshowcases_OptionsRule_"] {
     border-top: 1px solid rgb(var(--white12));
+}
+[class*="standardtemplates_StandardTemplateDesktop_"]:hover {
+    background: rgb(var(--white24));
+}
+[class*="standardtemplates_StandardTemplateDesktop_"] {
+    background: rgb(var(--white12));
+}
+.contextMenuItem [class*="jumplist_JumpListGameName_"][class*="jumplist_Running_"] {
+    color: rgb(var(--ingame));
+    font-weight: normal;
+}
+[class*="boxcarousel_BoxCarouselContents_"][class*="boxcarousel_MaskRight_"] {
+    -webkit-mask-image: none;
+	border-right: 1px solid rgb(var(--clientBG)); /* Experimental */
+}
+[class*="libraryhome_UpdateLoweredPriorityNotice_"] {
+    color: rgb(var(--white50));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
