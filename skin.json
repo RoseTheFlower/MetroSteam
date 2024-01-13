@@ -1,9 +1,26 @@
-{
-    "UseDefaultPatches": true,
-    "Patches": [
+  "name": "Metro by Rose",
+  "author": "Rose",
+  "description": "A skin heavily inspired by the original Metro for Steam.",
+  "source": "https://github.com/RoseTheFlower/MetroSteam",
+  "github":
+  {
+  "owner": "RoseTheFlower",
+  "repo_name": "MetroSteam"
+  },
+  "tags":
+  [
+    "Dark",
+    "Metro",
+    "Windows 10",
+	"Windows 8"
+  ],
+  "header_image": "https://cdn.discordapp.com/attachments/985537290535305236/1121688363422974033/image.png",
+  "splash_image": "https://cdn.discordapp.com/attachments/985537290535305236/1121688363422974033/image.png",
+  "UseDefaultPatches": true,
+  "Patches":
+  [
         {
           "MatchRegexString": "^DUMMYFORCONFIG$",
           "TargetCss": "custom.css"
         }
-    ]
-}
+  ]
