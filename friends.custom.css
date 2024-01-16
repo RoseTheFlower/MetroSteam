@@ -3420,3 +3420,12 @@ but at least it doesn't break pointer events */
 .ChatRoomSpeaker .speaker {
 	margin-top: 0;
 }
+.speakerHoverArea, .speakerTimeStamp {
+	cursor: text;
+}
+.addFriendButton .SVGIcon_AddFriend .friendHead, .addFriendButton .SVGIcon_AddFriend .friendBody {
+    color: rgb(var(--white));
+}
+.addFriendButton:hover .SVGIcon_AddFriend .friendHead, .addFriendButton:hover .SVGIcon_AddFriend .friendBody {
+    color: rgb(var(--white));
+}
