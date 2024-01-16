@@ -133,11 +133,13 @@ body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay 
 [class*="gamelistbar_GameListHomeAndSearch_"] {
 	background-color:transparent;
 }
-[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] {
+.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] {
 	background:rgb(var(--header_dark));
 	padding-left:0px;
 	min-width:205px;
 	padding-top:46px;
+	height: calc(100% - 46px)!important;
+    min-height: calc(100% - 46px)!important;
 }
 .DialogContent,.DialogContentTransition {
 	background:rgb(var(--clientBG));
@@ -277,7 +279,7 @@ div.MediumWindow
 }
 [class*="gamelistdropdown_Bar_"] {
 	padding-top:0px;
-	padding-bottom:6px;
+	padding-bottom:0px;
 }
 [class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_AdvancedSearchContainer_"],[class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_SearchInput_"]
 .DialogTextInputBase,[class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_SearchInput_"]
@@ -327,6 +329,13 @@ img,[class*="appportrait_HoversEnabled_"]
 	padding:3px 6px;
 	border-bottom:1px solid rgb(var(--frameBorder));
 	border-top:1px solid rgb(var(--frameBorder));
+	margin-left: 0px;
+	color: rgb(var(--white));
+    background-color: rgb(var(--textentry));
+	/*margin-right: 0px;
+	margin-bottom: 0px;
+	Like the original but clashes with the buttons above
+	*/
 }
 [class*="downloads_SectionItem_"] [class*="downloads_Button_"],[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled,[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active,[class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover,[class*="downloads_SectionItem_"]
 [class*="downloads_Button_"]:enabled:active:hover,[class*="downloads_SectionItem_"]
@@ -2356,7 +2365,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within:hover {
     background: rgb(var(--white));
 }
-[class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within {
+.DesktopUI [class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within, [class*="desktopbrowser_URLBar_"] .DialogTextInputBase:focus-within {
     background: rgb(var(--white));
     color: rgb(var(--black));
 }
@@ -3489,7 +3498,8 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
     padding: 8px;
     background: rgb(var(--black45));
 }
-[class*="appproperties_BetasDropDown_"] ._DialogInputContainer::-webkit-scrollbar-button {
+[class*="appproperties_BetasDropDown_"] ._DialogInputContainer::-webkit-scrollbar-button,
+[class*="pagedsettings_PagedSettingsDialog_PageList_"]::-webkit-scrollbar {
 	display: none!important;
 }
 [class*="downloads_AutoUpdateSettings_"] {
@@ -3935,6 +3945,22 @@ div[class*="eventbbcodeparser_Header1_"], div[class*="eventbbcodeparser_Header2_
 	border-right: 1px solid rgb(var(--clientBG)); /* Experimental */
 }
 [class*="libraryhome_UpdateLoweredPriorityNotice_"] {
+    color: rgb(var(--white50));
+}
+.gpfocuswithin~[class*="appgrid_LibraryImageBackgroundGlow_"], :hover~[class*="appgrid_LibraryImageBackgroundGlow_"], [class*="appgrid_LibraryImageBackgroundGlow_"][class*="appgrid_ShowAsHovered_"] {
+    display: none;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_AdvancedSearchContainer_"] [class*="gamelistsearchbar_AdvancedSearchButton_"] svg {
+    width: 18px;
+    height: 18px;
+}
+[class*="gamelistdropdown_Bar_"] [class*="gamelistdropdown_MenuHeader_"] [class*="gamelistdropdown_Arrow_"] {
+    margin-top: 0px;
+}
+[class*="appactivityday_AppActivityDay_"] [class*="appactivityday_AppActivityDate_"] [class*="appactivityday_Rule_"] {
+    background: rgb(var(--white12));
+}
+.settings_SettingsDialogDescriptionText_3w92E.DesktopUI, .DesktopUI .settings_SettingsDialogDescriptionText_3w92E {
     color: rgb(var(--white50));
 }
 /*
