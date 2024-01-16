@@ -132,6 +132,7 @@ body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay 
 }
 [class*="gamelistbar_GameListHomeAndSearch_"] {
 	background-color:transparent;
+	display: none; /* More space for the games below; closer to the original look; the collections are accessible via the LIBRARY dropdown */
 }
 .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn_"] {
 	background:rgb(var(--header_dark));
@@ -278,8 +279,7 @@ div.MediumWindow
 	font-size:14px;
 }
 [class*="gamelistdropdown_Bar_"] {
-	padding-top:0px;
-	padding-bottom:0px;
+	padding-top:6px;
 }
 [class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_AdvancedSearchContainer_"],[class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_SearchInput_"]
 .DialogTextInputBase,[class*="gamelistsearchbar_Container_"][class*="gamelistsearchbar_SearchInput_"]
@@ -329,7 +329,7 @@ img,[class*="appportrait_HoversEnabled_"]
 	padding:3px 6px;
 	border-bottom:1px solid rgb(var(--frameBorder));
 	border-top:1px solid rgb(var(--frameBorder));
-	margin-left: 0px;
+	margin: 6px 0 0 0;
 	color: rgb(var(--white));
     background-color: rgb(var(--textentry));
 	/*margin-right: 0px;
