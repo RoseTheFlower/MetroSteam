@@ -30,6 +30,9 @@ My quest was to make the windows look as close as possible to those of [the orig
 * Note that the skin version available via the CSSLoader store may not have the most recent updates of this repo, though you can manually override it with the [latest files](/../../archive/refs/heads/master.zip).
 
 ### Using Millenium
+Refer to the instructions provided by the patcher developer on its repository pages to access its themes, which include **Metro by Rose**.
+
+Installing manually is also an option:
 1. Follow the SFP steps above to extract the skin files to the Steam folder.
 1. [Download the Millenium patcher](https://github.com/ShadowMonster99/millennium-steam-patcher/releases) and install it.
 1. Launch Steam and select the skin in Settings->Interface.
