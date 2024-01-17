@@ -29,6 +29,12 @@ My quest was to make the windows look as close as possible to those of [the orig
 1. Search for *Metro* and install **Metro by Rose**.
 * Note that the skin version available via the CSSLoader store may not have the most recent updates of this repo, though you can manually override it with the [latest files](/../../archive/refs/heads/master.zip).
 
+### Using Millenium
+1. Follow the SFP steps above to extract the skin files to the Steam folder.
+1. [Download the Millenium patcher](https://github.com/ShadowMonster99/millennium-steam-patcher/releases) and install it.
+1. Launch Steam and select the skin in Settings->Interface.
+1. Select No if prompted to enable JavaScript.
+
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating SFP, and for tips on managing the randomized class names.
