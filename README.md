@@ -36,7 +36,6 @@ Installing manually is also an option:
 1. Follow the SFP steps above to extract the skin files to the Steam folder.
 1. [Download the Millenium patcher](https://github.com/ShadowMonster99/millennium-steam-patcher/releases) and install it.
 1. Launch Steam and select the skin in Settings->Interface.
-1. Select No if prompted to enable JavaScript.
 
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
