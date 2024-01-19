@@ -34,7 +34,7 @@ Refer to the instructions provided by the patcher developer on its repository pa
 
 Installing manually is also an option:
 1. Follow the SFP steps above to extract the skin files to the Steam folder.
-1. [Download the Millenium patcher](https://github.com/ShadowMonster99/millennium-steam-patcher/releases) and install it.
+1. [Download the Millennium patcher](https://github.com/ShadowMonster99/millennium-steam-patcher/releases) and install it.
 1. Launch Steam and select the skin in Settings->Interface.
 
 ## Credits
