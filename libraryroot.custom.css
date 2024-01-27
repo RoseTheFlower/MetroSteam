@@ -1033,6 +1033,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"],
 [class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadProgress_"] {
 	color:rgb(var(--white))!important;
+	font-weight: normal;
 }
 [class*="rootmenu_RootMenuButton_"] {
 	color:rgb(var(--white));
@@ -1327,10 +1328,12 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 	color:rgb(var(--white50));
 }
 [class*="appdetailsplaysection_MenuButton_"] {
-	background-color:rgb(var(--white12));
+    background-color: transparent;
+    border-radius: 50%!important;
+    border: 1px solid rgb(var(--white));
 }
 [class*="appdetailsplaysection_MenuButton_"]:hover {
-	background-color:rgb(var(--white24));
+	background-color:rgb(var(--white10));
 }
 [class*="libraryhomenewupdates_EventTime_"] {
 	color:rgb(var(--white50));
@@ -1702,11 +1705,11 @@ button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] {
     fill: rgb(var(--white50));
 }
 :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg {
-    color: white; /* Intentional, not to be a var */
-    fill: white; /* Intentional, not to be a var */
+    color: rgb(var(--white));
+    fill: rgb(var(--white));
 }
 [class*="appactionbutton_ButtonChild_"] {
-    background: rgb(var(--online));
+    background: rgb(var(--white12));
 }
 a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"] {
     color: rgb(var(--white50));
@@ -2060,8 +2063,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     background: rgb(var(--ingame));
 }
 :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"]:hover {
-    background: rgb(var(--online));
-    filter: brightness(1.1);
+    background: rgb(var(--white24));
 }
 [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Title_"] {
     color: rgb(var(--white50));
@@ -2081,11 +2083,10 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     filter: none;
 }
 .DesktopUI [class*="library_ContextMenuAction_"].Download:hover, .DesktopUI [class*="library_ContextMenuAction_"].Download:focus, .DesktopUI [class*="library_ContextMenuAction_"].Update:hover, .DesktopUI [class*="library_ContextMenuAction_"].Update:focus, .DesktopUI [class*="library_ContextMenuAction_"].PreLoad:hover, .DesktopUI [class*="library_ContextMenuAction_"].PreLoad:focus, .DesktopUI [class*="library_ContextMenuAction_"].Resume:hover, .DesktopUI [class*="library_ContextMenuAction_"].Resume:focus, .DesktopUI [class*="library_ContextMenuAction_"].Pause:hover, .DesktopUI [class*="library_ContextMenuAction_"].Pause:focus, .DesktopUI [class*="library_ContextMenuAction_"].BorrowApp:hover, .DesktopUI [class*="library_ContextMenuAction_"].BorrowApp:focus, .DesktopUI [class*="library_ContextMenuAction_"].Stop:hover, .DesktopUI [class*="library_ContextMenuAction_"].Stop:focus, .DesktopUI [class*="library_ContextMenuAction_"].Cancel:hover, .DesktopUI [class*="library_ContextMenuAction_"].Cancel:focus, .DesktopUI [class*="library_ContextMenuAction_"].Install:hover, .DesktopUI [class*="library_ContextMenuAction_"].Install:focus, .DesktopUI [class*="library_ContextMenuAction_"].PurchaseApp:hover, .DesktopUI [class*="library_ContextMenuAction_"].PurchaseApp:focus {
-    background: rgb(var(--online));
-	filter: brightness(1.1);
+    background: rgb(var(--white05));
 }
 .DesktopUI [class*="library_ContextMenuAction_"].Download, .DesktopUI [class*="library_ContextMenuAction_"].Update, .DesktopUI [class*="library_ContextMenuAction_"].PreLoad, .DesktopUI [class*="library_ContextMenuAction_"].Resume, .DesktopUI [class*="library_ContextMenuAction_"].Pause, .DesktopUI [class*="library_ContextMenuAction_"].BorrowApp, .DesktopUI [class*="library_ContextMenuAction_"].Stop, .DesktopUI [class*="library_ContextMenuAction_"].Cancel, .DesktopUI [class*="library_ContextMenuAction_"].Install, .DesktopUI [class*="library_ContextMenuAction_"].PurchaseApp {
-    background: rgb(var(--online));
+    background: transparent;
 }
 .DesktopUI [class*="library_ContextMenuAction_"].Stream:hover, .DesktopUI [class*="library_ContextMenuAction_"].Stream:focus, .DesktopUI [class*="library_ContextMenuAction_"].Connect:hover, .DesktopUI [class*="library_ContextMenuAction_"].Connect:focus, .DesktopUI [class*="library_ContextMenuAction_"].Launch:hover, .DesktopUI [class*="library_ContextMenuAction_"].Launch:focus, .DesktopUI [class*="library_ContextMenuAction_"].PlayMusic:hover, .DesktopUI [class*="library_ContextMenuAction_"].PlayMusic:focus, .DesktopUI [class*="library_ContextMenuAction_"].Play:hover, .DesktopUI [class*="library_ContextMenuAction_"].Play:focus {
     background: rgb(var(--ingame));
@@ -2103,11 +2104,11 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="gamelistentry_Container_"][class*="gamelistentry_CloudError_"],
 [class*="gamelistentry_Container_"][class*="gamelistentry_Synchronizing_"],
 .contextMenuItem [class*="jumplist_JumpListGameName_"][class*="jumplist_Updating_"] {
-    color: rgb(var(--online));
-    font-weight: normal;
+    color: rgb(var(--focus)); /* As in the original Metro */
+    font-weight: 500; /* Makes the whole thing wider, but keeping this at 'normal' causes it to be too thin for some colors */
 }
 [class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadProgress_"] {
-    color: rgb(var(--online));
+    color: rgb(var(--focus));
 }
 [class*="downloads_SectionItemStatus_"] [class*="downloads_Downloading_"] [class*="downloads_State_"] {
     color: rgb(var(--white));
@@ -2119,7 +2120,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     background-color: rgb(var(--focus));
 }
 [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"] {
-    background: rgb(var(--online));
+    background: rgb(var(--white12));
 }
 [class*="downloads_SectionItem_"]:hover [class*="downloads_Button_"].DialogButton:enabled {
     background: transparent;
@@ -2685,7 +2686,13 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
     margin-right: 2px;
 }
 [class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadDash_"] {
-    color: rgb(var(--online)); /* Also affects the selected items, but it shouldn't */ 
+    color: rgb(var(--focus)); /* Also affects the selected items, but it shouldn't */ 
+}
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadDash_"], [class*="gamelistentry_Running_"][class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadDash_"] {
+    color: rgb(var(--white));
+}
+[class*="gamelistentry_Running_"][class*="gamelistentry_Container_"] [class*="gamelistentry_GameListEntryContainer_"] [class*="gamelistentry_DownloadDash_"] {
+    color: rgb(var(--ingame));
 }
 [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"] {
     color: rgb(var(--white));
@@ -3070,7 +3077,8 @@ div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder::aft
     background: rgb(var(--black75));
 }
 .contextMenuItem:hover [class*="jumplist_JumpListGameName_"][class*="jumplist_Updating_"] {
-    color: rgb(var(--online));
+    color: rgb(var(--focus));
+	font-weight: 500;
 }
 .contextMenuItem:hover [class*="jumplist_JumpListGameName_"][class*="jumplist_Running_"] {
     color: rgb(var(--ingame));
@@ -3261,7 +3269,7 @@ button.TextButton:hover, button.TextButton.gpfocus {
     color: rgb(var(--white75)); /* Random */
 }
 [class*="gamelistentry_AppIconDownloading_"] svg[class*="gamelistentry_DownloadProgressSVG_"] circle {
-    stroke: rgb(var(--online));
+    stroke: rgb(var(--focus));
 }
 [class*="personastatusicons_PersonaStatusIcon_"].online .SVGIcon_VR path, [class*="personastatusicons_PersonaStatusIcon_"].online .SVGIcon_MobilePhone path, [class*="personastatusicons_PersonaStatusIcon_"].online .SVGIcon_BigPicture path {
     fill: rgb(var(--online));
@@ -3716,7 +3724,7 @@ button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogB
     color: rgb(var(--white));
 }
 [class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_ActorName_"]:hover {
-    filter: brightness(1.2); /* Imperfect, should be temporary */
+    filter: opacity(0.75); /* Imperfect, should be temporary */
 }
 [class*="steamtemplates_WishlistBlurImage_"] {
     display: none;
@@ -3960,8 +3968,79 @@ div[class*="eventbbcodeparser_Header1_"], div[class*="eventbbcodeparser_Header2_
 [class*="appactivityday_AppActivityDay_"] [class*="appactivityday_AppActivityDate_"] [class*="appactivityday_Rule_"] {
     background: rgb(var(--white12));
 }
-.settings_SettingsDialogDescriptionText_3w92E.DesktopUI, .DesktopUI .settings_SettingsDialogDescriptionText_3w92E {
+[class*="settings_SettingsDialogDescriptionText_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogDescriptionText_"] {
     color: rgb(var(--white50));
+}
+[class*="appactionbutton_PlayButton_"] [class*="appactionbutton_ButtonText_"] {
+    color: rgb(var(--white));
+}
+[class*="appactionbutton_Green_"] [class*="appactionbutton_PlayButton_"] [class*="appactionbutton_ButtonText_"] {
+    color: white;
+}
+
+[class*="appdetailsplaysection_MenuButton_"] [class*="appdetailsplaysection_DotDotDot_"] circle:not(.I) {
+    display: none;
+}
+
+[class*="appactionbutton_Green_"]:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg {
+    color: white;
+    fill: white;
+}
+[class*="downloads_Buttons_"] [class*="appactionbutton_Green_"]:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg {
+    color: rgb(var(--white50));
+    fill: rgb(var(--white50));
+}
+textarea {
+    cursor: text!important;
+}
+[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_ControllerConfigButton_"] svg {
+    height: 18px; /* Looks better when smaller inside the circle */
+}
+[class*="appdetailscontrollersupport_ControllerSupportSectionHeader_"] {
+    color: rgb(var(--white));
+}
+[class*="appdetailscontrollersupport_ControllerSupportSectionDesc_"] {
+    color: rgb(var(--white75));
+}
+[class*="appdetailscontrollersupport_ControllerStatusSVG_"] {
+    color: rgb(var(--white));
+}
+[class*="gamelistdropdown_Bar_"] [class*="gamelistdropdown_MenuHeader_"]:hover [class*="gamelistdropdown_Arrow_"] polygon {
+	fill: rgb(var(--white));
+}
+[class*="contentmanagement_OtherToolTip_"] [class*="contentmanagement_OtherToolTipHeader_"] {
+    color: rgb(var(--white));
+}
+/*a:-webkit-any-link {
+	cursor: pointer!important;
+Hiding for now, as this can lead to conflicts because of the children being overridden with 'default'
+}*/
+:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"]:hover svg {
+    color: rgb(var(--white));
+    fill: rgb(var(--white));
+}
+[class*="appactionbutton_StreamingContextMenuItem_"][class*="contextmenu_contextMenuItem_"].contextMenuItem svg {
+	fill: rgb(var(--white));
+	stroke: rgb(var(--white));
+}
+[class*="pageablecontainer_PageClickContainer_"] .SVGIcon_Button line {
+	stroke: rgb(var(--white));
+}
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_ActorName_"],
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_ActorName_"] [class*="personanameandstatus_playerName_"],
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_EventActorAvatar_"] [class*="steamavatar_avatarHolder_"],
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_EventActorAvatar_"] [class*="steamavatar_avatarHolder_"] [class*="steamavatar_avatar_"] {
+    cursor: pointer!important;
+}
+[class*="appactivityday_VideoCarousel_"] [class*="appactivityday_VideoTitleLabel_"] {
+    color: rgb(var(--white50));
+}
+[class*="appactivityday_VideoCarousel_"] [class*="appactivityday_VideoTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="appactivityday_VideoCarousel_"] [class*="appactivityday_ActiveVideo_"],
+[class*="appactivityday_VideoCarousel_"] [class*="appactivityday_ActiveVideoContainer_"] {
+    background-color: transparent;
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
