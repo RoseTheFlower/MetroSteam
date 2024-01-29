@@ -173,6 +173,180 @@
                     "--frameBorder": ["23, 19, 102", "all"],
                     "--header_dark": ["0, 22, 45", "all"],
                     "--textentry": ["0, 14, 45", "all"]
+                },
+                "White (WIP)": {
+                    "--clientBG": [
+                        "230,230,230",
+                        "all"
+                    ],
+                    "--frameBorder": [
+                        "160,160,160",
+                        "all"
+                    ],
+                    "--header_dark": [
+                        "255,255,255",
+                        "all"
+                    ],
+                    "--bgGameList": [
+                        "217,217,217",
+                        "all"
+                    ],
+                    "--white05onbgGameList": [
+                        "206,206,206",
+                        "all"
+                    ],
+                    "--textentry": [
+                        "207,207,207",
+                        "all"
+                    ],
+                    "--white03": [
+                        "0,0,0,0.03",
+                        "all"
+                    ],
+                    "--white05": [
+                        "0,0,0,0.05",
+                        "all"
+                    ],
+                    "--white08": [
+                        "0,0,0,0.08",
+                        "all"
+                    ],
+                    "--white10": [
+                        "0,0,0,0.10",
+                        "all"
+                    ],
+                    "--white12": [
+                        "0,0,0,0.12",
+                        "all"
+                    ],
+                    "--white15": [
+                        "0,0,0,0.15",
+                        "all"
+                    ],
+                    "--white20": [
+                        "0,0,0,0.20",
+                        "all"
+                    ],
+                    "--white24": [
+                        "0,0,0,0.24",
+                        "all"
+                    ],
+                    "--white25": [
+                        "0,0,0,0.25",
+                        "all"
+                    ],
+                    "--white35": [
+                        "0,0,0,0.35",
+                        "all"
+                    ],
+                    "--white45": [
+                        "0,0,0,0.45",
+                        "all"
+                    ],
+                    "--white50": [
+                        "0,0,0,0.50",
+                        "all"
+                    ],
+                    "--white75": [
+                        "0,0,0,0.75",
+                        "all"
+                    ],
+                    "--white": [
+                        "0,0,0",
+                        "all"
+                    ],
+                    "--black03": [
+                        "255,255,255,0.03",
+                        "all"
+                    ],
+                    "--black08": [
+                        "255,255,255,0.08",
+                        "all"
+                    ],
+                    "--black05": [
+                        "255,255,255,0.05",
+                        "all"
+                    ],
+                    "--black10": [
+                        "255,255,255,0.10",
+                        "all"
+                    ],
+                    "--black12": [
+                        "255,255,255,0.12",
+                        "all"
+                    ],
+                    "--black15": [
+                        "255,255,255,0.15",
+                        "all"
+                    ],
+                    "--black20": [
+                        "255,255,255,0.20",
+                        "all"
+                    ],
+                    "--black24": [
+                        "255,255,255,0.24",
+                        "all"
+                    ],
+                    "--black35": [
+                        "255,255,255,0.35",
+                        "all"
+                    ],
+                    "--black25": [
+                        "255,255,255,0.25",
+                        "all"
+                    ],
+                    "--black45": [
+                        "255,255,255,0.45",
+                        "all"
+                    ],
+                    "--black75": [
+                        "255,255,255,0.75",
+                        "all"
+                    ],
+                    "--black": [
+                        "255,255,255",
+                        "all"
+                    ],
+                    "--textentrybuttons": [
+                        "35,50,50",
+                        "all"
+                    ],
+                    "--ingame": [
+                        "94,150,15",
+                        "all"
+                    ],
+                    "--online": [
+                        "66,104,255",
+                        "all"
+                    ],
+                    "--offline": [
+                        "var(--white45)",
+                        "all"
+                    ],
+                    "--forwardicon": [
+                        "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABZSURBVCjPxdC7DYAwDEXRE1ET1oM52BEK2AmaROIjIBSI29iW3pVsc0+PKdUd1YM4IqJDneYicSu3aDCUilI4yxFjqXhaO6TjMwHLps8sh8xrLr/8iTT/K61sQhRDs82RqwAAAABJRU5ErkJggg==)",
+                        "all"
+                    ],
+                    "--arrow_up": [
+                        "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtVIqDnYQcchQnSyIijiWKhbBQmkrtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhGaVqWZPDFA1y0gn4mIuvyoGXhFECH0IYFJipp7MLGbhOb7u4ePrXZRneZ/7cwwoBZMBPpE4xnTDIt4gnt20dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpeeIwsVjqYrmLWdlQiWeII4qqUb6Qc1nhvMVZrdZZ+578haGCtpLhOs1RJLCEJFIQIaOOCqqwEKVVI8VEmvbjHv4Rx58il0yuChg5FlCDCsnxg//B727N4vSUmxSKA70vtv0xBgR2gVbDtr+Pbbt1AvifgSut4681gblP0hsdLXIEDG4DF9cdTd4DLneA4SddMiRH8tMUikXg/Yy+KQ8M3QLBNbe39j5OH4AsdbV8AxwcAuMlyl73eHd/d2//nmn39wOKenKwI3uqbwAAAAZiS0dEACcAJwAnEqqtZQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAH1JREFUGNO1kcsNg0AMRN9EaYLdDgihEegiEnSaCpIm0sTkYhCfFSKH+Obx89iyZZuzceGH2MGSsqSHpHwIB9ABH6CTlFa0bWLvBIxAHXkdeZ6ZBTgAzVQIvQk9TYeowuG2BDcNI1BdgR542n6XLmD7JUnB0ZYcCxPu+ttTvvv7XYScThKFAAAAAElFTkSuQmCC)",
+                        "all"
+                    ],
+                    "--arrow_down": [
+                        "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TtVIqDnYQcchQnSyIijiWKhbBQmkrtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APE1cVJ0UVK/F9SaBHjwXE/3t173L0DhGaVqWZPDFA1y0gn4mIuvyoGXhFECH0IYFJipp7MLGbhOb7u4ePrXZRneZ/7cwwoBZMBPpE4xnTDIt4gnt20dM77xGFWlhTic+IJgy5I/Mh12eU3ziWHBZ4ZNrLpeeIwsVjqYrmLWdlQiWeII4qqUb6Qc1nhvMVZrdZZ+578haGCtpLhOs1RJLCEJFIQIaOOCqqwEKVVI8VEmvbjHv4Rx58il0yuChg5FlCDCsnxg//B727N4vSUmxSKA70vtv0xBgR2gVbDtr+Pbbt1AvifgSut4681gblP0hsdLXIEDG4DF9cdTd4DLneA4SddMiRH8tMUikXg/Yy+KQ8M3QLBNbe39j5OH4AsdbV8AxwcAuMlyl73eHd/d2//nmn39wOKenKwI3uqbwAAAAZiS0dEACcAJwAnEqqtZQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHpJREFUGNOtkcsJw0AMRN9sF97twL9r0kPKCDgNuia7jPFFDktYiAMR6DDSYxgk2eZqJX6oJGm+AkqaEnCTNH0DgTtAB7yAwTafDYyx785BBhZgbIALkG1TL3I49KH70OVkVJ9OUgEewB7xVtvbG2hkLMCzdmw6//UpBySDWY1+cY3AAAAAAElFTkSuQmCC)",
+                        "all"
+                    ],
+                    "--notificationicon": [
+                        "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRACmAKYApuRk9kYAAAAJcEhZcwAACxMAAAsTAQCanBgAAABlSURBVCjP1ZLRCoAgDEXPDT82+6D63NtLwlom5FsDQeY5m0wFmIkoALb1RZLkhckoudIIjjcrbwc/6zgqNN1x+jm4fk5e1Ta2AdYu04AAbk0OUn1wOZHkrmT7PpwwpF1S2x895gS75m5HM9xjCAAAAABJRU5ErkJggg==)",
+                        "all"
+                    ],
+                    "--notificationsiconactive": [
+                        "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9btSIVwXYQcchQnSyIFnEsVSyChdJWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIq4uToouU+L+k0CLGg+N+vLv3uHsHeJtVphg9MUBRTT2diAu5/Krgf0UfhhFEFFMiM7RkZjEL1/F1Dw9f7yI8y/3cn2NQLhgM8AjEMabpJvEG8eymqXHeJw6xsigTnxNP6nRB4keuSw6/cS7Z7OWZIT2bnicOEQulLpa6mJV1hThKHJYVlfK9OYdlzluclWqdte/JXxgoqCsZrtMcQwJLSCIFARLqqKAKExFaVVIMpGk/7uIftf0pcknkqoCRYwE1KBBtP/gf/O7WKM5MO0mBOND7Ylkf44B/F2g1LOv72LJaJ4DvGbhSO/5aE5j7JL3R0cJHwNA2cHHd0aQ94HIHGHnSRF20JR9Nb7EIvJ/RN+WB4C0wsOb01t7H6QOQpa6Wb4CDQ2CiRNnrLu/u7+7t3zPt/n4AIGdy7EGromUAAAAGYktHRABmACQA4p5xVPoAAAAJcEhZcwAACxMAAAsTAQCanBgAAABWSURBVCjP1ZFBDoBACAM7Zj+7PkifWy9q0EUPnJSkCZCStgFJVqEmFat82OJgmzcycMaimvFjilFhUP/PH2X7Aknzbj+iD7z7IjnuGac9uFiAo18zzgZmqlStgoYtqgAAAABJRU5ErkJggg==)",
+                        "all"
+                    ],
+                    "--searchicon": [
+                        "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewBox='0 0 100 100'%3E%3Cg transform='translate(0,-952.36218)'%3E%3Cpath class='ColorSelector' d='m 40.99855,964.36216 c -15.9798,0 -28.9986,13.01864 -28.9986,28.99862 0,15.97992 13.0188,28.99862 28.9986,28.99862 6.9189,0 13.2881,-2.4349 18.2803,-6.4997 l 23.5927,23.6239 c 1.1714,1.1714 3.0784,1.1715 4.2498,0 1.1716,-1.1715 1.1716,-3.0783 0,-4.2498 l -23.6239,-23.5926 c 4.0649,-4.9923 6.4997,-11.3615 6.4997,-18.28042 0,-15.97998 -13.0187,-28.99862 -28.9986,-28.99862 z m 0,5.99972 c 12.7374,0 22.9989,10.26145 22.9989,22.9989 0,12.73732 -10.2615,22.99892 -22.9989,22.99892 -12.7374,0 -22.9989,-10.2616 -22.9989,-22.99892 0,-12.73745 10.2615,-22.9989 22.9989,-22.9989 z' fill='black' fill-opacity='1' stroke='none' visibility='visible' display='inline' overflow='visible'%3E%3C/path%3E%3C/g%3E%3C/svg%3E\")",
+                        "all"
+                    ]
                 }
             }
         }
