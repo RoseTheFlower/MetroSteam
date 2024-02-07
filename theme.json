@@ -7,7 +7,7 @@
     "manifest_version": 9,
     "tabs": {
         "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
-        "friends": ["desktopchat"],
+        "friends": ["desktopchat", "Remote Play"],
         "all": ["library", "friends"]
     },
     "patches": {
