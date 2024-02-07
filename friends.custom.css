@@ -310,6 +310,7 @@
 
 .TabSearchButton .ColorSelector {
     fill: rgb(var(--white)) !important;
+	stroke: rgb(var(--white)) !important;
 }
 
 /* Remove Friends List Top Shadow */
@@ -2712,14 +2713,10 @@ svg.SVGIcon_Button.SVGIcon_Clock {
 
 [class*="remoteplay_ContentBox_"],
 [class*="remoteplay_BoxButton_"][class*="remoteplay_Light_"],
-[class*="remoteplay_BoxButton_"][class*="remoteplay_Dark_"],
-[class*="remoteplay_MediaButton_"],
 [class*="remoteplay_SliderControlContainer_"] [class*="remoteplay_SliderIconContainer_"],
 [class*="remoteplay_SliderControlContainer_"] [class*="remoteplay_SliderContainer_"],
-[class*="remoteplay_ControllerDropSlotsContainer_"]
-[class*="remoteplay_ControllerDropSlots_"],
 [class*="remoteplay_ControllerDropSlot_"] {
-    background-color: rgb(var(--white05));
+    background-color: rgb(var(--white10));
 }
 
 [class*="remoteplay_HeaderActions_"] [class*="remoteplay_GameInfo_"] {
@@ -3428,4 +3425,37 @@ but at least it doesn't break pointer events */
 }
 .addFriendButton:hover .SVGIcon_AddFriend .friendHead, .addFriendButton:hover .SVGIcon_AddFriend .friendBody {
     color: rgb(var(--white));
+}
+.msg.timeDivision.new_messages {
+    color: rgb(var(--white));
+}
+.clanInviteContainer a:hover .clanName {
+    color: rgb(var(--white));
+}
+[class*="remoteplay_BoxButton_"][class*="remoteplay_Dark_"],
+[class*="remoteplay_BoxButton_"][class*="remoteplay_Light_"] {
+	background-color: rgb(var(--white12));
+}
+[class*="remoteplay_BoxButton_"][class*="remoteplay_Dark_"]:hover,
+[class*="remoteplay_BoxButton_"][class*="remoteplay_Light_"]:hover {
+	background-color: rgb(var(--white24));
+}
+[class*="remoteplay_MediaBoxTitle_"] {
+    color: rgb(var(--white));
+}
+[class*="remoteplay_MediaButton_"] [class*="remoteplay_ButtonContent_"] {
+    background-color: transparent;
+}
+[class*="remoteplay_MediaButton_"] {
+    background-color: rgb(var(--white12));
+}
+[class*="remoteplay_MediaButton_"]:hover {
+    background-color: rgb(var(--white24));
+}
+[class*="remoteplay_PersonaAvatar_"] {
+    cursor: pointer!important;
+}
+[class*="remoteplay_ControllerDropSlotsContainer_"]
+[class*="remoteplay_ControllerDropSlots_"] {
+	background-color: transparent;
 }
