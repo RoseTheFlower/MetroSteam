@@ -5,8 +5,8 @@
   "source": "https://github.com/RoseTheFlower/MetroSteam",
   "github":
   {
-  "owner": "RoseTheFlower",
-  "repo_name": "MetroSteam"
+    "owner": "RoseTheFlower",
+    "repo_name": "MetroSteam"
   },
   "tags":
   [
@@ -15,8 +15,8 @@
     "Windows 10",
     "Windows 8"
   ],
-  "header_image": "https://cdn.discordapp.com/attachments/985537290535305236/1121688363422974033/image.png",
-  "splash_image": "https://cdn.discordapp.com/attachments/985537290535305236/1121688363422974033/image.png",
+  "header_image": "https://i.imgur.com/PQF7r4t.png",
+  "splash_image": "https://i.imgur.com/PQF7r4t.png",
   "UseDefaultPatches": true,
   "Patches":
   [
