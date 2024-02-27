@@ -2291,10 +2291,10 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="appportraithover_GameUpdatedContainer_"] [class*="appportraithover_GameUpdatedCircle_"] {
     border-radius: 50%!important;
-    background: rgb(var(--online));
+    background: rgb(var(--white50));
 }
 [class*="appportraithover_GameUpdatedContainer_"] [class*="appportraithover_ImportantUpdate_"] {
-    color: rgb(var(--online));
+    color: rgb(var(--white50));
 }
 [class*="appportraithover_GameUpdatedContainer_"] {
     font-weight: normal;
@@ -3019,12 +3019,14 @@ button.Primary.DialogButton:not(.Off):not(.Disabled):active, button.DialogButton
     color: rgb(var(--white));
 }
 [class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] .avatarHolder:hover::after,
-[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] .avatarHolder:hover::after,
 div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder:hover::after {
 	opacity:1;
 }
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] .avatarHolder:hover {
+	opacity:0.75;
+}
+
 [class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] .avatarHolder::after,
-[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] .avatarHolder::after,
 div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder::after {
 	position: absolute;
 	top: 0;
@@ -4366,6 +4368,18 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 }
 .DialogToggleField_Option:hover {
     color: rgb(var(--white));
+}
+[class*="appdetailsplaysection_DetailsSection_"][class*="appdetailsplaysection_Downloading_"]:hover [class*="appdetailsplaysection_PlayBarLabel_"] {
+	color: rgb(var(--white75));
+}
+[class*="downloads_PatchNotes_"] {
+    color: rgb(var(--focus));
+}
+[class*="comment_thread_RatingBar_"] [class*="comment_thread_RatingDetails_"] {
+    color: rgb(var(--white50));
+}
+[class*="downloads_PatchNotes_"]:hover {
+    color: rgba(var(--focus),.75);
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
