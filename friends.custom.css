@@ -683,7 +683,7 @@ button.DialogButton.roleButton.owner:disabled {
 }
 
 .DialogDropDown._DialogInputContainer {
-    color: rgba(var(--white75)) !important;
+    color: rgba(var(--white)) !important;
     padding: 3px 5px !important;
     border: 1px solid rgb(var(--white12));
 }
@@ -3458,4 +3458,32 @@ but at least it doesn't break pointer events */
 [class*="remoteplay_ControllerDropSlotsContainer_"]
 [class*="remoteplay_ControllerDropSlots_"] {
 	background-color: transparent;
+}
+.inviteLinkContainer .DialogInputLabelGroup .DialogInput {
+    background: rgb(var(--textentry));
+}
+.inviteLinkContainer .DialogDropDown._DialogInputContainer,
+.inviteLinkContainer .DialogDropDown._DialogInputContainer:hover {
+    background-color: transparent;
+}
+.DialogHBar {
+    background: rgb(var(--white12));
+}
+button.DialogButton.createNewRoleButton svg {
+    stroke: rgb(var(--white));
+}
+[class*="chatroomgroupsettings_PermissionsEdit_"] [class*="chatroomgroupsettings_Back_"] {
+    color: rgb(var(--white75));
+}
+[class*="chatroomgroupsettings_PermissionsEdit_"] [class*="chatroomgroupsettings_Back_"] svg polyline {
+    stroke: rgb(var(--white75));
+}
+[class*="chatroomgroupsettings_PermissionsEdit_"] [class*="chatroomgroupsettings_Back_"]:hover {
+    color: rgb(var(--white));
+}
+[class*="chatroomgroupsettings_PermissionsEdit_"] [class*="chatroomgroupsettings_Back_"]:hover svg polyline {
+    stroke: rgb(var(--white));
+}
+button.DialogButton.roleButton .roleSubtitle {
+    color: rgb(var(--white75));
 }
