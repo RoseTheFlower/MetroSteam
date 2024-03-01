@@ -194,6 +194,7 @@ body,body[class*="shared_common_v6_"] /* Adding a BG here overrides the overlay 
 }
 [class*="appdetailsplaysection_PlayBarLabel_"] {
 	color:rgb(var(--white50));
+    letter-spacing: normal;
 }
 button.DialogButton {
 	color:rgb(var(--white));
@@ -356,6 +357,7 @@ img,[class*="appportrait_HoversEnabled_"]
 }
 [class*="appdetailscommunityfeed_HeaderStyles_"] {
 	background:transparent;
+	margin-left: 0;
 }
 [class*="appactivityday_PartnerEventTextOnly_Container_"] {
 	border-image:none;
@@ -1326,6 +1328,8 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 }
 [class*="appactivityday_AppActivityDay_"] [class*="appactivityday_AppActivityDate_"] {
 	color:rgb(var(--white50));
+    letter-spacing: normal;
+    font-family: var(--basefont);
 }
 [class*="appdetailsplaysection_MenuButton_"] {
     background-color: transparent;
@@ -1972,7 +1976,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     font-size: 15px;
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_ComboboxSelector_"] {
+[class*="screenshotmanagerdialog_ComboboxSelector_"] {
     color: rgb(var(--white));
 }
 [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer {
@@ -2186,7 +2190,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="appdetailsprimarylinkssection_MenuButton_"] svg:hover {
     background: rgb(var(--white05));
 }
-[class*="mediamanagerutils_IconButton_"] [class*="mediamanagerutils_IconButtonIcon_"][class*="mediamanagerutils_Active_"] {
+[class*="screenshotmanagerdialog_IconButton_"] [class*="screenshotmanagerdialog_IconButtonIcon_"][class*="screenshotmanagerdialog_Active_"] {
     color: rgb(var(--focus));
 }
 [class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"] {
@@ -2435,6 +2439,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="appdetailsgameinfopanel_SocialMedia_"] [class*="appdetailsgameinfopanel_Account_"] [class*="appdetailsgameinfopanel_Icon_"] {
     opacity: .5;
+	margin-top: -2px;
 }
 [class*="appdetailsgameinfopanel_SocialMedia_"] [class*="appdetailsgameinfopanel_Account_"]:hover [class*="appdetailsgameinfopanel_Icon_"] {
     opacity: 1;
@@ -2534,19 +2539,19 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="libraryhomenewupdates_PartnerEventRowCapsule_TextCtn_"]:hover {
     background: rgb(var(--white05));
 }
-[class*="mediamanagerutils_FocusedScreenshots_"] {
+[class*="screenshotmanagerdialog_FocusedScreenshots_"] {
     background-color: transparent;
 }
-[class*="mediamanagerutils_Text_"][class*="mediamanagerutils_Secondary_"] {
+[class*="screenshotmanagerdialog_Text_"][class*="screenshotmanagerdialog_Secondary_"] {
     color: rgb(var(--white50));
 }
-[class*="mediamanagerutils_ExplainerBox_"] /* Previously screenshotmanagerdialog */ {
+[class*="screenshotmanagerdialog_ExplainerBox_"] /* Previously mediamanagerutils */ {
     background-color: transparent;
 }
-[class*="mediamanagerutils_ExplainerBox_"] [class*="mediamanagerutils_Explainer_"] {
+[class*="screenshotmanagerdialog_ExplainerBox_"] [class*="screenshotmanagerdialog_Explainer_"] {
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_SpoilerField_"] [class*="mediamanagerutils_Label_"], [class*="mediamanagerutils_VisibilityField_"] [class*="mediamanagerutils_Label_"] {
+[class*="screenshotmanagerdialog_SpoilerField_"] [class*="screenshotmanagerdialog_Label_"], [class*="screenshotmanagerdialog_VisibilityField_"] [class*="screenshotmanagerdialog_Label_"] {
     color: rgb(var(--white));
 }
 .ChatMessageInvite {
@@ -2575,8 +2580,8 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     transition-duration: 1ms!important;
     transition-delay: 1ms!important;
 }
-[class*="mediamanagerutils_FocusedScreenshotContainer_"] [class*="mediamanagerutils_FocusedScreenshotImageContainer_"] [class*="mediamanagerutils_FocusedScreenshot_"],
-[class*="mediamanagerutils_FocusedScreenshotContainer_"] [class*="mediamanagerutils_FocusedScreenshotImageContainer_"] {
+[class*="screenshotmanagerdialog_FocusedScreenshotContainer_"] [class*="screenshotmanagerdialog_FocusedScreenshotImageContainer_"] [class*="screenshotmanagerdialog_FocusedScreenshot_"],
+[class*="screenshotmanagerdialog_FocusedScreenshotContainer_"] [class*="screenshotmanagerdialog_FocusedScreenshotImageContainer_"] {
     cursor: pointer!important;
 }
 [class*="spotlightgameplaysummary_EventHeaderBlock_"] {
@@ -2774,25 +2779,25 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 [class*="appproperties_AppProperties_"] .DialogBody {
     color: rgb(var(--white50));
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Secondary_"] {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"] {
     background-color: rgb(var(--white12));
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Secondary_"]:hover {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"]:hover {
     background-color: rgb(var(--white24));
 }
-[class*="mediamanagerutils_CloudStorageImpact_"] {
+[class*="screenshotmanagerdialog_CloudStorageImpact_"] {
     color: rgb(var(--white50));
 }
-[class*="mediamanagerutils_Metadata_"] {
+[class*="screenshotmanagerdialog_Metadata_"] {
     color: rgb(var(--white50));
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Primary_"] {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Primary_"] {
     background-color: rgb(var(--white12));
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Primary_"]:hover {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Primary_"]:hover {
     background-color: rgb(var(--white24));
 }
-[class*="mediamanagerutils_SectionHeading_"] {
+[class*="screenshotmanagerdialog_SectionHeading_"] {
     color: rgb(var(--white75));
 }
 [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] {
@@ -2868,17 +2873,17 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 [class*="steamdesktopoverlay_GameOverview_"] [class*="steamdesktopoverlay_GameOverviewSection_"] [class*="steamdesktopoverlay_AchievementsList_"] [class*="steamdesktopoverlay_RecentAchievement_"] {
     background-color: rgb(var(--black20));
 }
-[class*="mediamanagerutils_ComboboxSelector_"] [class*="mediamanagerutils_Option_"]:hover {
+[class*="screenshotmanagerdialog_ComboboxSelector_"] [class*="screenshotmanagerdialog_Option_"]:hover {
     background-color: rgb(var(--white05));
 }
-[class*="mediamanagerutils_ComboboxSelectorContextMenu_"] {
+[class*="screenshotmanagerdialog_ComboboxSelectorContextMenu_"] {
     background-color: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
 }
-[class*="mediamanagerutils_SectionHeading_"] [class*="mediamanagerutils_Line_"] {
+[class*="screenshotmanagerdialog_SectionHeading_"] [class*="screenshotmanagerdialog_Line_"] {
     background-color: rgb(var(--white12));
 }
-[class*="mediamanagerutils_CaptionField_"] {
+[class*="screenshotmanagerdialog_CaptionField_"] {
     background-color: rgb(var(--textentry));
     color: rgb(var(--white));
 }
@@ -2937,7 +2942,7 @@ button.Primary.DialogButton:not(.Off):not(.Disabled):active, button.DialogButton
 [class*="library_LibraryWindowDivider_"][class*="library_Sizable_"]:hover {
     background-color: rgb(var(--white20)); /* Enough for it to stand out, no specific references to Metro */
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Secondary_"]:active {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"]:active {
     background-color: rgb(var(--focus));
 }
 [class*="browserviewfindinpage_FindBar_"] {
@@ -3018,27 +3023,13 @@ button.Primary.DialogButton:not(.Off):not(.Disabled):active, button.DialogButton
 [class*="steamdesktopoverlay_OverlayPopup_"] [class*="steamdesktopoverlay_PinWindowButton_"] {
     color: rgb(var(--white));
 }
-[class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] .avatarHolder:hover::after,
-div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder:hover::after {
-	opacity:1;
-}
-[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] .avatarHolder:hover {
+
+[class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] .avatarHolder:hover,
+[class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] .avatarHolder:hover,
+div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder:hover {
 	opacity:0.75;
 }
 
-[class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] .avatarHolder::after,
-div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: '';
-	background-color: rgb(var(--white24));
-	z-index: 1;
-	opacity: 0;
-	pointer-events: none;
-}
 [class*="bbcode_ImageModalBackground_"] {
     background: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
@@ -3689,7 +3680,7 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmbedButton_"] SVG, [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmoticonPickerButton_"] SVG {
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_ProgressContainer_"] [class*="mediamanagerutils_Progress_"] {
+[class*="screenshotmanagerdialog_ProgressContainer_"] [class*="screenshotmanagerdialog_Progress_"] {
     background-color: rgb(var(--focus));
 }
 [class*="miniprofile_miniProfileBackdropBlur_"] {
@@ -3723,7 +3714,7 @@ button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogB
 [class*="gamepaddialog_Field_"][class*="gamepaddialog_WithBottomSeparatorStandard_"]::after {
     background: rgb(var(--white12));
 }
-[class*="mediamanagerutils_UploadProgressIndicatorContainer_"] [class*="mediamanagerutils_Label_"] {
+[class*="screenshotmanagerdialog_UploadProgressIndicatorContainer_"] [class*="screenshotmanagerdialog_Label_"] {
     color: rgb(var(--white));
 }
 [class*="appactivityday_Event_"] [class*="appactivityday_EventHeadline_"] [class*="appactivityday_ActorName_"]:hover {
@@ -3771,16 +3762,16 @@ button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogB
 [class*="desktopbrowser_BrowserTabs_"] [class*="desktopbrowser_BrowserTab_"] [class*="desktopbrowser_TabTitle_"] {
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_Text_"] {
+[class*="screenshotmanagerdialog_Text_"] {
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_ButtonBox_"] {
+[class*="screenshotmanagerdialog_ButtonBox_"] {
     color: rgb(var(--white));
 }
 [class*="gamepaddialog_ToggleSwitch_"] {
     background: rgb(var(--white));
 }
-[class*="mediamanagerutils_Text_"][class*="mediamanagerutils_Warning_"] {
+[class*="screenshotmanagerdialog_Text_"][class*="screenshotmanagerdialog_Warning_"] {
     color: rgb(var(--white)); /* Unsure */
 }
 [class*="installrequest_NoticeInstallFolder_"] {
@@ -4242,15 +4233,15 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 [class*="gamepadtabbedpage_Tab_"], [class*="gamepadtabbedpage_Tab_"]:hover {
     color: rgb(var(--white75)); /* Unsure */
 }
-[class*="mediamanagerutils_KeyboardKey_"] {
+[class*="screenshotmanagerdialog_KeyboardKey_"] {
     border: 1px solid rgb(var(--white));
     color: rgb(var(--white));
 }
 [class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Row_"],[class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Row_"]:hover {
     color: rgb(var(--white));
 }
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Secondary_"][class*="mediamanagerutils_Disabled_"],
-[class*="mediamanagerutils_ButtonBox_"][class*="mediamanagerutils_Disabled_"][class*="mediamanagerutils_Secondary_"]:hover {
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Secondary_"][class*="screenshotmanagerdialog_Disabled_"],
+[class*="screenshotmanagerdialog_ButtonBox_"][class*="screenshotmanagerdialog_Disabled_"][class*="screenshotmanagerdialog_Secondary_"]:hover {
     opacity: 1;
     color: rgb(var(--white45));
 	background-color: rgb(var(--white12));
@@ -4380,6 +4371,32 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 }
 [class*="downloads_PatchNotes_"]:hover {
     color: rgba(var(--focus),.75);
+}
+[class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] [class*="comment_thread_CommentHeader_"] [class*="comment_thread_ActorName_"]:hover [class*="personanameandstatus_playerName_"] {
+    opacity: .75;
+}
+[class*="comment_thread_ActivityCommentThread_"] [class*="comment_thread_Comment_"] [class*="comment_thread_CommenterandTime_"] {
+    margin-top: 0px;
+}
+[class*="pagedsettings_PagedSettingsDialog_PageListItem_"] {
+	font-family: var(--basefont);
+}
+[class*="appdetailssectionheader_SectionHeader_"] {
+	font-family: var(--basefont);
+    letter-spacing: normal;
+}
+[class*="appactivityday_GameIcon_"] {
+    margin-top: -1px; /* Correcting the improper alignment */
+}
+[class*="screenshotmanagerdialog_ScreenshotListItem_"][class*="screenshotmanagerdialog_Selected_"],
+[class*="screenshotmanagerdialog_ScreenshotListItem_"][class*="screenshotmanagerdialog_Selected_"]:hover {
+    border-color: rgb(var(--focus));
+    filter: none;
+}
+[class*="screenshotmanagerdialog_ScreenshotListItem_"]:hover {
+    transform: none;
+    filter: none;
+    border-color: rgb(var(--white10));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
