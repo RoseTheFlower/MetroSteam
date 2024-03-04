@@ -2227,10 +2227,6 @@ a:visited {
     margin-top: 4px !important;
 }
 
-[class*="personanameandstatus_richPresenceContainer_"] {
-    width: calc(100% - 20px) !important;
-}
-
 .ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName {
     color: rgb(var(--white)) !important;
 }
