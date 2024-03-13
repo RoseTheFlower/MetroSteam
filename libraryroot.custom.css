@@ -577,11 +577,11 @@ button[class*="posttextentry_EmoticonButton_"]:hover {
 	width:calc(100% - 15px);
 }
 [class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"],[class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"] {
-    background: rgb(var(--ingame));
-    transition:none;
+    background: rgb(var(--focus));
+    transition: none;
 }
 :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_Green_"]>[class*="appactionbutton_ButtonChild_"]:hover {
-    background: rgb(var(--ingame));
+    background: rgb(var(--focus));
     filter: brightness(1.1);
 }
 [class*="gamelistsearchbar_Container_"]
@@ -1386,7 +1386,7 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 	fill:rgb(var(--white));
 	color:rgb(var(--white));
 }
-.DesktopUI [class*="DialogToggle_"] {
+.DesktopUI .DialogToggle_Label {
 	color:rgb(var(--white));
 }
 [class*="appdetailsachievementssection_UnlockedLabel_"] {
@@ -2972,7 +2972,7 @@ button.Primary.DialogButton:not(.Off):not(.Disabled):active, button.DialogButton
     width: 12px;
     height: 12px;
 }
-[class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Row_"]:hover {
+[class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Row_"]:hover:not([class*="gamelistdropdown_Disabled_"]) {
     background: rgb(var(--white05));
 }
 .DialogBodyText {
@@ -3229,8 +3229,11 @@ button.TextButton:hover, button.TextButton.gpfocus {
 [class*="contentmanagement_DriveSize_"] {
     color: rgb(var(--white50));
 }
-[class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Download_"] svg, [class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Update_"] svg {
+[class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Download_"] svg {
     transform: none;
+}
+[class*="appportrait_LibraryItemActionButton_"][class*="appportrait_Update_"] svg {
+	transform: scale(0.75)!important; /* !important to ensure it doesn't change on hover */
 }
 [class*="libraryhomenewupdates_EventOptions_"]>div {
     background-color: rgb(var(--white12));
@@ -4397,6 +4400,39 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
     transform: none;
     filter: none;
     border-color: rgb(var(--white10));
+}
+[class*="login_Login_"].DesktopUI, .DesktopUI [class*="login_Login_"] {
+    border: 1px solid rgb(var(--frameBorder));
+}
+[class*="login_TitleContainer_"] {
+    background: rgb(var(--header_dark));
+}
+[class*="newlogindialog_Login_"] [class*="newlogindialog_EmbeddedRoot_"] {
+    background: rgb(var(--clientBG));
+}
+[class*="newlogindialog_Login_"] [class*="newlogindialog_FieldLabel_"][class*="newlogindialog_Highlight_"] {
+    color: rgb(var(--white));
+}
+[class*="newlogindialog_Login_"] [class*="newlogindialog_TextInput_"] {
+    background-color: rgb(var(--textentry));
+    border: none;
+    color: rgb(var(--white));
+}
+[class*="newlogindialog_Login_"] [class*="newlogindialog_SubmitButton_"] {
+    background: rgb(var(--white12));
+}
+
+[class*="newlogindialog_Login_"] [class*="newlogindialog_SubmitButton_"]:hover {
+    background: rgb(var(--white24));
+}
+[class*="newlogindialog_Login_"] [class*="newlogindialog_SubmitButton_"]:focus {
+    outline: none;
+}
+[class*="gamelistdropdown_DropDown_"] [class*="gamelistdropdown_Rule_"] {
+    background-color: rgb(var(--white12));
+}
+.DesktopUI [class*="gamelistdropdown_Disabled_"] .DialogToggle_Label {
+	color: rgb(var(--white50));  /* Random, needs a proper reference color from the original Metro */ 
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
