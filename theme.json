@@ -2,7 +2,7 @@
     "name": "Metro by Rose",
     "author": "Rose",
     "target": "Desktop",
-    "version": "v1.4",
+    "version": "v1.5",
     "description": "A skin heavily inspired by the original Metro for Steam",
     "manifest_version": 9,
     "tabs": {
