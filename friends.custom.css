@@ -57,8 +57,9 @@
 
 /* User's name and status */
 .currentUserContainer .labelHolder {
-    justify-content: center !important;
+    justify-content: center; /* As in Valve's, but just to be sure */
     margin-right: 12px !important;
+    margin-top: 0;
 }
 
 .currentUserContainer [class*="personanameandstatus_richPresenceLabel_"] {
@@ -1003,11 +1004,10 @@ button.DialogButton,
     right: 50px !important;
     width: 100% !important;
     height: 30px !important;
-    opacity: 1 !important;
 }
 
 .Collapsed .ToggleGroupChatList svg {
-    display: none !important;
+    display: none;
 }
 
 .FriendsListChatSection.ChatRoomListContainerParent
@@ -3482,4 +3482,7 @@ button.DialogButton.createNewRoleButton svg {
 }
 button.DialogButton.roleButton .roleSubtitle {
     color: rgb(var(--white75));
+}
+.friendlistListContainer .labelHolder:not([class*="personanameandstatus_compactView_"]).ingame[class*="personanameandstatus_twoLine_"] {
+    margin-top: -2px;
 }
