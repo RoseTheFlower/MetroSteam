@@ -1068,7 +1068,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 	height:38px;
 	min-height:38px;
 	position:absolute;
-	left:28px;
+	left:29px;
 	top:1px;
 }
 [class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"] {
@@ -1099,7 +1099,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 
 [class*="rootmenu_SteamButton_"] [class*="rootmenu_Logo_"] {
 	margin-top:0px;
-	margin-left:-4px;
+	margin-left:-3px;
 }
 [class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"] [class*="libraryhomenewupdates_EventSummaryContainer_"] {
 	transition:none;
@@ -1135,14 +1135,14 @@ html[class*="contextmenu_ContextMenuPopup_"]
 [class*="gamelistdropdown_Bar_"] [class*="gamelistdropdown_Filters_"] [class*="gamelistdropdown_CheckboxWithImage_"][class*="gamelistdropdown_Active_"] svg {
 	fill:rgb(var(--white));
 }
-[class*="gamelistdropdown_ScrollToTop_"] [class*="SVGIcon_"] {
+[class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow {
 	background-color:rgb(var(--white12));
 	border:none;
 }
-[class*="gamelistdropdown_ScrollToTop_"]:hover [class*="SVGIcon_"] {
+[class*="gamelistdropdown_ScrollToTop_"]:hover .SVGIcon_Arrow {
 	background-color:rgb(var(--white24));
 }
-[class*="gamelistdropdown_ScrollToTop_"] [class*="SVGIcon_"] polyline {
+[class*="gamelistdropdown_ScrollToTop_"] .SVGIcon_Arrow polyline {
 	stroke:rgb(var(--white));
 }
 [class*="appdetailsplaysection_StickyHeaderShadow_"] {
@@ -3677,7 +3677,7 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 [class*="appdetailsplaysection_PlayBar_"] :not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_Green_"]>[class*="appactionbutton_ButtonChild_"]:hover svg {
 	fill: white;
 }
-[class*="gamelistdropdown_ScrollToTop_"]:hover [class*="SVGIcon_"] polyline {
+[class*="gamelistdropdown_ScrollToTop_"]:hover .SVGIcon_Arrow polyline {
     stroke: rgb(var(--white));
 }
 [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmbedButton_"] SVG, [class*="chatentry_chatSubmitButton_"][class*="chatentry_EmoticonPickerButton_"] SVG {
