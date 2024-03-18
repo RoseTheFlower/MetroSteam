@@ -1,4 +1,4 @@
-name: Shadow's ClassMapper
+name: SCH-ClassMapper
 
 on:
   push:
@@ -15,19 +15,19 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Clone Shadow's ClassMapper repository
-      run: git clone https://github.com/SteamClientHomebrew/classmapper.git
+    - name: Clone the SCH-ClassMapper repository
+      run: git clone https://github.com/SteamClientHomebrew/ClassMapper.git
 
     - name: Install the dependencies
-      run: npm install --prefix classmapper
+      run: npm install --prefix ClassMapper
 
     - name: Run the ClassMapper script
       run: |
-        cd classmapper
+        cd ClassMapper
         node lexer.js ${{ github.workspace }} --comment
 
     - name: Remove the classmapper directory
-      run: rm -rf classmapper
+      run: rm -rf ClassMapper
 
     - name: Commit and push the changes
       run: |
