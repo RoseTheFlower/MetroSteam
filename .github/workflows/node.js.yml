@@ -16,7 +16,7 @@ jobs:
         node-version: '20'
 
     - name: Clone Shadow's ClassMapper repository
-      run: git clone https://github.com/SteamClientHomebrew/ClassMapper.git
+      run: git clone https://github.com/SteamClientHomebrew/classmapper.git
 
     - name: Install the dependencies
       run: npm install --prefix classmapper
