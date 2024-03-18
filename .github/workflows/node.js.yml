@@ -1,8 +1,7 @@
 name: Shadow's ClassMapper
 
 on:
-  push:
-    branches: [ "test" ]
+  workflow_dispatch: # trigger the workflow manually instead of on push
 
 jobs:
   build:
@@ -16,7 +15,7 @@ jobs:
         node-version: '20'
 
     - name: Clone Shadow's ClassMapper repository
-      run: git clone https://github.com/ShadowMonster99/classmapper.git
+      run: git clone https://github.com/SteamClientHomebrew/ClassMapper.git
 
     - name: Install the dependencies
       run: npm install --prefix classmapper
