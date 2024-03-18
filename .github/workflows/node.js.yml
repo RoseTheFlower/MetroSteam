@@ -1,0 +1,38 @@
+name: Shadow's ClassMapper
+
+on:
+  push:
+    branches: [ "test" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js '20'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Clone Shadow's ClassMapper repository
+      run: git clone https://github.com/ShadowMonster99/classmapper.git
+
+    - name: Install the dependencies
+      run: npm install --prefix classmapper
+
+    - name: Run the script
+      run: |
+        cd classmapper
+        node lexer.js ${{ github.workspace }} --comment
+
+    - name: Remove the classmapper directory
+      run: rm -rf classmapper
+
+    - name: Commit and push the changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "ClassMapper"
+        git push
