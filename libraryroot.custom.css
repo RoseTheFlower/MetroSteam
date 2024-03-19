@@ -4434,6 +4434,9 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 .DesktopUI [class*="gamelistdropdown_Disabled_"] .DialogToggle_Label {
 	color: rgb(var(--white50));  /* Random, needs a proper reference color from the original Metro */ 
 }
+[class*="libraryassetimage_Title_"] {
+    background: white;
+}
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
 	background: !important;
