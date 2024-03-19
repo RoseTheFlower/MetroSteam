@@ -3377,10 +3377,6 @@ but at least it doesn't break pointer events */
 	text-overflow: ellipsis;
 	-webkit-mask: none;
 }
-[class*="chattabs_ChatTabRow_"] [class*="personanameandstatus_richPresenceContainer_"] {
-    width: calc(100% - 24px) !important;
-}
-
 [class*="chattabs_ChatTabRow_"] [class*="friendsnooze_SnoozeContainer_"] {
 	margin-right: 4px;
 }
