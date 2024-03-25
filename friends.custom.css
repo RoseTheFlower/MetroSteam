@@ -2981,9 +2981,8 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .clanInvitesGroupContainer .statMembersTotal {
     color: rgb(var(--white50));
 }
-/* This comes at the cost of not showing miniprofiles
-but at least it doesn't break pointer events */
-.client_chat_frame .miniProfileHover {
+/* Ideally, this would apply to hovering over the chat log only */
+.ChatPopup .miniProfileHover {
     display: none;
 }
 [class*="personastatusicons_PersonaStatusIcon_"][class*="personastatusicons_MobilePhoneIcon_"] {
@@ -3481,4 +3480,7 @@ button.DialogButton.roleButton .roleSubtitle {
 }
 .friendlistListContainer .labelHolder:not([class*="personanameandstatus_compactView_"]).ingame[class*="personanameandstatus_twoLine_"] {
     margin-top: -2px;
+}
+.ChatTabsContextMenu.CompactFriendsList .friend {
+    padding-top: 0px;
 }
