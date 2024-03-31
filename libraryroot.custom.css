@@ -465,9 +465,8 @@ button[class*="posttextentry_EmoticonButton_"]:hover {
 .DialogBody::-webkit-scrollbar-button {
 	display:none !important;
 }
-[class*="downloads_SectionItem_"][class*="downloads_Active_"]::-webkit-scrollbar-button {
-	display:none;
-}
+[class*="downloads_SectionItem_"][class*="downloads_Active_"]::-webkit-scrollbar-button,
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_OptionList_"] [class*="launchoptionsdialog_ListContainer_"]::-webkit-scrollbar-button,
 [class*="downloads_ItemLists_"]::-webkit-scrollbar-button {
 	display:none;
 }
@@ -515,9 +514,7 @@ button[class*="posttextentry_EmoticonButton_"]:hover {
 	fill:rgba(var(--white));
 	color:rgba(var(--white));
 }
-[class*="appdetailsplaysection_MenuButton_"] svg circle,[class*="appdetailsplaysection_MenuButton_"] svg polyline,[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"]
-    svg
-    path {
+[class*="appdetailsplaysection_MenuButton_"] svg circle,[class*="appdetailsplaysection_MenuButton_"] svg polyline,[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"] svg path {
 	stroke:rgba(var(--white));
 }
 [class*="artworkmodal_ArtworkModal_"] {
@@ -530,7 +527,7 @@ button[class*="posttextentry_EmoticonButton_"]:hover {
 	background:rgb(var(--W10close_Red_h)) !important;
 }
 .closeButton:active {
-	background:rgb(var(--W10close_Red_p));
+	background:rgb(var(--W10close_Red_p)) !important;
 }
 .title-area-icon {
 	padding:3px 4px;
@@ -794,6 +791,9 @@ html[class*="contextmenu_ContextMenuPopup_"]
 .DesktopUI .title-area-icon:hover,.friendsui-container .title-area-icon:hover {
 	background:rgb(var(--white05));
 }
+.DesktopUI .title-area-icon:not(.closeButton):active, .friendsui-container .title-area-icon:not(.closeButton):active {
+	background:rgb(var(--white10));
+}
 .title-area-icon .SVGIcon_Button rect,.title-area-icon .SVGIcon_Button line,.title-area-icon .SVGIcon_Button polyline {
 	stroke:rgb(var(--white)) !important;
 }
@@ -1028,7 +1028,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
 }
 [class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"][class*="gamelistentry_Uninstalled_"],[class*="gamelistentry_Selected_"]
 [class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled_"],[class*="gamelistentry_Uninstalled_"]:hover {
-	color:rgb(var(--white));
+	color: white;
 }
 
 [class*="gamelistentry_Container_"][class*="gamelistentry_Selected_"][class*="gamelistentry_Updating_"],
@@ -1476,7 +1476,8 @@ button.DialogButton:disabled,button.DialogButton:disabled:hover,button.DialogBut
 .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer {
     background: rgb(var(--clientBG)) !important;
     color: rgb(var(--white));
-    border: 1px solid rgb(var(--frameBorder));
+    /* border: 1px solid rgb(var(--frameBorder)); */
+	box-shadow: none!important;
 }
 .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] [class*="libraryhomeshowcases_DropDownItems_"]:hover {
     background: rgb(var(--white05));
@@ -1981,7 +1982,6 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer {
     background: rgb(var(--clientBG));
-    border: 1px solid rgb(var(--frameBorder));
 }
 [class*="dropdown_DialogDropDownMenu_Item_"]:hover {
     background: rgb(var(--white05));
@@ -2386,6 +2386,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 [class*="apppartnereventspage_PartnerEvent_"] {
     background-color: rgb(var(--clientBG));
     background-image: none;
+    border: 1px solid rgb(var(--frameBorder));
 }
 [class*="partnereventdisplay_InLibraryView_"] [class*="partnereventdisplay_EventDetailTitleContainer_"] {
     background: none;
@@ -3032,7 +3033,6 @@ div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder:hove
 
 [class*="bbcode_ImageModalBackground_"] {
     background: rgb(var(--clientBG));
-    border: 1px solid rgb(var(--frameBorder));
 }
 .GenericConfirmDialog {
     border: 1px solid rgb(var(--frameBorder));
@@ -4199,9 +4199,6 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 [class*="appgrid_AppGridSectionHeader_"] [class*="appgrid_Rule_"] {
     background: rgb(var(--white12));
 }
-.DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer_"][class*="libraryhomeshowcases_CollectionDropDownContainer_"] ._DialogInputContainer {
-    box-shadow: none!important;
-}
 [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:active, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:hover, [class*="downloads_SectionItem_"] [class*="downloads_Button_"]:enabled:active:hover,
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled:hover, [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled:focus {
     color: rgb(var(--white));
@@ -4339,7 +4336,7 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
     fill: rgb(var(--white75));
 }
 [class*="libraryhomerecentgames_RecentGameMediaContainer_"] [class*="appportrait_FriendsBar_"][class*="appportrait_SummaryView_"] {
-	display:none; /* Hides the friends playing count from the last game and fixes the overlapping but comes at the cost of also hiding it from the other places */
+	display: none; /* Hides the friends playing count from the last game and fixes the overlapping but comes at the cost of also hiding it from the other places */
 }
 [class*="libraryhome_UpdateLoweredPriorityUndo_"] {
     background-color: rgb(var(--white12));
@@ -4384,7 +4381,8 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 [class*="pagedsettings_PagedSettingsDialog_PageListItem_"] {
 	font-family: var(--basefont);
 }
-[class*="appdetailssectionheader_SectionHeader_"] {
+[class*="appdetailssectionheader_SectionHeader_"],
+[class*="spotlightgameplaysummary_GamePlaySummaryHeader_"] {
 	font-family: var(--basefont);
     letter-spacing: normal;
 }
@@ -4440,6 +4438,37 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 }
 [class*="bottombar_SteamFamilyJoinClientBeta_"] {
     background-color: rgb(var(--focus));
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_PlayButton_"]:active, [class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_ButtonContainer_"] [class*="launchoptionsdialog_CancelButton_"]:active {
+    background: rgb(var(--focus));
+}
+.PopupFullWindow::after { /* Better than manually resizing the affected elements */
+    border: 1px solid rgb(var(--frameBorder));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    content: '';
+    z-index: 200;
+    pointer-events: none;
+}
+[class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"].DialogButton, [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"].DialogButton, [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"].DialogButton {
+    color: rgb(var(--white));
+}
+[class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"][class*="overlaytimer_Active_"], [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"][class*="overlaytimer_Active_"], [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"][class*="overlaytimer_Active_"] {
+    background-color: rgb(var(--focus));
+    color: white;
+}
+[class*="gamenotes_NotesPagedSettings_"] [class*="gamenotes_NewNoteButton_"] svg {
+    fill: rgb(var(--white));
+}
+.DialogMenuPosition {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+.DesktopUI [class*="contextmenu_contextMenuItem_"]:first-child, [class*="contextmenu_ForceDesktop_"] [class*="contextmenu_contextMenuItem_"]:first-child {
+	border-top: 1px solid transparent; /* Valve probably remove this for the sake of the library dropdown menus but it also removes the border from the tray context menu. The border is present in both places in the original Metro */
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
