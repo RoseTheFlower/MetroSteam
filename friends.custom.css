@@ -439,16 +439,16 @@
 .chatHeader {
     background: rgb(var(--clientBG)) !important;
     min-height: 0px !important;
-    border-top: 1px solid rgb(var(--frameBorder)) !important;
 	z-index: 2;
+	border-top: 1px solid rgb(var(--frameBorder));
 }
 
 .chatTabList [class*="chattabs_ChatTab_"],
 .ChatTabsBackButton {
     background: rgb(var(--clientBG)) !important; /*rgba(var(--white05))*/
-    margin-right: 1px !important;
     border: 0 !important;
-    /*border-bottom: 1px solid rgb(var(--focus)) !important;*/
+    /*border-bottom: 1px solid transparent !important; /* It's --focus in the original Metro but it also doesn't have profile pics to align with in that one*/
+    width: 170px !important;
 }
 
 [class*="chattabs_ChatTab_"] {
@@ -636,7 +636,7 @@ button.Primary.DialogButton:not(.Off):not(.Disabled) {
 }
 
 button.DialogButton:hover {
-    background: rgb(81, 81, 81) !important; /* Hardcoded, must be changed */
+    background: rgb(var(--white24)) !important;
 }
 
 button.DialogButton:disabled,
@@ -754,23 +754,23 @@ button.DialogButton,
     background: rgb(var(--header_dark)) !important;
     padding-left: 0px !important;
     min-width: 205px !important;
-    padding-top: 28px;
+    padding-top: 25px;
 }
 
 [class*="pagedcontent_Nav_"] {
     padding-right: 0px !important;
 }
 
-    [class*="pagedsettings_PagedSettingsDialog_Title_"],
+[class*="pagedsettings_PagedSettingsDialog_Title_"],
     [class*="pagedcontent_Nav_"] [class*="pagedcontent_NavTitle_"] {
         color: rgb(var(--white)) !important;
         font-size: 18px !important;
         text-transform: none !important;
         margin-left: 15px !important;
-        margin-top: -3px !important;
+        margin-top: 0;
         font-weight: 200 !important;
         padding-left: 0px;
-    }
+}
 
 .DialogHeader,
 [class*="dialogs_DialogTitle_"] {
@@ -792,19 +792,19 @@ button.DialogButton,
     cursor: default !important;
 }
 
-    [class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"],
+[class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"],
     [class*="pagedcontent_Nav_"]
     [class*="pagedcontent_NavItems_"]
     [class*="pagedcontent_NavItem_"][class*="pagedcontent_Active_"] {
-        background-color: rgb(76, 76, 76) !important;
-        color: rgb(var(--white)) !important;
-    }
+        background-color: rgb(var(--white25));
+        color: rgb(var(--white));
+}
 
-    [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover {
+[class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover {
         background-color: rgb(var(--white12));
-    }
+}
 
-    [class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
+[class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
     [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover,
     [class*="pagedcontent_Nav_"]
     [class*="pagedcontent_NavItems_"]
@@ -813,7 +813,7 @@ button.DialogButton,
     [class*="pagedcontent_NavItems_"]
     [class*="pagedcontent_NavItem_"]:not([class*="pagedcontent_Active_"]):hover {
         color: rgb(var(--white50));
-    }
+}
 
 [class*="chatroomgroupsettings_LeaveButton_"] {
     margin-left: 5px;
@@ -1484,7 +1484,7 @@ html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenuCon
 
 .chatTabList [class*="chattabs_ChatTab_"]:not([class*="chattabs_Active_"]) {
     background: rgb(var(--header_dark)) !important;
-    border-bottom: 1px transparent !important;
+    /*border-bottom: 1px solid rgb(var(--frameBorder)) !important;*/
 }
 
 [class*="chattabs_ChatTab_"]:not([class*="chattabs_Active_"])
@@ -2044,11 +2044,6 @@ path {
 [class*="chattabs_CloseButton_"] {
     cursor: default !important;
 	margin-left: 1px;
-}
-
-.chatTabList [class*="chattabs_ChatTab_"],
-.ChatTabsBackButton {
-    width: 170px !important;
 }
 
 .compactView [class*="steamavatar_avatarHolder_"] [class*="steamavatar_avatarFrame_"] {
@@ -2820,11 +2815,6 @@ body[class*="shared_common_v6_"] {
 .MemberListColumn .friendGroup .groupName .groupCountCollapsed {
     color: white; /* Intentionally not a variable */
 }
-
-.PopupFullWindow {
-    border: 1px solid rgb(var(--frameBorder));
-}
-
 .chatRoomGroupHeaderTagline {
     color: rgb(var(--white50));
 }
@@ -2871,11 +2861,6 @@ body[class*="shared_common_v6_"] {
     left: 4px;
     margin-top: 2px;
 }
-
-[class*="bbcode_ImageModalBackground_"] {
-    background: rgb(var(--clientBG));
-}
-
 .friendPlayerLevel {
     border-radius: 50% !important;
 }
@@ -2958,6 +2943,7 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 
 .ChatTabs .title-area {
     background: rgb(var(--header_dark));
+    /* border-bottom: 1px solid rgb(var(--frameBorder));*/
 }
 
 .online .SVGIcon_DoNotDisturb circle, .online .SVGIcon_DoNotDisturb line {
@@ -2981,7 +2967,10 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 .clanInvitesGroupContainer .statMembersTotal {
     color: rgb(var(--white50));
 }
-/* Ideally, this would apply to hovering over the chat log only */
+/*
+Ideally, this would apply to hovering over the chat log only.
+Doesn't work when docking.
+*/
 .ChatPopup .miniProfileHover {
     display: none;
 }
@@ -3071,7 +3060,7 @@ svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
 }
 [class*="bbcode_ImageModalBackground_"] {
     background: rgb(var(--clientBG));
-    border: 1px solid rgb(var(--frameBorder));
+    border: none;
 }
 .confirmInviteButton.confirmInvites {
     background: rgb(var(--white12));
@@ -3483,4 +3472,66 @@ button.DialogButton.roleButton .roleSubtitle {
 }
 .ChatTabsContextMenu.CompactFriendsList .friend {
     padding-top: 0px;
+}
+.DialogListBuilderInput .DialogListBuilderInput_Input.DialogInputPlaceholder {
+    color: rgb(var(--white));
+}
+.DialogSpanningTable.BannedUsersTable tr.hoverRow, .DialogSpanningTable.InvitedUsersTable tr.hoverRow, .DialogSpanningTable.InviteLinksTable tbody tr,
+._DialogRow._DialogRowBackground {
+    background: rgb(var(--white05));
+}
+.DialogSpanningTable tr.hoverRow:hover {
+    background-color: rgb(var(--white10));
+}
+[class*="chatroomgroupsettings_PermissionsDescription_"] a {
+    color: rgb(var(--white));
+    border-bottom: 1px solid rgb(var(--white));
+}
+[class*="chatroomgroupsettings_PermissionsDescription_"]:hover a {
+    color: rgb(var(--white75));
+    border-bottom: 1px solid rgb(var(--white75));
+}
+.DialogTextInputBase.inviteURLLink {
+    background: rgb(var(--textentry));
+}
+.ChatGroupSettingsChannels_Row ._DialogRow {
+    color: rgb(var(--white));
+}
+.ChatGroupSettingsChannels_Row .ChannelDeleteButton {
+    color: rgb(var(--white));
+}
+.ChatGroupSettingsChannels_Row .ChannelDeleteButton:hover {
+    color: rgb(var(--white75));
+}
+.PopupFullWindow::after {
+    border: 1px solid rgb(var(--frameBorder));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    content: '';
+    z-index: 200;
+    pointer-events: none;
+}
+.rolePriorityButton {
+    background-color: rgb(var(--white12));
+}
+.rolePriorityButton:hover {
+    background-color: rgb(var(--white24));
+}
+.rolePriorityButton:hover svg polygon {
+    fill: rgb(var(--white));
+}
+.general_btn {
+    color: rgb(var(--white));
+}
+.NonInlinedEmbed .SVGIcon_YouTube {
+    fill: rgb(var(--white));
+}
+.msg div.ChatMessageOpenGraph, .msg div.SteamPublishedFile {
+    color: rgb(var(--white75));
+}
+.msg .ChatMessageOpenGraph_Title:hover {
+    color: rgb(var(--white))!important;
 }
