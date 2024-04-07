@@ -1341,6 +1341,7 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 }
 [class*="libraryhomenewupdates_EventTime_"] {
 	color:rgb(var(--white50));
+	font-weight: 400;
 }
 [class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_GuideTitle_"] {
 	color:rgb(var(--white50));
@@ -1709,7 +1710,8 @@ button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] {
 [class*="gamelistdropdown_Bar_"] [class*="gamelistdropdown_MenuHeader_"] [class*="gamelistdropdown_Arrow_"] polygon {
     fill: rgb(var(--white50));
 }
-:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg {
+:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg,
+:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg polygon {
     color: rgb(var(--white));
     fill: rgb(var(--white));
 }
@@ -2228,6 +2230,8 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="libraryhomeplaynext_PlayNextSubHead_"] {
     color: rgb(var(--white50));
+	font-weight: 400;
+    letter-spacing: normal;
 }
 [class*="achievementslist_AchievementList_"] {
     background-color: transparent;
@@ -2396,6 +2400,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 [class*="libraryhomerecentgames_RecentGame_"] [class*="libraryhomerecentgames_AddedDate_"] {
     color: rgb(var(--white50));
+	font-weight: 400;
 }
 [class*="appportrait_PlaytimeDetails_"][class*="appportrait_PlayedTotal_"], [class*="appportrait_PlaytimeDetails_"][class*="appportrait_PlayedRecent_"] {
     color: rgb(var(--white50));
@@ -2477,6 +2482,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 .DialogCheckbox.Active svg path {
     stroke: rgb(var(--white));
+    filter: none;
 }
 .DialogCheckbox {
     background-color: rgb(var(--white08));
@@ -2858,6 +2864,7 @@ button.DialogButton[class*="appdetailsbutton_AppDetailsButton_"][class*="appdeta
 }
 [class*="miniprofile_miniProfileContent_"] [class*="miniprofile_playerContent_"] [class*="miniprofile_awayStatusLabel_"] {
     color: rgb(var(--offline));
+    text-shadow: 1px 1px 1px #000!important;
 }
 [class*="miniprofile_miniProfileContent_"] [class*="miniprofile_playerNicknameBracket_"] {
     color: rgb(var(--offline));
@@ -3982,7 +3989,8 @@ div[class*="eventbbcodeparser_Header1_"], div[class*="eventbbcodeparser_Header2_
     display: none;
 }
 
-[class*="appactionbutton_Green_"]:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg {
+[class*="appactionbutton_Green_"]:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg,
+[class*="appactionbutton_Green_"]:not([class*="appactionbutton_Disabled_"])>[class*="appactionbutton_ButtonChild_"] svg polygon {
     color: white;
     fill: white;
 }
@@ -4469,6 +4477,60 @@ button[class*="soundtrackcontrols_IconButton_"]:hover svg path {
 }
 .DesktopUI [class*="contextmenu_contextMenuItem_"]:first-child, [class*="contextmenu_ForceDesktop_"] [class*="contextmenu_contextMenuItem_"]:first-child {
 	border-top: 1px solid transparent; /* Valve probably remove this for the sake of the library dropdown menus but it also removes the border from the tray context menu. The border is present in both places in the original Metro */
+}
+[class*="downloads_SectionItemStatus_"] [class*="downloads_Progress_"] {
+    color: rgb(var(--white));
+}
+button.TextButton {
+	font-weight: 300;
+}
+[class*="appdetailsreviewsection_ReviewIconThumbsDownBox_"] {
+    background: #683439; /* One of the colors of Valve's gradient */
+}
+[class*="appdetailsreviewsection_CommentsGroup_"] [class*="appdetailsreviewsection_CommentsContainer_"] [class*="appdetailsreviewsection_CommentCount_"] {
+    color: rgb(var(--white50));
+}
+[class*="appdetailsreviewsection_CommentsGroup_"] [class*="appdetailsreviewsection_CommentsContainer_"]:hover [class*="appdetailsreviewsection_UpVotesIcon_"], [class*="appdetailsreviewsection_CommentsGroup_"] [class*="appdetailsreviewsection_CommentsContainer_"]:hover [class*="appdetailsreviewsection_CommentCount_"] {
+    fill: rgb(var(--white75));
+}
+[class*="appdetailsreviewsection_CommentsGroup_"] [class*="appdetailsreviewsection_CommentsContainer_"] [class*="appdetailsreviewsection_CommentIcon_"],
+[class*="appdetailsreviewsection_CommentsGroup_"] [class*="appdetailsreviewsection_CommentsContainer_"] [class*="appdetailsreviewsection_UpVotesIcon_"] {
+    fill: rgb(var(--white50));
+}
+[class*="appproperties_PrivacyDLCRow_"] [class*="appproperties_DLCTitleArea_"] [class*="appproperties_NameText_"] {
+    color: rgb(var(--white75));
+}
+[class*="appproperties_PrivacyDLCRow_"] [class*="appproperties_DLCTitleArea_"] [class*="appproperties_NameText_"]:hover {
+    color: rgb(var(--white));
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_SteamInputStatusGrid_"] [class*="appproperties_Controller_"] [class*="appproperties_ControllerPip_"][class*="appproperties_ControllerConnected_"] {
+    background-color: rgb(var(--focus));
+    filter: none;
+    border-radius: 6px!important;
+}
+[class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_SteamInputStatusGrid_"] [class*="appproperties_SteamInputStatus_"] {
+    color: rgb(var(--white75));
+}
+[class*="appproperties_BetaLabel_"] {
+    color: rgb(var(--white50));
+}
+[class*="appproperties_PrivacyDLCRow_"] .DialogCheckbox {
+    background-color: rgb(var(--white08));
+}
+.DialogToggle_Description {
+    color: rgb(var(--white75));
+}
+[class*="libraryhomenewupdates_WhatsNewSettingsUndoButton_"] .SVGIcon_X_Line line {
+    stroke: rgb(var(--white));
+}
+[class*="miniprofile_miniProfileContent_"] [class*="miniprofile_miniProfilePlayer_"].in-game [class*="miniprofile_personaName_"]:not([class*="miniprofile_hasNickname_"]) [class*="miniprofile_personaNameLabel_"], [class*="miniprofile_miniProfileContent_"] [class*="miniprofile_miniProfilePlayer_"].in-game [class*="miniprofile_personaName_"][class*="miniprofile_nickName_"] [class*="miniprofile_personaNameLabel_"] {
+    color: rgb(var(--ingame));
+}
+[class*="miniprofile_miniProfileContent_"] [class*="miniprofile_playerContent_"] [class*="miniprofile_personaName_"] {
+    text-shadow: 1px 1px 1px #000!important;
+}
+[class*="appportrait_LibraryItemActionButton_"] .SVGIcon_Pause {
+    fill: rgb(var(--white));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
