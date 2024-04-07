@@ -644,6 +644,10 @@ button.DialogButton:disabled:hover {
     background: rgb(var(--header_dark)) !important;
 }
 
+button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
+	color: rgb(var(--white));
+}
+
 .DialogCheckbox path {
     stroke: rgb(var(--white)) !important;
 }
@@ -1717,9 +1721,9 @@ button.DialogButton.Primary:hover {
 
 /*Invite box*/
 .ChatMessageInvite {
-    background: rgba(0, 0, 0, 0.45) !important;
+    background: rgb(var(--black45));
     border-left: 3px solid rgb(var(--focus));
-    color: rgb(var(--offline)) !important;
+    color: rgb(var(--white75));
 }
 
 .inviteButton {
@@ -1732,7 +1736,7 @@ button.DialogButton.Primary:hover {
 
 .msg.ChatMessageInvite .invitedTimeLabel,
 .Invite_ExpireTime {
-    color: gray !important;
+	color: rgb(var(--white75));
 }
 
 .gameInviteMsg .productImage.productImageBlur,
@@ -3007,6 +3011,8 @@ Doesn't work when docking.
 }
 .friendInviteButton {
     border-radius: 50%!important;
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--white));
 }
 [class*="chattabs_CloseButton_"]:hover .SVGIcon_X_Line line {
     stroke: rgb(var(--white75));
@@ -3014,7 +3020,7 @@ Doesn't work when docking.
 .confirmInviteRequestContainer .confirmInviteButton.dim:hover, .confirmInvites.dim:hover, .confirmInvites.dim {
     color: rgb(var(--white));
     border-color: transparent;
-    background: rgb(var(--white24));
+    background: rgb(var(--white12));
 }
 [class*="steamavatar_avatarHolder_"] [class*="steamavatar_avatarFrame_"] {
     transform: scale(1.2) translateY(.5px);
@@ -3534,4 +3540,67 @@ button.DialogButton.roleButton .roleSubtitle {
 }
 .msg .ChatMessageOpenGraph_Title:hover {
     color: rgb(var(--white))!important;
+}
+.meKey .SVGIcon_DialogCheck path, button.DialogButton.roleButton .SVGIcon_DialogCheck path {
+    stroke: rgb(var(--white));
+}
+.DialogBody .SVGIcon_Crown {
+	fill: rgb(var(--white));
+}
+button.DialogButton.roleButton:hover .roleSubtitle {
+    color: rgb(var(--white));
+}
+button.DialogButton.GreenPlay {
+    background: rgb(var(--focus));
+    color: white;
+}
+button.DialogButton.GreenPlay:hover, button.DialogButton.GreenPlay.gpfocus {
+    background: rgba(var(--focus))!important;
+	filter: brightness(1.1);
+    color: white;
+}
+.gameInviteMsg .productName, .broadcastInviteMsg .productName, .broadcastViewRequestMsg .productName {
+    color: rgb(var(--white));
+}
+.gameInviteMsg .closeButton .SVGIcon_X_Line line {
+	stroke: rgb(var(--white));
+}
+.friendInviteButton.bright.acceptFriendInvite, .friendInviteButton.bright.declineFriendInvite {
+    background-color: rgb(var(--focus));
+}
+.friendInviteButton.bright.acceptFriendInvite .SVGIcon_Check polyline,
+.friendInviteButton.bright.declineFriendInvite .SVGIcon_X_Line line {
+    stroke: white;
+}
+.friendInviteContainer .friend.dim {
+    opacity: 0;
+}
+.friendInviteBlockContainer .blockCommunicationLabel {
+    color: rgb(var(--white));
+}
+.friendInviteBlockContainer .blockCommunicationLabel.subtitle {
+    color: rgb(var(--white75));
+}
+.friendInviteBlockContainer .DialogCheckbox {
+    background-color: rgb(var(--white08));
+    border: 1px solid rgb(var(--frameBorder)); /* Very random */
+}
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background-color: rgba(var(--white), 0.17);
+}
+.friendInviteBlockContainer .DialogCheckbox:hover {
+    border: 1px solid rgb(var(--frameBorder));
+}
+.friendInviteBlockContainer {
+    left: 15px;
+}
+.friendInviteButtons {
+    z-index: 1;
+}
+.declineFriendInvite .SVGIcon_X_Line line,
+.friendInviteButton .SVGIcon_Check polyline {
+    stroke: rgb(var(--white));
+}
+.declineFriendInvite.dim, .acceptFriendInvite.dim {
+	border-color: rgb(var(--white));
 }
