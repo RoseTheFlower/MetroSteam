@@ -18,8 +18,8 @@
     "Windows 10",
     "Windows 8"
   ],
-  "header_image": "https://i.imgur.com/PQF7r4t.png",
-  "splash_image": "https://raw.githubusercontent.com/RoseTheFlower/MetroSteam/master/preview.png",
+  "header_image": "https://raw.githubusercontent.com/RoseTheFlower/MetroSteam/master/preview.png",
+  "splash_image": "https://i.imgur.com/PQF7r4t.png",
   "UseDefaultPatches": true,
   "Patches":
   [
