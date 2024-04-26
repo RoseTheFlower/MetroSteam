@@ -1,0 +1,119 @@
+@import url('custom.css');
+
+:root {
+    --chatfont: 13px; /* Font size for chat messages */
+    --basefont: "Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
+    --semibold: "Segoe UI Semibold","Helvetica Neue Medium","Motiva Sans","Arial Bold","Helvetica Bold",sans-serif;
+    --semilight: "Segoe UI Semilight","Helvetica Neue Light","Motiva Sans","Arial Light","Helvetica Light",sans-serif;
+    --scrollbarSize: 15px;
+    --focus: 102, 36, 226; /* Default Metro skin purple accent */
+    --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
+    --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
+    --clientBG: 26, 26, 26;
+    --header_dark: 20, 20, 20;
+    --frameBorder: 15, 15, 15;
+    --online: 93, 178, 255;
+    --ingame: 130, 186, 0;
+    --offline: 145, 145, 145; /* Originally white45 but that makes it too bold */
+    --golden: 255, 255, 99;
+    --textentry: 39, 39, 39;
+    --white03: 255, 255, 255, 0.03;
+    --white05: 255, 255, 255, 0.05;
+    --white08: 255, 255, 255, 0.08;
+    --white10: 255, 255, 255, 0.10;
+    --white12: 255, 255, 255, 0.12;
+    --white20: 255, 255, 255, 0.20;
+    --white24: 255, 255, 255, 0.24;
+    --white25: 255, 255, 255, 0.25;
+    --white35: 255, 255, 255, 0.35;
+    --white45: 255, 255, 255, 0.45;
+    --white50: 255, 255, 255, 0.50;
+    --white75: 255, 255, 255, 0.75;
+    --white: 255, 255, 255;
+    --black05: 255, 255, 255, 0.05;
+    --black10: 0, 0, 0, 0.10;
+    --black12: 0, 0, 0, 0.12;
+    --black20: 0, 0, 0, 0.20;
+    --black24: 0, 0, 0, 0.24;
+    --black25: 0, 0, 0, 0.25;
+    --black45: 0, 0, 0, 0.45;
+    --black50: 0, 0, 0, 0.50;
+    --black75: 0, 0, 0, 0.75;
+    --black: 0, 0, 0;
+    --red: 255, 0, 0;
+}
+
+[class*="desktoptoasts_DesktopToastPopup_"]:hover::before {
+    opacity: 1;
+}
+
+[class*="desktoptoasts_DesktopToastPopup_"]::before {
+    background: rgb(var(--white05));
+}
+
+[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"] {
+    color: rgb(var(--white));
+}
+
+[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Timestamp_"],
+[class*="standardtemplates_StandardTemplateContainer_"]:hover [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateContainer_"].gpfocus [class*="standardtemplates_Timestamp_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Icon_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_IngameTitle_"],
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_FriendInGameAppColor_"] {
+    color: rgb(var(--ingame));
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_OnlineTitle_"],
+[class*="notificationcontent_FriendOnlineColor_"] {
+    color: rgb(var(--online));
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageUserName_"] {
+    color: rgb(var(--white)); /* As in Valve's */
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] [class*="standardtemplates_GroupMessageIcon_"] {
+    display: none;
+}
+
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="desktoptoasts_DesktopToastPopup_"] {
+    background: rgb(var(--clientBG));
+}
+
+[class*="desktoptoasts_DesktopToastBackground_"] {
+    display: none;
+}
+
+[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Title_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"] {
+    color: rgb(var(--white50));
+}
+
+[class*="standardtemplates_AvatarStatus_"].online {
+    background-color: rgb(var(--online));
+}
+
+[class*="standardtemplates_AvatarStatus_"].ingame {
+    background-color: rgb(var(--ingame));
+}
+
+[class*="standardtemplates_AvatarStatus_"].offline {
+    background-color: rgb(var(--offline));
+}
+
+[class*="standardtemplates_AvatarStatus_"] {
+    width: 2px;
+}
