@@ -117,3 +117,7 @@
 [class*="standardtemplates_AvatarStatus_"] {
     width: 2px;
 }
+
+[class*="notificationcontent_AchievementTextSection_"] [class*="notificationcontent_Name_"] {
+    color: rgb(var(--white));
+}
