@@ -11,6 +11,10 @@
         "all": ["library", "friends"]
     },
     "patches": {
+        "Components to Theme": {
+            "type": "none",
+            "values": {"No": {}}
+        },
         "Main Window": {
             "type": "checkbox",
             "values": {
@@ -29,6 +33,15 @@
                 "No": {}
             }
         },
+        "Notification Popups": {
+            "type": "checkbox",
+            "values": {
+                "Yes": {
+                    "notifications.custom.css": ["notificationtoasts_.*"]
+                },
+                "No": {}
+            }
+        },
         "Web Pages": {
             "type": "checkbox",
             "values": {
@@ -37,6 +50,10 @@
                 },
                 "No": {}
             }
+        },
+        "Extra Options": {
+            "type": "none",
+            "values": {"No": {}}
         },
         "Green Notification Icon": {
             "type": "checkbox",
