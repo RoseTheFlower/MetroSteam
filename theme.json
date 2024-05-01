@@ -195,6 +195,10 @@
                         "206,206,206",
                         "all"
                     ],
+                    "--gameinfoiconfilter": [
+                        "invert(1)",
+                        "library"
+                    ],
                     "--textentry": [
                         "207,207,207",
                         "all"
