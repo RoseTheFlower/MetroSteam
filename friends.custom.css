@@ -4113,3 +4113,12 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
 .FriendPicker_Focus .FriendPicker_SuggestedFriend.Focus {
 	background: rgb(var(--white05));
 }
+
+.general_btn {
+    background-color: rgb(var(--white12));
+}
+
+.general_btn.voteUp:hover {
+    background-color: rgb(var(--white24));
+    color: rgb(var(--white))
+}
