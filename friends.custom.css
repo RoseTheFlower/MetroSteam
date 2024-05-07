@@ -4122,3 +4122,12 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
     background-color: rgb(var(--white24));
     color: rgb(var(--white))
 }
+
+.friendGroup .friend, .friendGroup .SteamPlayerGroupFooter {
+	padding-top: 7px;
+	padding-bottom: 3px;
+}
+
+.Dialog_EditNickName .friend.ingame .DialogTextInputBase, .Dialog_ChangePersonaName .friend.ingame .DialogTextInputBase {
+    color: rgb(var(--ingame));
+}
