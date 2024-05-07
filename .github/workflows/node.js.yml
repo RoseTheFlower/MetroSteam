@@ -1,0 +1,38 @@
+name: SCH-ClassMapper
+
+on:
+  push:
+    branches: [ "test" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js '20'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Clone the SCH-ClassMapper repository
+      run: git clone https://github.com/SteamClientHomebrew/ClassMapper.git
+
+    - name: Install the dependencies
+      run: npm install --prefix ClassMapper
+
+    - name: Run the ClassMapper script
+      run: |
+        cd ClassMapper
+        node lexer.js ${{ github.workspace }} --comment
+
+    - name: Remove the classmapper directory
+      run: rm -rf ClassMapper
+
+    - name: Commit and push the changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "SCH-ClassMapper"
+        git push
