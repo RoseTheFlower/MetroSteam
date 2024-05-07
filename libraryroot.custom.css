@@ -7194,10 +7194,15 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 ._2vlF5KjDw2loCDFMY4RvKe ._3uhviLjoM6XjmJUZIwgo-c .po3ze72SNwOh1x9LAEYKN ._2R8EcI3ydGYPJkKASHBT0K ._26lUCOjXyPSIUFyyIijjTT {
     color: rgb(var(--white75));
 }
+
+._3QRf-tp5VddAF00vWY5Gn8:hover ._1Cva_kor3lWBIoeu9cQxJq {
+    color: rgb(var(--white));
+}
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
 	background: !important;
 }
+*/
 /* Bug fixing for Valve */
 /* [class*="pageablecontainer_HeaderPageControls_"] */
 ._2pAbUZVnG9Q1TYOfdvFmtX {
