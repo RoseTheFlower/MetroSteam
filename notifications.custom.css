@@ -43,81 +43,100 @@
     --red: 255, 0, 0;
 }
 
-[class*="desktoptoasts_DesktopToastPopup_"]:hover::before {
+/* [class*="desktoptoasts_DesktopToastPopup_"]:hover::before */
+._1OOQPJx0nCNP9ME9toCmV7:hover::before {
     opacity: 1;
 }
 
-[class*="desktoptoasts_DesktopToastPopup_"]::before {
+/* [class*="desktoptoasts_DesktopToastPopup_"]::before */
+._1OOQPJx0nCNP9ME9toCmV7::before {
     background: rgb(var(--white05));
 }
 
-[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"] {
+/* [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_StandardNotificationDescription_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationDescription_"] */
+._2m9JUBWfx2mQPWn_3xDhsF ._1Ldq1r-UGZ0EzO6Ygynz0j, ._1tsEfG-JyQFR7Un1HPOt98 ._1Ldq1r-UGZ0EzO6Ygynz0j, ._3CGHgMXRIoyrljmStDoKuf ._1Ldq1r-UGZ0EzO6Ygynz0j, .MmdBjSLHW3AVSShFBJVNt ._1Ldq1r-UGZ0EzO6Ygynz0j, ._2caCrhFIrYqRuguK-cB6be ._1Ldq1r-UGZ0EzO6Ygynz0j {
     color: rgb(var(--white));
 }
 
-[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Timestamp_"],
-[class*="standardtemplates_StandardTemplateContainer_"]:hover [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateContainer_"].gpfocus [class*="standardtemplates_Timestamp_"] {
+/* [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Timestamp_"],
+[class*="standardtemplates_StandardTemplateContainer_"]:hover [class*="standardtemplates_Timestamp_"], [class*="standardtemplates_StandardTemplateContainer_"].gpfocus [class*="standardtemplates_Timestamp_"] */
+._2m9JUBWfx2mQPWn_3xDhsF ._2vSvCQ4iDKoGIZIIv7oOUZ, ._1tsEfG-JyQFR7Un1HPOt98 ._2vSvCQ4iDKoGIZIIv7oOUZ, ._3CGHgMXRIoyrljmStDoKuf ._2vSvCQ4iDKoGIZIIv7oOUZ, .MmdBjSLHW3AVSShFBJVNt ._2vSvCQ4iDKoGIZIIv7oOUZ, ._2caCrhFIrYqRuguK-cB6be ._2vSvCQ4iDKoGIZIIv7oOUZ, ._1adpxcygOBVfskfCQESLZg:hover ._2vSvCQ4iDKoGIZIIv7oOUZ, ._1adpxcygOBVfskfCQESLZg.gpfocus ._2vSvCQ4iDKoGIZIIv7oOUZ {
     color: rgb(var(--white50));
 }
 
-[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Icon_"] {
+/* [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateWeb_"] [class*="standardtemplates_Icon_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Icon_"] */
+._2m9JUBWfx2mQPWn_3xDhsF ._19g_L-qkP3q7SDkgXAgoli, ._1tsEfG-JyQFR7Un1HPOt98 ._19g_L-qkP3q7SDkgXAgoli, ._3CGHgMXRIoyrljmStDoKuf ._19g_L-qkP3q7SDkgXAgoli, .MmdBjSLHW3AVSShFBJVNt ._19g_L-qkP3q7SDkgXAgoli, ._2caCrhFIrYqRuguK-cB6be ._19g_L-qkP3q7SDkgXAgoli {
     color: rgb(var(--white50));
 }
 
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_IngameTitle_"],
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_FriendInGameAppColor_"] {
+/* [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_IngameTitle_"],
+[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_FriendInGameAppColor_"] */
+._3CGHgMXRIoyrljmStDoKuf ._1wh9oefq1NyhdLO90w-PQx, ._3CGHgMXRIoyrljmStDoKuf ._19RnFywpjvazA8eaSDKXs0 {
     color: rgb(var(--ingame));
 }
 
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_OnlineTitle_"],
-[class*="notificationcontent_FriendOnlineColor_"] {
+/* [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_OnlineTitle_"],
+[class*="notificationcontent_FriendOnlineColor_"] */
+._3CGHgMXRIoyrljmStDoKuf .bpePVKH1Q8LO-a10l0-32, ._37hLxvdcAXgmMgHdTwlz3b {
     color: rgb(var(--online));
 }
 
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageUserName_"] {
+/* [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageUserName_"] */
+._3CGHgMXRIoyrljmStDoKuf ._2cDEkUd8CcHhB2pCRgBcSS {
     color: rgb(var(--white)); /* As in Valve's */
 }
 
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] [class*="standardtemplates_GroupMessageIcon_"] {
+/* [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] [class*="standardtemplates_GroupMessageIcon_"] */
+._3CGHgMXRIoyrljmStDoKuf ._2jxGpPAeshBjrEvUpgC2xB ._1pJtWelYxtxq4-f9eGMsHF {
     display: none;
 }
 
-[class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] {
+/* [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_GroupMessageBody_"] */
+._3CGHgMXRIoyrljmStDoKuf ._2jxGpPAeshBjrEvUpgC2xB {
     color: rgb(var(--white50));
 }
 
-[class*="desktoptoasts_DesktopToastPopup_"] {
+/* [class*="desktoptoasts_DesktopToastPopup_"] */
+._1OOQPJx0nCNP9ME9toCmV7 {
     background: rgb(var(--clientBG));
 }
 
-[class*="desktoptoasts_DesktopToastBackground_"] {
+/* [class*="desktoptoasts_DesktopToastBackground_"] */
+._3RkGkNRNheAkoRA3migph5 {
     display: none;
 }
 
-[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Title_"] {
+/* [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_Title_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_Title_"] */
+._2m9JUBWfx2mQPWn_3xDhsF ._1WlRE1q-W8WeQXa6LQ0Fw2, ._1tsEfG-JyQFR7Un1HPOt98 ._1WlRE1q-W8WeQXa6LQ0Fw2, ._3CGHgMXRIoyrljmStDoKuf ._1WlRE1q-W8WeQXa6LQ0Fw2, ._2caCrhFIrYqRuguK-cB6be ._1WlRE1q-W8WeQXa6LQ0Fw2 {
     color: rgb(var(--white50));
 }
 
-[class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"] {
+/* [class*="standardtemplates_AllNotificationsTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_StandardTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_DesktopToastTemplate_"] [class*="standardtemplates_StandardNotificationSubText_"], [class*="standardtemplates_PinnedTemplateDesktop_"] [class*="standardtemplates_StandardNotificationSubText_"] */
+._2m9JUBWfx2mQPWn_3xDhsF ._2XcN2JborbQvIZhYakQnO6, ._1tsEfG-JyQFR7Un1HPOt98 ._2XcN2JborbQvIZhYakQnO6, ._3CGHgMXRIoyrljmStDoKuf ._2XcN2JborbQvIZhYakQnO6, ._2caCrhFIrYqRuguK-cB6be ._2XcN2JborbQvIZhYakQnO6 {
     color: rgb(var(--white50));
 }
 
-[class*="standardtemplates_AvatarStatus_"].online {
+/* [class*="standardtemplates_AvatarStatus_"].online */
+._2yhOCNV9s2fKohW8wqWRTY.online {
     background-color: rgb(var(--online));
 }
 
-[class*="standardtemplates_AvatarStatus_"].ingame {
+/* [class*="standardtemplates_AvatarStatus_"].ingame */
+._2yhOCNV9s2fKohW8wqWRTY.ingame {
     background-color: rgb(var(--ingame));
 }
 
-[class*="standardtemplates_AvatarStatus_"].offline {
+/* [class*="standardtemplates_AvatarStatus_"].offline */
+._2yhOCNV9s2fKohW8wqWRTY.offline {
     background-color: rgb(var(--offline));
 }
 
-[class*="standardtemplates_AvatarStatus_"] {
+/* [class*="standardtemplates_AvatarStatus_"] */
+._2yhOCNV9s2fKohW8wqWRTY {
     width: 2px;
 }
 
-[class*="notificationcontent_AchievementTextSection_"] [class*="notificationcontent_Name_"] {
+/* [class*="notificationcontent_AchievementTextSection_"] [class*="notificationcontent_Name_"] */
+.mJ3Nu2ja1CSqf_qU1GD_b ._1juF1NbXeVbg06v1506lgi {
     color: rgb(var(--white));
 }
