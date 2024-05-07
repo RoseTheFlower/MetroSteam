@@ -41,7 +41,7 @@ Installing manually is also an option:
 
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
-* [PhantomGamers](https://github.com/PhantomGamers) for creating the first tool to alow skinning, SFP.
+* [PhantomGamers](https://github.com/PhantomGamers) for creating the first tool to allow skinning, SFP.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the chat and friends windows, which I used as an early template.
 * [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu, to the dynamic placement of the repositioned bottom bar buttons, and to the context menu borders.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
