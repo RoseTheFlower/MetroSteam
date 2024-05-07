@@ -41,10 +41,10 @@ Installing manually is also an option:
 
 ## Credits
 * [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
-* [PhantomGamers](https://github.com/PhantomGamers) for creating SFP, and for tips on managing the randomized class names.
+* [PhantomGamers](https://github.com/PhantomGamers) for creating the first tool to alow skinning, SFP.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the chat and friends windows, which I used as an early template.
 * [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu, to the dynamic placement of the repositioned bottom bar buttons, and to the context menu borders.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
 * [Shiina](https://github.com/AikoMidori) for helping me find a few elements and realize where to look.
-* [Laser](https://github.com/LaserFlash) for an idea on tackling randomized class names.
+* [Shadow](https://github.com/ShadowMonster99) for the [ClassMapper](https://github.com/SteamClientHomebrew/ClassMapper) that allowed to convert to the randomized class names.
 * [Contributors](../../graphs/contributors) to this repository.
