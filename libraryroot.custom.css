@@ -2449,7 +2449,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 
 [class*="updatealert_PrimaryMessage_"] {
     font-size: 15px;
-    color: rgb(var(--white));
+    color: white;
 }
 
 [class*="screenshotmanagerdialog_ComboboxSelector_"] {
@@ -5976,6 +5976,26 @@ svg[class*="achievementspage_DragHandle_"] path {
 
 [class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TopSectionRightSide_"] [class*="steamdesktopoverlay_BackToGame_"] [class*="steamdesktopoverlay_TextContainer_"] {
 	display: none; /* The text was absent in the original Metro */
+}
+
+[class*="awardmodal_GrantAwardModal_"] [class*="awardmodal_ButtonContainer_"] [class*="awardmodal_Button_"] {
+    color: rgb(var(--white75));
+}
+/* The popup for awarding people with points */
+[class*="awardmodal_GrantAwardModal_"]  {
+    color: rgb(var(--white));
+}
+
+[class*="awardmodal_GrantAwardModal_"] [class*="awardmodal_Header_"] [class*="awardmodal_Description_"] {
+    color: rgb(var(--white75));
+}
+
+[class*="awardmodal_GrantAwardModal_"] [class*="awardmodal_ButtonContainer_"] [class*="awardmodal_Button_"] [class*="awardmodal_Label_"] {
+    color: rgb(var(--white));
+}
+
+[class*="awardmodal_GrantAwardModal_"] [class*="awardmodal_Footer_"] [class*="awardmodal_Left_"] [class*="awardmodal_BalanceDetails_"] [class*="awardmodal_BalanceLabel_"] {
+    color: rgb(var(--white75));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
