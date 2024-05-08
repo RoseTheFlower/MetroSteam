@@ -4797,7 +4797,8 @@ button.TextButton:hover, button.TextButton.gpfocus {
     font-weight: 500;
 }
 
-[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] .DialogInput_Wrapper .DialogInput::placeholder {
+/*[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] */
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogInput_Wrapper .DialogInput::placeholder {
     font-size: 0;
 }
 
@@ -6838,6 +6839,7 @@ button.TextButton {
 /* [class*="salepreviewwidgets_CapsulePlatform_"] img, [class*="salepreviewwidgets_CapsulePlatform_"] svg */
 ._3vzWbeJ8alV7DKO0rwRuMK img, ._3vzWbeJ8alV7DKO0rwRuMK svg {
     color: rgb(var(--white));
+	fill: rgb(var(--white));
 }
 
 /* [class*="salepreviewwidgets_WishList_"] */
@@ -7124,7 +7126,8 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
     color: rgb(var(--white));
 }
 
-[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_PostTextEntryArea_"]::placeholder {
+/* [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_PostTextEntryArea_"] */
+._3x31AgESSlUqX3D4MTHv2m ._1JlC29Ic6L-QvL-39X_d-X::placeholder {
     color: rgb(var(--white50));
 }
 
