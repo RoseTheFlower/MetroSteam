@@ -626,9 +626,9 @@ button[class*="posttextentry_EmoticonButton_"] */
     display: none !important;
 }
 
-[class*="downloads_SectionItem_"][class*="downloads_Active_"]::-webkit-scrollbar-button,
-[class*="launchoptionsdialog_LaunchOptionDialog_"] [class*="launchoptionsdialog_OptionList_"] [class*="launchoptionsdialog_ListContainer_"]::-webkit-scrollbar-button,
-[class*="downloads_ItemLists_"]::-webkit-scrollbar-button {
+._1VNuYHM6BPBOJspC6zPf5r.IbePLaw-vSvhG1GTenYFg::-webkit-scrollbar-button,
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx-::-webkit-scrollbar-button,
+._1ugNiylO2vKXhirsGocAxa::-webkit-scrollbar-button {
     display: none;
 }
 
@@ -5239,8 +5239,8 @@ button.i7jBC4aexUlu_modj8Jwm.i7jBC4aexUlu_modj8Jwm {
 	background-color: rgb(var(--black),.5); /* It appears that the original had this hardcoded as 0,0,0,.5 */
 }
 
-[class*="appproperties_BetasDropDown_"] ._DialogInputContainer::-webkit-scrollbar-button,
-[class*="pagedsettings_PagedSettingsDialog_PageList_"]::-webkit-scrollbar {
+._1-tJH7xXk_v4ppGx6yLVXM ._DialogInputContainer::-webkit-scrollbar-button,
+._EebF_xe4DGRZ9a0XkyDj::-webkit-scrollbar {
     display: none !important;
 }
 
