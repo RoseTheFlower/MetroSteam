@@ -4463,3 +4463,10 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
 .Dialog_EditNickName .friend.ingame .DialogTextInputBase, .Dialog_ChangePersonaName .friend.ingame .DialogTextInputBase {
     color: rgb(var(--ingame));
 }
+
+.BBCodeTitle {
+    -webkit-app-region: initial; /* Having this set to no-drag by Valve results in the window not being movable when the title is behind the window header */
+}
+.msg.isCurrentUser .TradeOfferInvite {
+    background: rgb(var(--black45));
+}
