@@ -7071,8 +7071,9 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 /* [class*="steamdesktopoverlay_TopSection_"] [class*="steamdesktopoverlay_TimeStats_"] */
 .fi6UDkxJq66MLo2z9wabQ .vCykYvbW9JAoUuOZK3L8M {
-	margin: auto;
 	align-items: center;
+	transform: translateX(-50%);
+	margin-left: 50%;
 }
 
 /* [class*="appgrid_AppGridSectionLabel_"] */
@@ -7200,6 +7201,49 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 ._3QRf-tp5VddAF00vWY5Gn8:hover ._1Cva_kor3lWBIoeu9cQxJq {
     color: rgb(var(--white));
+}
+
+.lwZMnZmiLvD1VehXW1dVf {
+    color: rgb(var(--white75));
+}
+
+/* moveappsdialog_MoveAppsIndicator_ */
+._2IEorvaTnkOBZw3PEDXZoB {
+    background-color: rgb(var(--white20));
+}
+
+/* gamelistsearchbar_SearchFilterInputClear_ */
+._38tIMc-4Ug-Akpa1pYlN0R .SVGIcon_X_Line line {
+    stroke: rgb(var(--white));
+}
+
+._78Pwybe-fHVYEkQFFlpA5 ._1XMxxg4Tf-bnjlvGWtSdmP ._3hubFyqcbN0Tp93ajVPHLl {
+    color: rgb(var(--white));
+}
+
+._78Pwybe-fHVYEkQFFlpA5 ._1XMxxg4Tf-bnjlvGWtSdmP ._1M3piztNHu7tsD7h8OgpuI {
+    color: rgb(var(--white75));
+}
+
+._1yEoLSbdr6RwEzqpyKLR4m ._3m6qdpFN3Mop0iw9ZE3RRa {
+    color: rgb(var(--white50));
+}
+
+._2UySYiE8fUGGugkHVm1Qb ._2kqz-bSlDu-I49_cV_wicB {
+    background: rgb(var(--black45));
+}
+
+._1yEoLSbdr6RwEzqpyKLR4m ._3m6qdpFN3Mop0iw9ZE3RRa:hover {
+    background-color: rgb(var(--white05));
+    color: rgb(var(--white75));
+}
+
+._2kqz-bSlDu-I49_cV_wicB ._291lAW7IPxmXPQ2fk3AE4P:hover {
+    background: rgb(var(--white05));
+}
+
+.fi6UDkxJq66MLo2z9wabQ .BoygotvcKo4DC4dSix8G3:hover {
+	color: white;
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
