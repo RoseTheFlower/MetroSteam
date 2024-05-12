@@ -3633,13 +3633,8 @@ Doesn't work when docking.
     color: rgb(var(--white50)); /* Random */
 }
 
-    .clanActionButtons button.TextButton:hover {
-        color: rgb(var(--white75));
-    }
-
-/* [class*="bbcode_ChatMessageSteamStore_Pricing_"] */
-.-zHPw-Gz7zp-8qsn-gdgV {
-    background-color: rgb(var(--black45));
+.clanActionButtons button.TextButton:hover {
+    color: rgb(var(--white75));
 }
 
 /* [class*="bbcode_ChatMessageSteamStore_ViewStore_"] */
@@ -4469,4 +4464,17 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
 }
 .msg.isCurrentUser .TradeOfferInvite {
     background: rgb(var(--black45));
+}
+
+._2pB0yvMupqXHSMXN3YT89r {
+	-webkit-mask-image: none;
+}
+
+._3NgkbkQ2UEVdJZysdvBdL_, .JH_DYtKL9LRLi5wS8TJ2z {
+	color: rgb(var(--white75));
+	background: rgb(var(--black45));
+}
+
+._17di9y6ayc3Z-ITchVa-5N div span {
+    color: rgb(var(--white))!important;
 }
