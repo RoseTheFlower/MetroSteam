@@ -1,14 +1,11 @@
 @import url('custom.css');
 
 :root {
-    --chatfont: 13px; /* Font size for chat messages */
     --basefont: "Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
     --semibold: "Segoe UI Semibold","Helvetica Neue Medium","Motiva Sans","Arial Bold","Helvetica Bold",sans-serif;
     --semilight: "Segoe UI Semilight","Helvetica Neue Light","Motiva Sans","Arial Light","Helvetica Light",sans-serif;
     --scrollbarSize: 15px;
     --focus: 102, 36, 226; /* Default Metro skin purple accent */
-    --W10close_Red_h: 232, 18, 35; /* Window close button color on hover */
-    --W10close_Red_p: 241, 112, 121; /* Window close button color when pressed */
     --clientBG: 26, 26, 26;
     --header_dark: 20, 20, 20;
     --frameBorder: 15, 15, 15;
