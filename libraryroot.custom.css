@@ -2228,6 +2228,7 @@ button.TextButton {
 /* button.TextButton[class*="appdetailsfriendssection_ShowMore_"] */
 button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
     color: rgb(var(--white50));
+	font-weight: normal;
 }
 
 /* [class*="appactivityday_PartnerEventTextOnly_Title_"] */
@@ -2664,7 +2665,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 
 /* [class*="voicesettings_MicrophoneTest_"] [class*="voicesettings_VolumeBar_"] */
 ._2Dptk9e7W_k4zYB5wfRTcp .Qeg4qAFIMLaYd3mHOBndS {
-    background: rgb(var(--black));
+    background: rgb(var(--white20));
 }
 
 /* [class*="remoteplaysettings_TableHeader_"] */
@@ -7244,6 +7245,76 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 .fi6UDkxJq66MLo2z9wabQ .BoygotvcKo4DC4dSix8G3:hover {
 	color: white;
+}
+
+._3RNLmzBdpcg55exL2SwhT1 ._3K8Afwm4bvd9vSIzAz9siX ._1RfVQWVozb8NJ_wmCLAtxP {
+    color: rgb(var(--white));
+}
+
+._3QkkYqYUNkuL-1EOrIbEhB {
+    background-color: rgb(var(--white05));
+}
+
+._3rvHmUp522O41nzDaN_nH8 {
+    color: rgb(var(--white));
+}
+
+._2OqP3U4Xva0slDya7T_h9z svg path {
+    fill: rgb(var(--white));
+}
+
+._3RNLmzBdpcg55exL2SwhT1 ._3K8Afwm4bvd9vSIzAz9siX .H4JE-8OU0E7AeMZY3bEeM {
+    color: rgb(var(--white));
+}
+
+.DialogBody a.iKwt8JWlzzFgS6UsereGW {
+    cursor: default!important; /* The links from the family settings tab don't work here, so there's no point in changing the cursor */
+	text-decoration: none; /* Same as above */
+}
+
+._1-nHjRywUoX7Mpyc6JOPaQ {
+    background: rgb(var(--white20));
+}
+
+.z8GYwNt_nbBZrf7OVjs-s ._2g3Gley034M1ZGhcq005s {
+    color: rgb(var(--white));
+    cursor: pointer!important;
+    text-decoration: underline;
+}
+
+.z8GYwNt_nbBZrf7OVjs-s ._2g3Gley034M1ZGhcq005s:hover {
+    color: rgb(var(--white75));
+}
+
+.z8GYwNt_nbBZrf7OVjs-s {
+    color: rgb(var(--white50));
+	font-size: 14px;
+}
+
+._3NtZhwiPYTa9_A6u6hp8en {
+    background: rgb(var(--white05));
+}
+
+._3NtZhwiPYTa9_A6u6hp8en:hover {
+    background: rgb(var(--white10));
+}
+
+._3NtZhwiPYTa9_A6u6hp8en ._10thR4DOzTOaIh7Nw_Rt0I ._5TZM93iaa8IFGLbSm9uHp,
+._3NtZhwiPYTa9_A6u6hp8en ._10thR4DOzTOaIh7Nw_Rt0I ._3GiudB7tIi4ZxtG8PkRlrQ {
+    color: rgb(var(--focus));
+}
+
+._108IPFOOzK5rCCHyQTvvcx {
+    background: rgb(var(--clientBG));
+}
+
+.DesktopUI .LclHwcOfHFpwObYMD1HLa .DialogToggle_Label {
+    color: rgb(var(--white));
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz._1FyBL6obxHQ2Z2CsaV2Gbz:not(.HkTNMTzgCdY-DINJyKsGL) .DialogDropDown /* Intended to affect the dropdowns of the settings screens only */ {
+	border: 1px solid rgb(var(--white12)) !important;
+	background: none;
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
