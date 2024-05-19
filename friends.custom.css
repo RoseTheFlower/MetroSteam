@@ -1519,7 +1519,7 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
     line-height: 20px !important;
     margin: 0 !important;
     padding: 2px !important;
-    padding-left: 22px !important;
+    padding-left: 0;
 }
 
 /* [class*="suggestdialog_mentionDialog_"] */
@@ -1544,7 +1544,7 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
 ._2vKzaUZjsSot6P6v7AhDga.vuyQsbjGz1XyM66XierTV {
     color: !important;
     background-color: rgb(var(--white05)) !important;
-    padding-left: 22px !important;
+    padding-left: 0;
 }
 
 /* .timeDivision.time_passes .preHorizDivider,
@@ -3138,11 +3138,6 @@ body, body._3r3LeMDqAWrWz5yemfRZrr {
     display: none !important;
 }
 
-/* [class*="suggestdialog_suggestOption_"][class*="suggestdialog_selected_"] */
-._2vKzaUZjsSot6P6v7AhDga.vuyQsbjGz1XyM66XierTV {
-    padding-left: 22px;
-}
-
 .mentionAvatar {
     left: 4px;
     margin-top: 2px;
@@ -4477,4 +4472,8 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
 
 ._17di9y6ayc3Z-ITchVa-5N div span {
     color: rgb(var(--white))!important;
+}
+
+.SlashCommandSuggestion {
+  margin-left: 5px;
 }
