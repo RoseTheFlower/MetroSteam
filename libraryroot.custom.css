@@ -4567,6 +4567,7 @@ div[type="ever"] [class*="appdetailsfriendssection_Friends_"] .avatarHolder:hove
 /* [class*="appfilterpane_Container_"] [class*="appfilterpane_FilterArea_"] [class*="appfilterpane_FilterBucket_"][class*="appfilterpane_SearchResultsBox_"] [class*="appfilterpane_FilterBucketBoxes_"] */
 ._170Npw5h84elypMSQ8zNDI ._1ennWu_xj2YF8FRYgJ2M2H ._1axoiZsC1RBp22JQmxiBIc.MIMuVt_bcI4rYVo1e14kR ._32e6rHniKd5ztOQ1lYIulu {
     background-color: rgb(var(--clientBG));
+	border: 1px solid rgb(var(--frameBorder));
 }
 
 /* [class*="gamelistsearchbar_SearchFilterInput_"] [class*="gamelistsearchbar_FilterTag_"] */
@@ -7315,6 +7316,25 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 ._1FyBL6obxHQ2Z2CsaV2Gbz._1FyBL6obxHQ2Z2CsaV2Gbz:not(.HkTNMTzgCdY-DINJyKsGL) .DialogDropDown /* Intended to affect the dropdowns of the settings screens only */ {
 	border: 1px solid rgb(var(--white12)) !important;
 	background: none;
+}
+.ut0YcLYGAoSTz2Dnjw9U1 .gtlfC4VRhQqlmAmTFDl1N {
+    color: rgb(var(--white));
+}
+
+._15p_9xq6fzy0U3pCRV0mAC {
+    color: rgb(var(--white));
+}
+
+._3IWn-2rn7x98o5fDd0rAxb:focus, ._3IWn-2rn7x98o5fDd0rAxb:hover {
+    background: rgb(var(--black25));
+}
+
+._38GFQhbMgQS_1y-yV_MAza {
+    color: rgb(var(--white));
+}
+
+._2ZqUvIHTeQdmj5n3wCqp5s {
+    color: rgb(var(--white));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
