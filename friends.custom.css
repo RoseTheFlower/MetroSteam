@@ -4477,3 +4477,14 @@ button.DialogButton.roleButton.Disabled .roleSubtitle {
 .SlashCommandSuggestion {
   margin-left: 5px;
 }
+
+span.mention {
+    font-weight: normal;
+    color: rgb(var(--white));
+    border: 0.5px solid rgb(var(--white));
+    background: transparent;
+}
+
+.MentionAtSymbol {
+    color: rgb(var(--white));
+}
