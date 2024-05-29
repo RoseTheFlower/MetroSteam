@@ -18,6 +18,7 @@ Known issues / things to improve:
     --basefont: "Segoe UI","Helvetica Neue","Motiva Sans",Arial,Helvetica,sans-serif;
     --semibold: "Segoe UI Semibold","Helvetica Neue Medium","Motiva Sans",Arial,Helvetica,sans-serif;
     /* Both used occasionally, not for everything */
+    --semilight: "Segoe UI Semilight","Helvetica Neue Light","Motiva Sans","Arial Light","Helvetica Light",sans-serif;
     --whatsnew: block; /* Displayed */
     --gamehoverinfo: block; /* Displayed */
     --gameimageopacity: 0.25;
@@ -135,7 +136,7 @@ body, body._3r3LeMDqAWrWz5yemfRZrr /* Adding a BG here overrides the overlay BG 
 .bkfjn0yka2uHNqEvWZaTJ, .bkfjn0yka2uHNqEvWZaTJ:not(.Myra7iGjzCdMPzitboVfh):hover {
     text-transform: none;
     font-size: 14px;
-    padding: 5px 15px;
+    padding: 5px 16px;
     cursor: default;
     color: rgb(var(--white50));
 }
@@ -156,9 +157,9 @@ body, body._3r3LeMDqAWrWz5yemfRZrr /* Adding a BG here overrides the overlay BG 
     background: rgb(var(--header_dark));
     padding-left: 0px;
     min-width: 205px;
-    padding-top: 46px;
-    height: calc(100% - 46px) !important;
-    min-height: calc(100% - 46px) !important;
+    padding-top: 39px;
+    height: calc(100% - 39px) !important;
+    min-height: calc(100% - 39px) !important;
 }
 
 .DialogContent, .DialogContentTransition {
@@ -545,15 +546,16 @@ button[class*="posttextentry_EmoticonButton_"] */
 /* [class*="pagedsettings_PagedSettingsDialog_Title_"] */
 ._3qEgQJqeb0zyM12KXq64Or {
     color: rgb(var(--white));
-    font-size: 16px;
+    font-size: 20px;
     text-transform: none;
-    margin-top: -3px;
-    font-weight: 200;
+    margin-top: 0;
+    font-weight: 350;
+	font-family: var(--basefont);
 }
 
 /* [class*="pagedsettings_PagedSettingsDialog_PageListItem_"][class*="pagedsettings_Active_"] */
 .bkfjn0yka2uHNqEvWZaTJ.Myra7iGjzCdMPzitboVfh {
-    background-color: rgb(var(--white25));
+    background-color: rgb(var(--white24)); /* As in the original Metro */
     color: rgb(var(--white));
 }
 
@@ -1615,6 +1617,7 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
 /* [class*="pagedsettings_PagedSettingsDialog_PageContent_"].DesktopUI, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent_"] */
 ._1I3NifxqTHCkE-2DeritAs.DesktopUI, .DesktopUI ._1I3NifxqTHCkE-2DeritAs {
     background: rgb(var(--clientBG));
+	padding-top: 31px;
 }
 
 /* [class*="pagedsettings_PagedSettingsDialog_PageListItem_"]:not([class*="pagedsettings_Active_"]):hover [class*="pagedsettings_PageListItem_Icon_"] */
@@ -1629,7 +1632,7 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
 
 /* [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogHeader.DesktopUI, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogHeader */
 ._1I3NifxqTHCkE-2DeritAs .DialogHeader.DesktopUI, .DesktopUI ._1I3NifxqTHCkE-2DeritAs .DialogHeader {
-    font-weight: 300;
+    font-weight: 350;
     font-family: var(--basefont);
     font-size: 20px;
 }
@@ -2435,6 +2438,8 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 /* [class*="settings_SettingsDialogSubHeader_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogSubHeader_"] */
 ._2rK4YqGvSzXLj1bPZL8xMJ.DesktopUI, .DesktopUI ._2rK4YqGvSzXLj1bPZL8xMJ {
     color: rgb(var(--white75));
+	letter-spacing: normal;
+	font-weight: normal;
 }
 
 /* [class*="notificationssettings_FriendsDescription_"][class*="notificationssettings_FriendsDescription_"].DesktopUI, .DesktopUI [class*="notificationssettings_FriendsDescription_"][class*="notificationssettings_FriendsDescription_"] */
@@ -2455,6 +2460,7 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
     color: rgb(var(--white));
     text-transform: none;
     font-family: var(--basefont);
+	font-weight: 350;
 }
 
 /* button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] */
@@ -7335,6 +7341,11 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 ._2ZqUvIHTeQdmj5n3wCqp5s {
     color: rgb(var(--white));
+}
+
+._1GtsZWvAAnnuk-EjFP3su2 {
+    background-color: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
 }
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
