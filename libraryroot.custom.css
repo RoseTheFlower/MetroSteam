@@ -7347,6 +7347,10 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
     background-color: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
 }
+
+._9TcOq-IRuazXGnhjjLvhO.MT9J_J9hCotTlQQCrTT4 svg path {
+    fill: rgb(var(--white));
+}
 /*
 button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_ExitEditModeButton_"]:hover {
 	background: !important;
