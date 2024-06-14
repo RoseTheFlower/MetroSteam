@@ -523,10 +523,14 @@
     max-width: 46px !important;
     margin-left: 0px !important;
     padding: 0;
+	max-height: 40px;
 }
 
 .ChatMessageEntryVoice.Active {
     background: none;
+	min-width: 115px;
+    width: 115px;
+	max-width: 115px;
 }
 
 .ChatMessageEntryVoice.Disabled {
@@ -552,6 +556,7 @@
 
 .VoiceToggle {
     height: 40px !important;
+    max-height: 40px;
     border: 0;
     cursor: default;
 }
@@ -2769,25 +2774,25 @@ img._316r8gf6PZbv2JR4fpKVey {
 
     /* [class*="addonpicker_ItemList_"] [class*="addonpicker_Item_"]:hover */
 ._2tnPHy-nozONfkJPqkZciP ._3zgndNTKG2ncwQVa-HXHBQ:hover {
-        background-color: rgba(var(--white05)) !important;
-    }
+    background-color: rgba(var(--white05)) !important;
+}
 
     /* [class*="addonpicker_Tab_"][class*="addonpicker_Active_"] */
 ._1F8BhKKWf_XhG9QsmY_4lp._2bg1wWoNj7Bs0BSiao9e9x {
-        border-bottom: 4px solid rgb(var(--focus)) !important;
-    }
+    border-bottom: 4px solid rgb(var(--focus)) !important;
+}
 
     /* [class*="addonpicker_Tab_"]:hover:not([class*="addonpicker_Active_"]) */
 ._1F8BhKKWf_XhG9QsmY_4lp:hover:not(._2bg1wWoNj7Bs0BSiao9e9x) {
-        background-color: rgba(var(--white05)) !important;
-        border-bottom: 4px solid transparent !important;
-    }
+    background-color: rgba(var(--white05)) !important;
+    border-bottom: 4px solid transparent !important;
+}
 
     /* [class*="addonpicker_Tab_"]
     [class*="addonpicker_TabContent_"]:hover:not([class*="addonpicker_Active_"]) */
 ._1F8BhKKWf_XhG9QsmY_4lp ._2MluNdiOiHT-XKPQfFiIax:hover:not(._2bg1wWoNj7Bs0BSiao9e9x) {
-        background-color: transparent !important;
-    }
+    background-color: transparent !important;
+}
 
 /*emoticon and reactions code popup*/
 /* [class*="emoticon_EmoticonHover_"],
@@ -2887,7 +2892,7 @@ svg.SVGIcon_Button.SVGIcon_Clock */
 
 /* [class*="messages_MsgWithAddons_"] [class*="messages_Addons_"] */
 ._3kEgIPZCMTtXeWWzzRLo4K ._3nIwHFIw4nSXC_DUrzO_a6 {
-    background-color: rgb(var(--clientBG)) !important;
+    background: rgb(var(--clientBG)) !important;
     border-radius: 6px !important;
     border: 1px solid rgb(var(--frameBorder));
 }
@@ -2900,7 +2905,7 @@ svg.SVGIcon_Button.SVGIcon_Clock */
         width: 100%;
         height: 100%;
         content: '';
-        background-color: rgb(var(--white12));
+        background: rgb(var(--white12));
         z-index: 1;
         opacity: 1;
         pointer-events: none;
@@ -2932,8 +2937,8 @@ svg.SVGIcon_Button.SVGIcon_Clock */
     /* [class*="messages_Addons_"] [class*="messages_Emoticon_"]:hover,
     [class*="messages_Addons_"] [class*="messages_Emoticon_"]:hover path */
 ._3nIwHFIw4nSXC_DUrzO_a6 .x623f5XW8KKftpfX7C_tg:hover, ._3nIwHFIw4nSXC_DUrzO_a6 .x623f5XW8KKftpfX7C_tg:hover path {
-        stroke: rgb(var(--white)) !important;
-    }
+        stroke: rgb(var(--white75)) !important;
+}
 
     /* [class*="messages_Addons_"] [class*="messages_Emoticon_"] ellipse */
 ._3nIwHFIw4nSXC_DUrzO_a6 .x623f5XW8KKftpfX7C_tg ellipse {
@@ -3742,14 +3747,12 @@ Doesn't work when docking.
     color: rgb(var(--focus));
 }
 
-/* .VoiceToggle.Active svg,
-.VoiceToggle.Active:hover svg */
 .VoiceToggle.Active svg, .VoiceToggle.Active:hover svg {
     color: rgb(var(--white75));
 }
 
 .VoiceToggle.Active:hover {
-    background: rgb(var(--white05));
+    background-color: rgb(var(--white05));
 }
 
 .VoiceToggle.Active {
@@ -3757,8 +3760,14 @@ Doesn't work when docking.
     border: none !important;
 }
 
-/* .OneOnOneVoiceClose .SVGIcon_X_Line line,
-.OneOnOneVoiceClose:hover .SVGIcon_X_Line line, .OneOnOneVoiceClose.gpfocus .SVGIcon_X_Line line */
+.VoiceToggle.Active:focus {
+	background-color: rgb(var(--focus));
+}
+
+.VoiceToggle.Active:focus svg {
+    color: white;
+}
+
 .OneOnOneVoiceClose .SVGIcon_X_Line line, .OneOnOneVoiceClose:hover .SVGIcon_X_Line line, .OneOnOneVoiceClose.gpfocus .SVGIcon_X_Line line {
     stroke: rgb(var(--white));
 }
@@ -4487,4 +4496,31 @@ span.mention {
 
 .MentionAtSymbol {
     color: rgb(var(--white));
+}
+
+._30znjhR0GAP1wcdYr_vX8N {
+    color: rgb(var(--white));
+    background: rgb(var(--black45));
+}
+
+.ActiveTextChannel .chatRoomGroupName, .ActiveTextChannel .chatRoomTextChannelName {
+    color: rgb(var(--white));
+}
+
+._3kEgIPZCMTtXeWWzzRLo4K ._3nIwHFIw4nSXC_DUrzO_a6 .x623f5XW8KKftpfX7C_tg:hover {
+    opacity: 1;
+    color: rgb(var(--white75));
+	background: rgb(var(--white05));
+}
+
+.AssignCategoriesDialog_Friend {
+    background: rgb(var(--white05));
+}
+
+.VoiceControlPanelButton.chatPinRoom:hover .SVGIcon_Button {
+    fill: rgb(var(--white));
+}
+
+.friendRequestButton .requestsNumber, .friendRequestButton:hover .requestsNumber {
+    background-color: rgb(var(--focus));
 }
