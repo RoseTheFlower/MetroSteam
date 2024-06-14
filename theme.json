@@ -2,7 +2,7 @@
     "name": "Metro by Rose",
     "author": "Rose",
     "target": "Desktop",
-    "version": "v1.6",
+    "version": "v1.7",
     "description": "A skin heavily inspired by the original Metro for Steam",
     "manifest_version": 9,
     "tabs": {
@@ -136,44 +136,92 @@
                 }
             ]
         },
-        "Decal": {
-            "type": "dropdown",
-            "values": {
-                "Fish": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/1.png)", "all"],
-                    "--decalXY": ["right top", "all"]
-                },
-                "Wind": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/2.png)", "all"],
-                    "--decalXY": ["right bottom", "all"]
-                },
-                "Wave": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/3.png)", "all"],
-                    "--decalXY": ["right bottom", "all"]
-                },
-                "Bird": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/4.png)", "all"],
-                    "--decalXY": ["calc(100% - 1px) 3px", "all"]
-                },
-                "Circles": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/5_top.png)", "all"],
-                    "--decalXY": ["calc(100% - 2px) top", "all"]
-                },
-                "Grass": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/5_bot_sm.png)", "all"],
-                    "--decalXY": ["right bottom", "all"]
-                },
-                "Artistic Fish": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/6.png)", "all"],
-                    "--decalXY": ["right 41px", "all"]
-                },
-                "Steam": {
-                    "--decal": ["url(https://rosetheflower.github.io/MetroSteam/decals/decal_steam_btmr.png)", "all"],
-                    "--decalXY": ["calc(100% - 174px) calc(100% - 79px)", "all"]
-                },
-                "None":{}
-            }
+    "Decal": {
+      "type": "dropdown",
+      "values": {
+        "Fish": {
+          "--decal": [
+            "var(--fish)",
+            "library"
+          ],
+          "--decalXY": [
+            "right top",
+            "library"
+          ]
         },
+        "Wind": {
+          "--decal": [
+            "var(--wind)",
+            "library"
+          ],
+          "--decalXY": [
+            "right bottom",
+            "library"
+          ]
+        },
+        "Wave": {
+          "--decal": [
+            "var(--wave)",
+            "library"
+          ],
+          "--decalXY": [
+            "right bottom",
+            "library"
+          ]
+        },
+        "Bird": {
+          "--decal": [
+            "var(--bird)",
+            "library"
+          ],
+          "--decalXY": [
+            "calc(100% - 1px) 3px",
+            "library"
+          ]
+        },
+        "Circles": {
+          "--decal": [
+            "var(--circles)",
+            "library"
+          ],
+          "--decalXY": [
+            "calc(100% - 2px) top",
+            "library"
+          ]
+        },
+        "Grass": {
+          "--decal": [
+            "var(--grass)",
+            "library"
+          ],
+          "--decalXY": [
+            "right bottom",
+            "library"
+          ]
+        },
+        "Artistic Fish": {
+          "--decal": [
+            "var(--artisticfish)",
+            "library"
+          ],
+          "--decalXY": [
+            "right 41px",
+            "library"
+          ]
+        },
+        "Steam": {
+          "--decal": [
+            "var(--steam)",
+            "library"
+          ],
+          "--decalXY": [
+            "calc(100% - 174px) calc(100% - 79px)",
+            "library"
+          ]
+        },
+        "None": {}
+      }
+    },
         "Variation": {
             "type": "dropdown",
             "values": {
@@ -370,6 +418,38 @@
                     ],
                     "--gameinfoiconfilter": [
                         "invert(1)",
+                        "library"
+                    ],
+					"--fish": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/1.png)",
+                        "library"
+                    ],
+					"--wind": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/2.png)",
+                        "library"
+                    ],
+					"--wave": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/3.png)",
+                        "library"
+                    ],
+					"--bird": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/4.png)",
+                        "library"
+                    ],
+					"--circles": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/5_top.png)",
+                        "library"
+                    ],
+					"--grass": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/5_bot_sm.png)",
+                        "library"
+                    ],
+                    "--artisticfish": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/6.png)",
+                        "library"
+                    ],
+                    "--steam": [
+                        "url(https://rosetheflower.github.io/MetroSteam/decals/Metro%20White/decal_steam_btmr.png)",
                         "library"
                     ]
                 }
