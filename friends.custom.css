@@ -1658,11 +1658,12 @@ html._2GpKTB_eizdXpH2xVGbMKi ._2y2tUbsMx8OIwkimGSyHmb {
 
 .inviteButton.inviteButtonJoinVoice {
     background: rgb(var(--white12));
+	color: rgb(var(--white));
 }
 
-    .inviteButton.inviteButtonJoinVoice:hover {
-        background: rgb(var(--white24));
-    }
+.inviteButton.inviteButtonJoinVoice:hover {
+    background: rgb(var(--white24));
+}
 
 .OneOnOneVoiceRoomControls {
     background-color: rgb(var(--clientBG)) !important;
@@ -3532,15 +3533,13 @@ Doesn't work when docking.
 
 .chatRoomVoiceChannel.ActiveVoiceChannel {
     background-color: rgb(var(--clientBG));
-    border: 1px solid rgb(var(--frameBorder));
+    border-top: 1px solid rgb(var(--frameBorder));
+    border-bottom: 1px solid rgb(var(--frameBorder));
+	width: 100%;
 }
 
 .emptyChannelNotice {
     color: rgb(var(--white50));
-}
-
-.chatRoomVoiceChannel.ActiveVoiceChannel {
-    width: 100%;
 }
 
 .ChatRoomListGroupItemChatRooms {
@@ -3783,6 +3782,7 @@ Doesn't work when docking.
 /* [class*="chattabs_ChatTabTransitionGroup_"] */
 ._19ILu15eRwfp5Tkaqhtb0a {
     border-right: 2px solid transparent;
+	gap: 1px;
 }
 
 .HorizontalMiniSliderScroll::-webkit-scrollbar {
@@ -4523,4 +4523,25 @@ span.mention {
 
 .friendRequestButton .requestsNumber, .friendRequestButton:hover .requestsNumber {
     background-color: rgb(var(--focus));
+}
+
+.chatRoomGroupNavCollapsed .chatRoomVoiceChannelsGroup .chatRoomVoiceChannel, .chatRoomGroupNavCollapsed .chatRoomVoiceChannelsGroup .chatRoomVoiceChannel.ActiveVoiceChannel {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.OneOnOneVoiceRoomControls .VoiceToggleIconCtn:hover {
+    color: rgb(var(--white75));
+}
+
+.VoiceToggleIconCtn {
+    color: rgb(var(--white));
+}
+
+.FriendChatBroadcastDetails {
+    color: rgb(var(--white));
+}
+
+.BroadcastVideoWatchState_Text {
+    color: white;
 }
