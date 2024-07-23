@@ -7840,6 +7840,10 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
     color: rgb(var(--white75));
 }
 
+._2hegSJLw7cDEDv9fKZj8xS ._2SNqCkeOL0u8yOzul4tJuI, ._2hegSJLw7cDEDv9fKZj8xS ._2SNqCkeOL0u8yOzul4tJuI:hover {
+    background-color: rgb(var(--focus));
+}
+
 /* [class*="pagedsettings_PagedSettingsDialog_PageContent_"].DesktopUI .DialogBody, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent_"] .DialogBody */
 ._1I3NifxqTHCkE-2DeritAs.DesktopUI .DialogBody, .DesktopUI ._1I3NifxqTHCkE-2DeritAs .DialogBody {
     padding-right: 24px;
