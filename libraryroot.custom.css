@@ -7801,6 +7801,19 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 ._3A6_pctR-r38LS9uQsFQi7 ._3dZUYMj_C6yhvxzI0L010s .VzCqGXR4hfniDKyTLvjSr>svg {
 	opacity: 1;
 }
+
+._23SnllqT_AqZ1C_QHcNQ4Z ._3sz4Ldugm_cV_JaHOErVR8:hover {
+    background-color: rgb(var(--white05));
+}
+
+._23SnllqT_AqZ1C_QHcNQ4Z ._3sz4Ldugm_cV_JaHOErVR8:hover polyline,
+._23SnllqT_AqZ1C_QHcNQ4Z ._3sz4Ldugm_cV_JaHOErVR8 polyline {
+    stroke: rgb(var(--white));
+}
+
+._1-nHjRywUoX7Mpyc6JOPaQ ._2_0JonK7eKEvh8IoOvq0-B {
+	background: rgb(var(--focus))!important;
+}
 /*
 .xYbDdgox9mzrraWWYN3_- ._1AazHUNJbyL5SIWE5jC4Tz ._1b6LYWVijW-9E4YV0keDWZ {
     padding: 0;
@@ -7818,7 +7831,6 @@ button[class*="appdetailsheader_ExitEditModeButton_"][class*="appdetailsheader_E
 	background: !important;
 }
 */
-
 
 /* Bug fixing for Valve */
 /* [class*="pageablecontainer_HeaderPageControls_"] */
