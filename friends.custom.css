@@ -3790,7 +3790,7 @@ Doesn't work when docking.
 }
 
 .ChatTabs.HasWindowControls {
-    padding-top: 28px;
+    padding-top: 29px;
 }
 
 .chatTabSetContainer.inclient {
@@ -3803,7 +3803,7 @@ Doesn't work when docking.
 }
 
 .ChatTabs .dropTargetBox {
-    margin-top: 28px;
+    margin-top: 29px;
 }
 
 /* [class*="chattabs_ChatTabContent_ChatRoomName_"] */
