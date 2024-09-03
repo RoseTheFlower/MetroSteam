@@ -4042,11 +4042,6 @@ button.DialogButton._3Cdin80d-hVsakHUZboheb.SLpyhiN-Dagi3V8ZKukaK:hover {
     color: rgb(var(--focus));
 }
 
-/* [class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"], [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] [class*="gamelistentry_CloudError_"] */
-._1UBpAXP408Ez_L_mXhW5Q9._2-O4ZG0KrnSrzISHBKctFQ .cMb2tLY-QjdRohM5U6Btp, ._1UBpAXP408Ez_L_mXhW5Q9 ._2-O4ZG0KrnSrzISHBKctFQ .cMb2tLY-QjdRohM5U6Btp {
-    color: rgb(var(--white));
-}
-
 /* [class*="appdetailsachievementssection_UnachievedSection_"] [class*="appdetailsachievementssection_Label_"] */
 ._3ca11X3AK6npLS3emMa5Lr .uoFNFZ7Hs5cF1IjP2fvPw {
     color: rgb(var(--white50));
@@ -7817,6 +7812,31 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 ._1-nHjRywUoX7Mpyc6JOPaQ ._2_0JonK7eKEvh8IoOvq0-B {
 	background: rgb(var(--focus))!important;
+}
+
+.WMjaqaZQRSDfgd8VK8TOm:hover {
+    color: rgb(var(--white75));
+}
+
+._2T45kYJmyvQWyxytQeohuY._3JYigpIF46lZDATkhxHZmZ .OshLau78NSt9yYd3ifber {
+    color: rgb(var(--focus));
+}
+
+._36KTbApKz0VLY9Q6lGt4aH {
+    background-color: rgb(var(--textentry));
+    color: rgb(var(--white));
+}
+
+._36KTbApKz0VLY9Q6lGt4aH input {
+    color: rgb(var(--white));
+}
+
+._28eIRmQ229ntDIyQXTn3Ub._32Lfwcdolc3ByZWItfR3ni.QE3sHW9puNTAjiRDY71Xy:hover {
+    background-color: rgb(var(--white24));
+}
+
+._28eIRmQ229ntDIyQXTn3Ub._32Lfwcdolc3ByZWItfR3ni.QE3sHW9puNTAjiRDY71Xy:active {
+    background-color: rgb(var(--focus));
 }
 /*
 .xYbDdgox9mzrraWWYN3_- ._1AazHUNJbyL5SIWE5jC4Tz ._1b6LYWVijW-9E4YV0keDWZ {
