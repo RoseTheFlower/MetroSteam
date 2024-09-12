@@ -44,5 +44,5 @@ Installing manually is also an option:
 * [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu, to the dynamic placement of the repositioned bottom bar buttons, and to the context menu borders.
 * [Ruben7173](https://github.com/Ruben7173/) for pointing at an element and for inspiring me to implement custom scroll bar buttons.
 * [Shiina](https://github.com/AikoMidori) for helping me find a few elements and realize where to look.
-* [Shadow](https://github.com/ShadowMonster99) for the [ClassMapper](https://github.com/SteamClientHomebrew/ClassMapper) that allowed to convert to the randomized class names.
+* [number1](https://github.com/ricewind012) and [Shadow](https://github.com/ShadowMonster99) for helping automate the randomized class conversions.
 * [Contributors](../../graphs/contributors) to this repository.
