@@ -2,12 +2,12 @@
     "name": "Metro by Rose",
     "author": "Rose",
     "target": "Desktop",
-    "version": "v1.8",
+    "version": "v1.8.1",
     "description": "A skin heavily inspired by the original Metro for Steam",
     "manifest_version": 9,
     "tabs": {
         "library": ["Steam|SteamLibraryWindow", "desktopoverlay", "desktopcontextmenu"],
-        "friends": ["desktopchat", "Remote Play"],
+        "friends": ["desktopchat", "OverlayRemotePlayTogether"],
         "all": ["library", "friends"]
     },
     "patches": {
