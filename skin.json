@@ -23,6 +23,10 @@
         {
           "MatchRegexString": "^DUMMYFORCONFIG$",
           "TargetCss": "custom.css"
+        },
+        {
+          "MatchRegexString": "^OverlayRemotePlayTogether$",
+          "TargetCss": "friends.custom.css"
         }
   ]
 }
