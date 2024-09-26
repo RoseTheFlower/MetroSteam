@@ -1105,9 +1105,13 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 .ToggleGroupChatList {
     position: absolute !important;
     z-index: 11 !important;
-    right: 50px !important;
+    right: 33px;
     width: 100% !important;
     height: 30px !important;
+}
+
+.ToggleGroupChatList:hover {
+    background: rgb(var(--white05));
 }
 
 .Collapsed .ToggleGroupChatList svg {
@@ -1118,9 +1122,11 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 .ToggleGroupChatList
 .SVGIcon_DoubleArrow */
 .FriendsListChatSection.ChatRoomListContainerParent .ToggleGroupChatList .SVGIcon_DoubleArrow {
-    width: 123px !important;
-    height: 8px !important;
-    margin-top: 11px !important;
+    width: 8px;
+    height: 8px;
+    margin-top: 11px;
+    position: sticky;
+    left: 5px;
 }
 
 /* chat window message entry box */
@@ -2970,7 +2976,7 @@ svg.SVGIcon_Button.SVGIcon_Clock */
 }
 
 /* [class*="friendslist_RemotePlayInviteLinkSection_"] [class*="friendslist_LinkRow_"] */
-.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7 {
+._14S4rlGAAqfqW6lMKYB2GM ._1tN7mH20YhTaXLqtoW2hR- {
     background-color: rgb(var(--white12));
     color: rgb(var(--white));
     border-bottom: 1px solid rgb(var(--frameBorder));
@@ -3028,13 +3034,13 @@ svg.SVGIcon_Button.SVGIcon_Clock */
 /* [class*="friendslist_RemotePlayInviteLinkSection_"]
 [class*="friendslist_LinkRow_"]
 [class*="friendslist_LinkRowText_"] */
-.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7 .o_39qE2DKxFG3q0A-UZCM {
+._14S4rlGAAqfqW6lMKYB2GM ._1tN7mH20YhTaXLqtoW2hR- ._2sIHGS_555xUrHvjOwV0Y2 {
     letter-spacing: 1px;
 }
 
 /* [class*="friendslist_RemotePlayInviteLinkSection_"]
 [class*="friendslist_LinkRow_"]:hover */
-.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7:hover {
+._14S4rlGAAqfqW6lMKYB2GM ._1tN7mH20YhTaXLqtoW2hR-:hover {
     color: rgb(var(--white));
     background-color: rgb(var(--white24));
 }
@@ -4548,4 +4554,17 @@ span.mention {
 
 .RVIs84dAE6wHcjH9tkinc .tool-tip-source {
     height: 24px;
+}
+
+.createChatRoomButton {
+	padding-top: 4px;
+	margin-top: 0;
+}
+
+.createChatRoomButton:hover {
+	background-color: rgb(var(--white05));
+}
+
+.MultiUserChat .msg.timeDivision {
+    white-space: nowrap; /* Timestamps' wrapping often interferes with other things when the chat window is small */
 }
