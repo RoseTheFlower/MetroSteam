@@ -4568,3 +4568,11 @@ span.mention {
 .MultiUserChat .msg.timeDivision {
     white-space: nowrap; /* Timestamps' wrapping often interferes with other things when the chat window is small */
 }
+
+.BBCodeAlreadyCollapsed.Minimized .BBCodeCollapseControl svg {
+    fill: rgb(var(--white));
+}
+
+.BBCodeAlreadyCollapsed.Minimized:hover .BBCodeCollapseControl .SVGIcon_Button, .BBCodeResizableComponent.Minimized:hover .BBCodeCollapseControl .SVGIcon_Button {
+    fill: rgb(var(--white));
+}
