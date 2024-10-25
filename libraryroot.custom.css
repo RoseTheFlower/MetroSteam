@@ -7839,6 +7839,76 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
     background-color: rgb(var(--focus));
 }
 
+._6em9hiNtkrdaHE8eVfq0P .YZrEIVJMwK_1XhBbqQ3fg {
+    color: rgb(var(--white));
+}
+
+._2SbtjAWZJfmU34ANssADE5 {
+    color: rgb(var(--white75));
+}
+
+._6em9hiNtkrdaHE8eVfq0P {
+    background: rgb(var(--clientBG));
+    border: 1px solid rgb(var(--frameBorder));
+}
+
+._6em9hiNtkrdaHE8eVfq0P ._365PZ8BVgd7sz6-xR9E9yb .rYp_PTAXV9D7Jc5c756Re,
+._6em9hiNtkrdaHE8eVfq0P ._365PZ8BVgd7sz6-xR9E9yb ._1vrXP23Jvmwoj70Yk81cnc {
+    background: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+
+._2-7fqz03LhYHKEBI-HwIPq ._3yu2_I6JERouGkz0YLwnuX ._1u3MRQ0ABDU4GSI-cGGiQ5 {
+    stroke: white;
+}
+
+button.DialogButton._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
+    background: rgb(var(--white12));
+}
+
+button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
+    background: rgb(var(--white24));
+}
+
+._3v2Gg_GCpLHpHQDLFQ7cvI ._2TaU1qJcGZu77jX5M0E6V4 {
+    color: rgb(var(--white));
+}
+
+._13fGPw2BaM5wWIahr2xNKt {
+    background-color: rgb(var(--white));
+}
+
+._1cr9sIuuS4nLKFLZ9EYN9Q::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(var(--white12));
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+}
+
+._1cr9sIuuS4nLKFLZ9EYN9Q:hover::after {
+	opacity: 1;
+}
+
+._2n6FNLKyb6al_YPk13xS7S ._2RCSUgg2X_uF_C0e1lrcqc {
+    color: rgb(var(--white));
+}
+
+._2n6FNLKyb6al_YPk13xS7S .d9dlNsZ74TUTz3j0b1Syi ._g4ceYb5tVuSmXg0aNEdR ._3VH5fiCX_yRu0oV5Adyqfq:hover ._1G9v2mshuM0YQNG51iX5fH,
+._2n6FNLKyb6al_YPk13xS7S .d9dlNsZ74TUTz3j0b1Syi ._g4ceYb5tVuSmXg0aNEdR ._3VH5fiCX_yRu0oV5Adyqfq:hover ._2B8djgiwv5XCyvzl7GxWBA,
+._2n6FNLKyb6al_YPk13xS7S .d9dlNsZ74TUTz3j0b1Syi ._g4ceYb5tVuSmXg0aNEdR ._3VH5fiCX_yRu0oV5Adyqfq:hover svg {
+    color: rgb(var(--white25));
+}
+
+._1VNuYHM6BPBOJspC6zPf5r.IbePLaw-vSvhG1GTenYFg ._3oavRVhIS9tC3vBsFT4Ggi.DialogButton:enabled._2xR-V97DWI7svSjgiCb3N-:hover {
+    color: rgb(var(--white));
+}
+
 /*
 .xYbDdgox9mzrraWWYN3_- ._1AazHUNJbyL5SIWE5jC4Tz ._1b6LYWVijW-9E4YV0keDWZ {
     padding: 0;
