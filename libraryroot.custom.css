@@ -7584,12 +7584,12 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
     color: rgb(var(--white50));
 }
 
-.DialogBody .RmxP90Yut4EIwychIEg51:hover, .RmxP90Yut4EIwychIEg51:hover {
+.DialogBody .RmxP90Yut4EIwychIEg51:hover, .RmxP90Yut4EIwychIEg51:hover, .DesktopUI .RmxP90Yut4EIwychIEg51:hover {
     color: rgb(var(--white75));
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r.MYyvJ6lNQZtM4MHwS-Y3g, ._7EGqd8bdiXJBd2fj5Hh8r:hover.MYyvJ6lNQZtM4MHwS-Y3g {
-    background-color: rgb(var(--white12));
+    background-color: rgb(var(--white24));
 	border: none;
 	color: rgb(var(--white));
 }
@@ -7600,13 +7600,13 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r {
-    background-color: rgb(var(--white12));
+    background-color: transparent;
 	border: none;
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r:hover, ._7EGqd8bdiXJBd2fj5Hh8r.gpfocus {
     border: none;
-    background-color: rgb(var(--white24));
+    background-color: rgb(var(--white12));
 }
 
 ._3W9MqQaRJWkRvI492CQOEl {
