@@ -7582,6 +7582,7 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 
 .DialogBody .RmxP90Yut4EIwychIEg51, .RmxP90Yut4EIwychIEg51 {
     color: rgb(var(--white50));
+	cursor: pointer !important;
 }
 
 .DialogBody .RmxP90Yut4EIwychIEg51:hover, .RmxP90Yut4EIwychIEg51:hover, .DesktopUI .RmxP90Yut4EIwychIEg51:hover {
@@ -7589,7 +7590,7 @@ svg._2BcXpTTz4_uKHV10mn3WJW path {
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r.MYyvJ6lNQZtM4MHwS-Y3g, ._7EGqd8bdiXJBd2fj5Hh8r:hover.MYyvJ6lNQZtM4MHwS-Y3g {
-    background-color: rgb(var(--white24));
+    background-color: rgb(var(--white12));
 	border: none;
 	color: rgb(var(--white));
 }
@@ -7915,15 +7916,18 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r ._2sQtvR60AbFF5UzDwY9hit._1gKI37LOWj1Df3QSnxvKyF {
-    background-color: rgb(var(--focus));
+    background-color: rgb(var(--white));
+	border: 3px solid rgb(var(--clientBG));
+	position: relative;
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r ._3HgL0eRQXwU6dIEXXK6qba ._2BdpWib8Zcj3QSkXzmGgIB {
-    color: rgb(var(--white75));
+    color: rgb(var(--white50));
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r ._2sQtvR60AbFF5UzDwY9hit {
     background-color: rgb(var(--white08));
+	border-radius: 10px !important;
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r ._2sQtvR60AbFF5UzDwY9hit:hover:not(._1gKI37LOWj1Df3QSnxvKyF) {
@@ -8013,12 +8017,33 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
     color: rgb(var(--white75));
 }
 
-._1RCWDLVLFja1TdD1P53BMq.DesktopUI, .DesktopUI ._1RCWDLVLFja1TdD1P53BMq, .RmxP90Yut4EIwychIEg51.DesktopUI, .DesktopUI .RmxP90Yut4EIwychIEg51 {
+._1RCWDLVLFja1TdD1P53BMq.DesktopUI, .DesktopUI ._1RCWDLVLFja1TdD1P53BMq {
+    color: rgb(var(--white50));
+}
+
+.RmxP90Yut4EIwychIEg51.DesktopUI, .DesktopUI .RmxP90Yut4EIwychIEg51 {
     color: rgb(var(--white));
 }
 
 ._3cowYQH1B8oj2_ls7YZ1aW ._2FSTgdJFSAvY-XzLYUOxnB ._1tCcOYs-0OsLRJmEPjYDTV {
 	text-decoration: underline;
+}
+
+._7EGqd8bdiXJBd2fj5Hh8r ._2sQtvR60AbFF5UzDwY9hit::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: 1;
+    pointer-events: none;
+    border: 3px solid rgb(var(--white08));
+	border-radius: 10px !important;
+}
+
+._1HL6KuwUJaZQ7x2rmAxxSz.DesktopUI, .DesktopUI ._1HL6KuwUJaZQ7x2rmAxxSz {
+    letter-spacing: 0;
 }
 
 /*
