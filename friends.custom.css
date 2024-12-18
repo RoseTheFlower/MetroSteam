@@ -396,6 +396,8 @@
 
 .chatRoomListContainer {
     background: rgb(var(--clientBG)) !important;
+	height: 100vh !important;
+    max-height: calc(100vh - 122px) !important;
 }
 
 .titleBarContainer.ChatTabs {
@@ -1089,11 +1091,6 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 /* Group chats List Height remake  */
 .chatRoomListContainer[style="height: 0px; max-height: 0px; min-height: 0px;"] {
     display: none !important;
-}
-
-.chatRoomListContainer {
-    height: 100vh !important;
-    max-height: calc(100vh - 121px) !important;
 }
 
 /* Friends remove height and remake height */
