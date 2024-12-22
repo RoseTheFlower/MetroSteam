@@ -8147,6 +8147,9 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
     background-color: rgb(var(--white));
 }
 
+:not(._1Pb6PMh_3L5p5NzuUz0Pp9) > ._2AzIX5kl9k6JnxLfR5H4kX svg path {
+	stroke: rgb(var(--white));
+}
 
 /*._1J8umaxlHnD4poewN6r8wp {
     padding-top: 2px;
