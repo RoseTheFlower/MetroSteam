@@ -4573,3 +4573,24 @@ span.mention {
 .BBCodeAlreadyCollapsed.Minimized:hover .BBCodeCollapseControl .SVGIcon_Button, .BBCodeResizableComponent.Minimized:hover .BBCodeCollapseControl .SVGIcon_Button {
     fill: rgb(var(--white));
 }
+
+._18bmBH7zyngCgHtgY3IEL_ {
+    background-color: transparent;
+}
+
+._3t-tVOpu2n074cjZsygYfm ._2MByvWz7Ec6CRwKDWFmHrS {
+    color: rgb(var(--white));
+}
+
+._3t-tVOpu2n074cjZsygYfm .hL2FPh5NpOjzuylSWv4GY {
+    background: rgb(var(--white12));
+    color: rgb(var(--white));
+}
+
+._3t-tVOpu2n074cjZsygYfm .hL2FPh5NpOjzuylSWv4GY:hover {
+    background: rgb(var(--white24));
+}
+
+._3t-tVOpu2n074cjZsygYfm .hL2FPh5NpOjzuylSWv4GY:active {
+    background: rgb(var(--focus));
+}
