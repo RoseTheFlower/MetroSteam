@@ -6703,7 +6703,7 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
 }
 
 /* .PopupFullWindow:not([class*="_PinnedView_"])::after */
-.PopupFullWindow:not(._PinnedView_):not(.OverlayTimeline)::after { /* Better than manually resizing the affected elements */
+.PopupFullWindow:not(._2OoAjT3o0Ieng7ycuy86vZ):not(.OverlayTimeline)::after { /* Better than manually resizing the affected elements */
     border: 1px solid rgb(var(--frameBorder));
     position: absolute;
     top: 0;
@@ -8153,6 +8153,43 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
 
 ._3KfxIwlXEvum7FCD_AM2_t .nibodjvvrm86uCfnnAn4g:hover {
 	opacity: 0.75;
+}
+
+._2fICi3Sa-9RSsaGQXtgYxE ._1BfvGliHSf2eWZCE__10m1 .kjBAvLwkb1RetQQxFsPjM {
+	background-color: rgb(var(--textentry));
+}
+
+.PopupFullWindow:not(._2OoAjT3o0Ieng7ycuy86vZ) .FXmBItQhq4jEhkePnRy4H ._1ipUHE3x1jV4zebZsOKan7 {
+    color: rgb(var(--white));
+}
+
+.PopupFullWindow:not(._2OoAjT3o0Ieng7ycuy86vZ) ._2fICi3Sa-9RSsaGQXtgYxE ._1BfvGliHSf2eWZCE__10m1 {
+    color: rgb(var(--white));
+}
+
+.DialogSlider_Value {
+    background: rgb(var(--focus));
+}
+
+.DialogSlider_Slider {
+    border: none;
+}
+
+.PopupFullWindow:not(._2OoAjT3o0Ieng7ycuy86vZ)._2fICi3Sa-9RSsaGQXtgYxE ._1BfvGliHSf2eWZCE__10m1 ._2NbHN6kBjSdOE0iBdnx6cT,
+._2fICi3Sa-9RSsaGQXtgYxE ._1BfvGliHSf2eWZCE__10m1 ._1Iw8T069HWD0YCuj9DM8xX {
+    color: rgb(var(--white));
+}
+
+.C9tvuqqEXGcrkcAtHrQ_R .EMpALkio49OZ9ttf0_k55 {
+    color: rgb(var(--white));
+}
+
+.C9tvuqqEXGcrkcAtHrQ_R ._3EcEdRFCaMHk3xQ16qirtm:hover, .C9tvuqqEXGcrkcAtHrQ_R ._2yvoVvrGHYXwux1bLxYc9p:hover, .C9tvuqqEXGcrkcAtHrQ_R ._2J5BIjURexcIYfVhbHmgRT:hover, .C9tvuqqEXGcrkcAtHrQ_R .EMpALkio49OZ9ttf0_k55:hover {
+    color: rgb(var(--white));
+}
+
+._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b.DialogButton, ._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq.DialogButton, ._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3.DialogButton {
+    color: rgb(var(--white)); /* Is this for inactive buttons? Will need to check. */
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
