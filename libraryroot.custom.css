@@ -1,7 +1,9 @@
 /*
-Known issues / things to improve:
+Known issues / things to do:
 - Still some elements to be skinned, particularly the least used or visible
 - Having all buttons visually react to hovering over them if clickable
+- Introducing Windows 8 or 10 style animations
+- Context menu size changes cause misclicks (from the CSS injection delay, unrelated to the skin itself)
 - Some library elements were changed to make them tolerable without much thinking and need to be revisited
 */
 
@@ -96,18 +98,6 @@ Known issues / things to improve:
     box-shadow: none !important;
     text-shadow: none !important;
 }
-/* Thanks to Sims for the idea and initial implementation of the root menu as an animation */
-@keyframes steam-show-menu {
-    from {
-        width: 100%;
-        background: rgb(var(--header_dark));
-}
-
-    to {
-        width: 100%;
-        background: rgb(var(--header_dark));
-}
-}
 
 /* body, body[class*="shared_common_v6_"] */
 body, body._2LxgdMcpWJRjkxZKbmeEEb /* Adding a BG here overrides the overlay BG */ {
@@ -121,20 +111,17 @@ body, body._2LxgdMcpWJRjkxZKbmeEEb /* Adding a BG here overrides the overlay BG 
     flex-shrink: 1 !important;
     padding-left: 0px;
     gap: 0px;
+	transition-delay: 0.1s !important;
 }
 
 /* [class*="rootmenu_RootMenuBar_"]:hover */
-._1Ky59qmywxOUtNcI1cgmkX:hover {
-    width: 100%;
+._1Ky59qmywxOUtNcI1cgmkX:hover, ._1Ky59qmywxOUtNcI1cgmkX:has(._3rgV8pPmQvZC-01x9l-q-N) {
     background: rgb(var(--header_dark));
     box-shadow: 0px 1px rgb(var(--frameBorder)) !important;
+	width: 100%;
+    transition-delay: 0.25s !important;
 }
 
-/* [class*="rootmenu_RootMenuBar_"]:not(:hover) */
-._1Ky59qmywxOUtNcI1cgmkX:not(:hover) {
-    animation-name: steam-show-menu;
-    animation-duration: 0.25s;
-}
 
 /* [class*="libraryhome_UpdatesContainer_"], [class*="libraryhome_LibraryHome_"], [class*="allcollections_ScrollContainer_"] */
 ._17uEBe5Ri8TMsnfELvs8-N, ._3Sb2o_mQ30IDRh0C72QUUu, .u1xD3KJEgksF_J_5TLZzO {
@@ -8190,6 +8177,37 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
 
 ._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b.DialogButton, ._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq.DialogButton, ._2fICi3Sa-9RSsaGQXtgYxE ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3.DialogButton {
     color: rgb(var(--white)); /* Is this for inactive buttons? Will need to check. */
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody .r3hOLjghfVd2FkvKjlsrO {
+    border-top: solid rgb(var(--white12)) 1px;
+}
+
+.zhaKeChn9HPNSMtk0ami_ ._3m0MnUo45wjLOfNLpZ-3KH {
+    background: rgb(var(--white10));
+    border: 1px solid rgb(var(--frameBorder));
+}
+
+.zhaKeChn9HPNSMtk0ami_ ._1e6tjguQEHdYIehM9aRmO5 {
+    background: none;
+    border: 1px solid rgb(var(--frameBorder));
+	border-top: none;
+}
+
+.zhaKeChn9HPNSMtk0ami_ ._1cXzMrhKqoTeIK_bPpNLIC ._1kVk1iZQs3Blqmz6k0qeFV {
+    color: rgb(var(--white));
+}
+
+.zhaKeChn9HPNSMtk0ami_ ._1cXzMrhKqoTeIK_bPpNLIC ._1LM_TWL_05e13S1LS9wHao {
+    color: rgb(var(--white));
+}
+
+.zhaKeChn9HPNSMtk0ami_ .Xdr35d96Gm9KXkUcxmFnK {
+    color: rgb(var(--white75));
+}
+
+.zhaKeChn9HPNSMtk0ami_ ._1cXzMrhKqoTeIK_bPpNLIC:hover {
+    background-color: rgb(var(--white05));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
