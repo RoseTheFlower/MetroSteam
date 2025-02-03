@@ -2243,6 +2243,7 @@ button.TextButton {
 /* ? ? downloads_TimeRemaining */
 ._2sCvZTD6ZTZz3p9_ekH_gI ._1r3ouwFT2-tsTAcnXYZ6NU ._1-Mr1M0nO5UEnqLWSR-uki {
     color: rgb(var(--white75));
+	font-weight: normal;
 }
 
 /* button.TextButton[class*="appdetailsfriendssection_ShowMore_"] */
@@ -8278,6 +8279,10 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
 
 ._3Mbhnlk1Go2j8yCdjthzc7 {
   padding-bottom: 0;	
+}
+
+._1YdRdM9TZ_3Xolwv9aVEv- ._DialogInputContainer.DialogDropDown:hover, ._1YdRdM9TZ_3Xolwv9aVEv- ._DialogInputContainer.DialogDropDown:focus {
+    color: rgb(var(--white));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
