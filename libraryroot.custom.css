@@ -1318,11 +1318,6 @@ html._14wqdluDeDnnEcg3OSLEmd ._2EstNjFIIZm_WUSKm5Wt7n {
     margin-top: 12px;
 }
 
-/* [class*="progressbar_ProgressBar_"][class*="progressbar_AnimateProgress_"]::after */
-.yZ55NhARZGx1Awk2qs8pS._1CcdviLW6hebdTPh-3a7DC::after {
-    background-image: none;
-}
-
 @media (max-width:1250px) { /* Accounting for extra buttons like the one for Soundtracks */
 /* [class*="titlebarcontrols_AccountMenu_"] > div:nth-of-type(2) */
 ._3yD46y5pd3zOGR7CzKs0mC > div:nth-of-type(2) {
@@ -1631,11 +1626,6 @@ html._14wqdluDeDnnEcg3OSLEmd ._2EstNjFIIZm_WUSKm5Wt7n {
     font-weight: 350;
     font-family: var(--basefont);
     font-size: 20px;
-}
-
-/* [class*="settings_SettingsDialogFatButton_"] */
-.UqEiVDhZ47cn3vWxM7cR0 {
-    background-color: rgb(var(--white12));
 }
 
 /* [class*="settings_SettingsDialogButton_"] */
@@ -2316,34 +2306,9 @@ button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
     color: rgb(var(--white));
 }
 
-/* [class*="downloadgraph_Throttle_"] */
-._38T9T2x6JLXEkWadD96esD {
-    color: rgb(var(--white50));
-    /*text-decoration-line: underline; 
-	Creates an unwanted line that appears at all times*/
-    /*cursor: pointer!important;
-	*/
-}
-
 /* [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_RemoveFromQueue_"].DialogButton:enabled */
 ._1VNuYHM6BPBOJspC6zPf5r.IbePLaw-vSvhG1GTenYFg ._2xR-V97DWI7svSjgiCb3N-.DialogButton:enabled {
     background: transparent;
-}
-
-/* [class*="downloadgraph_Throttle_"]:hover [class*="downloadgraph_ThrottleValue_"] */
-._38T9T2x6JLXEkWadD96esD:hover ._3XTahwurtN8WZd9RDYdTde {
-    color: rgb(var(--white));
-}
-
-/* [class*="downloadgraph_Throttle_"] [class*="downloadgraph_ThrottleValue_"] */
-._38T9T2x6JLXEkWadD96esD ._3XTahwurtN8WZd9RDYdTde {
-    color: rgb(var(--white50));
-    cursor: pointer !important;
-}
-
-/* [class*="downloadgraph_StatsPanel_"] [class*="downloadgraph_Throttle_"]:hover */
-._3mdnpmV9S9u27eB5JFwFNk ._38T9T2x6JLXEkWadD96esD:hover {
-    color: rgb(var(--white));
 }
 
 /* [class*="downloads_SectionTitle_"] [class*="downloads_Count_"] */
@@ -2419,11 +2384,6 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 /* [class*="accountpanel_Highlight_"] */
 ._35ztZulp_gETT1gOElpfvK {
     color: rgb(var(--white));
-}
-
-/* [class*="settings_SettingsDialogFatButton_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogFatButton_"] */
-.UqEiVDhZ47cn3vWxM7cR0.DesktopUI, .DesktopUI .UqEiVDhZ47cn3vWxM7cR0 {
-    background-color: rgb(var(--white12));
 }
 
 /* [class*="settings_SettingsDialogButton_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogButton_"] */
@@ -2510,17 +2470,6 @@ button.TEWmsM70ZLEOxLAjDMpcv ._3Wb9yDmYPUJksCr7HmaT9H {
 /* [class*="appactionbutton_ButtonChild_"] */
 ._2AzIX5kl9k6JnxLfR5H4kX {
     background: rgb(var(--white12));
-}
-
-/* a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"] */
-a._1Z3B4iGT48X6pYKxjbVdBO {
-    color: rgb(var(--white50));
-}
-
-/* a[class*="appdetailsbroadcastsection_ViewBroadcastOnWeb_"]:hover */
-a._1Z3B4iGT48X6pYKxjbVdBO:hover {
-    background-color: rgb(var(--white05));
-    color: rgb(var(--white75));
 }
 
 /* .LibraryDisplaySizeMedium [class*="libraryhome_UpdatesContainer_"] */
@@ -4209,11 +4158,6 @@ button.DialogButton._3Cdin80d-hVsakHUZboheb.SLpyhiN-Dagi3V8ZKukaK:hover {
     background-color: rgb(var(--white24));
 }
 
-/* [class*="screenshotmanagerdialog_SectionHeading_"] */
-._2lo2ippNTEIrQrtG5ydaBc {
-    color: rgb(var(--white75));
-}
-
 /* [class*="appproperties_AppProperties_"] .DialogBody [class*="appproperties_DlcGrid_"] */
 ._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW {
     background: rgb(var(--clientBG));
@@ -4343,11 +4287,6 @@ button.DialogButton._3Cdin80d-hVsakHUZboheb.SLpyhiN-Dagi3V8ZKukaK:hover {
 ._29AJUo6aKT93gX24N5WFj_ {
     background-color: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
-}
-
-/* [class*="screenshotmanagerdialog_SectionHeading_"] [class*="screenshotmanagerdialog_Line_"] */
-._2lo2ippNTEIrQrtG5ydaBc ._2My62NPencZrM-iHqLlNvK {
-    background-color: rgb(var(--white12));
 }
 
 /* [class*="screenshotmanagerdialog_CaptionField_"] */
@@ -5477,11 +5416,6 @@ button.i7jBC4aexUlu_modj8Jwm.i7jBC4aexUlu_modj8Jwm {
     background: rgb(var(--clientBG));
 }
 
-/* [class*="progressbar_ProgressBar_"] [class*="progressbar_Percent_"] */
-.yZ55NhARZGx1Awk2qs8pS ._2_0JonK7eKEvh8IoOvq0-B {
-    background: rgb(var(--focus)) !important;
-}
-
 /* [class*="standardtemplates_StandardTemplateContainer_"]:hover, [class*="standardtemplates_StandardTemplateContainer_"].gpfocus */
 ._30fVm4Rsel-4nUKEiPJgz9:hover, ._30fVm4Rsel-4nUKEiPJgz9.gpfocus {
     background-color: transparent;
@@ -6285,23 +6219,6 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
     background-color: rgb(var(--white05));
 }
 
-/* [class*="appfilterpane_SteamDeckCompatDropDown_"] ._DialogInputContainer,
-[class*="appfilterpane_SteamDeckCompatDropDown_"] .DialogDropDown._DialogInputContainer.Active */
-._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer, ._1SFpbc4QXF4_NR-Nd9lwis .DialogDropDown._DialogInputContainer.Active {
-    outline: 1px solid rgb(var(--white12));
-}
-
-/* [class*="appfilterpane_SteamDeckCompatDropDown_"]:hover ._DialogInputContainer,
-[class*="appfilterpane_SteamDeckCompatDropDown_"]:hover .DialogDropDown._DialogInputContainer.Active */
-._1SFpbc4QXF4_NR-Nd9lwis:hover ._DialogInputContainer, ._1SFpbc4QXF4_NR-Nd9lwis:hover .DialogDropDown._DialogInputContainer.Active {
-    outline: 1px solid rgb(var(--white24));
-}
-
-/* [class*="shared_svg_library_SteamDeckCompatUnsupported_"], [class*="shared_svg_library_SteamDeckCompatUnknown_"] */
-._1SeOP2727kq8F4yXLQVkiN, ._15dEsyOLWcvaqEtVZE1yG2 {
-    color: rgb(var(--white75));
-}
-
 /* [class*="collectionview_Container_"] [class*="collectionview_Header_"] .DialogInput_Wrapper .DialogTextInputBase,
 [class*="collectionview_Container_"] [class*="collectionview_Header_"] .DialogInput_Wrapper .DialogTextInputBase:hover */
 ._2q70uOe6xM3-c5XIVfBLe6 ._2rqTSCLSSEycEiuCS_OkpX .DialogInput_Wrapper .DialogTextInputBase, ._2q70uOe6xM3-c5XIVfBLe6 ._2rqTSCLSSEycEiuCS_OkpX .DialogInput_Wrapper .DialogTextInputBase:hover {
@@ -6629,20 +6546,6 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
     width: 16px;
 }
 
-/* [class*="screenshotmanagerdialog_ScreenshotListItem_"][class*="screenshotmanagerdialog_Selected_"],
-[class*="screenshotmanagerdialog_ScreenshotListItem_"][class*="screenshotmanagerdialog_Selected_"]:hover */
-._1xlfggpT8Cn4-EK9iJBdx8._1YCCffk57wIFq_yC8mr14P, ._1xlfggpT8Cn4-EK9iJBdx8._1YCCffk57wIFq_yC8mr14P:hover {
-    border-color: rgb(var(--focus));
-    filter: none;
-}
-
-/* [class*="screenshotmanagerdialog_ScreenshotListItem_"]:hover */
-._1xlfggpT8Cn4-EK9iJBdx8:hover {
-    transform: none;
-    filter: none;
-    border-color: rgb(var(--white10));
-}
-
 /* [class*="login_Login_"].DesktopUI, .DesktopUI [class*="login_Login_"] */
 .VZ6x_grhNkIYJG__jEEyp.DesktopUI, .DesktopUI .VZ6x_grhNkIYJG__jEEyp {
     border: 1px solid rgb(var(--frameBorder));
@@ -6855,11 +6758,6 @@ button.TextButton {
 /* [class*="appdetailsachievementssection_AchievementProgressContainer_"] */
 ._3ns9185LizH61StaAXuAp6 {
     background-color: rgb(var(--white20)); /* Using the white of Win 8 as the reference for the Metro theme of this skin */
-}
-
-/* [class*="progressbar_ProgressBar_"] */
-.yZ55NhARZGx1Awk2qs8pS {
-    background: rgb(var(--white20)); /* The transparency here may be unwanted */
 }
 
 /* [class*="salepreviewwidgets_StoreSaleWidgetContainer_"][class*="salepreviewwidgets_SaleItemDefaultCapsuleDisplay_"]:not([class*="salepreviewwidgets_MarketingMessage_"]) */
@@ -7117,21 +7015,6 @@ The new Recording overlay gets in the way of this
 /* [class*="appgrid_AppGridSectionLabel_"] */
 ._2hvQbTq62AjXQS4tZqVepi {
     color: rgb(var(--white75));
-}
-
-/* [class*="appfilterpane_SteamDeckCompatDropDown_"] ._DialogInputContainer .DialogDropDown_CurrentDisplay */
-._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer .DialogDropDown_CurrentDisplay {
-    background-color: transparent;
-}
-
-/* [class*="appfilterpane_SteamDeckCompatDropDown_"] ._DialogInputContainer.DialogDropDown:hover */
-._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer.DialogDropDown:hover {
-    color: rgb(var(--white));
-}
-
-/* [class*="appfilterpane_SteamDeckCompatDropDown_"] ._DialogInputContainer */
-._1SFpbc4QXF4_NR-Nd9lwis ._DialogInputContainer {
-    color: rgb(var(--white));
 }
 
 /* [class*="appdetailsgameinfopanel_Container_"] [class*="appdetailsgameinfopanel_SectionContainer_"] [class*="appdetailsfeatureicon_Container_"] [class*="appdetailsfeatureicon_Icon_"] */
@@ -7670,131 +7553,18 @@ The new Recording overlay gets in the way of this
     width: 13px;
 }
 
-.S4YqOs3UHI5AKsi94Fr3k svg * {
-    fill: rgb(var(--white));
-}
-
-._3T-pn_0lqENgObgSuijChU {
-    color: rgb(var(--white));
-}
-
-._38PoJNOgpYbnjJFNiKMxCB {
-    filter: none;
-}
-
-._2x8YN4RvLu1CEIqCbGNpUL ._1pnAm9mTDE0X4yXe0P_x4Z {
-    color: rgb(var(--white));
-    filter: none;
-}
-
-._2pQVuzydGOhRfyVsn1Ttnq svg, ._2pQVuzydGOhRfyVsn1Ttnq img {
-    filter: none;
-}
-
-._1qdzpmJ1SLzMuEMUhdUDTK {
-    filter: none;
-}
-
-._3DKuh756N2eENy86JC_4O8 {
-    background-color: rgb(var(--white20));
-}
-
-._3A6_pctR-r38LS9uQsFQi7 ._3dZUYMj_C6yhvxzI0L010s .ypAP4syqquH1Oy48rutpI {
-    background-color: rgb(var(--white20));
-}
-
 ._21gY8PzFWYF-Bw9MlZiXDm ._1Yp6JEQWReLrqaHJaRiqTc.ZMQqOTHvTbwX2mMMsVGwv,
 ._21gY8PzFWYF-Bw9MlZiXDm ._1Yp6JEQWReLrqaHJaRiqTc._3SvJUvuHZaXpx8hauIzZGR {
     background-color: rgb(var(--white));
-}
-
-._2pDLTAPzHq2Ky6PpSY6mar._2wjsRU08jCRSQA1Af8bD2K {
-    background: rgba(var(--clientBG),0.4);
-    backdrop-filter: none;
-}
-
-._13cKjJzuI0PVa79oM8G9O6 {
-    color: rgb(var(--white));
-}
-
-.dcbLRfMs7IRAhrNVXoZTl ._2I5qJd6ZDy4bPeC7oeryK3 {
-    color: rgb(var(--white75));
-}
-
-.ozRJB8uLnn-ZyOZj43B0v ._1AVfyoaKX1mpK6B7AJjoGA .Biz9h2ya6tC40llO7aWex {
-    background-color: rgb(var(--white12));
-}
-
-.ozRJB8uLnn-ZyOZj43B0v ._1AVfyoaKX1mpK6B7AJjoGA .Biz9h2ya6tC40llO7aWex:hover {
-    background-color: rgb(var(--white24));
-}
-
-.ozRJB8uLnn-ZyOZj43B0v .KQclxRBc8sOfFA2U7FyvE {
-    background: none;
-    color: rgb(var(--white));
-    border: none;
 }
 
 .gOv9M_tdWa0CEJbaLhOKY {
     filter: none;
 }
 
-.Eb1lsOEJzpe16aJ22U1Qa {
-    background-color: rgb(var(--clientBG));
-	border: 1px solid rgb(var(--frameBorder));
-}
-
-.Eb1lsOEJzpe16aJ22U1Qa .kRpFT0QtRvni4GbNv31am {
-    color: rgb(var(--white));
-}
-
-.Eb1lsOEJzpe16aJ22U1Qa ._390X6OtISLq6uq5EvK25w {
-    color: rgb(var(--white75));
-}
-
-.Eb1lsOEJzpe16aJ22U1Qa ._1ZoKHV644CyD8AzIIXbSji .SVGIcon_Button line {
-    stroke: rgb(var(--white));
-}
-
-.Eb1lsOEJzpe16aJ22U1Qa ._390X6OtISLq6uq5EvK25w img {
-    border: none;
-}
-
 .UgQp-NQIbjw2dbLYF77Cw ._2mxOP83pEM0_VV774kShWG {
     backdrop-filter: none;
     background: rgb(var(--clientBG));
-}
-
-._3T-pn_0lqENgObgSuijChU._1fN7jOMSZPTStQLx_RFVSs {
-    color: rgb(var(--white));
-}
-
-._10eOWbwO6HzRXkxNZo4pR0 ._2umasY4NwuMm9kxnunli8V ._3w9FJyNAYTSM9zU-9F4N3z {
-    color: rgb(var(--white));
-}
-
-.rhzh6oHumH49cw7TgYju5 {
-    background: rgb(var(--focus));
-}
-
-._1qdzpmJ1SLzMuEMUhdUDTK svg path {
-    fill: rgb(var(--white));
-}
-
-._3A6_pctR-r38LS9uQsFQi7 ._3dZUYMj_C6yhvxzI0L010s .iOMpsnIlVIIiGjiU-kMhb {
-    background-color: rgb(var(--focus));
-    filter: none;
-    backdrop-filter: none;
-    opacity: 1;
-	z-index: 9;
-}
-
-._3A6_pctR-r38LS9uQsFQi7 ._3dZUYMj_C6yhvxzI0L010s .VzCqGXR4hfniDKyTLvjSr svg path {
-    fill: white;
-}
-
-._3A6_pctR-r38LS9uQsFQi7 ._3dZUYMj_C6yhvxzI0L010s .VzCqGXR4hfniDKyTLvjSr>svg {
-	opacity: 1;
 }
 
 ._23SnllqT_AqZ1C_QHcNQ4Z ._3sz4Ldugm_cV_JaHOErVR8:hover {
