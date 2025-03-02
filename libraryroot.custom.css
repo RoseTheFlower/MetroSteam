@@ -6663,13 +6663,13 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
     pointer-events: none;
 }
 
-/* [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"].DialogButton, [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"].DialogButton, [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"].DialogButton */
-._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b.DialogButton, ._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq.DialogButton, ._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3.DialogButton {
+/* [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"].DialogButton, [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"].DialogButton, [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"].DialogButton */
+._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b.DialogButton, ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq.DialogButton, ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3.DialogButton {
     color: rgb(var(--white));
 }
 
-/* [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"][class*="overlaytimer_Active_"], [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"][class*="overlaytimer_Active_"], [class*="overlaytimer_OverlayTimer_"] [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"][class*="overlaytimer_Active_"] */
-._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b._30yh2Wd7sU_xpk8Z1gaTqE, ._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq._30yh2Wd7sU_xpk8Z1gaTqE, ._2iKbt7g083TQdi7RqdGIjo ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3._30yh2Wd7sU_xpk8Z1gaTqE {
+/* [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Repeat_"][class*="overlaytimer_Active_"], [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Clear_"][class*="overlaytimer_Active_"], [class*="overlaytimer_ControlButtons_"] [class*="overlaytimer_Reset_"][class*="overlaytimer_Active_"] */
+._2j-W28YC1xAizcE7x9KkDT ._2fTt_FOOXO39F-pTi2dA-b._30yh2Wd7sU_xpk8Z1gaTqE, ._2j-W28YC1xAizcE7x9KkDT ._1ZLczw3NUNZfy66bzlEFMq._30yh2Wd7sU_xpk8Z1gaTqE, ._2j-W28YC1xAizcE7x9KkDT ._3TgXt606Gd8bsEEVvyCqv3._30yh2Wd7sU_xpk8Z1gaTqE {
     background-color: rgb(var(--focus));
     color: white;
 }
@@ -7632,7 +7632,7 @@ The new Recording overlay gets in the way of this
     background-color: rgb(var(--white));
 }
 
-.__1_YoWzrZ_hm7zSlMPkJNdp._2AkpJqt7oh9v0PNxn4G-um {
+._1_YoWzrZ_hm7zSlMPkJNdp._2AkpJqt7oh9v0PNxn4G-um {
     background: rgba(var(--clientBG),0.4);
     backdrop-filter: none;
 }
@@ -7683,7 +7683,7 @@ The new Recording overlay gets in the way of this
     background: rgb(var(--clientBG));
 }
 
-._3T-xYXziACgvkSwOnjGsjrll.c1Fn5e_N42Q5Oz4gyqRvL {
+.xYXziACgvkSwOnjGsjrll.c1Fn5e_N42Q5Oz4gyqRvL {
     color: rgb(var(--white));
 }
 
