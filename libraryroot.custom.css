@@ -5582,11 +5582,6 @@ button.DialogButton:disabled, button.DialogButton:disabled:hover, button.DialogB
     gap: 0;
 }
 
-/* [class*="appdetailsachievementssection_Remainder_"] [class*="appdetailsachievementssection_RemainderText_"] */
-._2gISWIeEzZ9PNuAzVuMaWd ._1-H7tKj_QcGHLUbx5wVsGg {
-    color: rgb(var(--white));
-}
-
 /* [class*="appdetailsworkshopsection_FeaturedItem_"] [class*="appdetailsworkshopsection_FeaturedItemHideButton_"]:hover .SVGIcon_X_Line line */
 ._1W34WpqfvufNgueNdZozwC .aZc8RQUeHL3YNHxrG4pXN:hover .SVGIcon_X_Line line {
     stroke: rgb(var(--white));
@@ -6598,7 +6593,8 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
 }
 
 /* [class*="newlogindialog_Login_"] [class*="newlogindialog_TextInput_"] */
-.lat0M-V5X4uYd6Mpm1DJ1 ._2GBWeup5cttgbTw8FM3tfx {
+.lat0M-V5X4uYd6Mpm1DJ1 ._2GBWeup5cttgbTw8FM3tfx,
+.lat0M-V5X4uYd6Mpm1DJ1 ._2GBWeup5cttgbTw8FM3tfx:hover {
     background-color: rgb(var(--textentry));
     border: none;
     color: rgb(var(--white));
@@ -6607,6 +6603,7 @@ button._1iFnR7cGRa1kepep433pGx:hover svg path {
 /* [class*="newlogindialog_Login_"] [class*="newlogindialog_SubmitButton_"] */
 .lat0M-V5X4uYd6Mpm1DJ1 .DjSvCZoKKfoNSmarsEcTS {
     background: rgb(var(--white12));
+	color: rgb(var(--white));
 }
 
 /* [class*="newlogindialog_Login_"] [class*="newlogindialog_SubmitButton_"]:hover */
@@ -8250,6 +8247,127 @@ svg.SVGIcon_Button.SVGIcon_DynamicCollection {
 
 ._3ooxUb30k7736aTVnO179S {
     color: inherit;
+}
+
+._36KTbApKz0VLY9Q6lGt4aH:hover, ._36KTbApKz0VLY9Q6lGt4aH:active {
+	color: rgb(var(--white));
+}
+
+._3gbOVGSW1dqXYHCOhiTtuR {
+    color: rgb(var(--white));
+}
+
+._2OsQkIMNf9Cnl4xfBXMApr {
+    background-color: transparent;
+}
+
+.HoGkIKTQnkTEFGjqO-GMl ._11phBiBefcVQdzrnrezkKa, .HoGkIKTQnkTEFGjqO-GMl ._2jphjrSifC6orDT4g_7Wd {
+    color: rgb(var(--focus)); /* This might need to be changed to something like white75 to be more readable depending on the user's custom color. */
+}
+
+._3v6WnuVNx1rJx0x_1AAyPp path {
+    fill: rgb(var(--white));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._14exBrSFDthVqeknXgFh4X ._3NHpq7ZDgg4uYEzUF9RxaQ {
+    color: rgb(var(--white));
+}
+
+.VZ6x_grhNkIYJG__jEEyp {
+    background: rgb(var(--clientBG));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._14exBrSFDthVqeknXgFh4X {
+    margin-top: 20px;
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._1K431RbY14lkaFW6-XgSsC {
+    color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._2v9dClMg2Lmn8UVv6GUeJt ._27aItUQsVlk-hSm7K9UCJt {
+    color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 .XrYgea66b38RASmbI3PJo {
+    color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._3wSeH3OorL-tMzwXL55smN ._3pxTSyPhDmjNqXUYDIITS- {
+    color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._2EuR68sQbA8eP01DlIfu6O._2R_n2M6thAvA4On2yeR_Jd {
+    background: rgb(var(--clientBG));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._3JBYGcszFcaSNXHHSR3kCV ._31Vq4lzNWs4WikXVr9J4hz {
+    color: rgb(var(--white));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._3JBYGcszFcaSNXHHSR3kCV ._1hKgiFuFaVR_Sq1Gj_gCnd {
+    color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 .DdK_Fpa32ezl3qzyYJ85d ._1rEWOv1g1uTXNhoWiJLQZs, .lat0M-V5X4uYd6Mpm1DJ1 .DdK_Fpa32ezl3qzyYJ85d ._3aMbj3PT-p1yxEt98UM56K, .lat0M-V5X4uYd6Mpm1DJ1 ._2Io_Jc8M4cRHn9cU4vHcqW ._1rEWOv1g1uTXNhoWiJLQZs, .lat0M-V5X4uYd6Mpm1DJ1 ._2Io_Jc8M4cRHn9cU4vHcqW ._3aMbj3PT-p1yxEt98UM56K, .lat0M-V5X4uYd6Mpm1DJ1 ._1YQZI88vD5NCUw4u35tB0m ._1rEWOv1g1uTXNhoWiJLQZs, .lat0M-V5X4uYd6Mpm1DJ1 ._1YQZI88vD5NCUw4u35tB0m ._3aMbj3PT-p1yxEt98UM56K {
+    color: rgb(var(--white));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._3huyZ7Eoy2bX4PbCnH3p5w {
+    background-color: transparent;
+}
+
+._37ANMR1DAeBJYXulW34A2S {
+    height: 38px;
+}
+
+._1gzkmmy_XA39rp9MtxJfZJ {
+    background-color: rgb(var(--textentry));
+}
+
+._1gzkmmy_XA39rp9MtxJfZJ ._3xcXqLVteTNHmk-gh9W65d {
+    border-bottom: 2px solid rgb(var(--white50));
+    color: rgb(var(--white));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._1K431RbY14lkaFW6-XgSsC:hover {
+    color: rgb(var(--white));
+}
+
+._1A8Mk6QeC0d7bvHDJIoW7o {
+    color: rgb(var(--white));
+}
+
+._3H-JHTYIWOo9uVrF0SXAX0 {
+    color: rgb(var(--white75));
+}
+
+._2-O4ZG0KrnSrzISHBKctFQ.hmT7JC84x7x3iWYzUZjij {
+    color: rgb(var(--white75)); /* Do we need to distinguish a game installed remotely? */
+}
+
+._2qm_fJcwhV6H_wMT8bvLQq ._3qs2GKynYkxCbVbV-u6wln {
+    color: rgb(var(--ingame));
+}
+
+._2qm_fJcwhV6H_wMT8bvLQq ._3CBD4hXRv0kxOEL2a_oXGY {
+    color: rgb(var(--ingame));
+}
+
+.KN1Z4dQcyKqZnJu1Lg-pt {
+    color: rgb(var(--white75));
+}
+
+.uCBCZOATxD3vzPCGUgDEp {
+    background-color: rgb(var(--white10)); /* Random */
+}
+
+.sEkutMg06fyWOzjTV1nX_ {
+    color: rgb(var(--white75));
+}
+
+._2g12SpxNjFdgoLExXqWpUS {
+    color: rgb(var(--white75));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
