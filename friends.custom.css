@@ -4594,3 +4594,24 @@ span.mention {
 ._3t-tVOpu2n074cjZsygYfm .hL2FPh5NpOjzuylSWv4GY:active {
     background: rgb(var(--focus));
 }
+
+.ChatRoomList .ChatRoomList_Empty {
+    color: rgb(var(--white75));
+}
+
+.quickAccessFriendsMessage {
+    color: rgb(var(--focus));
+    border: 1px dashed rgb(var(--focus));
+}
+
+.quickAccessFriends.emptyQuickAccess .quickAccessFriendsMessageDismiss {
+    background: rgb(var(--focus));
+}
+
+._1wu95XTcpkpdKpgg_n2HR ._3IBr8jcQ1xjVP0vGqDBE6R {
+    color: rgb(var(--white));
+}
+
+._1wu95XTcpkpdKpgg_n2HR ._3IBr8jcQ1xjVP0vGqDBE6R:hover {
+    color: rgb(var(--white75));
+}
