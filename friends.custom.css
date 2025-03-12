@@ -2968,6 +2968,10 @@ svg.SVGIcon_Button.SVGIcon_Clock */
     padding-top: 1px !important;
 }
 
+.socialInputContainer .inputContainer {
+	margin: 0;
+}
+
 .friendListButton:last-child:not(.addFriendButton) {
     margin-right: 0px;
 }
@@ -4152,7 +4156,7 @@ button.DialogButton.GreenPlay:hover, button.DialogButton.GreenPlay.gpfocus {
 }
 
 .quickAccessFriends .favoriteElement:hover .friend .playerName {
-    color:;
+    color: unset;
 }
 
 .friend.quickAccessFriend {
@@ -4614,4 +4618,31 @@ span.mention {
 
 ._1wu95XTcpkpdKpgg_n2HR ._3IBr8jcQ1xjVP0vGqDBE6R:hover {
     color: rgb(var(--white75));
+}
+
+.qRqgef0RWpUsajcxlKiYn {
+    color: rgb(var(--white));
+}
+
+@keyframes _2xvrsayL_RcEFyqGFvBu4N {/* Same as original but with new colors */
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  26% {
+    opacity: 1;
+    transform: scale(1);
+    color: rgb(var(--white));
+  }
+  100% {
+    color: rgb(var(--white75));
+  }
+}
+
+.CompactFriendsList .friend .labelHolder {
+	margin-top: 3px;
+}
+
+.CompactFriendsList .friendlistListContainer .friend.ingame .labelHolder._1BbOegz8bYL7iPzgYpOgQI {
+    margin-top: 3px;
 }
