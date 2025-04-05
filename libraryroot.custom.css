@@ -8370,6 +8370,30 @@ svg.SVGIcon_Button.SVGIcon_DynamicCollection {
     color: rgb(var(--white75));
 }
 
+._3xRRJfD2xy95i9NhJxLTp0 *::-webkit-scrollbar-corner, ._1UOkn2fGQ25jnyqcEJbnlo::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+button.DialogButton._3Cdin80d-hVsakHUZboheb:hover, button.DialogButton._3Cdin80d-hVsakHUZboheb:active:hover, button.DialogButton._3Cdin80d-hVsakHUZboheb:active {
+    color: rgb(var(--white));
+}
+
+._2iCoIHI0MBWO23qx2MstOi {
+    color: rgb(var(--white));
+}
+
+._1sEyqGyVMdCKf_5sIJnBz2 .J0VnCYymogUAJsk2sqyXG .WgpsFnN1iOVXybH93MPJL svg polyline {
+    stroke: rgb(var(--white));
+}
+
+._20QAC4WMXm8qFE8waUT5oo ._12vo5L1hsNGdao6_ssuirS .DialogTextInputBase {
+	border-bottom: none;
+}
+
+._2sCvZTD6ZTZz3p9_ekH_gI ._1r3ouwFT2-tsTAcnXYZ6NU ._3nx-k9xXUVgejG1BIAc84r {
+    color: rgb(var(--white75));
+}
+
 /*._1J8umaxlHnD4poewN6r8wp {
     padding-top: 2px;
 	padding-bottom: 2px;
