@@ -8221,6 +8221,7 @@ div.SPYFj8pCLpNmnuQJEDobC, div.QuKtTJ4LCPUlQeWYfLNyX, div._3s7cUqglDds9wzcWb7OLz
 
 ._2J170P0ckFcUIlsDU13MLS ._DialogInputContainer .DialogDropDown_CurrentDisplay {
     background-color: transparent;
+    flex-grow: 1;
 }
 
 ._2J170P0ckFcUIlsDU13MLS ._DialogInputContainer {
