@@ -157,10 +157,11 @@
 }
 
 .friendGroup .groupName {
-    margin-top: 0px !important;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
     font-family: var(--basefont); /* Matched to the original Metro */
+	align-items: center;
 }
 
 .groupName .gameGroupContainer .groupIcon {
@@ -177,7 +178,9 @@
 }
 
 .ExpandPlusMinus {
-    margin-top: 2px !important;
+    margin-top: 0 !important;
+	font-size: 0;
+	line-height: 16px;
 }
 
 /* zzz icon next to friends' names on the list */
@@ -1899,16 +1902,31 @@ button.DialogButton.Primary:hover {
 
 .inviteButton {
     background: rgb(var(--white12));
+	color: rgb(var(--white));
 }
 
-    .inviteButton:hover {
-        background: rgb(var(--white24));
-    }
+.inviteButton:hover {
+    background: rgb(var(--white24));
+}
+
+.ChatMessageInvite .inviteURLLinkDesc {
+    color: rgb(var(--white75));
+}
+
+.ChatMessageInvite .inviteURLLink {
+    background-color: rgb(var(--textentry));
+    color: rgb(var(--white75));
+    border: 1px solid transparent;
+}
 
 /* .msg.ChatMessageInvite .invitedTimeLabel,
 .Invite_ExpireTime */
 .msg.ChatMessageInvite .invitedTimeLabel, .Invite_ExpireTime {
     color: rgb(var(--white75));
+}
+
+.ChatMessageInvite.GroupAlreadyJoined, .ChatMessageInvite.Inviter {
+	background: rgb(var(--black45));
 }
 
 /* .gameInviteMsg .productImage.productImageBlur,
@@ -2280,7 +2298,7 @@ path */
 
 .friendlistListContainer .ExpandPlusMinus .SVGIcon_PlusCircle {
     width: 4px !important;
-    height: 17px !important;
+    height: 4px !important;
     margin-left: 1px !important;
     stroke: rgb(var(--white)) !important;
 }
@@ -2892,6 +2910,7 @@ svg.SVGIcon_Button.SVGIcon_Clock */
     background-color: transparent;
     cursor: initial;
     border: none;
+	align-items: center;
 }
 
 /* [class*="messages_MsgWithAddons_"] [class*="messages_Addons_"] */
@@ -3664,10 +3683,6 @@ Doesn't work when docking.
 .CompactFriendsList .gameGroup:not(.OtherGamesGroup):not(.NonSteamGamesGroup) .gameGroupContainer {
     margin-right: 7px;
     height: 22px;
-}
-
-.CompactFriendsList .ExpandPlusMinus {
-    margin-top: 1px !important;
 }
 
 .CompactFriendsList .gameGroupContainer .groupIcon {
@@ -4639,10 +4654,22 @@ span.mention {
   }
 }
 
+._2xvrsayL_RcEFyqGFvBu4N {
+	color: rgb(var(--white75));
+}
+
 .CompactFriendsList .friend .labelHolder {
 	margin-top: 3px;
 }
 
 .CompactFriendsList .friendlistListContainer .friend.ingame .labelHolder._1BbOegz8bYL7iPzgYpOgQI {
     margin-top: 3px;
+}
+
+.ChatMessageInvite .groupAlreadyJoined {
+	color: rgb(var(--white75));
+}
+
+.chatRoomGroupNavCollapsed .chatRoomVoiceChannelIcon {
+	margin-left: 10px;
 }
