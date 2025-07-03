@@ -1,7 +1,9 @@
 # Metro skin for Steam
-
 This skin for the new UI framework was created after Valve made it problematic to revert to the old-style windows and subsequently removed support for user-made themes.
 My quest was to make the windows look as close as possible to those of [the original Metro skin](https://steamcommunity.com/groups/metroforsteam).
+<p align="center">
+  <img src="preview.png" alt="Skin preview screenshot" width="500">
+</p>
 
 ## Applying the skin
 ### Using SFP
