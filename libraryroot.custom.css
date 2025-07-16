@@ -3124,7 +3124,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 
 /* [class*="emoticon_NewEmoticonIndicator_"] */
-._3O2gRFANfKKg3mYONXvlcL {
+._5BtHMjT9usALaSWHGugdV {
     background: none;
     top: calc(100% - 2px);
     right: 0;
@@ -3133,7 +3133,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 }
 
 /* [class*="emoticon_NewEmoticonIndicator_"] [class*="emoticon_NewEmoticonCircle_"] */
-._3O2gRFANfKKg3mYONXvlcL .JRMFrrhowzfdWhJcPIMB1 {
+._5BtHMjT9usALaSWHGugdV .u5Kx6dkUppvb-1qV4IIuy {
     background-color: rgb(var(--focus));
     width: 100%;
     height: 2px;
@@ -7290,7 +7290,7 @@ The new Recording overlay gets in the way of this
     color: rgb(var(--white));
 }
 
-._36iQ4zr5AiMWVmmiHee0mN {
+.W_hPU2JmhTx3oUqDN9ADo {
     background-color: rgb(var(--clientBG));
     border: 1px solid rgb(var(--frameBorder));
 }
