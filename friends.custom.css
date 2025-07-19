@@ -4681,3 +4681,11 @@ span.mention {
 .currentUserContainer ._4ZTzGZ5TTgFyfw1DcXLXS._1oYSXGjBe7QctQ1ikLpCMm .nOdcT-MoOaXGePXLyPe0H {
     font-size: 12px !important;
 }
+
+span.mentionSearchMatch {
+    color: rgb(var(--white50));
+}
+/*A workaround because Valve uses mentionDialog for its slash command suggestions as well, and we don't want that to be padded */
+._1QU3cLCGXCmYTUvjYiqqz6 .mentionAvatar {
+	display: none;
+}
