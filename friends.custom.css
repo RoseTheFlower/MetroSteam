@@ -178,7 +178,8 @@
 }
 
 .ExpandPlusMinus {
-    margin-top: 0 !important;
+    margin-top: auto !important;
+	margin-bottom: auto !important;
 	font-size: 0;
 	line-height: 16px;
 }
@@ -4688,4 +4689,16 @@ span.mentionSearchMatch {
 /*A workaround because Valve uses mentionDialog for its slash command suggestions as well, and we don't want that to be padded */
 ._1QU3cLCGXCmYTUvjYiqqz6 .mentionAvatar {
 	display: none;
+}
+
+.mutualFriendTitle {
+        color: rgb(var(--white))
+}
+
+._3AWk3BnPfsx8KJEGVge4Cr {
+    background-color: transparent;
+}
+
+.mutualFriendLabel {
+    color: rgb(var(--white75));
 }
