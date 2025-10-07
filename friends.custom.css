@@ -4702,3 +4702,11 @@ span.mentionSearchMatch {
 .mutualFriendLabel {
     color: rgb(var(--white75));
 }
+
+.DialogProgressBar_Value {
+    background: rgb(var(--focus));
+}
+
+.DialogProgressBar_ProgressBarContainer {
+    border: none;
+}
