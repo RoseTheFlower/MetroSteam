@@ -40,7 +40,7 @@ Installing manually is also an option:
 1. Launch Steam and select the skin in Settings->Interface.
 
 ## Credits
-* [Dom](https://github.com/minischetti) for creating the original Metro skin, which has been the reference point for many parts of my remake.
+* [Dom](https://github.com/auxvirtua) for creating the original Metro skin, which has been the reference point for many parts of my remake.
 * [PhantomGamers](https://github.com/PhantomGamers) for creating the first tool to allow skinning, SFP.
 * [RedSigma](https://github.com/redsigma) for creating a custom skin for the chat and friends windows, which I used as an early template.
 * [Sims](https://github.com/suchmememanyskill) for ideas and code examples related to animating the Steam menu, to the dynamic placement of the repositioned bottom bar buttons, and to the context menu borders.
