@@ -85,7 +85,9 @@ Known issues / things to do:
 }
 
 * {
+
     box-shadow: none !important;
+
     border-radius: 0 !important;
     cursor: default !important;
     transition-delay: 0s !important;
@@ -887,10 +889,10 @@ button[class*="posttextentry_EmoticonButton_"] */
 }
 
 /* html[class*="contextmenu_ContextMenuPopup_"]
-[class*="contextmenu_contextMenuContents_"] 
+[class*="contextmenu_contextMenuContents_"] */
 html._14wqdluDeDnnEcg3OSLEmd ._2EstNjFIIZm_WUSKm5Wt7n {
     padding: 0;
-}*/
+}
 
 /* [class*="contentmanagement_ContentManagement_"] */
 ._3wk64QNnKSFPWsjvok-t02 {
@@ -8481,6 +8483,19 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
 
 .lat0M-V5X4uYd6Mpm1DJ1 ._9Ig1o0jVRia2uf_FKR3rs:hover, .lat0M-V5X4uYd6Mpm1DJ1 ._2Z68vjdOnUDA2ULQG41JVV:hover, .lat0M-V5X4uYd6Mpm1DJ1 ._25eT23F0cV5lmT3tXAIA56:hover {
     background: rgb(var(--white24));
+}
+
+.IjIBR_wDDi2N77Oz4KAT4 {
+    border-bottom: .1px solid rgb(var(--white12));
+}
+
+._1dg8hJMsAYISbeQUxcCJcv ._1YqJbKvmcYmfIDhCmNIQ5q {
+    color: rgb(var(--white50));
+	letter-spacing: normal;
+}
+
+.DesktopUI ._3wtPUBfilFITcl1s4u6A7T .DialogToggle_Label {
+    color: rgb(var(--white75));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
