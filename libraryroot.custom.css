@@ -87,7 +87,6 @@ Known issues / things to do:
 * {
 
     box-shadow: none !important;
-
     border-radius: 0 !important;
     cursor: default !important;
     transition-delay: 0s !important;
@@ -8516,6 +8515,73 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
 
 ._39nnaT_CLE0m_WXVIrAwaG ._515RL2DZmyqkYq3yOP_m7 ._1ltVepCIamdDGwNMNKy3eA ._3XbaozTrhmZDRbFN7-enHx a:hover {
     color: rgb(var(--white75));
+}
+
+.lat0M-V5X4uYd6Mpm1DJ1 ._3yMMwjOGjHdmMrJbYQyst3 {
+    color: rgb(var(--white));
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody .X3pN_ESh0aoxmm2nK65Hu {
+    background: transparent;
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._33vTXbnDrHUQCTEKwJC3Eh {
+    color: rgb(var(--white50));
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG._231y-BrqpRH85PNLgfseSR {
+    background-color: rgb(var(--white05));
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy {
+    border: none;
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._3eWesiClfi8If1bY0SVd1P {
+    color: rgb(var(--white75));
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1mtADWws8sX_GRUMKT9h6b {
+    color: rgb(var(--white));
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1IR8K2Mmix7NIM5w8hdbDB {
+    color: rgb(var(--white75));
+    border-bottom: 1px solid rgb(var(--white75));
+}
+
+._3BVlfXvJszBFnVGme4yTnV {
+    background-color: transparent;
+}
+
+._2tqpD1Hr0c3LCAUSe4r3Yp {
+    background-color: rgb(var(--white12));
+    color: rgb(var(--white75));
+}
+
+._2tqpD1Hr0c3LCAUSe4r3Yp ._1Wd-oBTdxaR4gdEOCU0Y_c {
+    color: rgb(var(--white75));
+}
+
+._2tqpD1Hr0c3LCAUSe4r3Yp:hover {
+    background: rgb(var(--white24))
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1IR8K2Mmix7NIM5w8hdbDB:hover {
+    color: rgb(var(--white));
+    border-bottom: 1px solid rgb(var(--white));
+}
+
+._3ZR32BdxJUNwAA6Fu6n00p, ._3ZR32BdxJUNwAA6Fu6n00p:not(.disabled):not(.gpfocus):hover {
+    background: rgb(var(--textentry));
+}
+
+._3ZR32BdxJUNwAA6Fu6n00p {
+    color: rgb(var(--white));
+}
+
+._2cJjGYel7Z-MKjj_XD8sUo ._31M5aFIazQfIuJ0bCTtsrT {
+    color: rgb(var(--white50));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
