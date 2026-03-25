@@ -8533,16 +8533,26 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
     color: rgb(var(--white50));
 }
 
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG._231y-BrqpRH85PNLgfseSR {
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG._231y-BrqpRH85PNLgfseSR,
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG._2fy9Xqi70es7wkqy4iOvBE {
     background-color: transparent;
 }
 
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG.dB7T-kfL2b2b0jd9Zg9fa {
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG.dB7T-kfL2b2b0jd9Zg9fa,
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy .dB7T-kfL2b2b0jd9Zg9fa._1LCoWsUrJmZHr7SVX0luaG._2fy9Xqi70es7wkqy4iOvBE {
     background-color: rgb(var(--focus));
 }
 
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG.dB7T-kfL2b2b0jd9Zg9fa ._33vTXbnDrHUQCTEKwJC3Eh,
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG.dB7T-kfL2b2b0jd9Zg9fa ._3FgV6oQH8JCN-J9BPCCs14 {
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG.dB7T-kfL2b2b0jd9Zg9fa ._2d_FE9TOpHt1FsYhLEpjCp {
+    border-left: none;
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG:not(.dB7T-kfL2b2b0jd9Zg9fa)._231y-BrqpRH85PNLgfseSR:hover, ._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG:not(.dB7T-kfL2b2b0jd9Zg9fa)._2fy9Xqi70es7wkqy4iOvBE:hover {
+    background-color: rgb(var(--white05));
+}
+
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody .dB7T-kfL2b2b0jd9Zg9fa ._33vTXbnDrHUQCTEKwJC3Eh,
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody .dB7T-kfL2b2b0jd9Zg9fa ._3FgV6oQH8JCN-J9BPCCs14 {
     color: white;
 }
 
@@ -8597,10 +8607,6 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
     color: rgb(var(--white50));
 }
 
-._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3jWpi0kJp_piNEvdMufMmy ._1LCoWsUrJmZHr7SVX0luaG._2fy9Xqi70es7wkqy4iOvBE {
-    background-color: transparent;
-}
-
 .kW6m4Sjqacp5hykrj5LEo ._2zssEuiPfY5YdQlnihDfVD {
     background-color: rgb(var(--white12));
     color: rgb(var(--white));
@@ -8621,6 +8627,10 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
 
 ._3RNLmzBdpcg55exL2SwhT1 ._3K8Afwm4bvd9vSIzAz9siX ._1RfVQWVozb8NJ_wmCLAtxP>svg {
     color: rgb(var(--white))
+}
+
+._1tBzypb5E2AwNuBuVns9Hl ._DialogInputContainer.DialogDropDown:hover, ._1tBzypb5E2AwNuBuVns9Hl ._DialogInputContainer.DialogDropDown:focus {
+    color: rgb(var(--white));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
