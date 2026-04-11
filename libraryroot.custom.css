@@ -2801,6 +2801,14 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
     border-radius: 50% !important;
 }
 
+._3OzkVrQFFPv0aV41N4MrHV._1xInQb2gVGxBqTwFBdXoFW .fbu3l7kPiBeb3EKCjIb8n ._3ZLaTxSHxeGcoKlIy_-Z0L {
+	border-radius: unset!important;
+}
+
+._3OzkVrQFFPv0aV41N4MrHV._1xInQb2gVGxBqTwFBdXoFW button.DialogButton {
+	color: white; /*Same as Valve's text by default.*/
+}
+
 /* [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_BottomControlsRow_"] [class*="serverbrowserdialog_ToggleShowFilterDetailsButton_"][class*="serverbrowserdialog_Selected_"] */
 ._2rxrVvbku0AC8Qbequ4-z9 ._2SvsKGOQeIoV8laKj5Ql5s ._2YSm1vJtLeKb9BbihsLY1F ._341mdPDkZV7JkbIxGBREsd ._30Bn7zCGRm9mu2m62-VXOF.L3t04yaV4NIy6qhVIquGp {
     color: rgb(var(--white));
@@ -5226,6 +5234,10 @@ button.i7jBC4aexUlu_modj8Jwm.i7jBC4aexUlu_modj8Jwm {
     padding: 8px;
     position: relative;
     background-color: rgb(var(--black),.5); /* It appears that the original had this hardcoded as 0,0,0,.5 */
+}
+
+._3OzkVrQFFPv0aV41N4MrHV._1xInQb2gVGxBqTwFBdXoFW .fbu3l7kPiBeb3EKCjIb8n {
+	height: 100%;
 }
 
 ._1-tJH7xXk_v4ppGx6yLVXM ._DialogInputContainer::-webkit-scrollbar-button,
