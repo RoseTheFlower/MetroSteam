@@ -1078,9 +1078,10 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 }
 
 .OneOnOneVoiceStatusLabel {
-    margin-top: 1px;
+    margin-top: 0;
     overflow: hidden;
     white-space: normal;
+	align-self: center;
 }
 
 .OneOnOneVoiceActive {
@@ -2565,6 +2566,7 @@ img.AB86vEzEKPL0y5fK_m4pT {
 [class*="personanameandstatus_richPresenceLabel_"]:not([class*="personanameandstatus_gameName_"]) */
 .titleBarContainer .currentUserContainer ._2Ri005Wg_uXDTa71kdRbcN:not(._1cB0qtF0paHWWyj1XNcnbG) {
     margin-top: -1px !important;
+	margin-bottom: -4px; /*Compensating for the bottom padding when there are three lines.*/
 }
 
 .ChatTabsContextMenu.CompactFriendsList .friend {
@@ -4709,4 +4711,17 @@ span.mentionSearchMatch {
 
 .DialogProgressBar_ProgressBarContainer {
     border: none;
+}
+
+a.connectionStatus, a.connectionStatus:hover, a.connectionStatus:active, a.connectionStatus:visited {
+	color: green!important;
+}
+
+.speaking .avatarHolder .avatarStatus {
+	display: block!important;
+	margin-right: -5px;
+}
+
+.speaking .nibodjvvrm86uCfnnAn4g.Medium {
+	height: auto;
 }
