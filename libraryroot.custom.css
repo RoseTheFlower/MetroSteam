@@ -8650,6 +8650,33 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
 	color: rgb(var(--white75));
 }
 
+._1bq4x9pa4-9RLY-dXWUZTp ._32eLZRkdi_FgZPoefB5zMS {
+    background: transparent;
+    color: rgb(var(--white50));
+}
+
+._1bq4x9pa4-9RLY-dXWUZTp ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a {
+    background: transparent;
+    cursor: default;
+    border: 1px solid rgb(var(--white12));
+}
+
+:not(._1z325vU83sYraLYJ00JlPq)>._1bq4x9pa4-9RLY-dXWUZTp ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a:hover {
+    background: transparent;
+    color: initial;
+    border: 1px solid rgb(var(--white24));
+}
+
+:not(._1z325vU83sYraLYJ00JlPq)>._1bq4x9pa4-9RLY-dXWUZTp ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a svg {
+    color: rgb(var(--white50));
+    fill: rgb(var(--white50));
+}
+
+:not(._1z325vU83sYraLYJ00JlPq)>._1bq4x9pa4-9RLY-dXWUZTp ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a:hover svg {
+    color: rgb(var(--white));
+    fill: rgb(var(--white));
+}
+
 /*._1J8umaxlHnD4poewN6r8wp {
     padding-top: 2px;
     padding-bottom: 2px;
