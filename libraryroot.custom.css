@@ -2338,7 +2338,7 @@ button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
 
 /* [class*="gamepaddialog_FieldLabel_"] */
 ._3jMlJm4PQCA8SfNlUR99Fo {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 /* .online [class*="personanameandstatus_richPresenceLabel_"], .online [class*="personanameandstatus_gameName_"][class*="personanameandstatus_richPresenceLabel_"] a, .online [class*="personanameandstatus_gameName_"][class*="personanameandstatus_richPresenceLabel_"] a:hover, .online [class*="personanameandstatus_gameName_"][class*="personanameandstatus_richPresenceLabel_"] a:active, .online [class*="personanameandstatus_gameName_"][class*="personanameandstatus_richPresenceLabel_"] a:visited */
@@ -2366,6 +2366,10 @@ button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
 
 .DialogHeader {
     color: rgb(var(--white));
+}
+
+.OX7USkJ5dDP_icD00Gal6 .DialogHeader {
+    color: rgb(var(--white)); /*Could be --focus if the Windows 8 style is preferred over 10. */
 }
 
 /* [class*="contentmanagement_DriveUsageText_"], [class*="contentmanagement_DriveUsageNumber_"] */
@@ -2427,17 +2431,17 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 
 /* [class*="librarysettings_DescriptionText_"].DesktopUI, .DesktopUI [class*="librarysettings_DescriptionText_"] */
 ._2NyRKE2oI1jbaiJwFLf7CY.DesktopUI, .DesktopUI ._2NyRKE2oI1jbaiJwFLf7CY {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 /* [class*="accountsettings_EntryValue_"] */
 ._3qIXY674NedSZNa-CXtNlt {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 /* [class*="desktopsecuritysettings_EntryValue_"] */
 ._1PBuyc38k9xkUt4KB_lXh- {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 /* [class*="settings_SettingsDialogSubHeader_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogSubHeader_"] */
@@ -2462,7 +2466,7 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 .DialogSubHeader, .SettingsDialogSubHeader {
     font-size: 20px;
     letter-spacing: 0;
-    color: rgb(var(--white));
+    color: rgb(var(--white)); /*Could be --focus if the Windows 8 style is preferred over 10. */
     text-transform: none;
     font-family: var(--basefont);
     font-weight: 350;
@@ -2812,7 +2816,7 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 
 /* [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_BottomControlsRow_"] [class*="serverbrowserdialog_ToggleShowFilterDetailsButton_"][class*="serverbrowserdialog_Selected_"] */
 ._2rxrVvbku0AC8Qbequ4-z9 ._2SvsKGOQeIoV8laKj5Ql5s ._2YSm1vJtLeKb9BbihsLY1F ._341mdPDkZV7JkbIxGBREsd ._30Bn7zCGRm9mu2m62-VXOF.L3t04yaV4NIy6qhVIquGp {
-    color: rgb(var(--white));
+    color: white;
     background: rgb(var(--focus));
 }
 
@@ -2842,9 +2846,13 @@ button.DialogButton.Primary:hover, button.DialogButton.Primary.gpfocus {
 
 /* [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_TopControlsCtr_"] button[class*="serverbrowserdialog_SwitchTabButton_"][class*="serverbrowserdialog_Selected_"] */
 ._2rxrVvbku0AC8Qbequ4-z9 ._2SvsKGOQeIoV8laKj5Ql5s ._2X_ZpO2X_CIOIEfml3ZTcX button._1jEPp-_Fn1YtGfHenAZ7fT.L3t04yaV4NIy6qhVIquGp {
-    color: rgb(var(--white));
+    color: white;
     background: rgb(var(--focus));
     font-weight: 300;
+}
+
+._2rxrVvbku0AC8Qbequ4-z9 button.L3t04yaV4NIy6qhVIquGp.DialogButton svg {
+    color: white;
 }
 
 /* [class*="serverbrowserdialog_ServerBrowserDialog_"] [class*="serverbrowserdialog_DialogBody_"] [class*="serverbrowserdialog_ServerTabPane_"] [class*="serverbrowserdialog_ServerList_"] [class*="serverbrowserdialog_ColumnResizer_"] */
@@ -5391,7 +5399,7 @@ button.i7jBC4aexUlu_modj8Jwm.i7jBC4aexUlu_modj8Jwm {
 
 /* [class*="settings_SettingsDialogBodyText_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogBodyText_"] */
 ._1RCWDLVLFja1TdD1P53BMq.DesktopUI, .DesktopUI ._1RCWDLVLFja1TdD1P53BMq {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 /* [class*="activateproductdialog_ProductActivationInfoContainerDesktop_"] [class*="activateproductdialog_InfoExampleHeader_"] */
@@ -7956,10 +7964,6 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
     color: rgb(var(--white75));
 }
 
-._1RCWDLVLFja1TdD1P53BMq.DesktopUI, .DesktopUI ._1RCWDLVLFja1TdD1P53BMq {
-    color: rgb(var(--white50));
-}
-
 .RmxP90Yut4EIwychIEg51.DesktopUI, .DesktopUI .RmxP90Yut4EIwychIEg51 {
     color: rgb(var(--white));
 }
@@ -8675,6 +8679,26 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
 :not(._1z325vU83sYraLYJ00JlPq)>._1bq4x9pa4-9RLY-dXWUZTp ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a:hover svg {
     color: rgb(var(--white));
     fill: rgb(var(--white));
+}
+
+.eKmEXJCm_lgme24Fp_HWt._2CCdODv0vfzOMrEBUzZwfI {
+    background: transparent;
+}
+
+._3Vl2zkYPoCpw1q_1n28D3z {
+    background-color: transparent;
+}
+
+._2zGUtyw-lRSsEUPY1qaqf7 ._27r3CjIYhU20TsukVgm25C {
+    color: rgb(var(--white));
+}
+
+.bTuHD5QOYlrI7ljo-zst7 {
+    color: rgb(var(--white));
+}
+
+._2LyGIHuQ8SFKb5T262YUvg._3TgL3aJ2hUdLP2stFZ2wZv:hover {
+    background-color: rgb(var(--white12));
 }
 
 /*._1J8umaxlHnD4poewN6r8wp {
