@@ -8701,6 +8701,10 @@ button.DialogButton._1qG6xUlNu-qvdhpSxwed5 {
     background-color: rgb(var(--white12));
 }
 
+.ingame.awayOrSnooze ._2Ri005Wg_uXDTa71kdRbcN, .ingame ._2Ri005Wg_uXDTa71kdRbcN, .ingame ._2Ri005Wg_uXDTa71kdRbcN a, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:hover, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:active, .ingame ._2Ri005Wg_uXDTa71kdRbcN a:visited {
+    color: rgb(var(--ingame));
+}
+
 /*._1J8umaxlHnD4poewN6r8wp {
     padding-top: 2px;
     padding-bottom: 2px;
