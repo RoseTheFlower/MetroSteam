@@ -802,6 +802,7 @@ button.DialogButton.roleButton.owner:disabled {
 .DialogLabelStrong */
 .DialogLabel, .DialogLabelStrong {
     text-transform: none !important;
+    color: rgb(var(--white));
 }
 
 .DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu {
@@ -826,7 +827,7 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 .DialogLabelStrong,
 ._DialogInputContainer */
 .DialogLabel, .DialogLabelStrong, ._DialogInputContainer {
-    color: rgb(var(--white50));
+    color: rgb(var(--white));
 }
 
 .DialogCheckbox_Container {
@@ -868,11 +869,15 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 /* .DialogHeader,
 [class*="dialogs_DialogTitle_"] */
 .DialogHeader, .e600t61ObcLA11pIZAVb9 {
-    color: rgb(var(--white)) !important;
+    color: rgb(var(--white));
     font-size: 18px !important;
     text-transform: none !important;
     letter-spacing: 0px !important;
     font-weight: 200 !important;
+}
+
+._3mf9BBKxhIVdrt6nIWBt4x .DialogHeader {
+    color: rgb(var(--white)); /*Could be --focus if the Windows 8 style is preferred over 10. */
 }
 
 /* [class*="pagedsettings_PagedSettingsDialog_PageListItem_"],
@@ -882,7 +887,7 @@ button.DialogButton, .DialogToggleField_Option:hover:not(.Active) {
 ._1-vlriAtKYDViAEunue4VO, .xSTLmzylFJdIfak7ZdhuA .MWzjHR-uqa-svGrdXYfUl ._2YV0m3IRCNOoUV9YhJNFnV {
     text-transform: none !important;
     font-size: 14px !important;
-    margin-bottom: 3px !important;
+    margin-bottom: 0;
     padding: 5px 15px !important;
     cursor: default !important;
 }
@@ -3470,10 +3475,6 @@ Doesn't work when docking.
     background: rgb(var(--white05));
 }
 
-.DialogLabel, .DialogLabelStrong {
-    color: rgb(var(--white50));
-}
-
 .Dialog_EditNickName .friend.online .DialogTextInputBase, .Dialog_ChangePersonaName .friend.online .DialogTextInputBase {
     color: rgb(var(--online));
 }
@@ -4724,4 +4725,50 @@ a.connectionStatus, a.connectionStatus:hover, a.connectionStatus:active, a.conne
 
 .speaking .nibodjvvrm86uCfnnAn4g.Medium {
 	height: auto;
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1mtADWws8sX_GRUMKT9h6b {
+    color: rgb(var(--white));
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._3eWesiClfi8If1bY0SVd1P {
+    color: rgb(var(--white75));
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1IR8K2Mmix7NIM5w8hdbDB {
+    color: rgb(var(--white));
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+._3BVlfXvJszBFnVGme4yTnV ._1IR8K2Mmix7NIM5w8hdbDB:hover {
+    color: rgb(var(--white75));
+    border-bottom: none;
+}
+
+._1PUlL2I2RWFcIXXAWteNhd,
+.ovujKSqZqv7MmjE0upPcI>div input._1PFmi6hYnRJ7C8r3naWGJw {
+    background-color: rgb(var(--textentry));
+	color: rgb(var(--white));
+}
+
+._3ZR32BdxJUNwAA6Fu6n00p, ._3ZR32BdxJUNwAA6Fu6n00p:not(.disabled):not(.gpfocus):hover,
+.ovujKSqZqv7MmjE0upPcI>div input._1PFmi6hYnRJ7C8r3naWGJw:hover {
+    background: rgb(var(--textentry));
+}
+
+.eKmEXJCm_lgme24Fp_HWt._2CCdODv0vfzOMrEBUzZwfI {
+    background: transparent;
+}
+
+._3jMlJm4PQCA8SfNlUR99Fo {
+    color: rgb(var(--white));
+}
+
+._1PQppcgkuXQAiFPar9AGi- {
+    background: rgb(var(--white));
+}
+
+._2bl0iQ9xigbq4Zd1NI6NZl::before {
+    background: rgb(var(--focus));
 }
