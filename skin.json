@@ -29,6 +29,9 @@
           "MatchRegexString": "^Menu$|^useBrowserViewContextMenu$",
           "TargetCss": "menu.custom.css"
         },
+          "MatchRegexString": "^notificationtoasts_",
+          "TargetCss": "notifications.custom.css"
+        },
         {
           "MatchRegexString": "^OverlayRemotePlayTogether$",
           "TargetCss": "friends.custom.css"
