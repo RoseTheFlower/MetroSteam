@@ -17,6 +17,7 @@
   ],
   "header_image": "https://raw.githubusercontent.com/RoseTheFlower/MetroSteam/master/preview.png",
   "splash_image": "https://i.imgur.com/PQF7r4t.png",
+  "Steam-WebKit": "webkit.css",
   "UseDefaultPatches": true,
   "Patches":
   [
