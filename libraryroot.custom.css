@@ -2389,12 +2389,14 @@ button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
 }
 
 /* button[class*="accountpanel_FatButton_"] [class*="accountpanel_Label_"] */
-button.TEWmsM70ZLEOxLAjDMpcv ._3wadwgMy2-9k8uOKh3iSdT {
+button.TEWmsM70ZLEOxLAjDMpcv ._3wadwgMy2-9k8uOKh3iSdT,
+button.TEWmsM70ZLEOxLAjDMpcv.TEWmsM70ZLEOxLAjDMpcv ._3wadwgMy2-9k8uOKh3iSdT {
     color: rgb(var(--white));
 }
 
 /* button[class*="accountpanel_FatButton_"] svg */
-button.TEWmsM70ZLEOxLAjDMpcv svg {
+button.TEWmsM70ZLEOxLAjDMpcv svg,
+button.TEWmsM70ZLEOxLAjDMpcv.TEWmsM70ZLEOxLAjDMpcv svg {
     color: rgb(var(--white));
 }
 
@@ -2404,8 +2406,13 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 }
 
 /* [class*="settings_SettingsDialogFatButton_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogFatButton_"] */
-.JA6JIY08WWMEfWP-sZkZ2.DesktopUI, .DesktopUI .JA6JIY08WWMEfWP-sZkZ2 {
+.TEWmsM70ZLEOxLAjDMpcv.DesktopUI, .DesktopUI .TEWmsM70ZLEOxLAjDMpcv,
+button.TEWmsM70ZLEOxLAjDMpcv.TEWmsM70ZLEOxLAjDMpcv.DialogButton {
     background-color: rgb(var(--white12));
+}
+
+button.TEWmsM70ZLEOxLAjDMpcv.TEWmsM70ZLEOxLAjDMpcv.DialogButton:hover {
+    background-color: rgb(var(--white24));
 }
 
 /* [class*="settings_SettingsDialogButton_"].DesktopUI, .DesktopUI [class*="settings_SettingsDialogButton_"] */
@@ -2473,7 +2480,8 @@ button.TEWmsM70ZLEOxLAjDMpcv svg {
 }
 
 /* button[class*="accountpanel_FatButton_"] [class*="accountpanel_Details_"] */
-button.TEWmsM70ZLEOxLAjDMpcv ._3Wb9yDmYPUJksCr7HmaT9H {
+button.TEWmsM70ZLEOxLAjDMpcv ._3Wb9yDmYPUJksCr7HmaT9H,
+button.TEWmsM70ZLEOxLAjDMpcv.TEWmsM70ZLEOxLAjDMpcv ._3Wb9yDmYPUJksCr7HmaT9H {
     color: rgb(var(--white));
 }
 
@@ -7851,10 +7859,6 @@ button.DialogButton:hover._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
 
 ._3ygGwhh7ez8rniqAnS8BeW a:hover {
     color: rgb(var(--white));
-}
-
-.JA6JIY08WWMEfWP-sZkZ2.DesktopUI, .DesktopUI .JA6JIY08WWMEfWP-sZkZ2 {
-    background-color: rgb(var(--white12));
 }
 
 ._7EGqd8bdiXJBd2fj5Hh8r ._3HgL0eRQXwU6dIEXXK6qba ._1RUoX0kTOBfqpwCaBZGDLJ {
