@@ -29,6 +29,7 @@
           "MatchRegexString": "^Menu$|^useBrowserViewContextMenu$",
           "TargetCss": "menu.custom.css"
         },
+        {
           "MatchRegexString": "^notificationtoasts_",
           "TargetCss": "notifications.custom.css"
         },
